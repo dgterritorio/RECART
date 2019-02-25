@@ -464,8 +464,8 @@ CREATE TABLE ponto_interesse (
 --Ponto, Poligono
 CREATE TABLE edificio (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
-	inst_producao_id uuid NOT NULL,
-	inst_gestao_ambiental_id uuid NOT NULL,
+	inst_producao_id uuid,
+	inst_gestao_ambiental_id uuid,
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
 	geometria geometry(GEOMETRY, 3763)NOT NULL,
