@@ -474,8 +474,6 @@ CREATE TABLE edificio (
 	data_const date NOT NULL,
 	exaposxy int4 NOT NULL,
 	exaposz int4 NOT NULL,
-	nome varchar(255),
-	numero_policia varchar(255),
 	valor_condicao_const varchar(10) NOT NULL,
 	valor_elemento_edificio_xy varchar(10) NOT NULL,
 	valor_elemento_edificio_z varchar(10) NOT NULL,
@@ -483,6 +481,32 @@ CREATE TABLE edificio (
 	valor_utilizacao_atual varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+CREATE TABLE nome_edificio (
+	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
+        edificio_id uuid NOT NULL,
+	nome varchar(255),
+	PRIMARY KEY (identificador)
+);	
+
+ALTER TABLE nome_edificio ADD CONSTRAINT nome_edificio_id_edificio_id FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
+
+CREATE TABLE numero_policia_edificio (
+	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
+        edificio_id uuid NOT NULL,
+	numero_policia varchar(255),
+	PRIMARY KEY (identificador)
+);	
+
+ALTER TABLE numero_policia_edificio ADD CONSTRAINT numero_policia_edificio_id_edificio_id FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
+
+CREATE TABLE valor_utilizacao_atual_edificio (
+	valor_utilizacao_atual_id varchar(10) NOT NULL,
+        edificio_id uuid NOT NULL,
+	PRIMARY KEY (valor_utilizacao_atual_id, edificio_id)
+);	
+
+ALTER TABLE valor_utilizacao_atual_edificio ADD CONSTRAINT valor_utilizacao_atual_id_edificio_id FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
 
 CREATE TABLE valor_condicao_const (
 	identificador varchar(10) NOT NULL,
