@@ -772,7 +772,6 @@ CREATE TABLE infra_trans_ferrov (
 	codigo_infra_ferrov varchar(255) NOT NULL,
 	nome varchar(255) NOT NULL,
 	nplataformas int4 NOT NULL,
-	no_trans_ferrov_id uuid NOT NULL,
 	valor_tipo_uso_infra_trans_ferrov varchar(10) NOT NULL,
 	valor_tipo_infra_trans_ferrov varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -786,6 +785,13 @@ CREATE TABLE no_trans_ferrov (
 	valor_tipo_no_trans_ferrov varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+CREATE TABLE lig_infratransferrov_notransferrov (
+	infra_trans_ferrov_id uuid NOT NULL,
+	no_trans_ferrov_id uuid NOT NULL,
+	PRIMARY KEY (infra_trans_ferrov, no_trans_ferrov_id)
+	
+);	
 
 CREATE TABLE lig_seglinferrea_linhaferrea (
 	seg_lin_ferrea_id uuid NOT NULL,
@@ -898,7 +904,6 @@ CREATE TABLE infra_trans_rodov (
 	inicio_objeto date NOT NULL,
 	fim_objeto date NOT NULL,
 	nome varchar(255) NOT NULL,
-	no_trans_rodov_id uuid NOT NULL,
 	valor_tipo_infra_trans_rodov varchar(10),
 	valor_tipo_servico varchar(10),
 	PRIMARY KEY (identificador)
@@ -912,6 +917,13 @@ CREATE TABLE no_trans_rodov (
 	valor_tipo_no_trans_rodov varchar(10),
 	PRIMARY KEY (identificador)
 );
+
+CREATE TABLE lig_infratransrodov_notransrodov (
+	infra_trans_rodov_id uuid NOT NULL,
+	no_trans_rodov_id uuid NOT NULL,
+	PRIMARY KEY (infra_trans_rodov_id,no_trans_rodov_id)
+	
+);	
 
 CREATE TABLE via_rodov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
