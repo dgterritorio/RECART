@@ -107,14 +107,12 @@ CREATE TABLE linha_de_quebra (
 );
 
 CREATE TABLE ponto_cotado (
-	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	geometria geometry(POINT, 3763) NOT NULL,
 	valor_classifica_las varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
 CREATE TABLE curva_de_nivel (
-	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	geometria geometry(LINESTRING, 3763) NOT NULL,
 	valor_tipo_curva varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
