@@ -344,9 +344,9 @@ INSERT INTO valor_tipo_de_equipamento_urbano VALUES ('18','Sanitário público')
 INSERT INTO valor_tipo_de_equipamento_urbano VALUES ('19','Semáforo');
 INSERT INTO valor_tipo_de_equipamento_urbano VALUES ('20','Sinal de trânsito');
 INSERT INTO valor_tipo_de_equipamento_urbano VALUES ('21','Sinalização');
-INSERT INTO valor_tipo_infra_trans_aereo VALUES ('1','Aeroporto');
-INSERT INTO valor_tipo_infra_trans_aereo VALUES ('2','Aeródromo');
-INSERT INTO valor_tipo_infra_trans_aereo VALUES ('3','Heliporto');
+INSERT INTO valor_tipo_infra_trans_aereo VALUES ('1','Aeródromo');
+INSERT INTO valor_tipo_infra_trans_aereo VALUES ('2','Heliporto');
+INSERT INTO valor_tipo_infra_trans_aereo VALUES ('3','Aeródromo com heliporto');
 INSERT INTO valor_tipo_infra_trans_aereo VALUES ('4','Campo de aviação');
 INSERT INTO valor_tipo_infra_trans_ferrov VALUES ('1','Estação');
 INSERT INTO valor_tipo_infra_trans_ferrov VALUES ('2','Apeadeiro');
