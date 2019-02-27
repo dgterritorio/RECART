@@ -1248,10 +1248,10 @@ ALTER TABLE barreira ADD CONSTRAINT valor_barreira_id FOREIGN KEY (valor_barreir
 ALTER TABLE barreira ADD CONSTRAINT valor_estado_instalacao_id FOREIGN KEY (valor_estado_instalacao) REFERENCES valor_estado_instalacao (identificador);
 
 /**
- * Criar tabela auxiliar
+ * Criar tabela area_trabalho auxiliar
  */
 
-CREATE TABLE auxiliar (
+CREATE TABLE area_trabalho (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	geometria geometry(POLYGON, 3763) NOT NULL,
 	data time NOT NULL,
