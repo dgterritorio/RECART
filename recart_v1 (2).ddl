@@ -729,7 +729,7 @@ ALTER TABLE infra_trans_aereo ADD CONSTRAINT valor_tipo_infra_trans_aereo_id FOR
  * Criar dominio Transporte Ferroviario
  */
 
-CREATE TABLE seg_lin_ferrea (
+CREATE TABLE seg_via_ferrea (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
@@ -742,7 +742,9 @@ CREATE TABLE seg_lin_ferrea (
 	valor_estado_linha_ferrea varchar(10) NOT NULL,
 	valor_posicao_vertical_transportes varchar(10) NOT NULL,
 	valor_tipo_linha_ferrea varchar(10) NOT NULL,
-	valor_tipo_troco_linha_ferrea varchar(10) NOT NULL,
+	valor_tipo_troco_via_ferroviaria varchar(10) NOT NULL,
+	valor_via_ferrea varchar(10) NOT NULL,
+	jurisdicao varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
@@ -791,8 +793,8 @@ CREATE TABLE lig_infratransferrov_notransferrov (
 	
 );	
 
-CREATE TABLE lig_seglinferrea_linhaferrea (
-	seg_lin_ferrea_id uuid NOT NULL,
+CREATE TABLE lig_segviaferrea_linhaferrea (
+	seg_via_ferrea_id uuid NOT NULL,
 	linha_ferrea_id uuid NOT NULL,
 	PRIMARY KEY (seg_lin_ferrea_id, linha_ferrea_id)
 );
@@ -815,7 +817,7 @@ CREATE TABLE valor_tipo_linha_ferrea (
 	PRIMARY KEY (identificador)
 );
 
-CREATE TABLE valor_tipo_troco_linha_ferrea (
+CREATE TABLE valor_tipo_troco_via_ferroviaria (
 	identificador varchar(10) NOT NULL,
 	descricao varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -827,13 +829,8 @@ CREATE TABLE valor_estado_linha_ferrea (
 	PRIMARY KEY (identificador)
 );
 
-CREATE TABLE valor_tipo_linha_ferrovia (
-	identificador varchar(10) NOT NULL,
-	descricao varchar(255) NOT NULL,
-	PRIMARY KEY (identificador)
-);
 
-CREATE TABLE valor_tipo_via_ferroviaria (
+CREATE TABLE valor_via_ferrea (
 	identificador varchar(10) NOT NULL,
 	descricao varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -851,11 +848,12 @@ CREATE TABLE valor_tipo_no_trans_ferrov (
 	PRIMARY KEY (identificador)
 );
 
-ALTER TABLE seg_lin_ferrea ADD CONSTRAINT valor_categoria_bitola_id FOREIGN KEY (valor_categoria_bitola) REFERENCES valor_categoria_bitola (identificador);
-ALTER TABLE seg_lin_ferrea ADD CONSTRAINT valor_estado_linha_ferrea_id FOREIGN KEY (valor_estado_linha_ferrea) REFERENCES valor_estado_linha_ferrea (identificador);
-ALTER TABLE seg_lin_ferrea ADD CONSTRAINT valor_posicao_vertical_transportes_id FOREIGN KEY (valor_posicao_vertical_transportes) REFERENCES valor_posicao_vertical_transportes (identificador);
-ALTER TABLE seg_lin_ferrea ADD CONSTRAINT valor_tipo_linha_ferrea_id FOREIGN KEY (valor_tipo_linha_ferrea) REFERENCES valor_tipo_linha_ferrea (identificador);
-ALTER TABLE seg_lin_ferrea ADD CONSTRAINT valor_tipo_troco_linha_ferrea_id FOREIGN KEY (valor_tipo_troco_linha_ferrea) REFERENCES valor_tipo_troco_linha_ferrea (identificador);
+ALTER TABLE seg_via_ferrea ADD CONSTRAINT valor_categoria_bitola_id FOREIGN KEY (valor_categoria_bitola) REFERENCES valor_categoria_bitola (identificador);
+ALTER TABLE seg_via_ferrea ADD CONSTRAINT valor_estado_linha_ferrea_id FOREIGN KEY (valor_estado_linha_ferrea) REFERENCES valor_estado_linha_ferrea (identificador);
+ALTER TABLE seg_via_ferrea ADD CONSTRAINT valor_posicao_vertical_transportes_id FOREIGN KEY (valor_posicao_vertical_transportes) REFERENCES valor_posicao_vertical_transportes (identificador);
+ALTER TABLE seg_via_ferrea ADD CONSTRAINT valor_tipo_linha_ferrea_id FOREIGN KEY (valor_tipo_linha_ferrea) REFERENCES valor_tipo_linha_ferrea (identificador);
+ALTER TABLE seg_via_ferrea ADD CONSTRAINT valor_tipo_troco_via_ferroviaria_id FOREIGN KEY (valor_tipo_troco_via_ferroviaria) REFERENCES valor_tipo_troco_via_ferroviaria (identificador);
+ALTER TABLE seg_via_ferrea ADD CONSTRAINT valor_via_ferrea_id FOREIGN KEY (valor_via_ferrea) REFERENCES valor_via_ferrea (identificador);
 ALTER TABLE infra_trans_ferrov ADD CONSTRAINT valor_tipo_uso_infra_trans_ferrov_id FOREIGN KEY (valor_tipo_uso_infra_trans_ferrov) REFERENCES valor_tipo_uso_infra_trans_ferrov (identificador);
 ALTER TABLE infra_trans_ferrov ADD CONSTRAINT valor_tipo_infra_trans_ferrov_id FOREIGN KEY (valor_tipo_infra_trans_ferrov) REFERENCES valor_tipo_infra_trans_ferrov (identificador);
 ALTER TABLE no_trans_ferrov ADD CONSTRAINT valor_tipo_no_trans_ferrov_id FOREIGN KEY (valor_tipo_no_trans_ferrov) REFERENCES valor_tipo_no_trans_ferrov (identificador);
