@@ -107,14 +107,12 @@ CREATE TABLE linha_de_quebra (
 );
 
 CREATE TABLE ponto_cotado (
-	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	geometria geometry(POINT, 3763) NOT NULL,
 	valor_classifica_las varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
 CREATE TABLE curva_de_nivel (
-	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	geometria geometry(LINESTRING, 3763) NOT NULL,
 	valor_tipo_curva varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -464,8 +462,8 @@ CREATE TABLE ponto_interesse (
 --Ponto, Poligono
 CREATE TABLE edificio (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
-	inst_producao_id uuid NOT NULL,
-	inst_gestao_ambiental_id uuid NOT NULL,
+	inst_producao_id uuid,
+	inst_gestao_ambiental_id uuid,
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
 	geometria geometry(GEOMETRY, 3763)NOT NULL,
@@ -474,15 +472,38 @@ CREATE TABLE edificio (
 	data_const date NOT NULL,
 	exaposxy int4 NOT NULL,
 	exaposz int4 NOT NULL,
-	nome varchar(255),
-	numero_policia varchar(255),
 	valor_condicao_const varchar(10) NOT NULL,
 	valor_elemento_edificio_xy varchar(10) NOT NULL,
 	valor_elemento_edificio_z varchar(10) NOT NULL,
 	valor_forma_edificio varchar(10),
-	valor_utilizacao_atual varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+CREATE TABLE nome_edificio (
+	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
+        edificio_id uuid NOT NULL,
+	nome varchar(255),
+	PRIMARY KEY (identificador)
+);	
+
+ALTER TABLE nome_edificio ADD CONSTRAINT nome_edificio_id_edificio_id FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
+
+CREATE TABLE numero_policia_edificio (
+	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
+        edificio_id uuid NOT NULL,
+	numero_policia varchar(255),
+	PRIMARY KEY (identificador)
+);	
+
+ALTER TABLE numero_policia_edificio ADD CONSTRAINT numero_policia_edificio_id_edificio_id FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
+
+CREATE TABLE valor_utilizacao_atual_edificio (
+	valor_utilizacao_atual_id varchar(10) NOT NULL,
+        edificio_id uuid NOT NULL,
+	PRIMARY KEY (valor_utilizacao_atual_id, edificio_id)
+);	
+
+ALTER TABLE valor_utilizacao_atual_edificio ADD CONSTRAINT valor_utilizacao_atual_id_edificio_id FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
 
 CREATE TABLE valor_condicao_const (
 	identificador varchar(10) NOT NULL,
@@ -708,7 +729,7 @@ ALTER TABLE infra_trans_aereo ADD CONSTRAINT valor_tipo_infra_trans_aereo_id FOR
  * Criar dominio Transporte Ferroviario
  */
 
-CREATE TABLE seg_lin_ferrea (
+CREATE TABLE seg_via_ferrea (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
@@ -721,7 +742,9 @@ CREATE TABLE seg_lin_ferrea (
 	valor_estado_linha_ferrea varchar(10) NOT NULL,
 	valor_posicao_vertical_transportes varchar(10) NOT NULL,
 	valor_tipo_linha_ferrea varchar(10) NOT NULL,
-	valor_tipo_troco_linha_ferrea varchar(10) NOT NULL,
+	valor_tipo_troco_via_ferroviaria varchar(10) NOT NULL,
+	valor_via_ferrea varchar(10) NOT NULL,
+	jurisdicao varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
@@ -749,7 +772,6 @@ CREATE TABLE infra_trans_ferrov (
 	codigo_infra_ferrov varchar(255) NOT NULL,
 	nome varchar(255) NOT NULL,
 	nplataformas int4 NOT NULL,
-	no_trans_ferrov_id uuid NOT NULL,
 	valor_tipo_uso_infra_trans_ferrov varchar(10) NOT NULL,
 	valor_tipo_infra_trans_ferrov varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -764,8 +786,15 @@ CREATE TABLE no_trans_ferrov (
 	PRIMARY KEY (identificador)
 );
 
-CREATE TABLE lig_seglinferrea_linhaferrea (
-	seg_lin_ferrea_id uuid NOT NULL,
+CREATE TABLE lig_infratransferrov_notransferrov (
+	infra_trans_ferrov_id uuid NOT NULL,
+	no_trans_ferrov_id uuid NOT NULL,
+	PRIMARY KEY (infra_trans_ferrov, no_trans_ferrov_id)
+	
+);	
+
+CREATE TABLE lig_segviaferrea_linhaferrea (
+	seg_via_ferrea_id uuid NOT NULL,
 	linha_ferrea_id uuid NOT NULL,
 	PRIMARY KEY (seg_lin_ferrea_id, linha_ferrea_id)
 );
@@ -788,7 +817,7 @@ CREATE TABLE valor_tipo_linha_ferrea (
 	PRIMARY KEY (identificador)
 );
 
-CREATE TABLE valor_tipo_troco_linha_ferrea (
+CREATE TABLE valor_tipo_troco_via_ferroviaria (
 	identificador varchar(10) NOT NULL,
 	descricao varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -800,13 +829,8 @@ CREATE TABLE valor_estado_linha_ferrea (
 	PRIMARY KEY (identificador)
 );
 
-CREATE TABLE valor_tipo_linha_ferrovia (
-	identificador varchar(10) NOT NULL,
-	descricao varchar(255) NOT NULL,
-	PRIMARY KEY (identificador)
-);
 
-CREATE TABLE valor_tipo_via_ferroviaria (
+CREATE TABLE valor_via_ferrea (
 	identificador varchar(10) NOT NULL,
 	descricao varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -824,11 +848,12 @@ CREATE TABLE valor_tipo_no_trans_ferrov (
 	PRIMARY KEY (identificador)
 );
 
-ALTER TABLE seg_lin_ferrea ADD CONSTRAINT valor_categoria_bitola_id FOREIGN KEY (valor_categoria_bitola) REFERENCES valor_categoria_bitola (identificador);
-ALTER TABLE seg_lin_ferrea ADD CONSTRAINT valor_estado_linha_ferrea_id FOREIGN KEY (valor_estado_linha_ferrea) REFERENCES valor_estado_linha_ferrea (identificador);
-ALTER TABLE seg_lin_ferrea ADD CONSTRAINT valor_posicao_vertical_transportes_id FOREIGN KEY (valor_posicao_vertical_transportes) REFERENCES valor_posicao_vertical_transportes (identificador);
-ALTER TABLE seg_lin_ferrea ADD CONSTRAINT valor_tipo_linha_ferrea_id FOREIGN KEY (valor_tipo_linha_ferrea) REFERENCES valor_tipo_linha_ferrea (identificador);
-ALTER TABLE seg_lin_ferrea ADD CONSTRAINT valor_tipo_troco_linha_ferrea_id FOREIGN KEY (valor_tipo_troco_linha_ferrea) REFERENCES valor_tipo_troco_linha_ferrea (identificador);
+ALTER TABLE seg_via_ferrea ADD CONSTRAINT valor_categoria_bitola_id FOREIGN KEY (valor_categoria_bitola) REFERENCES valor_categoria_bitola (identificador);
+ALTER TABLE seg_via_ferrea ADD CONSTRAINT valor_estado_linha_ferrea_id FOREIGN KEY (valor_estado_linha_ferrea) REFERENCES valor_estado_linha_ferrea (identificador);
+ALTER TABLE seg_via_ferrea ADD CONSTRAINT valor_posicao_vertical_transportes_id FOREIGN KEY (valor_posicao_vertical_transportes) REFERENCES valor_posicao_vertical_transportes (identificador);
+ALTER TABLE seg_via_ferrea ADD CONSTRAINT valor_tipo_linha_ferrea_id FOREIGN KEY (valor_tipo_linha_ferrea) REFERENCES valor_tipo_linha_ferrea (identificador);
+ALTER TABLE seg_via_ferrea ADD CONSTRAINT valor_tipo_troco_via_ferroviaria_id FOREIGN KEY (valor_tipo_troco_via_ferroviaria) REFERENCES valor_tipo_troco_via_ferroviaria (identificador);
+ALTER TABLE seg_via_ferrea ADD CONSTRAINT valor_via_ferrea_id FOREIGN KEY (valor_via_ferrea) REFERENCES valor_via_ferrea (identificador);
 ALTER TABLE infra_trans_ferrov ADD CONSTRAINT valor_tipo_uso_infra_trans_ferrov_id FOREIGN KEY (valor_tipo_uso_infra_trans_ferrov) REFERENCES valor_tipo_uso_infra_trans_ferrov (identificador);
 ALTER TABLE infra_trans_ferrov ADD CONSTRAINT valor_tipo_infra_trans_ferrov_id FOREIGN KEY (valor_tipo_infra_trans_ferrov) REFERENCES valor_tipo_infra_trans_ferrov (identificador);
 ALTER TABLE no_trans_ferrov ADD CONSTRAINT valor_tipo_no_trans_ferrov_id FOREIGN KEY (valor_tipo_no_trans_ferrov) REFERENCES valor_tipo_no_trans_ferrov (identificador);
@@ -875,7 +900,6 @@ CREATE TABLE infra_trans_rodov (
 	inicio_objeto date NOT NULL,
 	fim_objeto date NOT NULL,
 	nome varchar(255) NOT NULL,
-	no_trans_rodov_id uuid NOT NULL,
 	valor_tipo_infra_trans_rodov varchar(10),
 	valor_tipo_servico varchar(10),
 	PRIMARY KEY (identificador)
@@ -889,6 +913,13 @@ CREATE TABLE no_trans_rodov (
 	valor_tipo_no_trans_rodov varchar(10),
 	PRIMARY KEY (identificador)
 );
+
+CREATE TABLE lig_infratransrodov_notransrodov (
+	infra_trans_rodov_id uuid NOT NULL,
+	no_trans_rodov_id uuid NOT NULL,
+	PRIMARY KEY (infra_trans_rodov_id,no_trans_rodov_id)
+	
+);	
 
 CREATE TABLE via_rodov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
@@ -1217,10 +1248,10 @@ ALTER TABLE barreira ADD CONSTRAINT valor_barreira_id FOREIGN KEY (valor_barreir
 ALTER TABLE barreira ADD CONSTRAINT valor_estado_instalacao_id FOREIGN KEY (valor_estado_instalacao) REFERENCES valor_estado_instalacao (identificador);
 
 /**
- * Criar tabela auxiliar
+ * Criar tabela area_trabalho auxiliar
  */
 
-CREATE TABLE auxiliar (
+CREATE TABLE area_trabalho (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	geometria geometry(POLYGON, 3763) NOT NULL,
 	data time NOT NULL,
