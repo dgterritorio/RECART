@@ -33,11 +33,13 @@ CREATE TABLE designacao_local (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(POINT, 3763) NOT NULL,
 	valor_local_nomeado varchar(10) NOT NULL,
 	nome varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','designacao_local','geometria',3763,'POINT',2);
+ALTER TABLE designacao_local ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE valor_local_nomeado (
 	identificador varchar(10) NOT NULL,
@@ -55,12 +57,14 @@ CREATE TABLE area_agricola_florestal_mato (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(POLYGON, 3763) NOT NULL,
 	valor_areas_agricolas_florestais_matos varchar(10) NOT NULL,
 	nome varchar(255),
 	descricao varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','area_agricola_florestal_mato','geometria',3763,'POLYGON',2);
+ALTER TABLE area_agricola_florestal_mato ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE areas_artificializadas (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
@@ -68,11 +72,13 @@ CREATE TABLE areas_artificializadas (
 	inst_gestao_ambiental_id uuid NOT NULL,
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(POLYGON, 3763) NOT NULL,
 	valor_areas_artificializadas varchar(10) NOT NULL,
 	nome varchar(255),
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','areas_artificializadas','geometria',3763,'POLYGON',2);
+ALTER TABLE areas_artificializadas ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE valor_areas_agricolas_florestais_matos (
 	identificador varchar(10) NOT NULL,
@@ -97,7 +103,6 @@ CREATE TABLE linha_de_quebra (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(LINESTRING, 3763) NOT NULL,
 	valor_classifica varchar(10) NOT NULL,
 	valor_natureza_linha varchar(10) NOT NULL,
 	artificial bool NOT NULL,
@@ -105,19 +110,26 @@ CREATE TABLE linha_de_quebra (
 	PRIMARY KEY (identificador)
 );
 
+SELECT AddGeometryColumn ('public','linha_de_quebra','geometria',3763,'LINESTRING',3);
+ALTER TABLE linha_de_quebra ALTER COLUMN geometria SET NOT NULL;
+
 CREATE TABLE ponto_cotado (
 	identificador bigint,
-	geometria geometry(POINT, 3763) NOT NULL,
 	valor_classifica_las varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
+SELECT AddGeometryColumn ('public','ponto_cotado','geometria',3763,'POINT',3);
+ALTER TABLE ponto_cotado ALTER COLUMN geometria SET NOT NULL;
+
 CREATE TABLE curva_de_nivel (
 	identificador bigint,
-	geometria geometry(LINESTRING, 3763) NOT NULL,
 	valor_tipo_curva varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','curva_de_nivel','geometria',3763,'LINESTRING',3);
+ALTER TABLE curva_de_nivel ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE valor_tipo_curva (
 	identificador varchar(10) NOT NULL,
@@ -157,10 +169,12 @@ CREATE TABLE equipamento_urbano (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(GEOMETRY, 3763) NOT NULL, 
 	valor_tipo_de_equipamento_urbano varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','equipamento_urbano','geometria',3763,'GEOMETRY',2);
+ALTER TABLE equipamento_urbano ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE valor_tipo_de_equipamento_urbano (
 	identificador varchar(10) NOT NULL,
@@ -178,40 +192,48 @@ CREATE TABLE distrito (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(POLYGON, 3763) NOT NULL,
 	dicofre varchar(255) NOT NULL,
 	nome varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','distrito','geometria',3763,'POLYGON',2);
+ALTER TABLE distrito ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE concelho (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(POLYGON, 3763) NOT NULL,
 	dico varchar(255) NOT NULL,
 	nome varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
+SELECT AddGeometryColumn ('public','concelho','geometria',3763,'POLYGON',2);
+ALTER TABLE concelho ALTER COLUMN geometria SET NOT NULL;
+
 CREATE TABLE freguesia (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(POLYGON, 3763) NOT NULL,
 	dicofre varchar(255) NOT NULL,
 	nome varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
+SELECT AddGeometryColumn ('public','freguesia','geometria',3763,'POLYGON',2);
+ALTER TABLE freguesia ALTER COLUMN geometria SET NOT NULL;
+
 CREATE TABLE fronteira (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(LINESTRING, 3763) NOT NULL,
 	valor_estado_fronteira varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','fronteira','geometria',3763,'LINESTRING',2);
+ALTER TABLE fronteira ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE valor_estado_fronteira (
 	identificador varchar(10) NOT NULL,
@@ -246,42 +268,50 @@ CREATE TABLE conduta_de_agua (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(LINESTRING, 3763) NOT NULL,
 	diametro int4 NOT NULL,
 	valor_conduta_agua varchar(10) NOT NULL,
 	valor_posicao_vertical varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
+SELECT AddGeometryColumn ('public','conduta_de_agua','geometria',3763,'LINESTRING',2);
+ALTER TABLE conduta_de_agua ALTER COLUMN geometria SET NOT NULL;
+
 -- Ponto, Poligono
 CREATE TABLE elem_assoc_pgq (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(GEOMETRY, 3763)NOT NULL, 
 	valor_elemento_associado_pgq varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','elem_assoc_pgq','geometria',3763,'GEOMETRY',2);
+ALTER TABLE elem_assoc_pgq ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE oleoduto_gasoduto_subtancias_quimicas (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(LINESTRING, 3763) NOT NULL,
 	diametro int4 NOT NULL,
 	valor_gasoduto_oleoduto_sub_quimicas varchar(10) NOT NULL,
 	valor_posicao_vertical varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
+SELECT AddGeometryColumn ('public','oleoduto_gasoduto_subtancias_quimicas','geometria',3763,'LINESTRING',2);
+ALTER TABLE oleoduto_gasoduto_subtancias_quimicas ALTER COLUMN geometria SET NOT NULL;
+
 CREATE TABLE elem_assoc_telecomunicacoes (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(POINT, 3763) NOT NULL,
 	valor_elemento_associado_telecomunicacoes varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','elem_assoc_telecomunicacoes','geometria',3763,'POINT',2);
+ALTER TABLE elem_assoc_telecomunicacoes ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE servico_publico (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
@@ -297,31 +327,37 @@ CREATE TABLE elem_assoc_agua (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(GEOMETRY, 3763)NOT NULL,
 	valor_elemento_associado_agua varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','elem_assoc_agua','geometria',3763,'GEOMETRY',2);
+ALTER TABLE elem_assoc_agua ALTER COLUMN geometria SET NOT NULL;
 
 -- Ponto, Poligono
 CREATE TABLE elem_assoc_eletricidade (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(GEOMETRY, 3763)NOT NULL, 
 	valor_elemento_associado_electricidade varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','elem_assoc_eletricidade','geometria',3763,'GEOMETRY',2);
+ALTER TABLE elem_assoc_eletricidade ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE cabo_electrico (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(LINESTRING, 3763) NOT NULL,
 	voltagem_nominal int4 NOT NULL,
 	valor_designacao_tensao varchar(10) NOT NULL,
 	valor_posicao_vertical varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','cabo_electrico','geometria',3763,'LINESTRING',2);
+ALTER TABLE cabo_electrico ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE lig_servicopublico_edificio (
 	servico_publico_id uuid NOT NULL,
@@ -417,7 +453,6 @@ CREATE TABLE sinal_geodesico (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(POINT, 3763) NOT NULL,
 	cota_sinal int4 NOT NULL,
 	nome varchar(255) NOT NULL,
 	valor_local_geodesico varchar(10) NOT NULL,
@@ -426,16 +461,21 @@ CREATE TABLE sinal_geodesico (
 	PRIMARY KEY (identificador)
 );
 
+SELECT AddGeometryColumn ('public','sinal_geodesico','geometria',3763,'POINT',3);
+ALTER TABLE sinal_geodesico ALTER COLUMN geometria SET NOT NULL;
+
 CREATE TABLE constru_linear (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(LINESTRING, 3763) NOT NULL,
 	nome varchar(255),
 	suporte bool NOT NULL,
 	valor_construcao_linear varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','constru_linear','geometria',3763,'LINESTRING',2);
+ALTER TABLE constru_linear ALTER COLUMN geometria SET NOT NULL;
 
 --Ponto, Poligono
 CREATE TABLE constru_polig (
@@ -443,22 +483,26 @@ CREATE TABLE constru_polig (
 	inst_producao_id uuid NOT NULL,
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(GEOMETRY, 3763) NOT NULL,
 	nome varchar(255),
 	valor_tipo_construcao varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','constru_polig','geometria',3763,'GEOMETRY',2);
+ALTER TABLE constru_polig ALTER COLUMN geometria SET NOT NULL;
 
 --Ponto, Poligono
 CREATE TABLE ponto_interesse (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(GEOMETRY, 3763) NOT NULL,
 	nome varchar(255) NOT NULL,
 	valor_tipo_ponto_interesse varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','ponto_interesse','geometria',3763,'GEOMETRY',2);
+ALTER TABLE ponto_interesse ALTER COLUMN geometria SET NOT NULL;
 
 --Ponto, Poligono
 CREATE TABLE edificio (
@@ -467,7 +511,6 @@ CREATE TABLE edificio (
 	inst_gestao_ambiental_id uuid,
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(GEOMETRY, 3763)NOT NULL,
 	altura_edificio int4 NOT NULL,
 	altura_medida bool NOT NULL,
 	data_const date NOT NULL,
@@ -479,6 +522,9 @@ CREATE TABLE edificio (
 	valor_forma_edificio varchar(10),
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','edificio','geometria',3763,'GEOMETRY',2);
+ALTER TABLE edificio ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE nome_edificio (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
@@ -607,19 +653,23 @@ CREATE TABLE area_infra_trans_cabo (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(POLYGON, 3763) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','area_infra_trans_cabo','geometria',3763,'POLYGON',2);
+ALTER TABLE area_infra_trans_cabo ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE seg_via_cabo (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto date NOT NULL,
-	geometria geometry(LINESTRING, 3763) NOT NULL,
 	nome varchar(255) NOT NULL,
 	valor_tipo_via_cabo varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','seg_via_cabo','geometria',3763,'LINESTRING',2);
+ALTER TABLE seg_via_cabo ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE valor_tipo_via_cabo (
 	identificador varchar(10) NOT NULL,
@@ -637,22 +687,26 @@ CREATE TABLE area_infra_trans_via_navegavel (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(POLYGON, 3763) NOT NULL,
 	valor_tipo_area_infra_trans_via_navegavel varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','area_infra_trans_via_navegavel','geometria',3763,'POLYGON',2);
+ALTER TABLE area_infra_trans_via_navegavel ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE infra_trans_via_navegavel (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(POINT, 3763) NOT NULL,
 	nome varchar(255) NOT NULL,
 	codigo_icao varchar(255) NOT NULL,
 	codigo_via_navegavel varchar(255) NOT NULL,
 	valor_tipo_infra_trans_via_navegavel varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','infra_trans_via_navegavel','geometria',3763,'POINT',2);
+ALTER TABLE infra_trans_via_navegavel ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE valor_tipo_area_infra_trans_via_navegavel (
 	identificador varchar(10) NOT NULL,
@@ -677,16 +731,17 @@ CREATE TABLE area_infra_trans_aereo (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(POLYGON, 3763) NOT NULL,
 	valor_tipo_area_infra_trans_aereo varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','area_infra_trans_aereo','geometria',3763,'POLYGON',2);
+ALTER TABLE area_infra_trans_aereo ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE infra_trans_aereo (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(POINT, 3763) NOT NULL,
 	codigo_iata varchar(255) NOT NULL,
 	codigo_icao varchar(255) NOT NULL,
 	nome varchar(255) NOT NULL,
@@ -695,6 +750,9 @@ CREATE TABLE infra_trans_aereo (
 	valor_tipo_infra_trans_aereo varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','infra_trans_aereo','geometria',3763,'POINT',2);
+ALTER TABLE infra_trans_aereo ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE valor_tipo_area_infra_trans_aereo (
 	identificador varchar(10) NOT NULL,
@@ -733,7 +791,6 @@ CREATE TABLE seg_via_ferrea (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(LINESTRING, 3763) NOT NULL,
 	eletrific bool NOT NULL,
 	gestao varchar(255) NOT NULL,
 	velocidade_max int4 NOT NULL,
@@ -748,6 +805,9 @@ CREATE TABLE seg_via_ferrea (
 	PRIMARY KEY (identificador)
 );
 
+SELECT AddGeometryColumn ('public','seg_via_ferrea','geometria',3763,'LINESTRING',3);
+ALTER TABLE seg_via_ferrea ALTER COLUMN geometria SET NOT NULL;
+
 CREATE TABLE linha_ferrea (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	codigo_ferroviario varchar(255) NOT NULL,
@@ -759,16 +819,17 @@ CREATE TABLE area_infra_trans_ferrov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(POLYGON, 3763) NOT NULL,
 	infra_trans_ferrov_id uuid NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','area_infra_trans_ferrov','geometria',3763,'POLYGON',2);
+ALTER TABLE area_infra_trans_ferrov ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE infra_trans_ferrov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(POINT, 3763) NOT NULL,
 	codigo_infra_ferrov varchar(255) NOT NULL,
 	nome varchar(255) NOT NULL,
 	nplataformas int4 NOT NULL,
@@ -777,14 +838,19 @@ CREATE TABLE infra_trans_ferrov (
 	PRIMARY KEY (identificador)
 );
 
+SELECT AddGeometryColumn ('public','infra_trans_ferrov','geometria',3763,'POINT',2);
+ALTER TABLE infra_trans_ferrov ALTER COLUMN geometria SET NOT NULL;
+
 CREATE TABLE no_trans_ferrov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
-	geometria geometry(POINT, 3763) NOT NULL,
 	inicio_objeto date NOT NULL,
 	fim_objeto date NOT NULL,
 	valor_tipo_no_trans_ferrov varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','no_trans_ferrov','geometria',3763,'POINT',3);
+ALTER TABLE no_trans_ferrov ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE lig_infratransferrov_notransferrov (
 	infra_trans_ferrov_id uuid NOT NULL,
@@ -866,7 +932,6 @@ CREATE TABLE seg_via_rodov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(LINESTRING, 3763) NOT NULL,
 	codigo_via_rodov varchar(14),
 	gestao varchar(255) NOT NULL,
 	largura_via_rodov int4 NOT NULL,
@@ -885,18 +950,22 @@ CREATE TABLE seg_via_rodov (
 	PRIMARY KEY (identificador)
 );
 
+SELECT AddGeometryColumn ('public','seg_via_rodov','geometria',3763,'LINESTRING',3);
+ALTER TABLE seg_via_rodov ALTER COLUMN geometria SET NOT NULL;
+
 CREATE TABLE area_infra_trans_rodov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(POLYGON, 3763) NOT NULL,
 	infra_trans_rodov_id uuid NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
+SELECT AddGeometryColumn ('public','area_infra_trans_rodov','geometria',3763,'POLYGON',2);
+ALTER TABLE area_infra_trans_rodov ALTER COLUMN geometria SET NOT NULL;
+
 CREATE TABLE infra_trans_rodov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
-	geometria geometry(POINT, 3763) NOT NULL,
 	inicio_objeto date NOT NULL,
 	fim_objeto date NOT NULL,
 	nome varchar(255) NOT NULL,
@@ -905,14 +974,19 @@ CREATE TABLE infra_trans_rodov (
 	PRIMARY KEY (identificador)
 );
 
+SELECT AddGeometryColumn ('public','infra_trans_rodov','geometria',3763,'POINT',2);
+ALTER TABLE infra_trans_rodov ALTER COLUMN geometria SET NOT NULL;
+
 CREATE TABLE no_trans_rodov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
-	geometria geometry(POINT, 3763) NOT NULL,
 	inicio_objeto date NOT NULL,
 	fim_objeto date NOT NULL,
 	valor_tipo_no_trans_rodov varchar(10),
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','no_trans_rodov','geometria',3763,'POINT',3);
+ALTER TABLE no_trans_rodov ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE lig_infratransrodov_notransrodov (
 	infra_trans_rodov_id uuid NOT NULL,
@@ -938,21 +1012,25 @@ CREATE TABLE via_rodov_limite (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(LINESTRING, 3763) NOT NULL,
 	codigo_via_rodov varchar(255),
 	valor_tipo_limite varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
+SELECT AddGeometryColumn ('public','via_rodov_limite','geometria',3763,'LINESTRING',3);
+ALTER TABLE via_rodov_limite ALTER COLUMN geometria SET NOT NULL;
+
 CREATE TABLE obra_arte (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(POLYGON, 3763) NOT NULL,
 	nome varchar(255),
 	valor_tipo_obra_arte varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','obra_arte','geometria',3763,'POLYGON',3);
+ALTER TABLE obra_arte ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE lig_segviarodov_viarodov (
 	seg_via_rodov_id uuid NOT NULL,
@@ -1053,18 +1131,19 @@ CREATE TABLE nascente (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(POINT, 3763) NOT NULL,
 	nome varchar(255),
 	valor_persistencia_hidrologica varchar(10) NOT NULL,
 	valor_tipo_nascente varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
+SELECT AddGeometryColumn ('public','nascente','geometria',3763,'POINT',3);
+ALTER TABLE nascente ALTER COLUMN geometria SET NOT NULL;
+
 CREATE TABLE agua_lentica (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(POLYGON, 3763) NOT NULL,
 	nome varchar(255),
 	cota_plena_armazenamento bool NOT NULL,
 	data_fonte_dados DATE NOT NULL,
@@ -1076,22 +1155,26 @@ CREATE TABLE agua_lentica (
 	PRIMARY KEY (identificador)
 );
 
+SELECT AddGeometryColumn ('public','agua_lentica','geometria',3763,'POLYGON',3);
+ALTER TABLE agua_lentica ALTER COLUMN geometria SET NOT NULL;
+
 CREATE TABLE margem (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(POLYGON, 3763) NOT NULL,
 	nome varchar(255),
 	valor_tipo_margem varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','margem','geometria',3763,'POLYGON',2);
+ALTER TABLE margem ALTER COLUMN geometria SET NOT NULL;
 
 -- Linha, Poligono
 CREATE TABLE curso_de_agua (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(GEOMETRY, 3763) NOT NULL,
 	nome varchar(255),
 	comprimento real NOT NULL,
 	delimitacao_conhecida bool NOT NULL,
@@ -1107,59 +1190,72 @@ CREATE TABLE curso_de_agua (
 	PRIMARY KEY (identificador)
 );
 
+SELECT AddGeometryColumn ('public','curso_de_agua','geometria',3763,'GEOMETRY',3);
+ALTER TABLE curso_de_agua ALTER COLUMN geometria SET NOT NULL;
+
 -- Ponto, Poligono
 CREATE TABLE queda_de_agua (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(GEOMETRY, 3763) NOT NULL,
 	nome varchar(255),
 	altura real NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
+SELECT AddGeometryColumn ('public','queda_de_agua','geometria',3763,'GEOMETRY',3);
+ALTER TABLE queda_de_agua ALTER COLUMN geometria SET NOT NULL;
+
 CREATE TABLE zona_humida (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(POLYGON, 3763) NOT NULL,
 	nome varchar(255),
 	mare bool NOT NULL,
 	valor_zona_humida varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
+SELECT AddGeometryColumn ('public','zona_humida','geometria',3763,'POLYGON',3);
+ALTER TABLE zona_humida ALTER COLUMN geometria SET NOT NULL;
+
 CREATE TABLE no_hidrografico (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(POINT, 3763) NOT NULL,
 	nome varchar(255),
 	valor_tipo_no_hidrografico varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','no_hidrografico','geometria',3763,'POINT',3);
+ALTER TABLE no_hidrografico ALTER COLUMN geometria SET NOT NULL;
 
 -- Ponto, Poligono
 CREATE TABLE barreira (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(GEOMETRY, 3763)NOT NULL,
 	nome varchar(255),
 	valor_barreira varchar(10) NOT NULL,
 	valor_estado_instalacao varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
+SELECT AddGeometryColumn ('public','barreira','geometria',3763,'GEOMETRY',2);
+ALTER TABLE barreira ALTER COLUMN geometria SET NOT NULL;
+
 CREATE TABLE fronteira_terra_agua (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	geometria geometry(LINESTRING, 3763) NOT NULL,
 	data_fonte_dados date NOT NULL,
 	ilha bool NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','fronteira_terra_agua','geometria',3763,'LINESTRING',3);
+ALTER TABLE fronteira_terra_agua ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE valor_barreira (
 	identificador varchar(10) NOT NULL,
@@ -1253,7 +1349,6 @@ ALTER TABLE barreira ADD CONSTRAINT valor_estado_instalacao_id FOREIGN KEY (valo
 
 CREATE TABLE area_trabalho (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
-	geometria geometry(POLYGON, 3763) NOT NULL,
 	data time NOT NULL,
 	nivel_de_detalhe varchar(255) NOT NULL,
 	nome varchar(255) NOT NULL,
@@ -1261,6 +1356,9 @@ CREATE TABLE area_trabalho (
 	nome_produtor varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
 );
+
+SELECT AddGeometryColumn ('public','area_trabalho','geometria',3763,'POLYGON',2);
+ALTER TABLE area_trabalho ALTER COLUMN geometria SET NOT NULL;
 
 /**
  * Criar relacoes entre tabelas
