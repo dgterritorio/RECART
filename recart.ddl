@@ -114,7 +114,9 @@ SELECT AddGeometryColumn ('public','linha_de_quebra','geometria',3763,'LINESTRIN
 ALTER TABLE linha_de_quebra ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE ponto_cotado (
-	identificador bigint,
+	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
+	inicio_objeto date NOT NULL,
+	fim_objeto time,
 	valor_classifica_las varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -123,7 +125,9 @@ SELECT AddGeometryColumn ('public','ponto_cotado','geometria',3763,'POINT',3);
 ALTER TABLE ponto_cotado ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE curva_de_nivel (
-	identificador bigint,
+	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
+	inicio_objeto date NOT NULL,
+	fim_objeto time,
 	valor_tipo_curva varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -932,6 +936,7 @@ CREATE TABLE seg_via_rodov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
+	arruamento bool NOT NULL,
 	codigo_via_rodov varchar(14),
 	gestao varchar(255) NOT NULL,
 	largura_via_rodov int4 NOT NULL,
