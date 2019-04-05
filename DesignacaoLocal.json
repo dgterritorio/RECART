@@ -1,0 +1,290 @@
+{
+	"tema": "TOPONÍMIA",
+	"caracteristicageografica": "Designação local",
+	"objectoinspire": "NamedPlace",
+	"objecto": "DesignacaoLocal",
+	"definicao": "Designação de uma entidade do mundo real referenciada através de um ou mais nomes próprios.",
+	"dimensao": "2D",
+	"atributos": [{
+			"atributo": "identificador",
+			"Multip": "1",
+			"tipo": "UUID",
+			"voidable": "Não",
+			"NdD1": "x",
+			"NdD2": "x",
+			"definicao": "Identificador único do objeto"
+		},
+		{
+			"atributo": "inicioObjeto",
+			"Multip": "1",
+			"tipo": "Data",
+			"voidable": "Não",
+			"NdD1": "x",
+			"NdD2": "x",
+			"definicao": "Data do início do objeto"
+		},
+		{
+			"atributo": "fimObjeto",
+			"Multip": "[0..1]",
+			"tipo": "Data",
+			"voidable": "Não",
+			"NdD1": "x",
+			"NdD2": "x",
+			"definicao": "Data do fim do objeto"
+		},
+		{
+			"atributo": "geometria",
+			"Multip": "1",
+			"tipo": "Geometria (ponto)",
+			"voidable": "Não",
+			"NdD1": "x",
+			"NdD2": "x",
+			"definicao": ""
+		},
+		{
+			"atributo": "valorLocalNomeado",
+			"Multip": "1",
+			"tipo": "Lista de códigos",
+			"voidable": "Não",
+			"NdD1": "x",
+			"NdD2": "x",
+			"definicao": "Nome de local."
+		}
+	],
+	"listacodigos": [{
+		"listacodigos": "valorLocalNomeado",
+		"valores": [{
+				"valores": "1",
+				"descricao": "Capital do País",
+				"valoresinspire": "",
+				"NdD1": "",
+				"NdD2": "x",
+				"definicao": "Cidade onde está situada a sede administrativa do país."
+			},
+			{
+				"valores": "2",
+				"descricao": "Sede administrativa de Região Autónoma",
+				"valoresinspire": "",
+				"NdD1": "",
+				"NdD2": "x",
+				"definicao": "Cidade onde está situada a sede administrativa da Região Autónoma."
+			},
+			{
+				"valores": "3",
+				"descricao": "Capital de Distrito",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Cidade onde está situada a sede administrativa do distrito."
+			},
+			{
+				"valores": "4",
+				"descricao": "Sede de Concelho",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Lugar onde está instalada a Câmara Municipal e que dá o nome ao município."
+			},
+			{
+				"valores": "5",
+				"descricao": "Sede de Freguesia",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Lugar onde está instalada a freguesia e que dá o nome à mesma."
+			},
+			{
+				"valores": "6",
+				"descricao": "Forma de relevo",
+				"valoresinspire": "",
+				"NdD1": "",
+				"NdD2": "",
+				"definicao": "Características geomorfológicas dos terrenos."
+			},
+			{
+				"valores": "6.1",
+				"descricao": "Serra",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Forma natural de relevo constituída por uma cadeia de montanhas."
+			},
+			{
+				"valores": "6.2",
+				"descricao": "Cabo",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Zona da costa onde a terra avança pelo mar originando uma saliência natural."
+			},
+			{
+				"valores": "6.3",
+				"descricao": "Ria",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Enseada comprida e estreita na costa marítima, em que o mar invadiu os vales fluviais interiores."
+			},
+			{
+				"valores": "6.4",
+				"descricao": "Ponta",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Cume de uma elevação natural com dimensões consideráveis - o mesmo que pico."
+			},
+			{
+				"valores": "6.5",
+				"descricao": "Península",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Porção de terra cercada de água por todos os lados menos por um que a liga geralmente a uma região mais vasta, habitualmente continental."
+			},
+			{
+				"valores": "6.6",
+				"descricao": "Baía",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Reentrância da costa, geralmente entre dois cabos, de contorno aproximadamente semicircular ou estreita à entrada e mais larga no interior, de extensão considerável, menor que um golfo."
+			},
+			{
+				"valores": "6.7",
+				"descricao": "Enseada",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Reentrância ou recôncavo da costa marítima, que forma pequeno porto de abrigo."
+			},
+			{
+				"valores": "6.8",
+				"descricao": "Ínsua",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Ilha pequena que fica no curso de um rio."
+			},
+			{
+				"valores": "6.9",
+				"descricao": "Dunas",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Colinas de areia formadas pelo vento junto das praias."
+			},
+			{
+				"valores": "6.10",
+				"descricao": "Fajã",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Terreno plano ou em declive não muito acentuado, junto ao mar subjacente a uma arriba abrupta. Pode ter origem na solidificação de mantos de lavas que escorreram pelas encostas, ou no depósito de materiais provenientes do desmoronamento das arribas erodidas"
+			},
+			{
+				"valores": "7",
+				"descricao": "Lugar",
+				"valoresinspire": "",
+				"NdD1": "",
+				"NdD2": "",
+				"definicao": "Aglomerado populacional com designação própria."
+			},
+			{
+				"valores": "7.1",
+				"descricao": "Cidade",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Aglomerado populacional com a categoria de “cidade”."
+			},
+			{
+				"valores": "7.2",
+				"descricao": "Vila",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Aglomerado populacional com a categoria de “vila”."
+			},
+			{
+				"valores": "7.3",
+				"descricao": "Outro aglomerado",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Povoação de pequenas dimensões e densidade populacional reduzida (aldeia, lugar, casal, etc.)."
+			},
+			{
+				"valores": "8",
+				"descricao": "Designação local",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Nome de local que se destaca e constitui uma referência conhecida da população (pinhal, mata, mouchão, lombo, etc.)."
+			},
+			{
+				"valores": "9",
+				"descricao": "Sitio protegido",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Área relevante para a conservação da natureza e da biodiversidade e objeto de regulamentação específica."
+			},
+			{
+				"valores": "9.1",
+				"descricao": "Praia",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Faixa arenosa no litoral marítimo ou numa parte de uma margem ribeirinha."
+			},
+			{
+				"valores": "9.2",
+				"descricao": "Parque natural",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Ecossistema natural ou seminatural, onde a preservação da biodiversidade a longo prazo depende da atividade humana que assegura um fluxo sustentável de produtos naturais e de serviços."
+			},
+			{
+				"valores": "10",
+				"descricao": "Oceano",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Grande massa de água salgada na superfície da Terra."
+			},
+			{
+				"valores": "11",
+				"descricao": "Arquipélago",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Grupo de ilhas mais ou menos próximas entre si."
+			},
+			{
+				"valores": "12",
+				"descricao": "Ilha",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Extensão de terra cercada de água por todos os lados."
+			},
+			{
+				"valores": "13",
+				"descricao": "Ilhéu",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Ilha de pequenas dimensões, normalmente não habitada."
+			},
+			{
+				"valores": "14",
+				"descricao": "Outro",
+				"valoresinspire": "",
+				"NdD1": "x",
+				"NdD2": "x",
+				"definicao": "Local não enquadrável em qualquer um dos outros valores."
+			}
+		]
+	}]
+}
