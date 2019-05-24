@@ -105,8 +105,7 @@ CREATE TABLE linha_de_quebra (
 	fim_objeto time,
 	valor_classifica varchar(10) NOT NULL,
 	valor_natureza_linha varchar(10) NOT NULL,
-	artificial bool NOT NULL,
-	desce_direita bool NOT NULL,
+	artificial bool,
 	PRIMARY KEY (identificador)
 );
 
@@ -747,9 +746,9 @@ CREATE TABLE infra_trans_aereo (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	codigo_iata varchar(255) NOT NULL,
-	codigo_icao varchar(255) NOT NULL,
-	nome varchar(255) NOT NULL,
+	codigo_iata varchar(255),
+	codigo_icao varchar(255),
+	nome varchar(255),
 	valor_categoria_infra_trans_aereo varchar(10) NOT NULL,
 	valor_restricao_infra_trans_aereo varchar(10) NOT NULL,
 	valor_tipo_infra_trans_aereo varchar(10) NOT NULL,
@@ -1152,10 +1151,10 @@ CREATE TABLE agua_lentica (
 	fim_objeto time,
 	nome varchar(255),
 	cota_plena_armazenamento bool NOT NULL,
-	data_fonte_dados DATE NOT NULL,
+	data_fonte_dados DATE,
 	mare bool NOT NULL,
-	origem_natural bool NOT NULL,
-	profundidade_media real NOT NULL,
+	origem_natural bool,
+	profundidade_media real,
 	valor_agua_lentica varchar(10) NOT NULL,
 	valor_persistencia_hidrologica varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -1182,13 +1181,13 @@ CREATE TABLE curso_de_agua (
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
 	nome varchar(255),
-	comprimento real NOT NULL,
+	comprimento real,
 	delimitacao_conhecida bool NOT NULL,
 	eixo bool NOT NULL,
 	ficticio bool NOT NULL,
-	largura real NOT NULL,
-	ordem_hidrologica varchar(255) NOT NULL,
-	origem_natural bool NOT NULL,
+	largura real,
+	ordem_hidrologica varchar(255),
+	origem_natural bool,
 	valor_curso_de_agua varchar(10) NOT NULL,
 	valor_persistencia_hidrologica varchar(10) NOT NULL,
 	valor_posicao_vertical varchar(10) NOT NULL,
@@ -1204,7 +1203,7 @@ CREATE TABLE queda_de_agua (
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
 	nome varchar(255),
-	altura real NOT NULL,
+	altura real,
 	PRIMARY KEY (identificador)
 );
 
