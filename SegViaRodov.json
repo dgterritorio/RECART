@@ -6,10 +6,10 @@
 		"objeto": "SegViaRodov",
 		"Definição": "Eixo da faixa de rodagem da via rodoviária.",
 		"Dim.": "3D",
-   	    "Esquemas":["eSegViaRodov1.png","eSegViaRodov2.png","eSegViaRodov3.png","eSegViaRodov4.jpg","eSegViaRodov5.jpg","eSegViaRodov6.jpg"],
-		"atributos": [{
+   	        "Esquemas":["eSegViaRodov1.png","eSegViaRodov2.png","eSegViaRodov3.png","eSegViaRodov4.jpg","eSegViaRodov5.jpg","eSegViaRodov6.jpg"],
+		"Atributos": [{
 			"Atributo": "identificador",
-			"Multip": "1",
+			"Multip.": "1",
 			"Voidable": "Não",
 			"Definição": "Identificador único do objeto",
 			"Tipo": "UUID",
@@ -17,7 +17,7 @@
 			"D2": "x"
 		},{
 			"Atributo": "inicioObjeto",
-			"Multip": "1",
+			"Multip.": "1",
 			"Voidable": "Não",
 			"Definição": "Data do início do objeto",
 			"Tipo": "Data",
@@ -25,7 +25,7 @@
 			"D2": "x"
 		},{
 			"Atributo": "fimObjeto",
-			"Multip": "[0..1]",
+			"Multip.": "[0..1]",
 			"Voidable": "Não",
 			"Definição": "Data do fim do objeto",
 			"Tipo": "Data",
