@@ -668,7 +668,7 @@ CREATE TABLE seg_via_cabo (
 	inicio_objeto date NOT NULL,
 	fim_objeto date NOT NULL,
 	nome varchar(255),
-	valor_tipo_via_cabo varchar(10) NOT NULL,
+	valor_tipo_via_cabo varchar(10),
 	PRIMARY KEY (identificador)
 );
 
@@ -749,7 +749,7 @@ CREATE TABLE infra_trans_aereo (
 	codigo_icao varchar(255),
 	nome varchar(255),
 	valor_categoria_infra_trans_aereo varchar(10) NOT NULL,
-	valor_restricao_infra_trans_aereo varchar(10) NOT NULL,
+	valor_restricao_infra_trans_aereo varchar(10),
 	valor_tipo_infra_trans_aereo varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -803,7 +803,7 @@ CREATE TABLE seg_via_ferrea (
 	valor_posicao_vertical_transportes varchar(10) NOT NULL,
 	valor_tipo_linha_ferrea varchar(10) NOT NULL,
 	valor_tipo_troco_via_ferroviaria varchar(10) NOT NULL,
-	valor_via_ferrea varchar(10) NOT NULL,
+	valor_via_ferrea varchar(10),
 	jurisdicao varchar(255),
 	PRIMARY KEY (identificador)
 );
@@ -836,7 +836,7 @@ CREATE TABLE infra_trans_ferrov (
 	codigo_infra_ferrov varchar(255),
 	nome varchar(255),
 	nplataformas int4 NOT NULL,
-	valor_tipo_uso_infra_trans_ferrov varchar(10) NOT NULL,
+	valor_tipo_uso_infra_trans_ferrov varchar(10),
 	valor_tipo_infra_trans_ferrov varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -944,9 +944,9 @@ CREATE TABLE seg_via_rodov (
 	velocidade_max int4,
 	jurisdicao varchar(255),
 	valor_caract_fisica_rodov varchar(10) NOT NULL,
-	valor_estado_via_rodov varchar(10) NOT NULL,
+	valor_estado_via_rodov varchar(10),
 	valor_posicao_vertical_transportes varchar(10) NOT NULL,
-	valor_restricao_acesso varchar(10) NOT NULL,
+	valor_restricao_acesso varchar(10),
 	valor_sentido varchar(10) NOT NULL,
 	valor_tipo_circulacao varchar(10) NOT NULL,
 	valor_tipo_troco_rodoviario varchar(10) NOT NULL,
@@ -1135,8 +1135,8 @@ CREATE TABLE nascente (
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
 	nome varchar(255),
-	valor_persistencia_hidrologica varchar(10) NOT NULL,
-	valor_tipo_nascente varchar(10) NOT NULL,
+	valor_persistencia_hidrologica varchar(10),
+	valor_tipo_nascente varchar(10),
 	PRIMARY KEY (identificador)
 );
 
@@ -1154,7 +1154,7 @@ CREATE TABLE agua_lentica (
 	origem_natural bool,
 	profundidade_media real,
 	valor_agua_lentica varchar(10) NOT NULL,
-	valor_persistencia_hidrologica varchar(10) NOT NULL,
+	valor_persistencia_hidrologica varchar(10),
 	PRIMARY KEY (identificador)
 );
 
@@ -1187,7 +1187,7 @@ CREATE TABLE curso_de_agua (
 	ordem_hidrologica varchar(255),
 	origem_natural bool,
 	valor_curso_de_agua varchar(10) NOT NULL,
-	valor_persistencia_hidrologica varchar(10) NOT NULL,
+	valor_persistencia_hidrologica varchar(10),
 	valor_posicao_vertical varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
