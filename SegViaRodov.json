@@ -400,7 +400,6 @@
 		"nome": "valorTipoCirculacao",
 		"valores":[
 		 {
-		   "Lista códigos": "valorTipoCirculacao",
 		   "Valores": "1",
 		   "Descrição": "Veículo ligeiro ou pesado",
 		   "Valores INSPIRE": "",
@@ -409,7 +408,6 @@
 		   "Definição": "Permite a circulação de veículos ligeiros ou pesados."
 		 },
 		 {
-		   "Lista códigos": "valorTipoCirculacao",
 		   "Valores": "2",
 		   "Descrição": "Veículo agrícola",
 		   "Valores INSPIRE": "farm vehicle",
@@ -418,7 +416,6 @@
 		   "Definição": "Permite a circulação de veículos agrícolas ou de veículos com tração às quatro rodas."
 		 },
 		 {
-		   "Lista códigos": "valorTipoCirculacao",
 		   "Valores": "3",
 		   "Descrição": "Bicicleta",
 		   "Valores INSPIRE": "bicycle",
@@ -427,7 +424,6 @@
 		   "Definição": "Dedicada à circulação de bicicletas."
 		 },
 		 {
-		   "Lista códigos": "valorTipoCirculacao",
 		   "Valores": "4",
 		   "Descrição": "Pedonal",
 		   "Valores INSPIRE": "pedestrian",
