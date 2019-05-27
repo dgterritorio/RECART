@@ -516,10 +516,7 @@ CREATE TABLE edificio (
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
 	altura_edificio int4 NOT NULL,
-	altura_medida bool NOT NULL,
 	data_const date,
-	exaposxy int4 NOT NULL,
-	exaposz int4 NOT NULL,
 	valor_condicao_const varchar(10),
 	valor_elemento_edificio_xy varchar(10) NOT NULL,
 	valor_elemento_edificio_z varchar(10) NOT NULL,
@@ -799,7 +796,7 @@ CREATE TABLE seg_via_ferrea (
 	velocidade_max int4,
 	codigo_ferroviario varchar(255) NOT NULL,
 	valor_categoria_bitola varchar(10) NOT NULL,
-	valor_estado_linha_ferrea varchar(10) NOT NULL,
+	valor_estado_linha_ferrea varchar(10),
 	valor_posicao_vertical_transportes varchar(10) NOT NULL,
 	valor_tipo_linha_ferrea varchar(10) NOT NULL,
 	valor_tipo_troco_via_ferroviaria varchar(10) NOT NULL,
@@ -835,7 +832,7 @@ CREATE TABLE infra_trans_ferrov (
 	fim_objeto time,
 	codigo_infra_ferrov varchar(255),
 	nome varchar(255),
-	nplataformas int4 NOT NULL,
+	nplataformas int4,
 	valor_tipo_uso_infra_trans_ferrov varchar(10),
 	valor_tipo_infra_trans_ferrov varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -972,7 +969,7 @@ CREATE TABLE infra_trans_rodov (
 	inicio_objeto date NOT NULL,
 	fim_objeto date NOT NULL,
 	nome varchar(255),
-	valor_tipo_infra_trans_rodov varchar(10),
+	valor_tipo_infra_trans_rodov varchar(10) NOT NULL,
 	valor_tipo_servico varchar(10),
 	PRIMARY KEY (identificador)
 );
@@ -984,7 +981,7 @@ CREATE TABLE no_trans_rodov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto date NOT NULL,
-	valor_tipo_no_trans_rodov varchar(10),
+	valor_tipo_no_trans_rodov varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
@@ -1347,6 +1344,7 @@ CREATE TABLE area_trabalho (
 	nome varchar(255) NOT NULL,
 	nome_proprietario varchar(255) NOT NULL,
 	nome_produtor varchar(255) NOT NULL,
+	data_homologacao date,
 	PRIMARY KEY (identificador)
 );
 
