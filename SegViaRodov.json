@@ -8,29 +8,31 @@
 		"Dim.": "3D",
    	        "Esquemas":["eSegViaRodov1.png","eSegViaRodov2.png","eSegViaRodov3.png","eSegViaRodov4.jpg","eSegViaRodov5.jpg","eSegViaRodov6.jpg"],
 		"Atributos": [{
-			"Atributo": "identificador",
-			"Multip.": "1",
-			"Definição": "Identificador único do objeto",
-			"Tipo": "UUID",
-			"D1": "x",
-			"D2": "x"
-		},{
-			"Atributo": "inicioObjeto",
-			"Multip.": "1",
-			"Definição": "Data do início do objeto",
-			"Tipo": "Data",
-			"D1": "x",
-			"D2": "x"
-		},{
-			"Atributo": "fimObjeto",
-			"Multip.": "[0..1]",
-			"Definição": "Data do fim do objeto",
-			"Tipo": "Data",
-			"D1": "x",
-			"D2": "x"
+		   "Atributo": "identificador",
+		   "Multip.": "1",
+		   "Definição": "Identificador único do objeto",
+		   "Tipo": "UUID",
+		   "D1": "x",
+		   "D2": "x"
 		},
 		{
-		   "Atributos": "geometria",
+		   "Atributo": "inicioObjeto",
+		   "Multip.": "1",
+		   "Definição": "Data do início do objeto",
+		   "Tipo": "Data",
+		   "D1": "x",
+		   "D2": "x"
+		},
+		{
+		   "Atributo": "fimObjeto",
+		   "Multip.": "[0..1]",
+		   "Definição": "Data do fim do objeto",
+		    "Tipo": "Data",
+		    "D1": "x",
+		    "D2": "x"
+		},
+		{
+		   "Atributo": "geometria",
 		   "Multip.": "1",
 		   "Tipo": "Geometria (linha)",
 		   "D1": "x",
@@ -38,7 +40,7 @@
 		   "Definição": ""
 		 },
 		 {
-		   "Atributos": "valorEstadoViaRodov",
+		   "Atributo": "valorEstadoViaRodov",
 		   "Multip.": "1",
 		   "Tipo": "Lista de códigos",
 		   "D1": "x",
@@ -46,7 +48,7 @@
 		   "Definição": "Estado da infraestrutura."
 		 },
 		 {
-		   "Atributos": "valorCaractFisicaViaRodov",
+		   "Atributo": "valorCaractFisicaViaRodov",
 		   "Multip.": "1",
 		   "Tipo": "Lista de códigos",
 		   "D1": "x",
@@ -54,7 +56,7 @@
 		   "Definição": "Classificação da via rodoviária em função das suas características físicas."
 		 },
 		 {
-		   "Atributos": "valorPosicaoVerticalTransportes",
+		   "Atributo": "valorPosicaoVerticalTransportes",
 		   "Multip.": "1",
 		   "Tipo": "Lista de códigos",
 		   "D1": "x",
@@ -62,7 +64,7 @@
 		   "Definição": "A posição vertical relativa da entidade (fenómeno do mundo real)."
 		 },
 		 {
-		   "Atributos": "valorRestricaoAcesso",
+		   "Atributo": "valorRestricaoAcesso",
 		   "Multip.": "1",
 		   "Tipo": "Lista de códigos",
 		   "D1": "",
@@ -70,7 +72,7 @@
 		   "Definição": "Tipo de restrições de acesso para um elemento de transporte."
 		 },
 		 {
-		   "Atributos": "valorSentido",
+		   "Atributo": "valorSentido",
 		   "Multip.": "1",
 		   "Tipo": "Lista de códigos",
 		   "D1": "x",
@@ -78,7 +80,7 @@
 		   "Definição": "Indica o sentido de circulação no segmento da via rodoviária."
 		 },
 		 {
-		   "Atributos": "valorTipoCirculacao",
+		   "Atributo": "valorTipoCirculacao",
 		   "Multip.": "[1..*]",
 		   "Tipo": "Lista de códigos",
 		   "D1": "x",
@@ -86,7 +88,7 @@
 		   "Definição": "Identificação do tipo de veículo que pode circular na via rodoviária."
 		 },
 		 {
-		   "Atributos": "valorTipoTrocoRodoviario",
+		   "Atributo": "valorTipoTrocoRodoviario",
 		   "Multip.": "1",
 		   "Tipo": "Lista de códigos",
 		   "D1": "x",
@@ -94,7 +96,7 @@
 		   "Definição": "Tipo de troço."
 		 },
 		 {
-		   "Atributos": "codigoViaRodov",
+		   "Atributo": "codigoViaRodov",
 		   "Multip.": "[1..*]",
 		   "Tipo": "Texto",
 		   "D1": "x",
@@ -103,7 +105,7 @@
 		   "Esquemas":["eSegViaRodov-codigoViaRodov2.jpg"]
 		 },
 		 {
-		   "Atributos": "gestao",
+		   "Atributo": "gestao",
 		   "Multip.": "1",
 		   "Tipo": "Texto",
 		   "D1": "",
@@ -111,7 +113,7 @@
 		   "Definição": "Autoridade que gere a via rodoviária."
 		 },
 		 {
-		   "Atributos": "jurisdicao",
+		   "Atributo": "jurisdicao",
 		   "Multip.": "1",
 		   "Tipo": "Texto",
 		   "D1": "",
@@ -119,7 +121,7 @@
 		   "Definição": "Autoridade que tem a jurisdição da via rodoviária"
 		 },
 		 {
-		   "Atributos": "multiplaFaixaRodagem",
+		   "Atributo": "multiplaFaixaRodagem",
 		   "Multip.": "1",
 		   "Tipo": "Booleano",
 		   "D1": "",
@@ -128,7 +130,7 @@
 		   "Esquemas":["eSegViaRodov-multiplaFaixaRodagem1.jpg","eSegViaRodov-multiplaFaixaRodagem2.jpg"]
 		 },
 		 {
-		   "Atributos": "numViasTransito",
+		   "Atributo": "numViasTransito",
 		   "Multip.": "1",
 		   "Tipo": "Inteiro",
 		   "D1": "x",
@@ -138,7 +140,7 @@
 
 		 },
 		 {
-		   "Atributos": "pavimentado",
+		   "Atributo": "pavimentado",
 		   "Multip.": "1",
 		   "Tipo": "Booleano",
 		   "D1": "x",
@@ -146,7 +148,7 @@
 		   "Definição": "Identifica se a via rodoviária está pavimentada com aglomerado asfáltico, betão, mistura betuminosa ou pedra."
 		 },
 		 {
-		   "Atributos": "velocidadeMax",
+		   "Atributo": "velocidadeMax",
 		   "Multip.": "1",
 		   "Tipo": "Inteiro",
 		   "D1": "",
