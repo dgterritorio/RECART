@@ -997,6 +997,8 @@ CREATE TABLE lig_infratransrodov_notransrodov (
 
 CREATE TABLE via_rodov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
+	inicio_objeto date NOT NULL,
+	fim_objeto time,
 	codigo_via_rodov varchar(255) NOT NULL,
 	data_cat date NOT NULL,
 	fonte_aquisicao_dados varchar(255) NOT NULL,
