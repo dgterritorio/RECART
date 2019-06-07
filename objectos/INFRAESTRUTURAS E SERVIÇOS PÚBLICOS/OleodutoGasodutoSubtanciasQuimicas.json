@@ -1,0 +1,109 @@
+{
+	"objecto": {
+		"Tema": "INFRAESTRUTURAS E SERVIÇOS PÚBLICOS",
+		"Característica geográfica": "Oleoduto, gasoduto ou substâncias químicas",
+		"Objeto INSPIRE": "OilGasChemicalsPipe",
+		"objeto": "OleodutoGasodutoSubtanciasQuimicas",
+		"Definição": "Tubagem utilizada para transportar petróleo, gás ou produtos químicos de um local para outro.",
+		"Dim.": "2D",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (linha)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
+		}, {
+			"Atributo": "valorGasodutoOleodutoSubQuimicas",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Tipo de infraestrutura."
+		}, {
+			"Atributo": "valorPosicaoVertical",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "A posição vertical relativa da entidade (fenómeno no mundo real)."
+		}, {
+			"Atributo": "diametro",
+			"Multip.": "1",
+			"Tipo": "Real",
+			"D1": "",
+			"D2": "",
+			"Definição": "Diâmetro da conduta. [unidade: metro]"
+		}],
+		"listas de códigos": [{
+			"nome": "valorGasodutoOleodutoSubQuimicas",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Gasoduto",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Tubagem para transportar produtos gasosos, especialmente gás natural ou gás derivado do petróleo."
+			}, {
+				"Valores": "2",
+				"Descrição": "Oleoduto",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Tubagem para transportar ou conduzir petróleo ou seus derivados."
+			}, {
+				"Valores": "3",
+				"Descrição": "Outros produtos",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Tubagem para transportar produtos químicos."
+			}]
+		}, {
+			"nome": "valorPosicaoVertical",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Suspenso ou elevado",
+				"Valores INSPIRE": "suspendedOrElevated",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A entidade geográfica está acima do solo."
+			}, {
+				"Valores": "0",
+				"Descrição": "Ao nível do solo",
+				"Valores INSPIRE": "onGroundSurface ",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A entidade geográfica está assente diretamente no solo."
+			}, {
+				"Valores": "-1",
+				"Descrição": "No subsolo",
+				"Valores INSPIRE": "underground",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A entidade geográfica está assente abaixo do solo."
+			}]
+		}]
+	}
+}

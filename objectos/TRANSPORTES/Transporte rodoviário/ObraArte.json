@@ -1,0 +1,113 @@
+{
+	"objecto": {
+		"Tema": "TRANSPORTES (Transporte rodoviário)",
+		"Característica geográfica": "Obra de arte",
+		"Objeto INSPIRE": "",
+		"objeto": "ObraArte",
+		"Definição": "Estrutura destinada à transposição de linhas de água, vales ou vias destinadas ao tráfego rodoviário, ferroviário, pedonal ou fauna.",
+		"Dim.": "3D",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (polígono)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
+		}, {
+			"Atributo": "valorTipoObraArte",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Tipo de obra de arte."
+		}, {
+			"Atributo": "nome",
+			"Multip.": "[0..1]",
+			"Tipo": "Texto",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Nome da obra de arte."
+		}],
+		"listas de códigos": [{
+			"nome": "valorTipoObraArte",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Ponte",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Construção que liga dois pontos separados por um curso de água."
+			}, {
+				"Valores": "2",
+				"Descrição": "Viaduto",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Construção sobre um vale ou uma estrada para estabelecer a comunicação entre as duas vertentes."
+			}, {
+				"Valores": "3",
+				"Descrição": "Passagem superior",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Construção destinada a dar passagem a uma estrada sobre uma linha férrea ou uma estrada de maior importância."
+			}, {
+				"Valores": "4",
+				"Descrição": "Passagem inferior",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Construção destinada a dar passagem a uma estrada sob um linha férrea ou uma estrada de maior importância, incluindo passagens agrícolas."
+			}, {
+				"Valores": "5",
+				"Descrição": "Túnel",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Passagem abobadada por baixo de monte, rio, canal ou mar."
+			}, {
+				"Valores": "6",
+				"Descrição": "Passagem hidráulica",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Construção destinada à passagem de água sob uma linha férrea ou estrada."
+			}, {
+				"Valores": "7",
+				"Descrição": "Passagem pedonal",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Construção destinada à passagem de peões, incluindo as pontes pedonais. "
+			}, {
+				"Valores": "8",
+				"Descrição": "Pilar",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Construção relativa à sapata em altura destinada a apoio a uma estrutura."
+			}]
+		}]
+	}
+}

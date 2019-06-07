@@ -1,0 +1,84 @@
+﻿{
+	"objecto": {
+		"Tema": "AUXILIAR",
+		"Característica geográfica": "Área de trabalho",
+		"Objeto INSPIRE": "",
+		"objeto": "AreaTrabalho",
+		"Definição": "Perímetro correspondente ao âmbito territorial dos dados associados.",
+		"Dim.": "2D",
+		"Atributos": [{
+		   "Atributo": "identificador",
+		   "Multip.": "1",
+		   "Definição": "Identificador único do objeto",
+		   "Tipo": "UUID",
+		   "D1": "x",
+		   "D2": "x"
+		},
+		{
+		   "Atributo": "inicioObjeto",
+		   "Multip.": "1",
+		   "Definição": "Data do início do objeto",
+		   "Tipo": "Data",
+		   "D1": "x",
+		   "D2": "x"
+		},
+		{
+		   "Atributo": "fimObjeto",
+		   "Multip.": "[0..1]",
+		   "Definição": "Data do fim do objeto",
+		    "Tipo": "Data",
+		    "D1": "x",
+		    "D2": "x"
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (polígono)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
+		},{
+			"Atributo": "data",
+			"Multip.": "1",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Data de conclusão do trabalho."
+		},{
+			"Atributo": "datahomologacao",
+			"Multip.": "1",
+			"Tipo": "Data",
+			"D1": "",
+			"D2": "",
+			"Definição": "Data de homologação do trabalho (da responsabilidade da DGT)."
+		},{
+			"Atributo": "nivelDeDetalhe",
+			"Multip.": "1",
+			"Tipo": "Texto",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Indicação do nível de detalhe dos dados."
+		}, {
+			"Atributo": "nome",
+			"Multip.": "1",
+			"Tipo": "Texto",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Nome atribuído ao trabalho (de acordo com a nomenclatura)."
+		}, {
+			"Atributo": "nomeDoProdutor",
+			"Multip.": "1",
+			"Tipo": "Texto",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Nome do produtor do trabalho."
+		}, {
+			"Atributo": "nomeDoProprietario",
+			"Multip.": "1",
+			"Tipo": "Texto",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Nome do proprietário do trabalho."
+		}],
+		"listas de códigos": []
+}
+	}

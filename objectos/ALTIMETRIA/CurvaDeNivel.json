@@ -1,0 +1,71 @@
+{
+	"objecto": {
+		"Tema": "ALTIMETRIA",
+		"Característica geográfica": "Curva de nível",
+		"Objeto INSPIRE": "ContourLine",
+		"objeto": "CurvaDeNivel",
+		"Definição": "Linha imaginária que resulta da interseção de uma superfície de nível com o terreno na qual todos os pontos têm igual valor de elevação, referida esta a um determinado Datum Altimétrico.",
+		"Dim.": "3D",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (linha)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
+		}, {
+			"Atributo": "valorTipoCurva",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Curva diferenciada pelos intervalos altimétricos na sua representação."
+		}],
+		"listas de códigos": [{
+			"nome": "valorTipoCurva",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Mestra",
+				"Valores INSPIRE": "master",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Curva cujo valor da elevação corresponde a 5 vezes o valor da equidistância natural."
+			}, {
+				"Valores": "2",
+				"Descrição": "Secundária",
+				"Valores INSPIRE": "ordinary",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Curva cujo valor da elevação corresponde ao valor da equidistância natural."
+			}, {
+				"Valores": "3",
+				"Descrição": "Auxiliar",
+				"Valores INSPIRE": "auxiliary",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Curva estimada ou interpolada a partir das curvas de nível circundantes. Utilizada em áreas onde a informação altimétrica é insuficiente."
+			}]
+		}]
+	}
+}

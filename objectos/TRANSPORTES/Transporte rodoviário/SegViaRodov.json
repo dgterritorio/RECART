@@ -1,0 +1,397 @@
+{
+	"objecto": {
+		"Tema": "TRANSPORTES (Transporte rodoviário)",
+		"Característica geográfica": "Segmento da via rodoviária",
+		"Objeto INSPIRE": "RoadLink",
+		"objeto": "SegViaRodov",
+		"Definição": "Eixo da faixa de rodagem da via rodoviária.",
+		"Dim.": "3D",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (linha)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
+		}, {
+			"Atributo": "valorEstadoViaRodov",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Estado da infraestrutura."
+		}, {
+			"Atributo": "valorCaractFisicaViaRodov",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Classificação da via rodoviária em função das suas características físicas."
+		}, {
+			"Atributo": "valorPosicaoVerticalTransportes",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "A posição vertical relativa da entidade (fenómeno do mundo real)."
+		}, {
+			"Atributo": "valorRestricaoAcesso",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "",
+			"D2": "",
+			"Definição": "Tipo de restrições de acesso para um elemento de transporte."
+		}, {
+			"Atributo": "valorSentido",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Indica o sentido de circulação no segmento da via rodoviária."
+		}, {
+			"Atributo": "valorTipoCirculacao",
+			"Multip.": "[1..*]",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Identificação do tipo de veículo que pode circular na via rodoviária."
+		}, {
+			"Atributo": "valorTipoTrocoRodoviario",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Tipo de troço."
+		}, {
+			"Atributo": "codigoViaRodov",
+			"Multip.": "[1..*]",
+			"Tipo": "Texto",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Código da via rodoviária."
+		}, {
+			"Atributo": "gestao",
+			"Multip.": "1",
+			"Tipo": "Texto",
+			"D1": "",
+			"D2": "",
+			"Definição": "Autoridade que gere a via rodoviária."
+		}, {
+			"Atributo": "jurisdicao",
+			"Multip.": "1",
+			"Tipo": "Texto",
+			"D1": "",
+			"D2": "",
+			"Definição": "Autoridade que tem a jurisdição da via rodoviária"
+		}, {
+			"Atributo": "multiplaFaixaRodagem",
+			"Multip.": "1",
+			"Tipo": "Booleano",
+			"D1": "",
+			"D2": "",
+			"Definição": "Indica se a via rodoviária correspondente a este segmento tem mais do que uma faixa de rodagem."
+		}, {
+			"Atributo": "numViasTransito",
+			"Multip.": "1",
+			"Tipo": "Inteiro",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Número de vias de trânsito da faixa de rodagem."
+		}, {
+			"Atributo": "pavimentado",
+			"Multip.": "1",
+			"Tipo": "Booleano",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Identifica se a via rodoviária está pavimentada com aglomerado asfáltico, betão, mistura betuminosa ou pedra."
+		}, {
+			"Atributo": "velocidadeMax",
+			"Multip.": "1",
+			"Tipo": "Inteiro",
+			"D1": "",
+			"D2": "",
+			"Definição": "Especificação da velocidade máxima definida para a via rodoviária. [unidade: Km/h]"
+		}],
+		"listas de códigos": [{
+			"nome": "valorEstadoViaRodov",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Desmantelada",
+				"Valores INSPIRE": "decommissioned",
+				"D1": "",
+				"D2": "",
+				"Definição": "A instalação já não é utilizada e foi ou está a ser desmantelada."
+			}, {
+				"Valores": "2",
+				"Descrição": "Em construção",
+				"Valores INSPIRE": "underConstruction",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A instalação encontra-se em fase de construção e ainda não está funcional. Este valor aplica-se unicamente à construção inicial da instalação e não a trabalhos de manutenção."
+			}, {
+				"Valores": "3",
+				"Descrição": "Em desuso",
+				"Valores INSPIRE": "disused",
+				"D1": "",
+				"D2": "",
+				"Definição": "A instalação já não é utilizada, mas não está a ser ou não foi desmantelada."
+			}, {
+				"Valores": "4",
+				"Descrição": "Projetada",
+				"Valores INSPIRE": "projected",
+				"D1": "",
+				"D2": "",
+				"Definição": "A instalação encontra-se em fase de projeto. Os trabalhos de construção ainda não tiveram início."
+			}]
+		}, {
+			"nome": "valorCaractFisicaViaRodov",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Via-rápida",
+				"Valores INSPIRE": "motorway ou freeway",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Via destinada ao tráfego motorizado, com parte ou a totalidade dos acessos condicionados e geralmente sem cruzamentos de nível. Via normalmente com características de autoestrada ou  via reservada a automóveis e motociclos."
+			}, {
+				"Valores": "2",
+				"Descrição": "Estrada",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Via destinada ao trânsito de veículos motorizados. Caminho geralmente alcatroado ou empedrado que vai de um ponto a outro, onde podem transitar veículos, pessoas ou animais."
+			}, {
+				"Valores": "3",
+				"Descrição": "Caminho",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Via de terra, gravilha, saibro ou areia habitualmente destinada ao trânsito.."
+			}, {
+				"Valores": "4",
+				"Descrição": "Aceiro",
+				"Valores INSPIRE": "tractorRoad",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Via que desempenha funções de corta-fogo."
+			}, {
+				"Valores": "5",
+				"Descrição": "Vereda",
+				"Valores INSPIRE": "pedestrianZone / walkway",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Via estreita habitualmente destinada a circulação de pessoas a pé, inclui vias em escada e outras para circulação a pé em ambiente urbano."
+			}, {
+				"Valores": "6",
+				"Descrição": "Ciclovia",
+				"Valores INSPIRE": "bicycleRoad / pedestrianZone",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Via de comunicação terrestre destinada à circulação de pessoas a pé e/ou em bicicleta (velocípedes).  "
+			}]
+		}, {
+			"nome": "valorPosicaoVerticalTransportes",
+			"valores": [{
+				"Valores": "3",
+				"Descrição": "Suspenso ou elevado: nível acima do nível 2",
+				"Valores INSPIRE": "suspendedOrElevated",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A entidade geográfica está assente no segundo nível acima do solo."
+			}, {
+				"Valores": "2",
+				"Descrição": "Suspenso ou elevado: nível 2, acima de nível 1",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A entidade geográfica está assente no segundo nível acima do solo."
+			}, {
+				"Valores": "1",
+				"Descrição": "Suspenso ou elevado: nível 1",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A entidade geográfica está assente no primeiro nível acima do solo."
+			}, {
+				"Valores": "0",
+				"Descrição": "Ao nível do solo",
+				"Valores INSPIRE": "onGroundSurface ",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A entidade geográfica está assente diretamente no solo."
+			}, {
+				"Valores": "-1",
+				"Descrição": "No subsolo: nível -1",
+				"Valores INSPIRE": "underground",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A entidade geográfica está assente no primeiro nível abaixo do solo."
+			}, {
+				"Valores": "-2",
+				"Descrição": "No subsolo: nível mais profundo que nível -1",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "A entidade geográfica está assente no segundo nível abaixo do solo."
+			}, {
+				"Valores": "-3",
+				"Descrição": "No subsolo: nível mais profundo que nível -2",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "A entidade geográfica está assente no terceiro ou inferior nível abaixo do solo."
+			}]
+		}, {
+			"nome": "valorRestricaoAcesso",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Livre",
+				"Valores INSPIRE": "publicAccess",
+				"D1": "",
+				"D2": "",
+				"Definição": "Sem restrições de acesso."
+			}, {
+				"Valores": "2",
+				"Descrição": "Pago",
+				"Valores INSPIRE": "toll",
+				"D1": "",
+				"D2": "",
+				"Definição": "Sujeito a cobrança de portagem."
+			}, {
+				"Valores": "3",
+				"Descrição": "Privado",
+				"Valores INSPIRE": "private",
+				"D1": "",
+				"D2": "",
+				"Definição": "Condicionado a decisão do proprietário."
+			}, {
+				"Valores": "4",
+				"Descrição": "Proibido por lei",
+				"Valores INSPIRE": "forbiddenLegally",
+				"D1": "",
+				"D2": "",
+				"Definição": "Sujeito a disposição legal."
+			}, {
+				"Valores": "5",
+				"Descrição": "Sazonal",
+				"Valores INSPIRE": "seasonal",
+				"D1": "",
+				"D2": "",
+				"Definição": "Restrição de caracter temporário."
+			}, {
+				"Valores": "6",
+				"Descrição": "Acesso físico impossível",
+				"Valores INSPIRE": "physicallyImpossible",
+				"D1": "",
+				"D2": "",
+				"Definição": "Acesso fisicamente impossível devido à existência de barreiras ou outros obstáculos físicos. "
+			}]
+		}, {
+			"nome": "valorSentido",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Duplo",
+				"Valores INSPIRE": "bothDirections",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A circulação decorre nos dois sentidos."
+			}, {
+				"Valores": "2",
+				"Descrição": "No sentido",
+				"Valores INSPIRE": "inDirection",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A circulação apenas ocorre num único sentido que é o sentido da ordem dos vértices do objeto."
+			}, {
+				"Valores": "3",
+				"Descrição": "Sentido contrário",
+				"Valores INSPIRE": "inOppositeDirection",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A circulação apenas ocorre num único sentido que é o sentido contrário ao da ordem dos vértices do objeto."
+			}]
+		}, {
+			"nome": "valorTipoCirculacao",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Veículo ligeiro ou pesado",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Permite a circulação de veículos ligeiros ou pesados."
+			}, {
+				"Valores": "2",
+				"Descrição": "Veículo agrícola",
+				"Valores INSPIRE": "farm vehicle",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Permite a circulação de veículos agrícolas ou de veículos com tração às quatro rodas."
+			}, {
+				"Valores": "3",
+				"Descrição": "Bicicleta",
+				"Valores INSPIRE": "bicycle",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Dedicada à circulação de bicicletas."
+			}, {
+				"Valores": "4",
+				"Descrição": "Pedonal",
+				"Valores INSPIRE": "pedestrian",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Dedicada à circulação de pessoas a pé."
+			}]
+		}, {
+			"nome": "valorTipoTrocoRodoviario",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Plena via",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Todas as vias rodoviárias à exceção das rotundas, ramos de ligação e vias de serviço."
+			}, {
+				"Valores": "2",
+				"Descrição": "Ramo de ligação ",
+				"Valores INSPIRE": "slipRoad",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Estrada especialmente concebida para entrada e saída de outra estrada, incluindo vias de aceleração e desaceleração."
+			}, {
+				"Valores": "3",
+				"Descrição": "Rotunda",
+				"Valores INSPIRE": "roundabout",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Praça comum de confluência de duas ou mais vias públicas, sinalizada como tal, onde o trânsito se reúne e distribui, circulando numa faixa de rodagem de sentido único em torno de uma placa central."
+			}, {
+				"Valores": "4",
+				"Descrição": "Via de serviço",
+				"Valores INSPIRE": "serviceRoad",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Via de acesso destinada a prestar apoio a infraestruturas ou equipamentos, habitualmente de acesso condicionado. Inclui caminho paralelo e via coletora. "
+			}]
+		}]
+	}
+}

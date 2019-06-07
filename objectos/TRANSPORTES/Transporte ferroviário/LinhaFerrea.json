@@ -1,0 +1,47 @@
+{
+	"objecto": {
+		"Tema": "TRANSPORTES (Transporte ferroviário)",
+		"Característica geográfica": "Linha férrea",
+		"Objeto INSPIRE": "RailwayLine\n",
+		"objeto": "LinhaFerrea",
+		"Definição": "Caracterização da linha férrea. Corresponde a um extrato do catálogo de linhas férreas para  a área geográfica representada.",
+		"Dim.": "-",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "codigoLinhaFerrea",
+			"Multip.": "1",
+			"Tipo": "Texto",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Código da linha férrea."
+		}, {
+			"Atributo": "nome",
+			"Multip.": "1",
+			"Tipo": "Texto",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Nome da linha férrea."
+		}],
+		"listas de códigos": []
+	}
+}

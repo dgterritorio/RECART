@@ -1,0 +1,78 @@
+{
+	"objecto": {
+		"Tema": "TRANSPORTES (Transporte por cabo)",
+		"Característica geográfica": "Segmento da via por cabo",
+		"Objeto INSPIRE": "CablewayLink",
+		"objeto": "SegViaCabo",
+		"Definição": "Linha de transporte de pessoas ou de materiais por meio de cabo suspenso.",
+		"Dim.": "2D",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (linha)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
+		}, {
+			"Atributo": "valorTipoViaCabo",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "",
+			"D2": "",
+			"Definição": "Tipo de transporte por cabo."
+		}, {
+			"Atributo": "nome",
+			"Multip.": "[0..1]",
+			"Tipo": "Texto",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Nome da via de transporte por cabo."
+		}],
+		"listas de códigos": [{
+			"nome": "valorTipoViaCabo",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Cabina",
+				"Valores INSPIRE": "cabinCableCar",
+				"D1": "",
+				"D2": "",
+				"Definição": "Transporte por cabo cujos veículos são compostos por uma cabina suspensa utilizada para transportar, de um local para outro, grupos de pessoas e/ou mercadorias que se encontram no interior das mesmas."
+			}, {
+				"Valores": "2",
+				"Descrição": "Cadeira",
+				"Valores INSPIRE": "chairLift",
+				"D1": "",
+				"D2": "",
+				"Definição": "Transporte por cabo cujos veículos são compostos por cadeiras suspensas utilizadas para transportar pessoas ou grupos de pessoas de um local para outro através de um cabo de aço ou de uma corda presa com uma alça em dois pontos."
+			}, {
+				"Valores": "3",
+				"Descrição": "Teleski",
+				"Valores INSPIRE": "skiTow",
+				"D1": "",
+				"D2": "",
+				"Definição": "Sistema de transporte por cabo utilizado para transportar esquiadores nas subidas."
+			}]
+		}]
+	}
+}

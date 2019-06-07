@@ -1,0 +1,64 @@
+{
+	"objecto": {
+		"Tema": "UNIDADES ADMINISTRATIVAS",
+		"Característica geográfica": "Fronteira",
+		"Objeto INSPIRE": "",
+		"objeto": "Fronteira",
+		"Definição": "Linha que representa a fronteira de Portugal. ",
+		"Dim.": "2D",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (linha)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
+		}, {
+			"Atributo": "valorEstadoFronteira",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Descrição do estado de aceitação oficial da linha de fronteira."
+		}],
+		"listas de códigos": [{
+			"nome": "valorEstadoFronteira",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Definido",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Troço obtido a partir de procedimentos realizados para o efeito."
+			}, {
+				"Valores": "2",
+				"Descrição": "Por acordar",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Troço não acordado entre Portugal e Espanha."
+			}]
+		}]
+	}
+}

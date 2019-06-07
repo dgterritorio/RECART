@@ -1,0 +1,109 @@
+{
+	"objecto": {
+		"Tema": "TRANSPORTES (Transporte ferroviário)",
+		"Característica geográfica": "Infraestrutura de transporte ferroviário",
+		"Objeto INSPIRE": "RailwayStationNode",
+		"objeto": "InfraTransFerrov",
+		"Definição": "Ponto que caracteriza a área da infraestrutura de transporte ferroviário.",
+		"Dim.": "2D",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (ponto)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
+		}, {
+			"Atributo": "valorTipoInfraTransFerrov",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Tipo de infraestrutura ferroviária."
+		}, {
+			"Atributo": "valorTipoUsoInfraTransFerrov",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "",
+			"D2": "",
+			"Definição": "Tipo de utilização atual da linha férrea."
+		}, {
+			"Atributo": "codigoInfraTransFerrov",
+			"Multip.": "1",
+			"Tipo": "Texto",
+			"D1": "",
+			"D2": "",
+			"Definição": "Código da infraestrutura de transporte ferroviário."
+		}, {
+			"Atributo": "nome",
+			"Multip.": "[0..1]",
+			"Tipo": "Texto",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Nome da infraestrutura de transporte ferroviário."
+		}],
+		"listas de códigos": [{
+			"nome": "valorTipoInfraTransFerrov",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Local de estação",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Local de paragem de um meio de transporte de carga ou passageiros, para embarque, desembarque, etc. Inclui as estações de metro."
+			}, {
+				"Valores": "2",
+				"Descrição": "Local de apeadeiro",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Lugar onde não há estação e em que o meio de transporte para apenas para deixar ou receber passageiros."
+			}]
+		}, {
+			"nome": "valorTipoUsoInfraTransFerrov",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Passageiros",
+				"Valores INSPIRE": "passengers",
+				"D1": "",
+				"D2": "",
+				"Definição": "O uso da ferrovia é exclusivamente para o transporte de passageiros."
+			}, {
+				"Valores": "2",
+				"Descrição": "Mercadorias",
+				"Valores INSPIRE": "cargo",
+				"D1": "",
+				"D2": "",
+				"Definição": "O uso da ferrovia é exclusivamente para operações de carga de mercadorias."
+			}, {
+				"Valores": "3",
+				"Descrição": "Misto",
+				"Valores INSPIRE": "mixed",
+				"D1": "",
+				"D2": "",
+				"Definição": "O uso da ferrovia é usado para transportar passageiros e mercadorias."
+			}]
+		}]
+	}
+}

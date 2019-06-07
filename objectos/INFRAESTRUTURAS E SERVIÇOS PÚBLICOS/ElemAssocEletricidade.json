@@ -1,0 +1,162 @@
+{
+	"objecto": {
+		"Tema": "INFRAESTRUTURAS E SERVIÇOS PÚBLICOS",
+		"Característica geográfica": "Elemento associado de electricidade",
+		"Objeto INSPIRE": "",
+		"objeto": "ElemAssocEletricidade",
+		"Definição": "Instalação associada à transformação e distribuição de energia elétrica.",
+		"Dim.": "2D",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (ponto; polígono)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
+		}, {
+			"Atributo": "valorElementoAssociadoElectricidade",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Classificação de elementos associados de redes de eletricidade."
+		}],
+		"listas de códigos": [{
+			"nome": "valorElementoAssociadoElectricidade",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Central de produção elétrica",
+				"Valores INSPIRE": "mainStation",
+				"D1": "",
+				"D2": "",
+				"Definição": "Infraestrutura que contém instalação ou instalações de produção de energia."
+			}, {
+				"Valores": "1.1",
+				"Descrição": "Central elétrica",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Infraestrutura que contém instalação ou instalações de uma central elétrica."
+			}, {
+				"Valores": "1.2",
+				"Descrição": "Central fotovoltaica",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Infraestrutura que contém uma instalação de produção de energia elétrica a partir da radiação emitida pelo sol. "
+			}, {
+				"Valores": "1.3",
+				"Descrição": "Central eólica",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Infraestrutura que contém uma instalação de produção de energia elétrica a partir da energia cinética dos ventos."
+			}, {
+				"Valores": "1.4",
+				"Descrição": "Central termoelétrica",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Infraestrutura que contém uma instalação de produção de energia elétrica a partir de energia libertada em forma de calor."
+			}, {
+				"Valores": "2",
+				"Descrição": "Subestação",
+				"Valores INSPIRE": "subStation",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Estação numa rede de distribuição de energia elétrica, onde se faz a transformação da corrente e se fiscalizam as linhas."
+			}, {
+				"Valores": "3",
+				"Descrição": "Aeromotor",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Engenho para produzir energia elétrica quando acionado pela energia do vento."
+			}, {
+				"Valores": "4",
+				"Descrição": "Gerador eólico",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Equipamento de grande porte capaz de transformar a energia do vento em energia elétrica que é inserida diretamente na rede elétrica."
+			}, {
+				"Valores": "5",
+				"Descrição": "Painel solar fotovoltaico",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Equipamento utilizado para converter a energia solar em energia elétrica quando não estão sobre edifícios."
+			}, {
+				"Valores": "6",
+				"Descrição": "Poste de iluminação",
+				"Valores INSPIRE": "streetLight",
+				"D1": "",
+				"D2": "",
+				"Definição": "Haste vertical, colocada no solo ou fixada em alvenaria, para suporte de luminárias de iluminação da via pública."
+			}, {
+				"Valores": "7",
+				"Descrição": "Poste de eletricidade",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Equipamento para suporte das linhas de transporte de energia elétrica."
+			}, {
+				"Valores": "7.1",
+				"Descrição": "Poste de alta tensão",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Equipamento para suporte das linhas de transporte de energia elétrica com tensão maior que 45kV e menor ou igual a 110kV destinada à indústria."
+			}, {
+				"Valores": "7.2",
+				"Descrição": "Poste de média tensão",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Equipamento para suporte das linhas de transporte de energia elétrica com tensão maior que 1Kv e menor ou igual a 45kV destinada à indústria de componentes automóveis, metalúrgica, moldes, vitrificação, grande hotelaria, etc. "
+			}, {
+				"Valores": "7.3",
+				"Descrição": "Poste de baixa tensão",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Equipamento para suporte das linhas de transporte de energia elétrica com contratadas iguais ou inferiores a 41,4kVA e uma potência mínima contratada de 1,15kVA destinada a clientes residenciais, lojas, escritórios e pequenas empresas. "
+			}, {
+				"Valores": "7.4",
+				"Descrição": "Torre de alta tensão",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Equipamento de altura mínima de 20 metros, para suporte das linhas de transporte de energia elétrica superior a 110kV."
+			}, {
+				"Valores": "8",
+				"Descrição": "Posto transformador",
+				"Valores INSPIRE": "transformer",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Instalação ou equipamento sobre o solo, destinado à transformação da corrente elétrica."
+			}]
+		}]
+	}
+}

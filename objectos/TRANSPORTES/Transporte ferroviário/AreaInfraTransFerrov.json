@@ -1,0 +1,40 @@
+{
+	"objecto": {
+		"Tema": "TRANSPORTES (Transporte ferroviário)",
+		"Característica geográfica": "Área da infraestrutura de transporte ferroviário",
+		"Objeto INSPIRE": "RailwayStationArea",
+		"objeto": "AreaInfraTransFerrov",
+		"Definição": "Área que dispõe de instalações, equipamentos e serviços destinados ao tráfego ferroviário.",
+		"Dim.": "2D",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (polígono)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
+		}],
+		"listas de códigos": []
+	}
+}

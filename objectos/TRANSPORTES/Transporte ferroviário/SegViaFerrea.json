@@ -1,0 +1,387 @@
+{
+	"objecto": {
+		"Tema": "TRANSPORTES (Transporte ferroviário)",
+		"Característica geográfica": "Segmento da via férrea",
+		"Objeto INSPIRE": "RailwayLink",
+		"objeto": "SegViaFerrea",
+		"Definição": "Eixo da via férrea.",
+		"Dim.": "3D",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (linha)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
+		}, {
+			"Atributo": "valorCategoriaBitola",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Tipo de bitola (apenas aplicável ao comboio (dois carris paralelos). "
+		}, {
+			"Atributo": "valorEstadoLinhaFerrea",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Estado da infraestrutura."
+		}, {
+			"Atributo": "valorPosicaoVerticalTransportes",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "A posição vertical relativa da entidade (fenómeno do mundo real)."
+		}, {
+			"Atributo": "valorTipoLinhaFerrea",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Tipo de transporte ferroviário para o qual a linha foi projetada."
+		}, {
+			"Atributo": "valorTipoTrocoViaFerroviaria",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Tipo de troço da via ferroviária."
+		}, {
+			"Atributo": "valorViaFerrea",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "",
+			"D2": "",
+			"Definição": "Tipo de via férrea."
+		}, {
+			"Atributo": "codigoLinhaFerrea",
+			"Multip.": "[1..*]",
+			"Tipo": "Texto",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Código da linha férrea. "
+		}, {
+			"Atributo": "eletrific",
+			"Multip.": "1",
+			"Tipo": "Booleano",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Indica se a linha está eletrificada."
+		}, {
+			"Atributo": "gestao",
+			"Multip.": "1",
+			"Tipo": "Texto",
+			"D1": "",
+			"D2": "",
+			"Definição": "Autoridade que gere a ferrovia."
+		}, {
+			"Atributo": "jurisdicao",
+			"Multip.": "1",
+			"Tipo": "Texto",
+			"D1": "",
+			"D2": "",
+			"Definição": "Autoridade que tem a jurisdição da ferrovia."
+		}, {
+			"Atributo": "velocidadeMax",
+			"Multip.": "1",
+			"Tipo": "Inteiro",
+			"D1": "",
+			"D2": "",
+			"Definição": "Especificação da velocidade máxima para a qual a linha férrea foi projetada. [unidade: Km/h]"
+		}],
+		"listas de códigos": [{
+			"nome": "valorCategoriaBitola",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Ibérica",
+				"Valores INSPIRE": "broad",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A bitola nominal da via é de 1668 milímetros."
+			}, {
+				"Valores": "2",
+				"Descrição": "Europeia ",
+				"Valores INSPIRE": "standard",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A bitola nominal da via é de 1435 milímetros."
+			}, {
+				"Valores": "3",
+				"Descrição": "Métrica",
+				"Valores INSPIRE": "narrow",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A bitola nominal da via é de 1000 milímetros."
+			}, {
+				"Valores": "995",
+				"Descrição": "Não aplicável",
+				"Valores INSPIRE": "notApplicable",
+				"D1": "x",
+				"D2": "x",
+				"Definição": ""
+			}]
+		}, {
+			"nome": "valorEstadoLinhaFerrea",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Em construção",
+				"Valores INSPIRE": "underConstruction",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Linha ferroviária em construção iniciada e não concluída."
+			}, {
+				"Valores": "2",
+				"Descrição": "Em projeto",
+				"Valores INSPIRE": "projected",
+				"D1": "",
+				"D2": "",
+				"Definição": "Linha ferroviária em fase de projeto. "
+			}, {
+				"Valores": "3",
+				"Descrição": "Linha em exploração",
+				"Valores INSPIRE": "functional",
+				"D1": "",
+				"D2": "",
+				"Definição": "Linha ferroviária aberta ao tráfego."
+			}, {
+				"Valores": "4",
+				"Descrição": "Linha fechada ao tráfego",
+				"Valores INSPIRE": "disused",
+				"D1": "",
+				"D2": "",
+				"Definição": "Linha ferroviária não utilizada em condições normais."
+			}, {
+				"Valores": "5",
+				"Descrição": "Ramal particular",
+				"Valores INSPIRE": "functional",
+				"D1": "",
+				"D2": "",
+				"Definição": "Troço de via férrea que penetra diretamente nas instalações de uma empresa."
+			}, {
+				"Valores": "6",
+				"Descrição": "Linha desafetada",
+				"Valores INSPIRE": "disused",
+				"D1": "",
+				"D2": "",
+				"Definição": "Linha ferroviária fora de serviço."
+			}, {
+				"Valores": "7",
+				"Descrição": "Linha desmantelada",
+				"Valores INSPIRE": "decommissioned",
+				"D1": "",
+				"D2": "",
+				"Definição": "A linha ferroviária já não é utilizada e foi ou está a ser desmantelada."
+			}]
+		}, {
+			"nome": "valorPosicaoVerticalTransportes",
+			"valores": [{
+				"Valores": "3",
+				"Descrição": "Suspenso ou elevado: nível acima do nível 2",
+				"Valores INSPIRE": "suspendedOrElevated",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A entidade geográfica está assente no segundo nível acima do solo."
+			}, {
+				"Valores": "2",
+				"Descrição": "Suspenso ou elevado: nível 2, acima de nível 1",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A entidade geográfica está assente no segundo nível acima do solo."
+			}, {
+				"Valores": "1",
+				"Descrição": "Suspenso ou elevado: nível 1",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A entidade geográfica está assente no primeiro nível acima do solo."
+			}, {
+				"Valores": "0",
+				"Descrição": "Ao nível do solo",
+				"Valores INSPIRE": "onGroundSurface ",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A entidade geográfica está assente diretamente no solo."
+			}, {
+				"Valores": "-1",
+				"Descrição": "No subsolo: nível -1",
+				"Valores INSPIRE": "underground",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A entidade geográfica está assente no primeiro nível abaixo do solo."
+			}, {
+				"Valores": "-2",
+				"Descrição": "No subsolo: nível mais profundo que nível -1",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "A entidade geográfica está assente no segundo nível abaixo do solo."
+			}, {
+				"Valores": "-3",
+				"Descrição": "No subsolo: nível mais profundo que nível -2",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "A entidade geográfica está assente no terceiro ou inferior nível abaixo do solo."
+			}]
+		}, {
+			"nome": "valorTipoLinhaFerrea",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Ferrovia de cremalheira",
+				"Valores INSPIRE": "cogRailway",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Transporte ferroviário que permite a circulação dos veículos a grandes desníveis, composto por uma via-férrea com ferrovia de cremalheira (situada geralmente entre os carris de rolamento) e veículos equipados com uma ou várias rodas dentadas ou pinhões que engrenam nessa cremalheira."
+			}, {
+				"Valores": "2",
+				"Descrição": "Funicular",
+				"Valores INSPIRE": "funicular",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Transporte ferroviário que compreende um cabo ligado a um veículo que circula em carris permitindo a subida e a descida de um declive muito íngreme. Se possível, os veículos que fazem os percursos ascendentes e descendente contrabalançam-se."
+			}, {
+				"Valores": "3",
+				"Descrição": "Levitação magnética",
+				"Valores INSPIRE": "magneticLevitation",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Transporte ferroviário assente num único carril, com a função de guiamento, que o suporta por meio de um mecanismo de levitação magnética."
+			}, {
+				"Valores": "4",
+				"Descrição": "Metro",
+				"Valores INSPIRE": "metro",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Sistema de transporte ferroviário urbano utilizado em zonas urbanas e suburbanas, que circula numa via independente dos outros sistemas de transporte acionado eletricamente e cujo percurso é subterrâneo e à superfície."
+			}, {
+				"Valores": "5",
+				"Descrição": "Carril único",
+				"Valores INSPIRE": "monorail",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Transporte ferroviário assente num único carril, com função simultânea de apoio e guiamento."
+			}, {
+				"Valores": "6",
+				"Descrição": "Carril único (suspenso)",
+				"Valores INSPIRE": "suspendedRail",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Transporte ferroviário assente num único carril, com função de apoio e guiamento, no qual está suspenso um veículo que se desloca ao longo deste."
+			}, {
+				"Valores": "7",
+				"Descrição": "Comboio (dois carris paralelos)",
+				"Valores INSPIRE": "train",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Transporte ferroviário que geralmente consiste em dois carris paralelos sobre os quais um veículo ou uma máquina movidos a energia aciona uma série de veículos atrelados permitindo a sua circulação ao longo da via-férrea a fim de transportar pessoas ou mercadorias de um destino para outro."
+			}, {
+				"Valores": "8",
+				"Descrição": "Elétrico",
+				"Valores INSPIRE": "tramway",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Sistema de transporte ferroviário, utilizado em zonas urbanas, que partilha o espaço rodoviário com veículo e peões."
+			}]
+		}, {
+			"nome": "valorTipoTrocoViaFerroviaria",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Via única",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Via ferroviária cujo perfil transversal apresenta uma só via que pode ser percorrida nos dois sentidos."
+			}, {
+				"Valores": "2",
+				"Descrição": "Via dupla",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Via ferroviária cujo perfil transversal apresenta duas vias em que, normalmente, há um só sentido de circulação para cada via."
+			}, {
+				"Valores": "3",
+				"Descrição": "Via múltipla",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Via ferroviária cujo perfil transversal apresenta mais do que duas vias em que, normalmente, há um só sentido de circulação para cada via."
+			}]
+		}, {
+			"nome": "valorViaFerrea",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Plena via",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Via entre estações que constitui a via férrea principal."
+			}, {
+				"Valores": "2",
+				"Descrição": "Linha de estação",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Via de uma estação que constitui a via férrea principal."
+			}, {
+				"Valores": "3",
+				"Descrição": "Linha de estacionamento",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Instalação de via numa estação ou depósito para estacionamento e, se necessário, para limpeza das composições."
+			}, {
+				"Valores": "4",
+				"Descrição": "Linha de segurança",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Linha destinada ao resguardo de um comboio, permitindo a sua ultrapassagem, em segurança, por outro considerado prioritário."
+			}, {
+				"Valores": "1",
+				"Descrição": "Sapal",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Solo alagadiço, geralmente localizado nas margens de rios e cuja cobertura varia com a quantidade de água."
+			}, {
+				"Valores": "3",
+				"Descrição": "Turfeira",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Zona húmida, constituídas por solos mal drenados, geralmente impermeáveis, o que provoca o seu encharcamento e anoxia (comum no interior dos Açores)."
+			}, {
+				"Valores": "2",
+				"Descrição": "Paul",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Tipo de ecossistema lagunar, que, juntamente com as turfeiras e os pântanos, se inclui na categoria de zonas húmidas palustres."
+			}]
+		}]
+	}
+}

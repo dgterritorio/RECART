@@ -1,0 +1,797 @@
+{
+	"objecto": {
+		"Tema": "CONSTRUÇÕES",
+		"Característica geográfica": "Edifício",
+		"Objeto INSPIRE": "building",
+		"objeto": "Edificio",
+		"Definição": "Construção em alvenaria, betão ou outro material, com um ou vários pisos, de caráter permanente, em geral limitada por paredes e teto, que serve de habitação ou constitui um espaço comercial, industrial, administrativo, religioso, cultural, etc.",
+		"Dim.": "2D",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (ponto; polígono)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
+		}, {
+			"Atributo": "valorCondicaoConst",
+			"Multip.": "[0..1]",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Estado da construção."
+		}, {
+			"Atributo": "valorElementoEdificioXY",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Referência utilizada para a definição da geometria horizontal do edifício."
+		}, {
+			"Atributo": "valorElementoEdificioZ",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Referência utilizada para a determinação da altura do edifício."
+		}, {
+			"Atributo": "valorFormaEdificio",
+			"Multip.": "[0..1]",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Caracterização física do edifício relevante à sua representação cartográfica."
+		}, {
+			"Atributo": "valorUtilizacaoAtual",
+			"Multip.": "[1..*]",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Valores que indicam a utilização atual do edifício."
+		}, {
+			"Atributo": "alturaEdificio",
+			"Multip.": "1",
+			"Tipo": "Real",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Altura acima do solo. [unidade: metro]"
+		}, {
+			"Atributo": "dataConst",
+			"Multip.": "1",
+			"Tipo": "Data",
+			"D1": "",
+			"D2": "",
+			"Definição": "Data de construção."
+		}, {
+			"Atributo": "nome",
+			"Multip.": "[0..*]",
+			"Tipo": "Texto",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Nome da construção."
+		}, {
+			"Atributo": "numeroPolicia",
+			"Multip.": "[0..*]",
+			"Tipo": "Texto",
+			"D1": "x",
+			"D2": "",
+			"Definição": "Número, por vezes acompanhado de letras, que permite identificar um edifício, uma habitação, uma entrada ou um recinto, geralmente colocado ou inscrito por cima ou ao lado de uma porta."
+		}],
+		"listas de códigos": [{
+			"nome": "valorCondicaoConst",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Demolido",
+				"Valores INSPIRE": "demolished",
+				"D1": "",
+				"D2": "",
+				"Definição": "Construção demolida já não subsistindo vestígios visíveis."
+			}, {
+				"Valores": "2",
+				"Descrição": "Desafetado",
+				"Valores INSPIRE": "declined",
+				"D1": "",
+				"D2": "",
+				"Definição": "Construção não pode ser utilizada em condições normais, embora os seus principais elementos (paredes, telhado) ainda existam."
+			}, {
+				"Valores": "3",
+				"Descrição": "Em construção",
+				"Valores INSPIRE": "underConstruction",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Construção iniciada e não concluída. Este valor aplica-se unicamente à construção inicial do edifício e não a trabalhos de manutenção."
+			}, {
+				"Valores": "4",
+				"Descrição": "Projetado",
+				"Valores INSPIRE": "projected",
+				"D1": "",
+				"D2": "",
+				"Definição": "Construção em fase de projeto."
+			}, {
+				"Valores": "5",
+				"Descrição": "Ruína",
+				"Valores INSPIRE": "ruin",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Construção parcialmente demolida."
+			}]
+		}, {
+			"nome": "valorElementoEdificioXY",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Combinado",
+				"Valores INSPIRE": "combined",
+				"D1": "",
+				"D2": "",
+				"Definição": "A geometria horizontal foi obtida a partir da combinação das geometrias das suas partes constituintes com as geometrias das partes do edifício utilizando diferentes referências de geometria horizontal."
+			}, {
+				"Valores": "2",
+				"Descrição": "Ponto de entrada",
+				"Valores INSPIRE": "entrancePoint",
+				"D1": "",
+				"D2": "",
+				"Definição": "A geometria horizontal foi obtida por um ponto situado à entrada do edifício."
+			}, {
+				"Valores": "3",
+				"Descrição": "Invólucro",
+				"Valores INSPIRE": "envelope",
+				"D1": "",
+				"D2": "",
+				"Definição": "A geometria horizontal foi obtida utilizando todo o invólucro do edifício, ou seja, a extensão máxima do edifício acima e abaixo do solo."
+			}, {
+				"Valores": "4",
+				"Descrição": "Implantação",
+				"Valores INSPIRE": "footPrint",
+				"D1": "x",
+				"D2": "",
+				"Definição": "A geometria horizontal foi obtida utilizando a implantação do edifício, ou seja, a sua extensão ao nível do solo, incluindo os alpendres."
+			}, {
+				"Valores": "5",
+				"Descrição": "Piso mais baixo acima do solo",
+				"Valores INSPIRE": "lowestFloorAboveGround",
+				"D1": "",
+				"D2": "",
+				"Definição": "A geometria horizontal foi obtida utilizando o piso mais baixo acima do solo do edifício."
+			}, {
+				"Valores": "6",
+				"Descrição": "Beira do telhado",
+				"Valores INSPIRE": "roofEdge",
+				"D1": "",
+				"D2": "x",
+				"Definição": "A geometria horizontal foi obtida utilizando as beiras do telhado do edifício."
+			}]
+		}, {
+			"nome": "valorElementoEdificioZ",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Invólucro acima do solo",
+				"Valores INSPIRE": "aboveGroundEnvelope",
+				"D1": "",
+				"D2": "",
+				"Definição": "Altura medida ou estimada ao nível da extensão máxima do invólucro acima do solo do edifício."
+			}, {
+				"Valores": "2",
+				"Descrição": "Base do edifício",
+				"Valores INSPIRE": "bottomOfConstruction",
+				"D1": "",
+				"D2": "",
+				"Definição": "Altura medida ou estimada na base da parte utilizável do edifício."
+			}, {
+				"Valores": "3",
+				"Descrição": "Ponto de entrada",
+				"Valores INSPIRE": "entrancePoint",
+				"D1": "",
+				"D2": "",
+				"Definição": "Altura medida ou estimada à entrada da edifico, geralmente na soleira da porta de entrada."
+			}, {
+				"Valores": "4",
+				"Descrição": "Cornija geral",
+				"Valores INSPIRE": "generalEave",
+				"D1": "",
+				"D2": "",
+				"Definição": "Altura medida ou estimada ao nível da cornija, em qualquer local entre os níveis mais baixo e mais alto da cornija do edifício."
+			}, {
+				"Valores": "5",
+				"Descrição": "Solo geral",
+				"Valores INSPIRE": "generalGround",
+				"D1": "",
+				"D2": "",
+				"Definição": "Altura medida ou estimada ao nível do solo, em qualquer local entre os pontos mais baixo e mais alto do edifício no solo."
+			}, {
+				"Valores": "6",
+				"Descrição": "Telhado geral",
+				"Valores INSPIRE": "generalRoof",
+				"D1": "",
+				"D2": "",
+				"Definição": "Altura medida ou estimada ao nível do telhado, em qualquer local entre o nível mais baixo da beira do telhado e o topo do edifício."
+			}, {
+				"Valores": "7",
+				"Descrição": "Beira do telhado geral",
+				"Valores INSPIRE": "generalRoofEdge",
+				"D1": "",
+				"D2": "",
+				"Definição": "Altura medida ou estimada ao nível da beira do telhado, em qualquer local entre as beiras mais baixa e mais alta do telhado do edifício."
+			}, {
+				"Valores": "8",
+				"Descrição": "Cornija mais alta",
+				"Valores INSPIRE": "highestEave",
+				"D1": "",
+				"D2": "",
+				"Definição": "A altura foi medida ou estimada ao nível da cornija mais elevada do edifício."
+			}, {
+				"Valores": "9",
+				"Descrição": "Ponto mais alto",
+				"Valores INSPIRE": "highestPoint",
+				"D1": "",
+				"D2": "",
+				"Definição": "A altura foi medida ou estimada no ponto mais alto do edifício, incluindo instalações, como as chaminés e antenas."
+			}, {
+				"Valores": "10",
+				"Descrição": "Beira mais alta do telhado",
+				"Valores INSPIRE": "highestRoofEdge",
+				"D1": "",
+				"D2": "",
+				"Definição": "A altura foi medida ou estimada ao nível da beira mais alta do edifício."
+			}, {
+				"Valores": "11",
+				"Descrição": "Cornija mais baixa",
+				"Valores INSPIRE": "lowestEave",
+				"D1": "",
+				"D2": "",
+				"Definição": "A altura foi medida ou estimada ao nível mais baixo da cornija do edifício."
+			}, {
+				"Valores": "12",
+				"Descrição": "Piso mais baixo acima do solo",
+				"Valores INSPIRE": "lowestFloorAboveGround",
+				"D1": "",
+				"D2": "",
+				"Definição": "A altura foi medida ou estimada ao nível do piso mais baixo acima do solo."
+			}, {
+				"Valores": "13",
+				"Descrição": "Beira do telhado mais baixa",
+				"Valores INSPIRE": "lowestRoofEdge",
+				"D1": "",
+				"D2": "",
+				"Definição": "A altura foi medida ou estimada ao nível da beira mais baixa do telhado do edifício."
+			}, {
+				"Valores": "14",
+				"Descrição": "Topo do edíficio",
+				"Valores INSPIRE": "topOfConstruction",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A altura foi medida ou estimada ao nível do topo do edifício."
+			}, {
+				"Valores": "15",
+				"Descrição": "Ponto mais alto no solo",
+				"Valores INSPIRE": "highestgroundPoint",
+				"D1": "",
+				"D2": "",
+				"Definição": "A altura foi medida ou estimada no ponto mais alto do edifício no solo."
+			}, {
+				"Valores": "16",
+				"Descrição": "Ponto mais baixo no solo",
+				"Valores INSPIRE": "lowestgroundPoint",
+				"D1": "",
+				"D2": "",
+				"Definição": "A altura foi medida ou estimada ao nível do ponto mais baixo do edifício no solo."
+			}]
+		}, {
+			"nome": "valorFormaEdificio",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Anfiteatro ao ar livre",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Espaço aberto onde são representadas espetáculos culturais."
+			}, {
+				"Valores": "2",
+				"Descrição": "Arco",
+				"Valores INSPIRE": "arch",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Estrutura artificial em forma de arco."
+			}, {
+				"Valores": "3",
+				"Descrição": "Azenha",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Estrutura com dispositivo para funcionar com base na energia hídrica e destinado à moagem de cereais."
+			}, {
+				"Valores": "4",
+				"Descrição": "Barraca",
+				"Valores INSPIRE": "shed",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Edifício de construção ligeira, que normalmente tem um ou mais lados abertos e que é geralmente utilizado para fins de armazenamento."
+			}, {
+				"Valores": "5",
+				"Descrição": "Barragem",
+				"Valores INSPIRE": "dam",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Construção permanente num curso de água utilizada para reter a água ou para controlar o seu caudal."
+			}, {
+				"Valores": "6",
+				"Descrição": "Bunker",
+				"Valores INSPIRE": "bunker",
+				"D1": "",
+				"D2": "",
+				"Definição": "Instalação, em parte subterrânea, destinada aos militares, ou por estes utilizada, quer para a localização de centros de comando e controlo quer para o acampamento de tropas."
+			}, {
+				"Valores": "7",
+				"Descrição": "Capela",
+				"Valores INSPIRE": "chapel",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Edifício de culto cristão, geralmente mais pequeno que uma igreja."
+			}, {
+				"Valores": "8",
+				"Descrição": "Castelo",
+				"Valores INSPIRE": "castle",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Fortificação de defesa com muralhas, torres e, por vezes, fossos, construída geralmente em local estratégico."
+			}, {
+				"Valores": "9",
+				"Descrição": "Chaminé",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Conduta vertical e elevada em forma de tubo construída para exaustão de fumos."
+			}, {
+				"Valores": "10",
+				"Descrição": "Coreto",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Edificação sobrelevada, coberta mas sem paredes, localizada em largos e jardins, e onde se realizam apresentações de bandas musicais e outros espetáculos."
+			}, {
+				"Valores": "11",
+				"Descrição": "Espigueiro",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Estrutura normalmente de pedra ou madeira com a função de secar o milho através das fissuras laterais."
+			}, {
+				"Valores": "12",
+				"Descrição": "Estádio",
+				"Valores INSPIRE": "stadium",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Grande recinto destinado essencialmente à realização de competições desportivas e circundada de bancadas em anfiteatro para acomodação de público"
+			}, {
+				"Valores": "13",
+				"Descrição": "Estufa",
+				"Valores INSPIRE": "greenhouse",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Construção envidraçada ou coberta de material transparente, na qual a temperatura e humidade podem ser controladas, para cultivo e crescimento de espécies agrícolas ou plantas."
+			}, {
+				"Valores": "14",
+				"Descrição": "Farol",
+				"Valores INSPIRE": "lighthouse",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Torre ou outra construção elevada construída para apoio à navegação marítima."
+			}, {
+				"Valores": "15",
+				"Descrição": "Forte",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Construção arquitetónica militar projetada para defesa."
+			}, {
+				"Valores": "16",
+				"Descrição": "Hangar",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Construção destinada ao abrigo e reparação de aeronaves e dirigíveis."
+			}, {
+				"Valores": "17",
+				"Descrição": "Igreja",
+				"Valores INSPIRE": "church",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Edifício de culto cristão."
+			}, {
+				"Valores": "18",
+				"Descrição": "Reservatório da mãe d'água",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Reservatório de água encanada."
+			}, {
+				"Valores": "19",
+				"Descrição": "Mesquita",
+				"Valores INSPIRE": "mosque",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Edifício de culto islâmico."
+			}, {
+				"Valores": "20",
+				"Descrição": "Moinho de vento",
+				"Valores INSPIRE": "windmill",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Estrutura com dispositivo para funcionar com base na energia do vento e destinado à moagem de cereais."
+			}, {
+				"Valores": "21",
+				"Descrição": "Palácio",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Edifício grandioso e de aparência nobre."
+			}, {
+				"Valores": "22",
+				"Descrição": "Pombal",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Construção de forma tradicionalmente circular ou em ferradura que proporciona habitat de nidificação para os pombos."
+			}, {
+				"Valores": "23",
+				"Descrição": "Praça de touros",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Infraestrutura normalmente circular, com bancadas para espectadores e com uma arena interior destinada a corridas tauromáquicas."
+			}, {
+				"Valores": "24",
+				"Descrição": "Silo",
+				"Valores INSPIRE": "silo",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Reservatório em forma de torre onde são armazenados materiais ou alimentos."
+			}, {
+				"Valores": "25",
+				"Descrição": "Sinagoga",
+				"Valores INSPIRE": "synagogue",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Edifício de culto judaico."
+			}, {
+				"Valores": "26",
+				"Descrição": "Tanque de armazenamento",
+				"Valores INSPIRE": "storageTank",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Contentor geralmente para líquidos e gases comprimidos."
+			}, {
+				"Valores": "27",
+				"Descrição": "Telheiro",
+				"Valores INSPIRE": "canopy",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Abrigo de pessoas, animais, lenha, veículos ou de outros materiais, constituído por uma cobertura assente sobre pilares e por vezes tapada dos lados."
+			}, {
+				"Valores": "28",
+				"Descrição": "Templo",
+				"Valores INSPIRE": "temple",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Edifício ou estrutura de características específicas cuja principal finalidade é o culto religioso."
+			}, {
+				"Valores": "29",
+				"Descrição": "Torre",
+				"Valores INSPIRE": "tower",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Estrutura relativamente alta e estreita que pode estar isolada ou fazer parte de outra estrutura."
+			}]
+		}, {
+			"nome": "valorUtilizacaoAtual",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Residencial",
+				"Valores INSPIRE": "residential",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Edifício utilizado para fins exclusivos ou parcialmente residenciais."
+			}, {
+				"Valores": "1.1",
+				"Descrição": "Residencial",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Edifício utilizado para fins residenciais."
+			}, {
+				"Valores": "1.2",
+				"Descrição": "Associado à residência ",
+				"Valores INSPIRE": "ancillary",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Edifício ou construção de apoio à residência (inclui garagem, telheiro, arrecadação e escadas)."
+			}, {
+				"Valores": "2",
+				"Descrição": "Agricultura e pescas",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Edifício utilizado para fins de produção animal, caça, floresta ou pesca."
+			}, {
+				"Valores": "2.1",
+				"Descrição": "Agricultura",
+				"Valores INSPIRE": "agriculture",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Edifício utilizado para fins agrícolas, de produção animal, caça ou serviços relacionados."
+			}, {
+				"Valores": "2.2",
+				"Descrição": "Floresta ",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Edifício utilizado para atividades de silvicultura e exploração florestal."
+			}, {
+				"Valores": "2.3",
+				"Descrição": "Pesca e aquicultura",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Edifício utilizado para atividades piscatórias."
+			}, {
+				"Valores": "3",
+				"Descrição": "Indústria",
+				"Valores INSPIRE": "industrial",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Edifício utilizado para fins industriais (inclui a industria extrativa e transformadora)."
+			}, {
+				"Valores": "4",
+				"Descrição": "Comércio",
+				"Valores INSPIRE": "commerceAndServices",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Edifício destinado ao comércio por grosso e a retalho; reparação de veículos automóveis, motociclos e de bens de uso pessoal e doméstico."
+			}, {
+				"Valores": "4.1",
+				"Descrição": "Comércio tradicional",
+				"Valores INSPIRE": "trade",
+				"D1": "",
+				"D2": "",
+				"Definição": "Estabelecimento de pequena/média dimensão num ambiente em que predomina a proximidade entre o cliente e o vendedor."
+			}, {
+				"Valores": "4.2",
+				"Descrição": "Mercado",
+				"Valores INSPIRE": "trade",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Estabelecimento onde se reúnem vendedores e compradores no mesmo local para a troca de bens e serviços."
+			}, {
+				"Valores": "4.3",
+				"Descrição": "Centro comercial",
+				"Valores INSPIRE": "trade",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Estabelecimento que contém uma grande área comercial com um conjunto de estabelecimentos para consumo, prestação de serviços e lazer."
+			}, {
+				"Valores": "5",
+				"Descrição": "Alojamento e restauração",
+				"Valores INSPIRE": "commerceAndServices",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Edifício, ou componente de edifício, utilizado exclusivamente ou parcialmente para alojamento e/ou restauração."
+			}, {
+				"Valores": "5.1",
+				"Descrição": "Alojamento",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Edifício utilizado para alojamento (inclui hotel, turismo rural e de habitação)."
+			}, {
+				"Valores": "5.2",
+				"Descrição": "Edifício de apoio ao alojamento",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Edifício de suporte ao parque de campismo e de caravanismo ou de outro local de alojamento de curta duração (inclui abrigos de montanha)."
+			}, {
+				"Valores": "5.3",
+				"Descrição": "Restauração",
+				"Valores INSPIRE": "trade",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Edifício utilizado para restauração (inclui restaurante e estabelecimentos onde se e servem bebidas ou refeições ligeiras)."
+			}, {
+				"Valores": "6",
+				"Descrição": "Transportes",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Edifício associado aos transportes."
+			}, {
+				"Valores": "6.1",
+				"Descrição": "Transporte aéreo",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Edifício associado a tráfego aéreo."
+			}, {
+				"Valores": "6.1.1",
+				"Descrição": "Terminal aéreo",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Edifício destinado aos serviços associados ao transporte aéreo (incluindo os serviços de check-in, embarque e desembarque, comércio, etc.)."
+			}, {
+				"Valores": "6.1.2",
+				"Descrição": "Torre de controlo",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Edifício destinado ao controlo do tráfego aéreo."
+			}, {
+				"Valores": "6.2",
+				"Descrição": "Transporte ferroviário",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Edifício associado a tráfego ferroviário."
+			}, {
+				"Valores": "6.2.1",
+				"Descrição": "Estação",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Edifício da estação ferroviária."
+			}, {
+				"Valores": "6.2.2",
+				"Descrição": "Apeadeiro",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Edifício do apeadeiro ferroviário."
+			}, {
+				"Valores": "6.3",
+				"Descrição": "Transporte por via navegável",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Edifício associado ao tráfego marítimo ou fluvial."
+			}, {
+				"Valores": "6.3.1",
+				"Descrição": "Terminal marítimo ou fluvial",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Edifício destinado aos serviços associados ao transporte marítimo ou fluvial (incluindo os serviços de check-in, embarque e desembarque, comercio, etc.)."
+			}, {
+				"Valores": "6.3.2",
+				"Descrição": "Centro de controlo",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Edifício destinado ao controlo do tráfego marítimo ou fluvial."
+			}, {
+				"Valores": "6.4",
+				"Descrição": "Transporte rodoviário",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Edifício associado a tráfego rodoviário."
+			}, {
+				"Valores": "6.4.1",
+				"Descrição": "Paragem rodoviária",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Equipamento associado ao lugar de paragem do transporte rodoviário para embarque e desembarque dos passageiros."
+			}, {
+				"Valores": "6.4.2",
+				"Descrição": "Terminal rodoviário",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Edifício destinado aos serviços associados ao transporte rodoviário (incluindo os serviços de check-in, embarque e desembarque, comércio, etc.)."
+			}, {
+				"Valores": "6.4.3",
+				"Descrição": "Parque de estacionamento em edifício",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Edifício associado a parques de estacionamento ou interfaces."
+			}, {
+				"Valores": "6.5",
+				"Descrição": "Elevador ou ascensor",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Equipamento que conduz pessoas ou carga aos vários andares de um edifício."
+			}, {
+				"Valores": "6.6",
+				"Descrição": "Outro - Transportes",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Edifício associado ao parque de estacionamento, interface, estação de serviço ou outro equipamento associado a transportes."
+			}, {
+				"Valores": "7",
+				"Descrição": "Serviços",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Edifício associado à prestação de serviços."
+			}, {
+				"Valores": "7.1",
+				"Descrição": "Serviço público",
+				"Valores INSPIRE": "publicServices",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Edifício destinado à educação, saúde, segurança e ordem pública, administração do Estado ou a serviços sociais."
+			}, {
+				"Valores": "7.2",
+				"Descrição": "Outros - Serviços",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Edifício onde se desenvolvem atividades financeiras, informáticas, imobiliárias ou outras."
+			}, {
+				"Valores": "8",
+				"Descrição": "Serviços coletivos, sociais e pessoais",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Edifício destinado a atividades associativas, recreativas, culturais ou desportivas."
+			}, {
+				"Valores": "8.1",
+				"Descrição": "Atividades associativas",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Organizações económicas, patronais e profissionais, sindicais, políticas ou associativas."
+			}, {
+				"Valores": "8.2",
+				"Descrição": "Culto e inumação",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Edifício onde se exerce práticas de diferentes confissões religiosas e de apoio às atividades de inumação. "
+			}, {
+				"Valores": "8.3",
+				"Descrição": "Atividades recreativas e culturais",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Edifício onde se exerce atividades lúdicas ou culturais (cinema, vídeo, rádio, televisão, atividades artísticas e de espetáculo, agências de noticias, bibliotecas, arquivos, museus, etc.)"
+			}, {
+				"Valores": "8.4",
+				"Descrição": "Atividades desportivas e de lazer",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Edifício de apoio à prática de atividades desportivas (inclui estádios com bancadas, pavilhões gimnodesportivos; ginásios, piscinas e edifícios de apoio a diferentes modalidades desportivas."
+			}, {
+				"Valores": "9",
+				"Descrição": "Organismos internacionais",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Edifício destinado a organizações internacionais (e.g. ONU, OCDE, EFTA, FMI), Banco Mundial, Embaixadas e Consulados."
+			}]
+		}]
+	}
+}

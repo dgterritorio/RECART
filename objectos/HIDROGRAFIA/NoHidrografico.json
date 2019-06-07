@@ -1,0 +1,99 @@
+{
+	"objecto": {
+		"Tema": "HIDROGRAFIA",
+		"Característica geográfica": "Nó hidrográfico",
+		"Objeto INSPIRE": "HydroNode",
+		"objeto": "NoHidrografico",
+		"Definição": "Ponto utilizado para representar a conectividade entre segmentos da rede hidrográfica.",
+		"Dim.": "3D",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (ponto)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
+		}, {
+			"Atributo": "valorTipoNoHidrografico",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Categorias dos diferentes tipos de nós das redes hidrográficas."
+		}, {
+			"Atributo": "iDHidrografico",
+			"Multip.": "1",
+			"Tipo": "Identificador hidrográfico",
+			"D1": "",
+			"D2": "",
+			"Definição": "Identificador utilizado para identificar o objeto hidrográfico no mundo real. "
+		}],
+		"listas de códigos": [{
+			"nome": "valorTipoNoHidrografico",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Início",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Nó que identifica o inicio de uma série de linhas de \"Curso de água\". Na representação do \"Curso de água\" através das margens considerar apenas o eixo."
+			}, {
+				"Valores": "2",
+				"Descrição": "Fim",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Nó que identifica o final de uma série de linhas de \"Curso de água\". Na representação do \"Curso de água\" através das margens considerar apenas o eixo."
+			}, {
+				"Valores": "3",
+				"Descrição": "Junção",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Nó que identifica a intersecção de 3 ou mais linhas de \"Curso de água\". Na representação do \"Curso de água\" através das margens considerar apenas o eixo."
+			}, {
+				"Valores": "4",
+				"Descrição": "Pseudo-nó",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Nó que representa um ponto que une 2 linhas \"Curso de água\" com características distintas. Aplicável apenas aos eixos."
+			}, {
+				"Valores": "5",
+				"Descrição": "Variação de fluxo",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Nó que representa um local que condiciona o fluxo do \"Curso de água\" (\"Queda de água\", \"Zona húmida\")."
+			}, {
+				"Valores": "6",
+				"Descrição": "Regulação de fluxo",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Nó que representa um local que regula o fluxo do \"Curso de água\" (\"Barreira\")."
+			}]
+		}]
+	}
+}

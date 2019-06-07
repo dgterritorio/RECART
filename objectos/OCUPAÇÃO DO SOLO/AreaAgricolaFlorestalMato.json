@@ -1,0 +1,232 @@
+{
+	"objecto": {
+		"Tema": "OCUPAÇÃO DO SOLO",
+		"Característica geográfica": "Área agrícola, florestal ou mato",
+		"Objeto INSPIRE": "LandCoverUnit",
+		"objeto": "AreaAgricolaFlorestalMato",
+		"Definição": "Áreas naturais de ocupação do solo.",
+		"Dim.": "2D",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (polígono)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
+		}, {
+			"Atributo": "valorAreasAgricolasFlorestaisMatos",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Tipo de área verde."
+		}, {
+			"Atributo": "nome",
+			"Multip.": "[0..1]",
+			"Tipo": "Texto",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Nome da área."
+		}],
+		"listas de códigos": [{
+			"nome": "valorAreasAgricolasFlorestaisMatos",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Agricultura",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Área de terrenos dedicados à produção agrícola."
+			}, {
+				"Valores": "1.1",
+				"Descrição": "Cultura de sequeiro",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Área de terreno onde o cultivo é sem irrigação em regiões onde a precipitação anual é inferior a 500 mm. "
+			}, {
+				"Valores": "1.2",
+				"Descrição": "Cultura de regadio",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Área de terreno onde se pratica a cultura de regadio dependente de sistemas de irrigação."
+			}, {
+				"Valores": "1.3",
+				"Descrição": "Arrozal",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Área de uso agrícola preparada para o cultivo do arroz."
+			}, {
+				"Valores": "1.4",
+				"Descrição": "Vinha",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Área de plantação de vinha (incluindo vinhas para produção de uva de mesa e uva de vinho)."
+			}, {
+				"Valores": "1.5",
+				"Descrição": "Pomar",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Área com árvores ou arbustos de uma ou várias espécies, destinados à produção de fruto."
+			}, {
+				"Valores": "1.6",
+				"Descrição": "Olival",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Área de plantação de oliveiras (Olea europea var. europea) para produção de azeitona."
+			}, {
+				"Valores": "1.7",
+				"Descrição": "Pastagem permanente",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Área coberta de erva normalmente para pastoreio e frequentemente melhorada por adubação, cultivo sementeira ou drenagem."
+			}, {
+				"Valores": "2",
+				"Descrição": "Sistema agroflorestal",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Área de terrenos dedicados aos usos florestais e agrícolas."
+			}, {
+				"Valores": "3",
+				"Descrição": "Floresta",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Área de terreno coberto de árvores e de outras formações vegetais."
+			}, {
+				"Valores": "3.1",
+				"Descrição": "Floresta de folhosas",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Floresta de espécies arbóreas angiospérmicas."
+			}, {
+				"Valores": "3.1.1",
+				"Descrição": "Sobreiro",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Área ocupada por conjuntos de árvores da espécie sobreiro (Quercus suber)."
+			}, {
+				"Valores": "3.1.2",
+				"Descrição": "Azinheira",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Área ocupada por conjuntos de árvores da espécie azinheira (Quercus rotundifolia)."
+			}, {
+				"Valores": "3.1.3",
+				"Descrição": "Carvalho",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Área ocupada por conjuntos de árvores florestais das espécies carvalho-negral (Quercus pyrenaica), carvalho-alvarinho (Quercus robur), carvalho-português (Quercus faginea), ou de outros carvalhos."
+			}, {
+				"Valores": "3.1.4",
+				"Descrição": "Castanheiro",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Área ocupada por conjuntos de árvores da espécie castanheiro (Castanea sativa) resultantes de regeneração natural, sementeira ou plantação."
+			}, {
+				"Valores": "3.1.5",
+				"Descrição": "Eucalipto",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Área ocupada por conjuntos de árvores da espécie eucalipto (Eucalyptus spp.) resultantes de regeneração natural, sementeira ou plantação."
+			}, {
+				"Valores": "3.1.6",
+				"Descrição": "Espécie invasora",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Área ocupada por conjuntos de árvores de espécie de carácter invasor."
+			}, {
+				"Valores": "3.1.7",
+				"Descrição": "Outras folhosas",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Área ocupada por conjuntos de espécies arbóreas angiospérmicas não discriminadas."
+			}, {
+				"Valores": "3.2",
+				"Descrição": "Floresta de resinosas",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Floresta de espécies arbóreas gimnospérmicas."
+			}, {
+				"Valores": "3.2.1",
+				"Descrição": "Pinheiro manso",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Área ocupada por conjuntos de árvores da espécie pinheiro manso (Pinus pinea) resultantes de regeneração natural, sementeira ou plantação."
+			}, {
+				"Valores": "3.2.2",
+				"Descrição": "Pinheiro bravo",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Área ocupada por conjuntos de árvores da espécie pinheiro bravo (Pinus pinaster) resultantes de regeneração natural, sementeira ou plantação."
+			}, {
+				"Valores": "3.2.3",
+				"Descrição": "Outras resinosas",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Área ocupada por conjuntos de espécies arbóreas gimnospérmicas não discriminadas."
+			}, {
+				"Valores": "4",
+				"Descrição": "Vegetação arbustiva e herbácea",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Área de coberto vegetal composto essencialmente por arbustos e vegetação herbácea (inclui comunidades de herbáceas, sebes, coníferas anãs, vegetação esclerófita e prados)."
+			}, {
+				"Valores": "4.1",
+				"Descrição": "Vegetação herbácea natural",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Área correspondente a um terreno coberto de vegetação herbácea, arbustiva ou semi-arbustiva, espontânea."
+			}, {
+				"Valores": "4.2",
+				"Descrição": "Mato",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "x",
+				"Definição": "Área natural de vegetação espontânea, pouco ou muito densa (inclui urzes, silvas, giestas, tojos e laburnos)."
+			}]
+		}]
+	}
+}

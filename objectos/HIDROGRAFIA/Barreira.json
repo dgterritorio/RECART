@@ -1,0 +1,92 @@
+{
+	"objecto": {
+		"Tema": "HIDROGRAFIA",
+		"Característica geográfica": "Barreira",
+		"Objeto INSPIRE": "DamOrWeir",
+		"objeto": "Barreira",
+		"Definição": "Barreira permanente num curso de água utilizada para reter a água ou para controlar o seu caudal.",
+		"Dim.": "2D",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (ponto; polígono)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
+		}, {
+			"Atributo": "valorBarreira",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Tipo de barreira."
+		}, {
+			"Atributo": "iDHidrografico",
+			"Multip.": "1",
+			"Tipo": "Identificador hidrográfico",
+			"D1": "",
+			"D2": "",
+			"Definição": "Identificador utilizado para identificar o objeto hidrográfico no mundo real. "
+		}, {
+			"Atributo": "nome",
+			"Multip.": "[0..1]",
+			"Tipo": "Texto",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Topónimo da entidade no mundo real. "
+		}],
+		"listas de códigos": [{
+			"nome": "valorBarreira",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Comporta",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Porta que sustem as águas de diques, açudes, represas ou barragens e que pode abrir-se para o seu escoamento."
+			}, {
+				"Valores": "2",
+				"Descrição": "Eclusa",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Obra hidráulica, construída sobre um rio ou em zona portuária, com uma ou várias comportas, que permite a navegação quando é necessário vencer grandes desníveis."
+			}, {
+				"Valores": "3",
+				"Descrição": "Açude",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Construção de pedra, terra, madeira ou betão, transversal ao percurso de um curso de água de modo a reter águas e canalizá-las para diversos fins."
+			}, {
+				"Valores": "4",
+				"Descrição": "Represa",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Pequena barreira natural que retém a água de um curso de água."
+			}]
+		}]
+	}
+}

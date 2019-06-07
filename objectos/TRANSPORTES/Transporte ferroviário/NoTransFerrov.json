@@ -1,0 +1,85 @@
+{
+	"objecto": {
+		"Tema": "TRANSPORTES (Transporte ferroviário)",
+		"Característica geográfica": "Nó de transporte ferroviário\n",
+		"Objeto INSPIRE": "RailwayNode",
+		"objeto": "NoTransFerrov",
+		"Definição": "Ponto utilizado para representar a conectividade entre segmentos da via ferroviária, estabelecer a relação com outras vias de comunicação e com as infraestruturas associadas à ferrovia.",
+		"Dim.": "3D",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "ax",
+			"D2": "x"
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (ponto)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
+		}, {
+			"Atributo": "valorTipoNoTransFerrov",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Tipo de nó ferroviário."
+		}],
+		"listas de códigos": [{
+			"nome": "valorTipoNoTransFerrov",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Junção",
+				"Valores INSPIRE": "junction",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Nó que identifica a interseção ao mesmo nível de 3 ou mais segmentos da via ferroviária."
+			}, {
+				"Valores": "2",
+				"Descrição": "Passagem de nível",
+				"Valores INSPIRE": "levelCrossing",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Nó que identifica a interseção ao mesmo nível do segmento da via ferroviária com o segmento da via rodoviária."
+			}, {
+				"Valores": "3",
+				"Descrição": "Pseudo-nó",
+				"Valores INSPIRE": "pseudoNode",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Nó que representa um ponto que une dois segmentos da via ferroviária com características distintas."
+			}, {
+				"Valores": "4",
+				"Descrição": "Fim da via ferroviária",
+				"Valores INSPIRE": "railwayEnd",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Nó que identifica o fim do segmento da via ferroviária (não existe conetividade com outro segmento)."
+			}, {
+				"Valores": "5",
+				"Descrição": "Paragem",
+				"Valores INSPIRE": "railwayStop",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Nó que identifica a presença de uma infraestrutura de transporte ferroviário."
+			}]
+		}]
+	}
+}

@@ -1,0 +1,71 @@
+{
+	"objecto": {
+		"Tema": "HIDROGRAFIA",
+		"Característica geográfica": "Zona húmida",
+		"Objeto INSPIRE": "Wetland",
+		"objeto": "ZonaHumida",
+		"Definição": "Área mal drenada ou periodicamente inundada em que o solo se encontra saturado de água e onde cresce vegetação.",
+		"Dim.": "3D",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (polígono)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
+		}, {
+			"Atributo": "valorZonaHumida",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Caracterização em função da quantidade de água e de vegetação."
+		}, {
+			"Atributo": "iDHidrografico",
+			"Multip.": "1",
+			"Tipo": "Identificador hidrográfico",
+			"D1": "",
+			"D2": "",
+			"Definição": "Identificador utilizado para identificar o objeto hidrográfico no mundo real. "
+		}, {
+			"Atributo": "mare",
+			"Multip.": "1",
+			"Tipo": "Booleano",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Indica se a zona húmida é afetada por águas flúvio-marítimas."
+		}, {
+			"Atributo": "nome",
+			"Multip.": "[0..1]",
+			"Tipo": "Texto",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Topónimo da entidade no mundo real. "
+		}],
+		"listas de códigos": [{
+			"nome": "valorZonaHumida",
+			"valores": []
+		}]
+	}
+}

@@ -1,0 +1,61 @@
+{
+	"objecto": {
+		"Tema": "HIDROGRAFIA",
+		"Característica geográfica": "Queda de água",
+		"Objeto INSPIRE": "Falls",
+		"objeto": "QuedaDeAgua",
+		"Definição": "Local onde ocorre a queda de uma massa de água devido a um desnível no curso de água.",
+		"Dim.": "3D",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (ponto)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
+		}, {
+			"Atributo": "altura",
+			"Multip.": "1",
+			"Tipo": "Real",
+			"D1": "",
+			"D2": "",
+			"Definição": "Distância medida a partir do ponto mais baixo da base ao nível do solo ou da água (na base do declive/a jusante) até ao ponto mais elevado do objeto geográfico. [unidade: metro]"
+		}, {
+			"Atributo": "iDHidrografico",
+			"Multip.": "1",
+			"Tipo": "Identificador hidrográfico",
+			"D1": "",
+			"D2": "",
+			"Definição": "Identificador utilizado para identificar o objeto hidrográfico no mundo real. "
+		}, {
+			"Atributo": "nome",
+			"Multip.": "[0..1]",
+			"Tipo": "Texto",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Topónimo da entidade no mundo real. "
+		}],
+		"listas de códigos": []
+	}
+}

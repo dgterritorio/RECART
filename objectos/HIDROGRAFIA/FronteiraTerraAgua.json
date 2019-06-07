@@ -1,0 +1,54 @@
+{
+	"objecto": {
+		"Tema": "HIDROGRAFIA",
+		"Característica geográfica": "Fronteira terra-água",
+		"Objeto INSPIRE": "",
+		"objeto": "FronteiraTerraAgua",
+		"Definição": "Linha que estabelece a fronteira entre a terra e a água e que representa a “linha de costa” assim como o limite das ilhas em águas interiores e no mar.",
+		"Dim.": "3D",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (linha)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
+		}, {
+			"Atributo": "dataFonteDados",
+			"Multip.": "1",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Data da fonte de dados usada para recolha do objeto."
+		}, {
+			"Atributo": "ilha",
+			"Multip.": "1",
+			"Tipo": "Booleano",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Indica se o objeto corresponde a uma ilha."
+		}],
+		"listas de códigos": []
+	}
+}

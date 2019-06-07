@@ -1,0 +1,71 @@
+{
+	"objecto": {
+		"Tema": "TRANSPORTES (Transporte por via navegável)",
+		"Característica geográfica": "Área da infraestrutura de transporte por via navegável",
+		"Objeto INSPIRE": "",
+		"objeto": "AreaInfraTransViaNavegavel",
+		"Definição": "Área que dispõe de instalações, equipamentos e serviços destinados ao tráfego por via navegável.",
+		"Dim.": "2D",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (polígono)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
+		}, {
+			"Atributo": "valorTipoAreaInfraTransViaNavegavel",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Tipo de infraestrutura."
+		}],
+		"listas de códigos": [{
+			"nome": "valorTipoAreaInfraTransViaNavegavel",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Área do porto",
+				"Valores INSPIRE": "PortArea",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Área localizada na costa, rio ou lago que dispõe de um conjunto de infraestruturas e de serviços , incluindo os de logística, de suporte ao comercio marítimo, pesca, transporte de passageiros, náutica de recreio, marítimo-turística, desportos náuticos, e, ainda de bases navais militares."
+			}, {
+				"Valores": "2",
+				"Descrição": "Área do cais",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Área da estrutura junto da qual os navios procedem à acostagem a fim de efetuarem operações de embarque e desembarque de passageiros ou mercadorias."
+			}, {
+				"Valores": "3",
+				"Descrição": "Área da doca",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Área dotada de cais acostáveis para navios e embarcações (inclui as marinas)."
+			}]
+		}]
+	}
+}

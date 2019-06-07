@@ -1,0 +1,127 @@
+{
+	"objecto": {
+		"Tema": "HIDROGRAFIA",
+		"Característica geográfica": "Margem",
+		"Objeto INSPIRE": "Shore",
+		"objeto": "Margem",
+		"Definição": "Faixa de terra em contacto com qualquer massa de água.",
+		"Dim.": "2D",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (polígono)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
+		}, {
+			"Atributo": "valorTipoMargem",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Categorias em função dos materiais que compõem a área das margens."
+		}, {
+			"Atributo": "iDHidrografico",
+			"Multip.": "1",
+			"Tipo": "Identificador hidrográfico",
+			"D1": "",
+			"D2": "",
+			"Definição": "Identificador utilizado para identificar o objeto hidrográfico no mundo real. "
+		}, {
+			"Atributo": "nome",
+			"Multip.": "[0..1]",
+			"Tipo": "Texto",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Topónimo da entidade no mundo real. "
+		}],
+		"listas de códigos": [{
+			"nome": "valorTipoMargem",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Pedregulho",
+				"Valores INSPIRE": "boulders",
+				"D1": "",
+				"D2": "",
+				"Definição": "Margem constituída por pedras grandes erodidas pela água ou pela ação do tempo."
+			}, {
+				"Valores": "2",
+				"Descrição": "Argila",
+				"Valores INSPIRE": "clay",
+				"D1": "",
+				"D2": "",
+				"Definição": "Margem constituída por terra dura e tenaz de grão fino, constituída sobretudo por alumino-silicatos."
+			}, {
+				"Valores": "3",
+				"Descrição": "Cascalho",
+				"Valores INSPIRE": "gravel",
+				"D1": "",
+				"D2": "",
+				"Definição": "Margem constituída por pedra miúda misturada geralmente com areia grossa."
+			}, {
+				"Valores": "4",
+				"Descrição": "Lama",
+				"Valores INSPIRE": "mud",
+				"D1": "",
+				"D2": "",
+				"Definição": "Margem constituída por solo macio e húmido, areia, pó ou qualquer outro material terroso."
+			}, {
+				"Valores": "5",
+				"Descrição": "Rocha",
+				"Valores INSPIRE": "rock",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Margem constituída por rochas de qualquer tamanho."
+			}, {
+				"Valores": "6",
+				"Descrição": "Areia",
+				"Valores INSPIRE": "sand",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Margem constituída por fragmentos pequenos e erodidos de rochas (sobretudo silicatos), mais finas que o cascalho e maiores que o grão de lodo solto."
+			}, {
+				"Valores": "7",
+				"Descrição": "Seixos",
+				"Valores INSPIRE": "shingle",
+				"D1": "",
+				"D2": "",
+				"Definição": "Margem constituída por calhaus pequenos, soltos e arredondados pela ação da água."
+			}, {
+				"Valores": "8",
+				"Descrição": "Pedra",
+				"Valores INSPIRE": "stone",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Margem constituída por partes de rocha ou de uma substância mineral usualmente artificial e com um propósito especial."
+			}, {
+				"Valores": "995",
+				"Descrição": "Não aplicável",
+				"Valores INSPIRE": "notApplicable",
+				"D1": "x",
+				"D2": "x",
+				"Definição": ""
+			}]
+		}]
+	}
+}

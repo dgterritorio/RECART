@@ -1,0 +1,113 @@
+{
+	"objecto": {
+		"Tema": "CONSTRUÇÕES",
+		"Característica geográfica": "Construção poligonal",
+		"Objeto INSPIRE": "",
+		"objeto": "ConstruPolig",
+		"Definição": "Construção poligonal não classificada como “Edifício”.",
+		"Dim.": "2D",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (ponto; polígono)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
+		}, {
+			"Atributo": "valorTipoConstrucao",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Tipo de construção poligonal."
+		}, {
+			"Atributo": "nome",
+			"Multip.": "[0..1]",
+			"Tipo": "Texto",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Nome da construção."
+		}],
+		"listas de códigos": [{
+			"nome": "valorTipoConstrucao",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Molhe",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Paredão ou muro de grande grossura que avança pela água dentro, geralmente à entrada de um porto ou perpendicular a praias, para quebrar o ímpeto das ondas, abrigar navios, servir de atracadouro ou para reter as areias das praias."
+			}, {
+				"Valores": "2",
+				"Descrição": "Pontão",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Local específico no cais, molhe ou ponte-cais, onde um navio pode acostar ou amarrar para proceder a operações de embarque ou desembarque de carga ou passageiros."
+			}, {
+				"Valores": "3",
+				"Descrição": "Piscina",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Reservatório feito de pedra, cimento ou outro material, onde se armazena água para fins lúdicos."
+			}, {
+				"Valores": "4",
+				"Descrição": "Tanque",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Reservatório feito de pedra, cimento ou outro material, onde se armazena água para fins lúdicos."
+			}, {
+				"Valores": "5",
+				"Descrição": "Campo de jogos",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Limite da área que integra um ou mais campos de jogos para a mesma modalidade desportiva ou para modalidades desportivas distintas."
+			}, {
+				"Valores": "6",
+				"Descrição": "Lago de jardim",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Pequena extensão de água que cobre uma área com fundo impermeável e tem fins decorativos ou recreativos."
+			}, {
+				"Valores": "7",
+				"Descrição": "Escadaria ",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Elemento arquitetónico não relacionado com vias de comunicação nem com edifício residencial."
+			}, {
+				"Valores": "8",
+				"Descrição": "Bancada",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Conjunto de assentos dispostos em filas sucessivas, cada uma num nível superior ao da anterior (existe em estádios ou anfiteatros)."
+			}]
+		}]
+	}
+}

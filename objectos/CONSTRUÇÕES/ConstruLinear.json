@@ -1,0 +1,127 @@
+{
+	"objecto": {
+		"Tema": "CONSTRUÇÕES",
+		"Característica geográfica": "Construção linear",
+		"Objeto INSPIRE": "",
+		"objeto": "ConstruLinear",
+		"Definição": "Construção com forma linear utilizada para separar ou limitar áreas geográficas.",
+		"Dim.": "2D",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (linha)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
+		}, {
+			"Atributo": "valorConstrucaoLinear",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Tipo de construção linear."
+		}, {
+			"Atributo": "largura",
+			"Multip.": "1",
+			"Tipo": "Real",
+			"D1": "",
+			"D2": "",
+			"Definição": "Indicação da largura da construção linear."
+		}, {
+			"Atributo": "nome",
+			"Multip.": "[0..1]",
+			"Tipo": "Texto",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Nome da construção."
+		}, {
+			"Atributo": "suporte",
+			"Multip.": "1",
+			"Tipo": "Booleano",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Identifica se a construção é suporte de terras."
+		}],
+		"listas de códigos": [{
+			"nome": "valorConstrucaoLinear",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Muro de alvenaria ou betão",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Obra em alvenaria ou em betão que delimita ou separa áreas ou estruturas distintas, com altura e largura variáveis (inclui muros de gabiões)."
+			}, {
+				"Valores": "2",
+				"Descrição": "Muro de pedra solta",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Obra de pedras sobrepostas que delimita ou separa áreas ou estruturas distintas, com altura e largura variáveis."
+			}, {
+				"Valores": "3",
+				"Descrição": "Sebe",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Tapumes feitos de arbustos emaranhados, árvores justapostas, ramos secos, varas entrelaçadas, para vedarem ou cercarem áreas ou separarem outras estruturas, sobre solo, muros ou muretes ou sobre pequenas valas."
+			}, {
+				"Valores": "4",
+				"Descrição": "Gradeamento ou vedação",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Delimitação física com o objetivo de impedir a passagem de pessoas, animais ou veículos, formada por barras de metal, arame ou ripas de madeira."
+			}, {
+				"Valores": "5",
+				"Descrição": "Muralha",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Muro de grande espessura e geralmente bastante elevado, construído, como obra defensiva, à volta de uma fortaleza, de uma praça de armas ou que protege um território."
+			}, {
+				"Valores": "6",
+				"Descrição": "Portão",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Porta que pode ter diversos tamanhos e formas e que, geralmente fecha uma abertura num muro ou numa grade, impedindo o acesso da via pública a um local privado."
+			}, {
+				"Valores": "7",
+				"Descrição": "Barreira acústica",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Dispositivo, normalmente sob a forma de painel, limitador da propagação de som, colocado entre as habitações e as estradas ou entre habitações e vias férreas."
+			}, {
+				"Valores": "8",
+				"Descrição": "Pista",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Circuito para competição desportiva diversa (atletismo e desportos motorizados)."
+			}]
+		}]
+	}
+}
