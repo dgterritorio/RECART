@@ -63,12 +63,12 @@
 			"D2": "x",
 			"Definição": "Tipo de transporte ferroviário para o qual a linha foi projetada."
 		}, {
-			"Atributo": "valorTipoTrocoViaFerroviaria",
+			"Atributo": "valorTipoTrocoViaFerrea",
 			"Multip.": "1",
 			"Tipo": "Lista de códigos",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Tipo de troço da via ferroviária."
+			"Definição": "Tipo de troço da via-férrea."
 		}, {
 			"Atributo": "valorViaFerrea",
 			"Multip.": "1",
@@ -307,7 +307,7 @@
 				"Definição": "Sistema de transporte ferroviário, utilizado em zonas urbanas, que partilha o espaço rodoviário com veículo e peões."
 			}]
 		}, {
-			"nome": "valorTipoTrocoViaFerroviaria",
+			"nome": "valorTipoTrocoViaFerrea",
 			"valores": [{
 				"Valores": "1",
 				"Descrição": "Via única",
