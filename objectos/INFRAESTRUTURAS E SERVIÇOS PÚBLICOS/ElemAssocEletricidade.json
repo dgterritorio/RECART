@@ -1,10 +1,10 @@
 {
 	"objecto": {
-		"Tema": "INFRAESTRUTURAS E SERVIÇOS PÚBLICOS",
+		"Tema": "INFRAESTRUTURAS E SERVIÇOS DE INTERESSE PÚBLICO",
 		"Característica geográfica": "Elemento associado de electricidade",
 		"Objeto INSPIRE": "",
 		"objeto": "ElemAssocEletricidade",
-		"Definição": "Instalação associada à transformação e distribuição de energia elétrica.",
+		"Definição": "Infraestrutura associada à transformação e distribuição de energia elétrica.",
 		"Dim.": "2D",
 		"Atributos": [{
 			"Atributo": "identificador",
