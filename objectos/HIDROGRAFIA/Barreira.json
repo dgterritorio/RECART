@@ -2,7 +2,7 @@
 	"objecto": {
 		"Tema": "HIDROGRAFIA",
 		"Característica geográfica": "Barreira",
-		"Objeto INSPIRE": "DamOrWeir",
+		"Objeto INSPIRE": "DamOrWeir; Sluice; Lock",
 		"objeto": "Barreira",
 		"Definição": "Barreira permanente num curso de água utilizada para reter a água ou para controlar o seu caudal.",
 		"Dim.": "2D",
