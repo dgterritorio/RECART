@@ -1,10 +1,10 @@
 {
 	"objecto": {
-		"Tema": "INFRAESTRUTURAS E SERVIÇOS PÚBLICOS",
+		"Tema": "INFRAESTRUTURAS E SERVIÇOS DE INTERESSE PÚBLICO",
 		"Característica geográfica": "Elemento associado de petróleo, gás e substâncias químicas",
 		"Objeto INSPIRE": "",
 		"objeto": "ElemAssocPGQ",
-		"Definição": "Instalação de armazenamento ou distribuição de produtos químicos.",
+		"Definição": "Infraestrutura de armazenamento ou distribuição de produtos químicos.",
 		"Dim.": "2D",
 		"Atributos": [{
 			"Atributo": "identificador",
