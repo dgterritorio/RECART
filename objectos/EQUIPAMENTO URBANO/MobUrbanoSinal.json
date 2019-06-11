@@ -1,9 +1,9 @@
 {
 	"objecto": {
-		"Tema": "EQUIPAMENTO URBANO",
-		"Característica geográfica": "Equipamento urbano",
+		"Tema": "MOBILIÁRIO URBANO E SINALIZAÇÃO",
+		"Característica geográfica": "Mobiliário Urbano e sinalização",
 		"Objeto INSPIRE": "",
-		"objeto": "EquipamentoUrbano",
+		"objeto": "MobUrbanoSinal",
 		"Definição": "Equipamento de utilidade pública destinado à prestação de serviços necessários ao funcionamento dos aglomerados urbanos.",
 		"Dim.": "2D",
 		"Atributos": [{
