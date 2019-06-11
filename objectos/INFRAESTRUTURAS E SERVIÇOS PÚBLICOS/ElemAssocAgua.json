@@ -1,10 +1,10 @@
 {
 	"objecto": {
-		"Tema": "INFRAESTRUTURAS E SERVIÇOS PÚBLICOS",
+		"Tema": "INFRAESTRUTURAS E SERVIÇOS DE INTERESSE PÚBLICO",
 		"Característica geográfica": "Elemento associado de água",
 		"Objeto INSPIRE": "",
 		"objeto": "ElemAssocAgua",
-		"Definição": "Equipamento associado ao transporte ou distribuição de água.",
+		"Definição": "Infraestrutura associada ao tratamento, transporte ou distribuição de água.",
 		"Dim.": "2D",
 		"Atributos": [{
 			"Atributo": "identificador",
