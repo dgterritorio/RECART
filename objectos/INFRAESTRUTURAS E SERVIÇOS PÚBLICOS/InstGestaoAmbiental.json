@@ -1,10 +1,10 @@
 {
 	"objecto": {
-		"Tema": "INFRAESTRUTURAS E SERVIÇOS PÚBLICOS",
+		"Tema": "INFRAESTRUTURAS E SERVIÇOS DE INTERESSE PÚBLICO",
 		"Característica geográfica": "Instalação de gestão ambiental",
 		"Objeto INSPIRE": "EnvironmentalManagementFacility",
 		"objeto": "InstGestaoAmbiental",
-		"Definição": "Infraestrutura de tratamento de resíduos.",
+		"Definição": "Infraestrutura de gestão de resíduos ou águas residuais.",
 		"Dim.": "-",
 		"Atributos": [{
 			"Atributo": "identificador",
