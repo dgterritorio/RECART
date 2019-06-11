@@ -168,24 +168,24 @@ ALTER TABLE curva_de_nivel ADD CONSTRAINT valor_tipo_curva_id FOREIGN KEY (valor
  */
 
 -- Ponto, Poligono
-CREATE TABLE equipamento_urbano (
+CREATE TABLE mob_urbano_sinal (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	valor_tipo_de_equipamento_urbano varchar(10) NOT NULL,
+	valor_tipo_de_mob_urbano_sinal varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
-SELECT AddGeometryColumn ('public','equipamento_urbano','geometria',3763,'GEOMETRY',2);
-ALTER TABLE equipamento_urbano ALTER COLUMN geometria SET NOT NULL;
+SELECT AddGeometryColumn ('public','mob_urbano_sinal','geometria',3763,'GEOMETRY',2);
+ALTER TABLE mob_urbano_sinal ALTER COLUMN geometria SET NOT NULL;
 
-CREATE TABLE valor_tipo_de_equipamento_urbano (
+CREATE TABLE valor_tipo_de_mob_urbano_sinal (
 	identificador varchar(10) NOT NULL,
 	descricao varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
-ALTER TABLE equipamento_urbano ADD CONSTRAINT valor_tipo_de_equipamento_urbano_id FOREIGN KEY (valor_tipo_de_equipamento_urbano) REFERENCES valor_tipo_de_equipamento_urbano (identificador);
+ALTER TABLE mob_urbano_sinal ADD CONSTRAINT valor_tipo_de_mob_urbano_sinal_id FOREIGN KEY (valor_tipo_de_mob_urbano_sinal) REFERENCES valor_tipo_de_mob_urbano_sinal (identificador);
 
 /**
  * Criar dominio Unidades Administrativas
@@ -316,12 +316,22 @@ CREATE TABLE elem_assoc_telecomunicacoes (
 SELECT AddGeometryColumn ('public','elem_assoc_telecomunicacoes','geometria',3763,'POINT',2);
 ALTER TABLE elem_assoc_telecomunicacoes ALTER COLUMN geometria SET NOT NULL;
 
-CREATE TABLE servico_publico (
+CREATE TABLE adm_publica (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
 	ponto_de_contacto varchar(255) NOT NULL,
-	valor_tipo_servico_publico varchar(10) NOT NULL,
+	valor_tipo_adm_publica varchar(10) NOT NULL,
+	PRIMARY KEY (identificador)
+);
+
+
+CREATE TABLE equip_util_coletiva (
+	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
+	inicio_objeto date NOT NULL,
+	fim_objeto time,
+	ponto_de_contacto varchar(255) NOT NULL,
+	valor_tipo_equipamento_coletivo varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
@@ -362,10 +372,16 @@ CREATE TABLE cabo_electrico (
 SELECT AddGeometryColumn ('public','cabo_electrico','geometria',3763,'LINESTRING',2);
 ALTER TABLE cabo_electrico ALTER COLUMN geometria SET NOT NULL;
 
-CREATE TABLE lig_servicopublico_edificio (
-	servico_publico_id uuid NOT NULL,
+CREATE TABLE lig_adm_publica_edificio (
+	adm_publica_id uuid NOT NULL,
 	edificio_id uuid NOT NULL,
-	PRIMARY KEY (servico_publico_id, edificio_id)
+	PRIMARY KEY (adm_publica_id, edificio_id)
+);
+
+CREATE TABLE lig_equip_util_coletiva_edificio (
+	equip_util_coletivao_id uuid NOT NULL,
+	edificio_id uuid NOT NULL,
+	PRIMARY KEY (equip_util_coletiva_id, edificio_id)
 );
 
 CREATE TABLE valor_elemento_associado_pgq (
@@ -392,12 +408,17 @@ CREATE TABLE valor_elemento_associado_telecomunicacoes (
 	PRIMARY KEY (identificador)
 );
 
-CREATE TABLE valor_tipo_servico_publico (
+CREATE TABLE valor_tipo_adm_publica (
 	identificador varchar(10) NOT NULL,
 	descricao varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
+CREATE TABLE valor_tipo_equipamento_coletivo (
+	identificador varchar(10) NOT NULL,
+	descricao varchar(255) NOT NULL,
+	PRIMARY KEY (identificador)
+);
 CREATE TABLE valor_conduta_agua (
 	identificador varchar(10) NOT NULL,
 	descricao varchar(255) NOT NULL,
@@ -442,7 +463,8 @@ ALTER TABLE elem_assoc_pgq ADD CONSTRAINT valor_elemento_associado_pgq_id FOREIG
 ALTER TABLE oleoduto_gasoduto_subtancias_quimicas ADD CONSTRAINT valor_gasoduto_oleoduto_sub_quimicas_id FOREIGN KEY (valor_gasoduto_oleoduto_sub_quimicas) REFERENCES valor_gasoduto_oleoduto_sub_quimicas (identificador);
 ALTER TABLE oleoduto_gasoduto_subtancias_quimicas ADD CONSTRAINT valor_posicao_vertical_id FOREIGN KEY (valor_posicao_vertical) REFERENCES valor_posicao_vertical (identificador);
 ALTER TABLE elem_assoc_telecomunicacoes ADD CONSTRAINT valor_elemento_associado_telecomunicacoes_id FOREIGN KEY (valor_elemento_associado_telecomunicacoes) REFERENCES valor_elemento_associado_telecomunicacoes (identificador);
-ALTER TABLE servico_publico ADD CONSTRAINT valor_tipo_servico_publico_id FOREIGN KEY (valor_tipo_servico_publico) REFERENCES valor_tipo_servico_publico (identificador);
+ALTER TABLE equip_util_coletiva ADD CONSTRAINT valor_tipo_adm_publica_id FOREIGN KEY (valor_tipo_adm_publica) REFERENCES valor_tipo_adm_publica (identificador);
+ALTER TABLE adm_publica ADD CONSTRAINT valor_tipo_equipamento_coletivo_id FOREIGN KEY (valor_tipo_equipamento_coletivo) REFERENCES valor_tipo_equipamento_coletivo (identificador);
 ALTER TABLE elem_assoc_agua ADD CONSTRAINT valor_elemento_associado_agua_id FOREIGN KEY (valor_elemento_associado_agua) REFERENCES valor_elemento_associado_agua (identificador);
 ALTER TABLE elem_assoc_eletricidade ADD CONSTRAINT valor_elemento_associado_electricidade_id FOREIGN KEY (valor_elemento_associado_electricidade) REFERENCES valor_elemento_associado_electricidade (identificador);
 ALTER TABLE cabo_electrico ADD CONSTRAINT valor_designacao_tensao_id FOREIGN KEY (valor_designacao_tensao) REFERENCES valor_designacao_tensao (identificador);
@@ -799,7 +821,7 @@ CREATE TABLE seg_via_ferrea (
 	valor_estado_linha_ferrea varchar(10),
 	valor_posicao_vertical_transportes varchar(10) NOT NULL,
 	valor_tipo_linha_ferrea varchar(10) NOT NULL,
-	valor_tipo_troco_via_ferroviaria varchar(10) NOT NULL,
+	valor_tipo_troco_via_ferrea varchar(10) NOT NULL,
 	valor_via_ferrea varchar(10),
 	jurisdicao varchar(255),
 	PRIMARY KEY (identificador)
@@ -883,7 +905,7 @@ CREATE TABLE valor_tipo_linha_ferrea (
 	PRIMARY KEY (identificador)
 );
 
-CREATE TABLE valor_tipo_troco_via_ferroviaria (
+CREATE TABLE valor_tipo_troco_via_ferrea (
 	identificador varchar(10) NOT NULL,
 	descricao varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -918,7 +940,7 @@ ALTER TABLE seg_via_ferrea ADD CONSTRAINT valor_categoria_bitola_id FOREIGN KEY 
 ALTER TABLE seg_via_ferrea ADD CONSTRAINT valor_estado_linha_ferrea_id FOREIGN KEY (valor_estado_linha_ferrea) REFERENCES valor_estado_linha_ferrea (identificador);
 ALTER TABLE seg_via_ferrea ADD CONSTRAINT valor_posicao_vertical_transportes_id FOREIGN KEY (valor_posicao_vertical_transportes) REFERENCES valor_posicao_vertical_transportes (identificador);
 ALTER TABLE seg_via_ferrea ADD CONSTRAINT valor_tipo_linha_ferrea_id FOREIGN KEY (valor_tipo_linha_ferrea) REFERENCES valor_tipo_linha_ferrea (identificador);
-ALTER TABLE seg_via_ferrea ADD CONSTRAINT valor_tipo_troco_via_ferroviaria_id FOREIGN KEY (valor_tipo_troco_via_ferroviaria) REFERENCES valor_tipo_troco_via_ferroviaria (identificador);
+ALTER TABLE seg_via_ferrea ADD CONSTRAINT valor_tipo_troco_via_ferrea_id FOREIGN KEY (valor_tipo_troco_via_ferrea) REFERENCES valor_tipo_troco_via_ferrea (identificador);
 ALTER TABLE seg_via_ferrea ADD CONSTRAINT valor_via_ferrea_id FOREIGN KEY (valor_via_ferrea) REFERENCES valor_via_ferrea (identificador);
 ALTER TABLE infra_trans_ferrov ADD CONSTRAINT valor_tipo_uso_infra_trans_ferrov_id FOREIGN KEY (valor_tipo_uso_infra_trans_ferrov) REFERENCES valor_tipo_uso_infra_trans_ferrov (identificador);
 ALTER TABLE infra_trans_ferrov ADD CONSTRAINT valor_tipo_infra_trans_ferrov_id FOREIGN KEY (valor_tipo_infra_trans_ferrov) REFERENCES valor_tipo_infra_trans_ferrov (identificador);
@@ -1425,8 +1447,8 @@ $BODY$ LANGUAGE plpgsql VOLATILE;
  * Cria trigger dominio Equipamento Urbano
  */
 
-CREATE TRIGGER equipamento_urbano_geometry_check
-BEFORE INSERT ON "equipamento_urbano"
+CREATE TRIGGER mob_urbano_sinal_geometry_check
+BEFORE INSERT ON "mob_urbano_sinal"
 FOR EACH ROW EXECUTE PROCEDURE trigger_point_polygon_validation();
 
 /** 
