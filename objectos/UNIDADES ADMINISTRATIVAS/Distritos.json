@@ -35,48 +35,6 @@
 			"D2": "x",
 			"Definição": ""
 		}, {
-			"Atributo": "dicofre",
-			"Multip.": "1",
-			"Tipo": "Texto",
-			"D1": "x",
-			"D2": "x",
-			"Definição": "Código da freguesia."
-		}, {
-			"Atributo": "nome",
-			"Multip.": "1",
-			"Tipo": "Texto",
-			"D1": "x",
-			"D2": "x",
-			"Definição": "Topónimo da freguesia."
-		}, {
-			"Atributo": "geometria",
-			"Multip.": "1",
-			"Tipo": "Geometria (polígono)",
-			"D1": "x",
-			"D2": "x",
-			"Definição": ""
-		}, {
-			"Atributo": "dico",
-			"Multip.": "1",
-			"Tipo": "Texto",
-			"D1": "x",
-			"D2": "x",
-			"Definição": "Código do concelho."
-		}, {
-			"Atributo": "nome",
-			"Multip.": "1",
-			"Tipo": "Texto",
-			"D1": "x",
-			"D2": "x",
-			"Definição": "Topónimo do concelho."
-		}, {
-			"Atributo": "geometria",
-			"Multip.": "1",
-			"Tipo": "Geometria (polígono)",
-			"D1": "x",
-			"D2": "x",
-			"Definição": ""
-		}, {
 			"Atributo": "di",
 			"Multip.": "1",
 			"Tipo": "Texto",
