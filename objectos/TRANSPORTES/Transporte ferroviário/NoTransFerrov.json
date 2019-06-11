@@ -4,7 +4,7 @@
 		"Característica geográfica": "Nó de transporte ferroviário\n",
 		"Objeto INSPIRE": "RailwayNode",
 		"objeto": "NoTransFerrov",
-		"Definição": "Ponto utilizado para representar a conectividade entre segmentos da via ferroviária, estabelecer a relação com outras vias de comunicação e com as infraestruturas associadas à ferrovia.",
+		"Definição": "Ponto utilizado para representar a conectividade entre segmentos da via-férrea, estabelecer a relação com outras vias de comunicação e com as infraestruturas associadas à ferrovia.",
 		"Dim.": "3D",
 		"Atributos": [{
 			"Atributo": "identificador",
@@ -25,7 +25,7 @@
 			"Multip.": "[0..1]",
 			"Definição": "Data do fim do objeto",
 			"Tipo": "Data",
-			"D1": "ax",
+			"D1": "x",
 			"D2": "x"
 		}, {
 			"Atributo": "geometria",
