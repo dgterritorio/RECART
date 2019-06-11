@@ -1,10 +1,10 @@
 {
 	"objecto": {
-		"Tema": "INFRAESTRUTURAS E SERVIÇOS PÚBLICOS",
+		"Tema": "INFRAESTRUTURAS E SERVIÇOS DE INTERESSE PÚBLICO",
 		"Característica geográfica": "Elemento associado de telecomunicações",
 		"Objeto INSPIRE": "",
 		"objeto": "ElemAssocTelecomunicacoes",
-		"Definição": "Instalação associada ao funcionamento da rede de telecomunicações.",
+		"Definição": "Infraestrutura associada ao funcionamento da rede de telecomunicações.",
 		"Dim.": "2D",
 		"Atributos": [{
 			"Atributo": "identificador",
