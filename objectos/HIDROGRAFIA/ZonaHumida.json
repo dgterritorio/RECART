@@ -65,7 +65,28 @@
 		}],
 		"listas de códigos": [{
 			"nome": "valorZonaHumida",
-			"valores": []
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Sapal",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Solo alagadiço, geralmente localizado nas margens de rios e cuja cobertura varia com a quantidade de água."
+			}, {
+				"Valores": "2",
+				"Descrição": "Turfeira",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Zona húmida, constituídas por solos mal drenados, geralmente impermeáveis, o que provoca o seu encharcamento e anoxia (comum no interior dos Açores)."
+			}, {
+				"Valores": "3",
+				"Descrição": "Paul",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Tipo de ecossistema lagunar, que, juntamente com as turfeiras e os pântanos, se inclui na categoria de zonas húmidas palustres."
+			}]
 		}]
 	}
 }
