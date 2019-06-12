@@ -2,7 +2,7 @@
 	"objecto": {
 		"Tema": "TRANSPORTES (Transporte ferroviário)",
 		"Característica geográfica": "Linha férrea",
-		"Objeto INSPIRE": "RailwayLine\n",
+		"Objeto INSPIRE": "RailwayLine",
 		"objeto": "LinhaFerrea",
 		"Definição": "Caracterização da linha férrea. Corresponde a um extrato do catálogo de linhas férreas para  a área geográfica representada.",
 		"Dim.": "-",
