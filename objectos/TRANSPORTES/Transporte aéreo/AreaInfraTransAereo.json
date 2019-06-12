@@ -59,6 +59,13 @@
 				"D2": "x",
 				"Definição": "Área preparada para a aterragem e descolagem de aeronaves."
 			}, {
+				"Valores": "3",
+				"Descrição": "Área de circulação",
+				"Valores INSPIRE": "TaxiwayArea",
+				"D1": "",
+				"D2": "",
+				"Definição": "Via destinada à circulação de aeronaves e a estabelecer uma ligação entre partes do aeródromo (taxiway)."
+			}, {
 				"Valores": "4",
 				"Descrição": "Plataforma de estacionamento",
 				"Valores INSPIRE": "ApronArea",
