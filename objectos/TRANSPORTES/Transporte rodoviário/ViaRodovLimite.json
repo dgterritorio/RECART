@@ -41,6 +41,13 @@
 			"D1": "x",
 			"D2": "x",
 			"Definição": "Identifica o tipo de limite."
+		}, {
+			"Atributo": "codigoViaRodov",
+			"Multip.": "[1..*]",
+			"Tipo": "Texto",
+			"D1": "",
+			"D2": "",
+			"Definição": "Código da via rodoviária."
 		}],
 		"listas de códigos": [{
 			"nome": "valorTipoLimite",
