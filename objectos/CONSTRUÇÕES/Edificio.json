@@ -559,7 +559,7 @@
 				"Valores INSPIRE": "industrial",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifício utilizado para fins industriais (inclui a industria extrativa e transformadora)."
+				"Definição": "Edifício utilizado para fins industriais (inclui a indústria extrativa e transformadora)."
 			}, {
 				"Valores": "4",
 				"Descrição": "Comércio",
@@ -783,7 +783,7 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifício de apoio à prática de atividades desportivas (inclui estádios com bancadas, pavilhões gimnodesportivos; ginásios, piscinas e edifícios de apoio a diferentes modalidades desportivas."
+				"Definição": "Edifício de apoio à prática de atividades desportivas (inclui estádios com bancadas, pavilhões gimnodesportivos, ginásios, piscinas e edifícios de apoio a diferentes modalidades desportivas."
 			}, {
 				"Valores": "9",
 				"Descrição": "Organismos internacionais",
