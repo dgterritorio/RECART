@@ -72,7 +72,91 @@
 		}],
 		"listas de códigos": [{
 			"nome": "valorLocalGeodesico",
-			"valores": []
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Igreja",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Sinal geodésico em torre, cruz ou zimbório da igreja."
+			}, {
+				"Valores": "2",
+				"Descrição": "Catavento",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Sinal geodésico em eixo do catavento."
+			}, {
+				"Valores": "3",
+				"Descrição": "Construção",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Sinal geodésico em torre de edifício, ou no telhado de uma construção."
+			}, {
+				"Valores": "4",
+				"Descrição": "Moinho",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Sinal geodésico sobre moinho."
+			}, {
+				"Valores": "5",
+				"Descrição": "Cruzeiro",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Sinal geodésico no topo de cruzeiro."
+			}, {
+				"Valores": "6",
+				"Descrição": "Castelo",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Sinal geodésico construído num ponto de um castelo."
+			}, {
+				"Valores": "7",
+				"Descrição": "Depósito elevado",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Sinal geodésico construído no topo de um depósito de água elevado."
+			}, {
+				"Valores": "8",
+				"Descrição": "Farol",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Sinal geodésico construído no topo ou num ponto de um farol."
+			}, {
+				"Valores": "9",
+				"Descrição": "Posto de vigia",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Sinal geodésico construído no topo de um posto de vigia."
+			}, {
+				"Valores": "10",
+				"Descrição": "Para-raios",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Sinal geodésico na ponta de para-raios."
+			}, {
+				"Valores": "11",
+				"Descrição": "Terreno",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Sinal geodésico sobre o terreno."
+			}, {
+				"Valores": "995",
+				"Descrição": "Não aplicável",
+				"Valores INSPIRE": "notApplicable",
+				"D1": "x",
+				"D2": "x",
+				"Definição": ""
+			}]
 		}, {
 			"nome": "valorOrdem",
 			"valores": [{
