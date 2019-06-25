@@ -35,19 +35,19 @@
 			"D2": "x",
 			"Definição": ""
 		}, {
-			"Atributo": "valorPosicaoVertical",
-			"Multip.": "1",
-			"Tipo": "Lista de códigos",
-			"D1": "x",
-			"D2": "x",
-			"Definição": "A posição vertical relativa da entidade (fenómeno no mundo real)."
-		}, {
 			"Atributo": "valorDesignacaoTensao",
 			"Multip.": "1",
 			"Tipo": "Lista de códigos",
 			"D1": "x",
 			"D2": "x",
 			"Definição": "Categoria da tensão entre fases."
+		}, {
+			"Atributo": "valorPosicaoVertical",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "A posição vertical relativa da entidade (fenómeno no mundo real)."
 		}, {
 			"Atributo": "voltagemNominal",
 			"Multip.": "1",
@@ -57,30 +57,6 @@
 			"Definição": "Valor da tensão nominal entre fases. [unidade: kV]"
 		}],
 		"listas de códigos": [{
-			"nome": "valorPosicaoVertical",
-			"valores": [{
-				"Valores": "1",
-				"Descrição": "Suspenso ou elevado",
-				"Valores INSPIRE": "suspendedOrElevated",
-				"D1": "x",
-				"D2": "x",
-				"Definição": "A entidade geográfica está acima do solo."
-			}, {
-				"Valores": "0",
-				"Descrição": "Ao nível do solo",
-				"Valores INSPIRE": "onGroundSurface ",
-				"D1": "x",
-				"D2": "x",
-				"Definição": "A entidade geográfica está assente diretamente no solo."
-			}, {
-				"Valores": "-1",
-				"Descrição": "No subsolo",
-				"Valores INSPIRE": "underground",
-				"D1": "x",
-				"D2": "x",
-				"Definição": "A entidade geográfica está assente abaixo do solo."
-			}]
-		}, {
 			"nome": "valorDesignacaoTensao",
 			"valores": [{
 				"Valores": "1",
@@ -110,6 +86,30 @@
 				"D1": "x",
 				"D2": "",
 				"Definição": "Tensão entre fases cujo valor eficaz é igual ou inferior a 1 kV."
+			}]
+		}, {
+			"nome": "valorPosicaoVertical",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Suspenso ou elevado",
+				"Valores INSPIRE": "suspendedOrElevated",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A entidade geográfica está acima do solo."
+			}, {
+				"Valores": "0",
+				"Descrição": "Ao nível do solo",
+				"Valores INSPIRE": "onGroundSurface ",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A entidade geográfica está assente diretamente no solo."
+			}, {
+				"Valores": "-1",
+				"Descrição": "No subsolo",
+				"Valores INSPIRE": "underground",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A entidade geográfica está assente abaixo do solo."
 			}]
 		}]
 	}
