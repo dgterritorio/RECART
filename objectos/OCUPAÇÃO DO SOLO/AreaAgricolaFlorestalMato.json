@@ -99,21 +99,21 @@
 				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "",
-				"Definição": "Áreas com ou sem intervenção humana ocupadas com vegetação essencialmente do tipo herbácea, quer cultivada quer natural, que não estejam incluídas num sistema de rotação da exploração e que ocupem uma área superior ou igual a 25% da superfície."
+				"Definição": "Área ocupada com vegetação essencialmente do tipo herbácea."
 			}, {
 				"Valores": "2.1",
 				"Descrição": "Pastagem permanente",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Áreas permanentemente ocupadas (por um período superior ou igual a 5 anos) com vegetação essencialmente do tipo herbácea, quer cultivada (semeada) quer natural (espontânea), que não estejam incluídas no sistema de rotação da exploração. Estas áreas são frequentemente melhoradas por adubações, cultivos, sementeiras ou drenagens. São utilizadas de forma intensiva e geralmente sujeitas a pastoreio, mas acessoriamente podem ser cortadas para silagem ou feno. A presença de árvores florestais pode verificar-se desde que com um grau de coberto inferior a 10%."
+				"Definição": "Área permanentemente ocupada com vegetação essencialmente do tipo herbácea (cultivada ou natural)."
 			}, {
 				"Valores": "2.2",
 				"Descrição": "Vegetação herbácea natural",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Áreas de vegetação herbácea em que esta ocupa uma área superior ou igual a 25% da superfície e que se desenvolvem sem adubação, cultivos, sementeiras ou drenagens. Estas áreas podem ser utilizadas de forma extensiva para pastoreio (pastagens espontâneas pobres). A presença de árvores florestais pode verificar-se desde que com um grau de coberto inferior a 10%."
+				"Definição": "Área de vegetação herbácea que se desenvolvem sem adubação, cultivo, sementeira ou drenagem."
 			},{
 				"Valores": "3",
 				"Descrição": "Sistema agroflorestal",
@@ -125,7 +125,7 @@
 				"Valores": "4",
 				"Descrição": "Floresta",
 				"Valores INSPIRE": "",
-				"D1": "x",
+				"D1": "",
 				"D2": "",
 				"Definição": "Área de terreno coberto de árvores e de outras formações vegetais."
 			}, {
@@ -183,7 +183,7 @@
 				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "x",
-				"Definição": "Área ocupada por conjuntos de árvores em que se verifica a maior dominância numa espécie de outra folhosa não discriminada nas restantes classes de folhosas  (Salixspp., Populusspp., Platanusspp., Alnus glutinosa, etc.) resultantes de regeneração natural, sementeira ou plantação.. Inclui florestas de nogueira (Juglans regia), desde que explorada para a produção de madeira."
+				"Definição": "Área ocupada por conjuntos de árvores em que se verifica a dominância numa espécie de outras folhosas não discriminadas nas restantes classes de folhosas."
 			}, {
 				"Valores": "4.2",
 				"Descrição": "Floresta de resinosas",
@@ -211,14 +211,14 @@
 				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "x",
-				"Definição": "Área ocupada por conjuntos de árvores em que se verifica a dominância numa espécie de outras resinosas não discriminada nas restantes classes de resinosas (e.g. Pseudotsugamenziesii, Pinushalepensis, Pinussylvestris, Piceaspp., Abiesspp., Larixspp., Cryptomeriajaponica) resultantes de regeneração natural, sementeira ou plantação."
+				"Definição": "Área ocupada por conjuntos de árvores em que se verifica a dominância numa espécie de outras resinosas não discriminadas nas restantes classes de resinosas."
 			}, {
 				"Valores": "5",
 				"Descrição": "Mato",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Áreas naturais de vegetação espontânea, pouco ou muito densa, em que o coberto arbustivo (e.g., urzes, silvas, giestas, tojos, zambujeiro,) é superior ou igual a 25%. A presença de árvores florestais pode verificar-se desde que com um grau de coberto inferior a 10%."
+				"Definição": "Área natural de vegetação espontânea (urzes, silvas, giestas, tojos, zambujeiro)."
 			}]
 		}]
 	}
