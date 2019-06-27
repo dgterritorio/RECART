@@ -1,1 +1,197 @@
-
+{
+	"objecto": {
+		"Tema": "MOBILIÁRIO URBANO E SINALIZAÇÃO",
+		"Característica geográfica": "Mobiliário Urbano e sinalização",
+		"Objeto INSPIRE": "",
+		"objeto": "MobUrbanoSinal",
+		"Definição": "Equipamento de utilidade pública destinado à prestação de serviços necessários ao funcionamento dos aglomerados urbanos.",
+		"Dim.": "2D",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (ponto; polígono)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
+		}, {
+			"Atributo": "valorTipoMobUrbSinal",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Caracterização do tipo de equipamento urbano."
+		}],
+		"listas de códigos": [{
+			"nome": "valorTipoMobUrbSinal",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Armário de semáforos",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Armário existente na via pública, nomeadamente em passeios, utlizado para apoio ao funcionamento de um ou vários semáforos."
+			}, {
+				"Valores": "2",
+				"Descrição": "Banco de jardim",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Assento estreito e comprido, de material variável, com ou sem encosto, para várias pessoas, localizado em jardim ou área de lazer."
+			}, {
+				"Valores": "3",
+				"Descrição": "Canteiro",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Espaços de terreno, de pequena dimensão, normalmente retangulares, em que se plantam flores ou quaisquer plantas ou relvas."
+			}, {
+				"Valores": "4",
+				"Descrição": "Contentor",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Recetáculo de dimensões normalizadas que se destina à recolha de lixo."
+			}, {
+				"Valores": "5",
+				"Descrição": "Ecoponto",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Área onde se encontram localizados um ou vários contentores para recolha de substâncias diversas, como lixo orgânico, vidros, plásticos ou produtos químicos bem identificados."
+			}, {
+				"Valores": "6",
+				"Descrição": "Equipamento de exercício físico ao ar livre",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Aparelhos de exercício físico ao ar livre instalados em parques e jardins."
+			}, {
+				"Valores": "7",
+				"Descrição": "Estacionamento para bicicletas",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Área própria para estacionar bicicletas."
+			}, {
+				"Valores": "8",
+				"Descrição": "Marco de correio",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Pequena construção, geralmente cilíndrica, ou outro tipo de dispositivo, com uma ranhura, localizada na via pública, que serve de recetáculo público à correspondência postal, antes de esta ser encaminhada para a estação de correios pelos serviços competentes."
+			}, {
+				"Valores": "9",
+				"Descrição": "Painel publicitário",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Estrutura de divulgação publicitária colocada na via pública."
+			}, {
+				"Valores": "10",
+				"Descrição": "Papeleira",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Pequeno dispositivo localizado na via pública, normalmente instalado em suportes tipo poste, e para funcionar como recetáculo de papéis e outro tipo de lixo."
+			}, {
+				"Valores": "11",
+				"Descrição": "Parque infantil",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Área, normalmente ao ar livre, especialmente destinada a crianças."
+			}, {
+				"Valores": "12",
+				"Descrição": "Parquímetro",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Dispositivo localizado na via pública, ou na entrada de parques de estacionamento descobertos, onde o utente deverá efetuar o pagamento da respetiva taxa."
+			}, {
+				"Valores": "13",
+				"Descrição": "Passadeira de peões",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Faixa, geralmente listrada de branco, que atravessa transversalmente uma rua ou outro tipo de arruamento e que se destina ao trânsito de peões."
+			}, {
+				"Valores": "14",
+				"Descrição": "Placa informativa",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Dispositivo de dimensão variável com indicações institucionais, turísticas ou de direção."
+			}, {
+				"Valores": "15",
+				"Descrição": "Pérgula",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Galeria, balcão ou terraço afastado da parede, com pilares que suportam barrotes que podem ser cobertos por trepadeiras, toldos, etc."
+			}, {
+				"Valores": "16",
+				"Descrição": "Posto de carregamento elétrico",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Ponto de carregamento de eletricidade para a mobilidade elétrica."
+			}, {
+				"Valores": "17",
+				"Descrição": "Quiosque fixo",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Pavilhão pequeno, de madeira, ferro, alumínio ou de cimento, situado geralmente nos aglomerados urbanos, ou em zonas de grande afluência de público, destinado à venda de jornais, tabacos, bebidas e outras miudezas."
+			}, {
+				"Valores": "18",
+				"Descrição": "Sanitário público",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Instalação ou conjunto de instalações públicas próprias para higiene pessoal ou para banho."
+			}, {
+				"Valores": "19",
+				"Descrição": "Semáforo",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Estrutura de suporte de um sinal luminoso, constituído, geralmente, por luzes verde, amarelo e vermelho, que acendem de forma alternada e que se encontra colocado na via pública em cruzamentos ou em determinados pontos das vias rodoviárias ou ferroviárias, para regular o fluxo de tráfego."
+			}, {
+				"Valores": "20",
+				"Descrição": "Sinal de trânsito",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Sinal que, devido à sua localização, forma, cor, tipo ou ainda símbolo e/ou caracteres alfanuméricos, transmite aos condutores uma mensagem visual com um determinado significado."
+			}, {
+				"Valores": "21",
+				"Descrição": "Sinalização",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Sinal que transmite aos condutores uma mensagem visual."
+			}]
+		}]
+	}
+}
