@@ -1,0 +1,78 @@
+{
+	"objecto": {
+		"Tema": "INFRAESTRUTURAS E SERVIÇOS DE INTERESSE PÚBLICO",
+		"Característica geográfica": "Instalação de gestão ambiental",
+		"Objeto INSPIRE": "EnvironmentalManagementFacility",
+		"objeto": "InstGestaoAmbiental",
+		"Definição": "Infraestrutura de gestão de resíduos ou águas residuais.",
+		"Dim.": "-",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador único do objeto",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data do início do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data do fim do objeto",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x"
+		}, {
+			"Atributo": "valorInstalacaoDeGestaoAmbiental",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Caracterização da instalação de gestão ambiental."
+		}, {
+			"Atributo": "localizacaoDaInstalacao",
+			"Multip.": "1",
+			"Tipo": "Construções: Edifício; Ocupação do solo: Áreas artificializadas",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Local geográfico da instalação de gestão ambiental."
+		}],
+		"listas de códigos": [{
+			"nome": "valorInstalacaoDeGestaoAmbiental",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Resíduos sólidos",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Instalação para depósito e tratamento de resíduos sólidos."
+			}, {
+				"Valores": "2",
+				"Descrição": "Resíduos líquidos",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Instalação para depósito tratamento de resíduos líquidos."
+			}, {
+				"Valores": "3",
+				"Descrição": "Resíduos industriais",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Instalação para depósito tratamento de resíduos industriais."
+			}, {
+				"Valores": "4",
+				"Descrição": "Resíduos tóxicos",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Instalação para depósito tratamento de resíduos tóxicos."
+			}]
+		}]
+	}
+}
