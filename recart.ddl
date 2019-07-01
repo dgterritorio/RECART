@@ -478,7 +478,7 @@ CREATE TABLE sinal_geodesico (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	cota_sinal int4 NOT NULL,
+	cota_sinal real NOT NULL,
 	nome varchar(255),
 	valor_local_geodesico varchar(10) NOT NULL,
 	valor_ordem varchar(10) NOT NULL,
