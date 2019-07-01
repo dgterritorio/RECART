@@ -58,7 +58,7 @@
 		}, {
 			"Atributo": "cotaSinal",
 			"Multip.": "1",
-			"Tipo": "DirectPosition",
+			"Tipo": "Real",
 			"D1": "x",
 			"D2": "x",
 			"Definição": "Cota ortométrica no topo do sinal geodésico."
