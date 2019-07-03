@@ -341,7 +341,7 @@
 				"Definição": "Permite a circulação de veículos ligeiros ou pesados."
 			}, {
 				"Valores": "2",
-				"Descrição": "Veículo agrícola",
+				"Descrição": "Veículo agrícola ou com tração às quatro rodas",
 				"Valores INSPIRE": "farm vehicle",
 				"D1": "x",
 				"D2": "x",
