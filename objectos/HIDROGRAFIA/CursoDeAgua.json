@@ -96,7 +96,7 @@
 			"Tipo": "Real",
 			"D1": "",
 			"D2": "",
-			"Definição": "Largura do curso de água (como amplitude) ao longo do seu comprimento. [unidade: metro]"
+			"Definição": "Largura média do curso de água. [unidade: metro]"
 		}, {
 			"Atributo": "nome",
 			"Multip.": "[0..1]",
