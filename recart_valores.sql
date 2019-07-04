@@ -318,7 +318,7 @@ INSERT INTO valor_tipo_curva VALUES ('1','Mestra');
 INSERT INTO valor_tipo_curva VALUES ('2','Secundária');
 INSERT INTO valor_tipo_curva VALUES ('3','Auxiliar');
 INSERT INTO valor_tipo_circulacao VALUES ('1','Veículo ligeiro ou pesado');
-INSERT INTO valor_tipo_circulacao VALUES ('2','Veículo agricola');
+INSERT INTO valor_tipo_circulacao VALUES ('2','Veículo agrícola ou com tração às quatro rodas');
 INSERT INTO valor_tipo_circulacao VALUES ('3','Bicicleta');
 INSERT INTO valor_tipo_circulacao VALUES ('4','Pedonal');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('1','Armário de semáforos');
