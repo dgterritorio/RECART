@@ -168,46 +168,46 @@
 			"nome": "valorCaractFisicaViaRodov",
 			"valores": [{
 				"Valores": "1",
-				"Descrição": "Via-rápida",
-				"Valores INSPIRE": "motorway ou freeway",
+				"Descrição": "Autoestrada ou via reservada a automóveis e motociclos",
+				"Valores INSPIRE": "motorway / freeway",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Via destinada ao tráfego motorizado, com parte ou a totalidade dos acessos condicionados e geralmente sem cruzamentos de nível. Via normalmente com características de autoestrada ou  via reservada a automóveis e motociclos."
+				"Definição": "Via pública destinada a trânsito rápido, com separação física de faixas de rodagem, sem cruzamentos de nível nem acesso a propriedades marginais, com acessos condicionados e sinalizadas como tal."
 			}, {
 				"Valores": "2",
 				"Descrição": "Estrada",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Via destinada ao trânsito de veículos motorizados. Caminho geralmente alcatroado ou empedrado que vai de um ponto a outro, onde podem transitar veículos, pessoas ou animais."
+				"Definição": "Via para circulação automóvel com percurso predominantemente não urbano, constituído por faixa de rodagem e bermas e que estabelece ligação com vias urbanas e rurais."
 			}, {
 				"Valores": "3",
-				"Descrição": "Caminho",
+				"Descrição": "Via urbana",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Via de terra, gravilha, saibro ou areia habitualmente destinada ao trânsito.."
+				"Definição": "Via para circulação automóvel, ciclistas e peões dentro de localidades."
 			}, {
 				"Valores": "4",
+				"Descrição": "Via rural",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Via habitualmente em meio rural (inclui caminho vicinal)."
+			}, {
+				"Valores": "5",
 				"Descrição": "Aceiro",
 				"Valores INSPIRE": "tractorRoad",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Via que desempenha funções de corta-fogo."
 			}, {
-				"Valores": "5",
-				"Descrição": "Vereda",
-				"Valores INSPIRE": "pedestrianZone / walkway",
-				"D1": "x",
-				"D2": "x",
-				"Definição": "Via estreita habitualmente destinada a circulação de pessoas a pé, inclui vias em escada e outras para circulação a pé em ambiente urbano."
-			}, {
 				"Valores": "6",
 				"Descrição": "Ciclovia",
 				"Valores INSPIRE": "bicycleRoad / pedestrianZone",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Via de comunicação terrestre destinada à circulação de pessoas a pé e/ou em bicicleta (velocípedes).  "
+				"Definição": "Via de comunicação destinada à circulação de velocípedes podendo permitir a circulação de pessoas a pé."
 			}]
 		}, {
 			"nome": "valorPosicaoVerticalTransportes",
@@ -348,11 +348,11 @@
 				"Definição": "Permite a circulação de veículos agrícolas ou de veículos com tração às quatro rodas."
 			}, {
 				"Valores": "3",
-				"Descrição": "Bicicleta",
+				"Descrição": "Velocípede",
 				"Valores INSPIRE": "bicycle",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Dedicada à circulação de bicicletas."
+				"Definição": "Dedicada à circulação de velocípedes."
 			}, {
 				"Valores": "4",
 				"Descrição": "Pedonal",
@@ -369,14 +369,14 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Todas as vias rodoviárias à exceção das rotundas, ramos de ligação e vias de serviço."
+				"Definição": "Troço principal da via rodoviária."
 			}, {
 				"Valores": "2",
 				"Descrição": "Ramo de ligação ",
 				"Valores INSPIRE": "slipRoad",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Estrada especialmente concebida para entrada e saída de outra estrada, incluindo vias de aceleração e desaceleração."
+				"Definição": "Via especialmente concebida para entrada e saída de outra via rodoviária, incluindo vias de aceleração e desaceleração."
 			}, {
 				"Valores": "3",
 				"Descrição": "Rotunda",
@@ -390,7 +390,21 @@
 				"Valores INSPIRE": "serviceRoad",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Via de acesso destinada a prestar apoio a infraestruturas ou equipamentos, habitualmente de acesso condicionado. Inclui caminho paralelo e via coletora. "
+				"Definição": "Via de acesso destinada a prestar apoio a infraestruturas ou equipamentos, habitualmente de acesso condicionado. Inclui caminho paralelo e via coletora."
+			}, {
+				"Valores": "5",
+				"Descrição": "Via em escada",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Via em degraus dispostos em plano inclinado."
+			}, {
+				"Valores": "6",
+				"Descrição": "Trilho",
+				"Valores INSPIRE": "pedestrianZone / walkway",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Caminho estreito, vereda, carreiro ou atalho."
 			}]
 		}]
 	}
