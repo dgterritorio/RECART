@@ -92,21 +92,28 @@
 				"Valores INSPIRE": "toll",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Zona da estrada destinada à cobrança manual ou automática de taxas de portagem (cabines de portagens tradicionais, ou pórticos - exclusivamente eletrónicas)."
+				"Definição": "Zona da via rodoviária destinada à cobrança manual ou automática de taxas de portagem (cabines de portagens tradicionais, ou pórticos - exclusivamente eletrónicas)."
 			}, {
 				"Valores": "6",
 				"Descrição": "Área de repouso",
 				"Valores INSPIRE": "restArea",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "O espaço marginal à estrada, podendo ser provido de sombreamento, iluminação, água potável, mesas e bancos ao ar livre, estacionamento para veículos ligeiros e pesados, instalações sanitárias, recolha de lixo e outros equipamentos de apoio aos utilizadores. "
+				"Definição": "O espaço marginal à via rodoviária, podendo ser provido de sombreamento, iluminação, água potável, mesas e bancos ao ar livre, estacionamento para veículos ligeiros e pesados, instalações sanitárias, recolha de lixo e outros equipamentos de apoio aos utilizadores."
 			}, {
 				"Valores": "7",
-				"Descrição": "Estação de serviço",
+				"Descrição": "Área de serviço",
 				"Valores INSPIRE": "restArea",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Instalação associada a uma estrada e que inclui equipamentos e meios destinados ao fornecimento de combustível e energia e eventual apoio aos utilizadores e aos veículos."
+				"Definição": "Instalação associada a uma via rodoviária e que inclui equipamentos e meios destinados ao fornecimento de combustível e energia e eventual apoio aos utilizadores e aos veículos."
+			}, {
+				"Valores": "8",
+				"Descrição": "Posto de abastecimento de combustíveis",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Instalação marginal à via rodoviária contendo equipamentos destinados ao fornecimento de combustíveis e energia."
 			}]
 		}, {
 			"nome": "valorTipoServico",
@@ -116,11 +123,11 @@
 				"Valores INSPIRE": "fuel",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Combustível disponível."
+				"Definição": "Combustível disponível (gasolina, gasóleo, etc.)."
 			}, {
 				"Valores": "2",
 				"Descrição": "Carregamento elétrico",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "fuel",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Carregamento elétrico disponível."
