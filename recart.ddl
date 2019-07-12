@@ -379,7 +379,7 @@ CREATE TABLE lig_adm_publica_edificio (
 );
 
 CREATE TABLE lig_equip_util_coletiva_edificio (
-	equip_util_coletivao_id uuid NOT NULL,
+	equip_util_coletiva_id uuid NOT NULL,
 	edificio_id uuid NOT NULL,
 	PRIMARY KEY (equip_util_coletiva_id, edificio_id)
 );
@@ -463,8 +463,8 @@ ALTER TABLE elem_assoc_pgq ADD CONSTRAINT valor_elemento_associado_pgq_id FOREIG
 ALTER TABLE oleoduto_gasoduto_subtancias_quimicas ADD CONSTRAINT valor_gasoduto_oleoduto_sub_quimicas_id FOREIGN KEY (valor_gasoduto_oleoduto_sub_quimicas) REFERENCES valor_gasoduto_oleoduto_sub_quimicas (identificador);
 ALTER TABLE oleoduto_gasoduto_subtancias_quimicas ADD CONSTRAINT valor_posicao_vertical_id FOREIGN KEY (valor_posicao_vertical) REFERENCES valor_posicao_vertical (identificador);
 ALTER TABLE elem_assoc_telecomunicacoes ADD CONSTRAINT valor_elemento_associado_telecomunicacoes_id FOREIGN KEY (valor_elemento_associado_telecomunicacoes) REFERENCES valor_elemento_associado_telecomunicacoes (identificador);
-ALTER TABLE equip_util_coletiva ADD CONSTRAINT valor_tipo_adm_publica_id FOREIGN KEY (valor_tipo_adm_publica) REFERENCES valor_tipo_adm_publica (identificador);
-ALTER TABLE adm_publica ADD CONSTRAINT valor_tipo_equipamento_coletivo_id FOREIGN KEY (valor_tipo_equipamento_coletivo) REFERENCES valor_tipo_equipamento_coletivo (identificador);
+ALTER TABLE adm_publica ADD CONSTRAINT valor_tipo_adm_publica_id FOREIGN KEY (valor_tipo_adm_publica) REFERENCES valor_tipo_adm_publica (identificador);
+ALTER TABLE equip_util_coletiva ADD CONSTRAINT valor_tipo_equipamento_coletivo_id FOREIGN KEY (valor_tipo_equipamento_coletivo) REFERENCES valor_tipo_equipamento_coletivo (identificador);
 ALTER TABLE elem_assoc_agua ADD CONSTRAINT valor_elemento_associado_agua_id FOREIGN KEY (valor_elemento_associado_agua) REFERENCES valor_elemento_associado_agua (identificador);
 ALTER TABLE elem_assoc_eletricidade ADD CONSTRAINT valor_elemento_associado_electricidade_id FOREIGN KEY (valor_elemento_associado_electricidade) REFERENCES valor_elemento_associado_electricidade (identificador);
 ALTER TABLE cabo_electrico ADD CONSTRAINT valor_designacao_tensao_id FOREIGN KEY (valor_designacao_tensao) REFERENCES valor_designacao_tensao (identificador);
@@ -1398,8 +1398,9 @@ ALTER TABLE constru_polig ADD CONSTRAINT localizacao_instalacao_producao FOREIGN
  * Dominio Infraestruturas e Servicos Publicos 
  */
 
-ALTER TABLE lig_servicopublico_edificio ADD CONSTRAINT localizacao_servico_publico_1 FOREIGN KEY (servico_publico_id) REFERENCES servico_publico (identificador);
-ALTER TABLE lig_servicopublico_edificio ADD CONSTRAINT localizacao_servico_publico_2 FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
+ALTER TABLE lig_adm_publica_edificio ADD CONSTRAINT localizacao_servico_publico_1 FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
+
+ALTER TABLE lig_equip_util_coletiva_edificio ADD CONSTRAINT localizacao_servico_publico_2 FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
 
 /**
  * Dominio Transporte Ferroviario
