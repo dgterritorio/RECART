@@ -40,7 +40,7 @@
 			"Tipo": "Data",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Data em que a estrada foi registada no catálogo de vias rodoviárias."
+			"Definição": "Data em que a via rodoviária foi registada no catálogo de vias rodoviárias."
 		}, {
 			"Atributo": "fonteAquisicaoDados",
 			"Multip.": "1",
