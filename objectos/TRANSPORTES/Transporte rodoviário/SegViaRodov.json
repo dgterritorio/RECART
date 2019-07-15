@@ -172,7 +172,7 @@
 				"Valores INSPIRE": "motorway / freeway",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Via pública destinada a trânsito rápido, com separação física de faixas de rodagem, sem cruzamentos de nível nem acesso a propriedades marginais, com acessos condicionados e sinalizadas como tal."
+				"Definição": "Via destinada a trânsito rápido, com separação física de faixas de rodagem, sem cruzamentos de nível nem acesso a propriedades marginais, com acessos condicionados e sinalizadas como tal."
 			}, {
 				"Valores": "2",
 				"Descrição": "Estrada",
