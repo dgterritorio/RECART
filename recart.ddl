@@ -552,7 +552,7 @@ ALTER TABLE edificio ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE nome_edificio (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
         edificio_id uuid NOT NULL,
-	nome varchar(255),
+	nome varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
 );	
 
@@ -561,19 +561,21 @@ ALTER TABLE nome_edificio ADD CONSTRAINT nome_edificio_id_edificio_id FOREIGN KE
 CREATE TABLE numero_policia_edificio (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
         edificio_id uuid NOT NULL,
-	numero_policia varchar(255),
+	numero_policia varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
 );	
 
 ALTER TABLE numero_policia_edificio ADD CONSTRAINT numero_policia_edificio_id_edificio_id FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
 
 CREATE TABLE valor_utilizacao_atual_edificio (
-	valor_utilizacao_atual_id varchar(10) NOT NULL,
+	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
         edificio_id uuid NOT NULL,
-	PRIMARY KEY (valor_utilizacao_atual_id, edificio_id)
+	valor_utilizacao_atual_id varchar(10) NOT NULL,
+	PRIMARY KEY (identificador)
 );	
 
-ALTER TABLE valor_utilizacao_atual_edificio ADD CONSTRAINT valor_utilizacao_atual_id_edificio_id FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
+ALTER TABLE valor_utilizacao_atual_edificio ADD CONSTRAINT valor_utilizacao_atual_edificio_edificio FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
+ALTER TABLE valor_utilizacao_atual_edificio ADD CONSTRAINT valor_utilizacao_atual_edificio_valor_utilizacao_atual FOREIGN KEY (valor_utilizacao_atual_id) REFERENCES valor_utilizacao_atual (identificador);
 
 CREATE TABLE valor_condicao_const (
 	identificador varchar(10) NOT NULL,
@@ -998,6 +1000,17 @@ CREATE TABLE infra_trans_rodov (
 
 SELECT AddGeometryColumn ('public','infra_trans_rodov','geometria',3763,'POINT',2);
 ALTER TABLE infra_trans_rodov ALTER COLUMN geometria SET NOT NULL;
+
+CREATE TABLE valor_tipo_servico_infra_trans_rodov (
+	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
+	infra_trans_rodov_id uuid NOT NULL,
+	valor_tipo_servico_id varchar(10) NOT NULL,
+	PRIMARY KEY (identificador)
+);
+
+ALTER TABLE valor_tipo_servico_infra_trans_rodov ADD CONSTRAINT valor_tipo_servico_infra_trans_rodov_infra_trans_rodov FOREIGN KEY (infra_trans_rodov_id) REFERENCES infra_trans_rodov (identificador);
+ALTER TABLE valor_tipo_servico_infra_trans_rodov ADD CONSTRAINT valor_tipo_servico_infra_trans_rodov_valor_tipo_servico FOREIGN KEY (valor_tipo_servico_id) REFERENCES valor_tipo_servico (identificador);
+
 
 CREATE TABLE no_trans_rodov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
