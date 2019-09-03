@@ -27,7 +27,7 @@ CREATE EXTENSION "postgis";
 CREATE EXTENSION "uuid-ossp";
 
 /**
- * Criar dominio Toponimia 
+ * Criar dominio Toponimia
  */
 CREATE TABLE designacao_local (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
@@ -554,7 +554,7 @@ CREATE TABLE nome_edificio (
         edificio_id uuid NOT NULL,
 	nome varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
-);	
+);
 
 ALTER TABLE nome_edificio ADD CONSTRAINT nome_edificio_id_edificio_id FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
 
@@ -563,7 +563,7 @@ CREATE TABLE numero_policia_edificio (
         edificio_id uuid NOT NULL,
 	numero_policia varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
-);	
+);
 
 ALTER TABLE numero_policia_edificio ADD CONSTRAINT numero_policia_edificio_id_edificio_id FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
 
@@ -572,10 +572,7 @@ CREATE TABLE valor_utilizacao_atual_edificio (
         edificio_id uuid NOT NULL,
 	valor_utilizacao_atual_id varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
-);	
-
-ALTER TABLE valor_utilizacao_atual_edificio ADD CONSTRAINT valor_utilizacao_atual_edificio_edificio FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
-ALTER TABLE valor_utilizacao_atual_edificio ADD CONSTRAINT valor_utilizacao_atual_edificio_valor_utilizacao_atual FOREIGN KEY (valor_utilizacao_atual_id) REFERENCES valor_utilizacao_atual (identificador);
+);
 
 CREATE TABLE valor_condicao_const (
 	identificador varchar(10) NOT NULL,
@@ -649,6 +646,9 @@ CREATE TABLE valor_elemento_edificio_xy (
 	PRIMARY KEY (identificador)
 );
 
+
+ALTER TABLE valor_utilizacao_atual_edificio ADD CONSTRAINT valor_utilizacao_atual_edificio_edificio FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
+ALTER TABLE valor_utilizacao_atual_edificio ADD CONSTRAINT valor_utilizacao_atual_edificio_valor_utilizacao_atual FOREIGN KEY (valor_utilizacao_atual_id) REFERENCES valor_utilizacao_atual (identificador);
 ALTER TABLE sinal_geodesico ADD CONSTRAINT valor_local_geodesico_id FOREIGN KEY (valor_local_geodesico) REFERENCES valor_local_geodesico (identificador);
 ALTER TABLE sinal_geodesico ADD CONSTRAINT valor_ordem_id FOREIGN KEY (valor_ordem) REFERENCES valor_ordem (identificador);
 ALTER TABLE sinal_geodesico ADD CONSTRAINT valor_tipo_sinal_geodesico_id FOREIGN KEY (valor_tipo_sinal_geodesico) REFERENCES valor_tipo_sinal_geodesico (identificador);
@@ -880,8 +880,8 @@ CREATE TABLE lig_infratransferrov_notransferrov (
 	infra_trans_ferrov_id uuid NOT NULL,
 	no_trans_ferrov_id uuid NOT NULL,
 	PRIMARY KEY (infra_trans_ferrov_id, no_trans_ferrov_id)
-	
-);	
+
+);
 
 CREATE TABLE lig_segviaferrea_linhaferrea (
 	seg_via_ferrea_id uuid NOT NULL,
@@ -1008,10 +1008,6 @@ CREATE TABLE valor_tipo_servico_infra_trans_rodov (
 	PRIMARY KEY (identificador)
 );
 
-ALTER TABLE valor_tipo_servico_infra_trans_rodov ADD CONSTRAINT valor_tipo_servico_infra_trans_rodov_infra_trans_rodov FOREIGN KEY (infra_trans_rodov_id) REFERENCES infra_trans_rodov (identificador);
-ALTER TABLE valor_tipo_servico_infra_trans_rodov ADD CONSTRAINT valor_tipo_servico_infra_trans_rodov_valor_tipo_servico FOREIGN KEY (valor_tipo_servico_id) REFERENCES valor_tipo_servico (identificador);
-
-
 CREATE TABLE no_trans_rodov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
@@ -1027,8 +1023,8 @@ CREATE TABLE lig_infratransrodov_notransrodov (
 	infra_trans_rodov_id uuid NOT NULL,
 	no_trans_rodov_id uuid NOT NULL,
 	PRIMARY KEY (infra_trans_rodov_id,no_trans_rodov_id)
-	
-);	
+
+);
 
 CREATE TABLE via_rodov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
@@ -1147,6 +1143,8 @@ CREATE TABLE valor_tipo_no_trans_rodov (
 	PRIMARY KEY (identificador)
 );
 
+ALTER TABLE valor_tipo_servico_infra_trans_rodov ADD CONSTRAINT valor_tipo_servico_infra_trans_rodov_infra_trans_rodov FOREIGN KEY (infra_trans_rodov_id) REFERENCES infra_trans_rodov (identificador);
+ALTER TABLE valor_tipo_servico_infra_trans_rodov ADD CONSTRAINT valor_tipo_servico_infra_trans_rodov_valor_tipo_servico FOREIGN KEY (valor_tipo_servico_id) REFERENCES valor_tipo_servico (identificador);
 ALTER TABLE seg_via_rodov ADD CONSTRAINT valor_caract_fisica_rodov_id FOREIGN KEY (valor_caract_fisica_rodov) REFERENCES valor_caract_fisica_rodov (identificador);
 ALTER TABLE seg_via_rodov ADD CONSTRAINT valor_estado_via_rodov_id FOREIGN KEY (valor_estado_via_rodov) REFERENCES valor_estado_via_rodov (identificador);
 ALTER TABLE seg_via_rodov ADD CONSTRAINT valor_posicao_vertical_transportes_id FOREIGN KEY (valor_posicao_vertical_transportes) REFERENCES valor_posicao_vertical_transportes (identificador);
@@ -1408,7 +1406,7 @@ ALTER TABLE edificio ADD CONSTRAINT localizacao_instalacao_producao FOREIGN KEY 
 ALTER TABLE constru_polig ADD CONSTRAINT localizacao_instalacao_producao FOREIGN KEY (inst_producao_id) REFERENCES inst_producao (identificador);
 
 /**
- * Dominio Infraestruturas e Servicos Publicos 
+ * Dominio Infraestruturas e Servicos Publicos
  */
 
 ALTER TABLE lig_adm_publica_edificio ADD CONSTRAINT localizacao_servico_publico_1 FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
@@ -1442,7 +1440,7 @@ if(st_geometrytype(NEW.geometria) like 'ST_Point' OR st_geometrytype(NEW.geometr
 	RETURN NEW;
 end if;
 RAISE EXCEPTION 'Invalid geometry type only point or polygon are accepted!';
-END; 
+END;
 $BODY$ LANGUAGE plpgsql VOLATILE;
 
 /**
@@ -1454,10 +1452,10 @@ if(st_geometrytype(NEW.geometria) like 'ST_Line' OR st_geometrytype(NEW.geometri
 	RETURN NEW;
 end if;
 RAISE EXCEPTION 'Invalid geometry type only line or polygon are accepted!';
-END; 
+END;
 $BODY$ LANGUAGE plpgsql VOLATILE;
 
-/** 
+/**
  * Cria trigger dominio Equipamento Urbano
  */
 
@@ -1465,7 +1463,7 @@ CREATE TRIGGER mob_urbano_sinal_geometry_check
 BEFORE INSERT ON "mob_urbano_sinal"
 FOR EACH ROW EXECUTE PROCEDURE trigger_point_polygon_validation();
 
-/** 
+/**
  * Cria trigger dominio Infraestruturas e Servicos Publicos
  */
 
@@ -1481,7 +1479,7 @@ CREATE TRIGGER elem_assoc_eletricidade_geometry_check
 BEFORE INSERT ON "elem_assoc_eletricidade"
 FOR EACH ROW EXECUTE PROCEDURE trigger_point_polygon_validation();
 
-/** 
+/**
  * Cria trigger dominio Construcoes
  */
 
@@ -1497,7 +1495,7 @@ CREATE TRIGGER ponto_interesse_geometry_check
 BEFORE INSERT ON "ponto_interesse"
 FOR EACH ROW EXECUTE PROCEDURE trigger_point_polygon_validation();
 
-/** 
+/**
  * Cria trigger dominio Hidrografia
  */
 
