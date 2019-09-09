@@ -35,6 +35,13 @@
 			"D2": "x",
 			"Definição": "Caracterização do tipo de equipamento coletivo."
 		}, {
+			"Atributo": "nome",
+			"Multip.": "1",
+			"Tipo": "Texto",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Topónimo utilizado para identificar o objeto no mundo real."
+		}, {
 			"Atributo": "localizacaoServicoPublico",
 			"Multip.": "1",
 			"Tipo": "Construções: Edifício; Ocupação do Solo: Áreas artificializadas",

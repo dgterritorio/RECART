@@ -254,6 +254,7 @@ CREATE TABLE inst_gestao_ambiental (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
+	nome varchar(255) NOT NULL,
 	valor_instalacao_gestao_ambiental varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -262,6 +263,7 @@ CREATE TABLE inst_producao (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
+	nome varchar(255) NOT NULL,
 	descricao_da_funcao varchar(255) NOT NULL,
 	valor_instalacao_producao varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -320,6 +322,7 @@ CREATE TABLE adm_publica (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
+	nome varchar(255) NOT NULL,
 	ponto_de_contacto varchar(255) NOT NULL,
 	valor_tipo_adm_publica varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -330,6 +333,7 @@ CREATE TABLE equip_util_coletiva (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
+	nome varchar(255) NOT NULL,
 	ponto_de_contacto varchar(255) NOT NULL,
 	valor_tipo_equipamento_coletivo varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -877,16 +881,18 @@ SELECT AddGeometryColumn ('public','no_trans_ferrov','geometria',3763,'POINT',3)
 ALTER TABLE no_trans_ferrov ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE lig_infratransferrov_notransferrov (
+	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	infra_trans_ferrov_id uuid NOT NULL,
 	no_trans_ferrov_id uuid NOT NULL,
-	PRIMARY KEY (infra_trans_ferrov_id, no_trans_ferrov_id)
+	PRIMARY KEY (identificador)
 
 );
 
 CREATE TABLE lig_segviaferrea_linhaferrea (
+	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	seg_via_ferrea_id uuid NOT NULL,
 	linha_ferrea_id uuid NOT NULL,
-	PRIMARY KEY (seg_via_ferrea_id, linha_ferrea_id)
+	PRIMARY KEY (identificador)
 );
 
 CREATE TABLE valor_categoria_bitola (
@@ -956,7 +962,6 @@ CREATE TABLE seg_via_rodov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto time,
-	codigo_via_rodov varchar(14),
 	gestao varchar(255),
 	largura_via_rodov int4 NOT NULL,
 	multipla_faixa_rodagem bool,
@@ -1020,9 +1025,10 @@ SELECT AddGeometryColumn ('public','no_trans_rodov','geometria',3763,'POINT',3);
 ALTER TABLE no_trans_rodov ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE lig_infratransrodov_notransrodov (
+	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	infra_trans_rodov_id uuid NOT NULL,
 	no_trans_rodov_id uuid NOT NULL,
-	PRIMARY KEY (infra_trans_rodov_id,no_trans_rodov_id)
+	PRIMARY KEY (identificador)
 
 );
 
@@ -1066,15 +1072,17 @@ SELECT AddGeometryColumn ('public','obra_arte','geometria',3763,'POLYGON',3);
 ALTER TABLE obra_arte ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE lig_segviarodov_viarodov (
+	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	seg_via_rodov_id uuid NOT NULL,
 	via_rodov_id uuid NOT NULL,
-	PRIMARY KEY (seg_via_rodov_id, via_rodov_id)
+	PRIMARY KEY (identificador)
 );
 
 CREATE TABLE lig_viarodovlimite_viarodov (
+	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	via_rodov_limite_id uuid NOT NULL,
 	via_rodov_id uuid NOT NULL,
-	PRIMARY KEY (via_rodov_limite_id, via_rodov_id)
+	PRIMARY KEY (identificador)
 );
 
 CREATE TABLE valor_sentido (

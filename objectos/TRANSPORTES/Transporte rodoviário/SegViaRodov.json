@@ -84,13 +84,6 @@
 			"D2": "x",
 			"Definição": "Tipo de troço."
 		}, {
-			"Atributo": "codigoViaRodov",
-			"Multip.": "[1..*]",
-			"Tipo": "Texto",
-			"D1": "x",
-			"D2": "x",
-			"Definição": "Código da via rodoviária."
-		}, {
 			"Atributo": "gestao",
 			"Multip.": "1",
 			"Tipo": "Texto",
