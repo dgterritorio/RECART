@@ -200,7 +200,7 @@ CREATE TABLE distrito (
 	PRIMARY KEY (identificador)
 );
 
-SELECT AddGeometryColumn ('public','distrito','geometria',3763,'POLYGON',2);
+SELECT AddGeometryColumn ('public','distrito','geometria',3763,'MULTIPOLYGON',2);
 ALTER TABLE distrito ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE concelho (
@@ -212,7 +212,7 @@ CREATE TABLE concelho (
 	PRIMARY KEY (identificador)
 );
 
-SELECT AddGeometryColumn ('public','concelho','geometria',3763,'POLYGON',2);
+SELECT AddGeometryColumn ('public','concelho','geometria',3763,'MULTIPOLYGON',2);
 ALTER TABLE concelho ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE freguesia (
@@ -224,7 +224,7 @@ CREATE TABLE freguesia (
 	PRIMARY KEY (identificador)
 );
 
-SELECT AddGeometryColumn ('public','freguesia','geometria',3763,'POLYGON',2);
+SELECT AddGeometryColumn ('public','freguesia','geometria',3763,'MULTIPOLYGON',2);
 ALTER TABLE freguesia ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE fronteira (
