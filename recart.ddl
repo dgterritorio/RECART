@@ -32,7 +32,7 @@ CREATE EXTENSION "uuid-ossp";
 CREATE TABLE designacao_local (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	valor_local_nomeado varchar(10) NOT NULL,
 	nome varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -56,7 +56,7 @@ ALTER TABLE designacao_local ADD CONSTRAINT valor_local_nomeado_id FOREIGN KEY (
 CREATE TABLE area_agricola_florestal_mato (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	valor_areas_agricolas_florestais_matos varchar(10) NOT NULL,
 	nome varchar(255),
 	descricao varchar(255) NOT NULL,
@@ -71,7 +71,7 @@ CREATE TABLE areas_artificializadas (
 	inst_producao_id uuid NOT NULL,
 	inst_gestao_ambiental_id uuid NOT NULL,
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	valor_areas_artificializadas varchar(10) NOT NULL,
 	nome varchar(255),
 	PRIMARY KEY (identificador)
@@ -102,7 +102,7 @@ ALTER TABLE areas_artificializadas ADD CONSTRAINT valor_areas_artificializadas_i
 CREATE TABLE linha_de_quebra (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	valor_classifica varchar(10) NOT NULL,
 	valor_natureza_linha varchar(10) NOT NULL,
 	artificial bool,
@@ -115,7 +115,7 @@ ALTER TABLE linha_de_quebra ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE ponto_cotado (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	valor_classifica_las varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -126,7 +126,7 @@ ALTER TABLE ponto_cotado ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE curva_de_nivel (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	valor_tipo_curva varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -171,7 +171,7 @@ ALTER TABLE curva_de_nivel ADD CONSTRAINT valor_tipo_curva_id FOREIGN KEY (valor
 CREATE TABLE mob_urbano_sinal (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	valor_tipo_de_mob_urbano_sinal varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -194,7 +194,7 @@ ALTER TABLE mob_urbano_sinal ADD CONSTRAINT valor_tipo_de_mob_urbano_sinal_id FO
 CREATE TABLE distrito (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	dicofre varchar(255) NOT NULL,
 	nome varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -206,7 +206,7 @@ ALTER TABLE distrito ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE concelho (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	dico varchar(255) NOT NULL,
 	nome varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -218,7 +218,7 @@ ALTER TABLE concelho ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE freguesia (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	dicofre varchar(255) NOT NULL,
 	nome varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -230,7 +230,7 @@ ALTER TABLE freguesia ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE fronteira (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	valor_estado_fronteira varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -253,7 +253,7 @@ ALTER TABLE fronteira ADD CONSTRAINT valor_estado_fronteira_id FOREIGN KEY (valo
 CREATE TABLE inst_gestao_ambiental (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	nome varchar(255) NOT NULL,
 	valor_instalacao_gestao_ambiental varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -262,7 +262,7 @@ CREATE TABLE inst_gestao_ambiental (
 CREATE TABLE inst_producao (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	nome varchar(255) NOT NULL,
 	descricao_da_funcao varchar(255) NOT NULL,
 	valor_instalacao_producao varchar(10) NOT NULL,
@@ -272,7 +272,7 @@ CREATE TABLE inst_producao (
 CREATE TABLE conduta_de_agua (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	diametro int4 NOT NULL,
 	valor_conduta_agua varchar(10) NOT NULL,
 	valor_posicao_vertical varchar(10) NOT NULL,
@@ -286,7 +286,7 @@ ALTER TABLE conduta_de_agua ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE elem_assoc_pgq (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	valor_elemento_associado_pgq varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -297,7 +297,7 @@ ALTER TABLE elem_assoc_pgq ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE oleoduto_gasoduto_subtancias_quimicas (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	diametro int4 NOT NULL,
 	valor_gasoduto_oleoduto_sub_quimicas varchar(10) NOT NULL,
 	valor_posicao_vertical varchar(10) NOT NULL,
@@ -310,7 +310,7 @@ ALTER TABLE oleoduto_gasoduto_subtancias_quimicas ALTER COLUMN geometria SET NOT
 CREATE TABLE elem_assoc_telecomunicacoes (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	valor_elemento_associado_telecomunicacoes varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -321,7 +321,7 @@ ALTER TABLE elem_assoc_telecomunicacoes ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE adm_publica (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	nome varchar(255) NOT NULL,
 	ponto_de_contacto varchar(255) NOT NULL,
 	valor_tipo_adm_publica varchar(10) NOT NULL,
@@ -332,7 +332,7 @@ CREATE TABLE adm_publica (
 CREATE TABLE equip_util_coletiva (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	nome varchar(255) NOT NULL,
 	ponto_de_contacto varchar(255) NOT NULL,
 	valor_tipo_equipamento_coletivo varchar(10) NOT NULL,
@@ -343,7 +343,7 @@ CREATE TABLE equip_util_coletiva (
 CREATE TABLE elem_assoc_agua (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	valor_elemento_associado_agua varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -355,7 +355,7 @@ ALTER TABLE elem_assoc_agua ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE elem_assoc_eletricidade (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	valor_elemento_associado_electricidade varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -366,7 +366,7 @@ ALTER TABLE elem_assoc_eletricidade ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE cabo_electrico (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	voltagem_nominal int4 NOT NULL,
 	valor_designacao_tensao varchar(10) NOT NULL,
 	valor_posicao_vertical varchar(10) NOT NULL,
@@ -481,7 +481,7 @@ ALTER TABLE cabo_electrico ADD CONSTRAINT valor_posicao_vertical_id FOREIGN KEY 
 CREATE TABLE sinal_geodesico (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	cota_sinal real NOT NULL,
 	nome varchar(255),
 	valor_local_geodesico varchar(10) NOT NULL,
@@ -496,7 +496,7 @@ ALTER TABLE sinal_geodesico ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE constru_linear (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	nome varchar(255),
 	suporte bool NOT NULL,
 	valor_construcao_linear varchar(10) NOT NULL,
@@ -512,7 +512,7 @@ CREATE TABLE constru_polig (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inst_producao_id uuid NOT NULL,
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	nome varchar(255),
 	valor_tipo_construcao varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -525,7 +525,7 @@ ALTER TABLE constru_polig ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE ponto_interesse (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	nome varchar(255) NOT NULL,
 	valor_tipo_ponto_interesse varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -540,7 +540,7 @@ CREATE TABLE edificio (
 	inst_producao_id uuid,
 	inst_gestao_ambiental_id uuid,
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	altura_edificio int4 NOT NULL,
 	data_const date,
 	valor_condicao_const varchar(10),
@@ -681,7 +681,7 @@ CREATE TABLE valor_posicao_vertical_transportes (
 CREATE TABLE area_infra_trans_cabo (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	PRIMARY KEY (identificador)
 );
 
@@ -691,7 +691,7 @@ ALTER TABLE area_infra_trans_cabo ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE seg_via_cabo (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto date NOT NULL,
+	fim_objeto date,
 	nome varchar(255),
 	valor_tipo_via_cabo varchar(10),
 	PRIMARY KEY (identificador)
@@ -715,7 +715,7 @@ ALTER TABLE seg_via_cabo ADD CONSTRAINT valor_tipo_via_cabo_id FOREIGN KEY (valo
 CREATE TABLE area_infra_trans_via_navegavel (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	valor_tipo_area_infra_trans_via_navegavel varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -726,7 +726,7 @@ ALTER TABLE area_infra_trans_via_navegavel ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE infra_trans_via_navegavel (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	nome varchar(255) NOT NULL,
 	codigo_via_navegavel varchar(255),
 	valor_tipo_infra_trans_via_navegavel varchar(10) NOT NULL,
@@ -758,7 +758,7 @@ ALTER TABLE infra_trans_via_navegavel ADD CONSTRAINT valor_tipo_infra_trans_via_
 CREATE TABLE area_infra_trans_aereo (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	valor_tipo_area_infra_trans_aereo varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -769,7 +769,7 @@ ALTER TABLE area_infra_trans_aereo ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE infra_trans_aereo (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	codigo_iata varchar(255),
 	codigo_icao varchar(255),
 	nome varchar(255),
@@ -818,7 +818,7 @@ ALTER TABLE infra_trans_aereo ADD CONSTRAINT valor_tipo_infra_trans_aereo_id FOR
 CREATE TABLE seg_via_ferrea (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	eletrific bool NOT NULL,
 	gestao varchar(255),
 	velocidade_max int4,
@@ -838,7 +838,7 @@ ALTER TABLE seg_via_ferrea ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE linha_ferrea (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
-	codigo_ferroviario varchar(255) NOT NULL,
+	codigo_linha_ferrea varchar(255) NOT NULL,
 	nome varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -846,7 +846,7 @@ CREATE TABLE linha_ferrea (
 CREATE TABLE area_infra_trans_ferrov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	infra_trans_ferrov_id uuid NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -857,7 +857,7 @@ ALTER TABLE area_infra_trans_ferrov ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE infra_trans_ferrov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	codigo_infra_ferrov varchar(255),
 	nome varchar(255),
 	nplataformas int4,
@@ -872,7 +872,7 @@ ALTER TABLE infra_trans_ferrov ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE no_trans_ferrov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto date NOT NULL,
+	fim_objeto date,
 	valor_tipo_no_trans_ferrov varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -961,7 +961,7 @@ ALTER TABLE no_trans_ferrov ADD CONSTRAINT valor_tipo_no_trans_ferrov_id FOREIGN
 CREATE TABLE seg_via_rodov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	gestao varchar(255),
 	largura_via_rodov int4 NOT NULL,
 	multipla_faixa_rodagem bool,
@@ -985,7 +985,7 @@ ALTER TABLE seg_via_rodov ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE area_infra_trans_rodov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	infra_trans_rodov_id uuid NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -996,7 +996,7 @@ ALTER TABLE area_infra_trans_rodov ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE infra_trans_rodov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto date NOT NULL,
+	fim_objeto date,
 	nome varchar(255),
 	valor_tipo_infra_trans_rodov varchar(10) NOT NULL,
 	valor_tipo_servico varchar(10),
@@ -1016,7 +1016,7 @@ CREATE TABLE valor_tipo_servico_infra_trans_rodov (
 CREATE TABLE no_trans_rodov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto date NOT NULL,
+	fim_objeto date,
 	valor_tipo_no_trans_rodov varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -1035,7 +1035,7 @@ CREATE TABLE lig_infratransrodov_notransrodov (
 CREATE TABLE via_rodov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	codigo_via_rodov varchar(255) NOT NULL,
 	data_cat date NOT NULL,
 	fonte_aquisicao_dados varchar(255) NOT NULL,
@@ -1050,7 +1050,7 @@ CREATE TABLE via_rodov (
 CREATE TABLE via_rodov_limite (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	codigo_via_rodov varchar(255),
 	valor_tipo_limite varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -1062,7 +1062,7 @@ ALTER TABLE via_rodov_limite ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE obra_arte (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	nome varchar(255),
 	valor_tipo_obra_arte varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -1173,7 +1173,7 @@ ALTER TABLE obra_arte ADD CONSTRAINT valor_tipo_obra_arte_id FOREIGN KEY (valor_
 CREATE TABLE nascente (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	nome varchar(255),
 	valor_persistencia_hidrologica varchar(10),
 	valor_tipo_nascente varchar(10),
@@ -1186,7 +1186,7 @@ ALTER TABLE nascente ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE agua_lentica (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	nome varchar(255),
 	cota_plena_armazenamento bool NOT NULL,
 	data_fonte_dados DATE,
@@ -1204,7 +1204,7 @@ ALTER TABLE agua_lentica ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE margem (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	nome varchar(255),
 	valor_tipo_margem varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -1217,7 +1217,7 @@ ALTER TABLE margem ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE curso_de_agua (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	nome varchar(255),
 	comprimento real,
 	delimitacao_conhecida bool NOT NULL,
@@ -1239,7 +1239,7 @@ ALTER TABLE curso_de_agua ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE queda_de_agua (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	nome varchar(255),
 	altura real,
 	PRIMARY KEY (identificador)
@@ -1251,7 +1251,7 @@ ALTER TABLE queda_de_agua ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE zona_humida (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	nome varchar(255),
 	mare bool NOT NULL,
 	valor_zona_humida varchar(10) NOT NULL,
@@ -1264,7 +1264,7 @@ ALTER TABLE zona_humida ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE no_hidrografico (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	nome varchar(255),
 	valor_tipo_no_hidrografico varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -1277,7 +1277,7 @@ ALTER TABLE no_hidrografico ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE barreira (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	nome varchar(255),
 	valor_barreira varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -1289,7 +1289,7 @@ ALTER TABLE barreira ALTER COLUMN geometria SET NOT NULL;
 CREATE TABLE fronteira_terra_agua (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
-	fim_objeto time,
+	fim_objeto date,
 	data_fonte_dados date NOT NULL,
 	ilha bool NOT NULL,
 	PRIMARY KEY (identificador)
@@ -1382,7 +1382,7 @@ ALTER TABLE barreira ADD CONSTRAINT valor_barreira_id FOREIGN KEY (valor_barreir
 
 CREATE TABLE area_trabalho (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
-	data time NOT NULL,
+	data date NOT NULL,
 	nivel_de_detalhe varchar(255) NOT NULL,
 	nome varchar(255) NOT NULL,
 	nome_proprietario varchar(255) NOT NULL,
