@@ -1221,9 +1221,10 @@ CREATE TABLE curso_de_agua (
 	nome varchar(255),
 	comprimento real,
 	delimitacao_conhecida bool NOT NULL,
-	eixo bool NOT NULL,
 	ficticio bool NOT NULL,
 	largura real,
+	id_hidrografico varchar(255),
+	id_area_curso_de_agua uuid,
 	ordem_hidrologica varchar(255),
 	origem_natural bool,
 	valor_curso_de_agua varchar(10) NOT NULL,
@@ -1232,8 +1233,20 @@ CREATE TABLE curso_de_agua (
 	PRIMARY KEY (identificador)
 );
 
-SELECT AddGeometryColumn ('public','curso_de_agua','geometria',3763,'GEOMETRY',3);
+SELECT AddGeometryColumn ('public','curso_de_agua','geometria',3763,'LINESTRING',3);
 ALTER TABLE curso_de_agua ALTER COLUMN geometria SET NOT NULL;
+
+-- Poligono
+CREATE TABLE area_curso_de_agua (
+	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
+	inicio_objeto date NOT NULL,
+	fim_objeto date,
+	delimitacao_conhecida bool NOT NULL,
+	PRIMARY KEY (identificador)
+);
+
+SELECT AddGeometryColumn ('public','area_curso_de_agua','geometria',3763,'POLYGON',3);
+ALTER TABLE area_curso_de_agua ALTER COLUMN geometria SET NOT NULL;
 
 -- Ponto, Poligono
 CREATE TABLE queda_de_agua (
