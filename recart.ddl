@@ -1175,6 +1175,7 @@ CREATE TABLE nascente (
 	inicio_objeto date NOT NULL,
 	fim_objeto date,
 	nome varchar(255),
+	id_hidrografico varchar(255),
 	valor_persistencia_hidrologica varchar(10),
 	valor_tipo_nascente varchar(10),
 	PRIMARY KEY (identificador)
@@ -1193,6 +1194,7 @@ CREATE TABLE agua_lentica (
 	mare bool NOT NULL,
 	origem_natural bool,
 	profundidade_media real,
+	id_hidrografico varchar(255),
 	valor_agua_lentica varchar(10) NOT NULL,
 	valor_persistencia_hidrologica varchar(10),
 	PRIMARY KEY (identificador)
@@ -1206,6 +1208,7 @@ CREATE TABLE margem (
 	inicio_objeto date NOT NULL,
 	fim_objeto date,
 	nome varchar(255),
+	id_hidrografico varchar(255),
 	valor_tipo_margem varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -1255,6 +1258,7 @@ CREATE TABLE queda_de_agua (
 	fim_objeto date,
 	nome varchar(255),
 	altura real,
+	id_hidrografico varchar(255),
 	PRIMARY KEY (identificador)
 );
 
@@ -1267,6 +1271,7 @@ CREATE TABLE zona_humida (
 	fim_objeto date,
 	nome varchar(255),
 	mare bool NOT NULL,
+	id_hidrografico varchar(255),
 	valor_zona_humida varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -1279,6 +1284,7 @@ CREATE TABLE no_hidrografico (
 	inicio_objeto date NOT NULL,
 	fim_objeto date,
 	nome varchar(255),
+	id_hidrografico varchar(255),
 	valor_tipo_no_hidrografico varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -1292,6 +1298,7 @@ CREATE TABLE barreira (
 	inicio_objeto date NOT NULL,
 	fim_objeto date,
 	nome varchar(255),
+	id_hidrografico varchar(255),
 	valor_barreira varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
