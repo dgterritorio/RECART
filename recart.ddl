@@ -59,7 +59,6 @@ CREATE TABLE area_agricola_florestal_mato (
 	fim_objeto date,
 	valor_areas_agricolas_florestais_matos varchar(10) NOT NULL,
 	nome varchar(255),
-	descricao varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
@@ -273,7 +272,7 @@ CREATE TABLE conduta_de_agua (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto date,
-	diametro int4 NOT NULL,
+	diametro real,
 	valor_conduta_agua varchar(10) NOT NULL,
 	valor_posicao_vertical varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -367,7 +366,7 @@ CREATE TABLE cabo_electrico (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto date,
-	voltagem_nominal int4 NOT NULL,
+	voltagem_nominal real,
 	valor_designacao_tensao varchar(10) NOT NULL,
 	valor_posicao_vertical varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -510,7 +509,7 @@ ALTER TABLE constru_linear ALTER COLUMN geometria SET NOT NULL;
 --Ponto, Poligono
 CREATE TABLE constru_polig (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
-	inst_producao_id uuid NOT NULL,
+	inst_producao_id uuid,
 	inicio_objeto date NOT NULL,
 	fim_objeto date,
 	nome varchar(255),
@@ -526,7 +525,7 @@ CREATE TABLE ponto_interesse (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto date NOT NULL,
 	fim_objeto date,
-	nome varchar(255) NOT NULL,
+	nome varchar(255),
 	valor_tipo_ponto_interesse varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );

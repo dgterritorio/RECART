@@ -201,6 +201,13 @@
 				"D1": "",
 				"D2": "",
 				"Definição": "Área de piquenique disponível."
+			}, {
+				"Valores": "995",
+				"Descrição": "Não aplicável",
+				"Valores INSPIRE": "notApplicable",
+				"D1": "x",
+				"D2": "x",
+				"Definição": ""
 			}]
 		}]
 	}
