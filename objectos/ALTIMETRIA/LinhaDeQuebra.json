@@ -17,15 +17,15 @@
 		}, {
 			"Atributo": "inicioObjeto",
 			"Multip.": "1",
-			"Definição": "Data do início do objeto",
-			"Tipo": "Data",
+			"Definição": "Data e hora (até ao segundo) em que a versão em causa do objeto foi inserida ou alterada.",
+			"Tipo": "Data/hora",
 			"D1": "x",
 			"D2": "x"
 		}, {
 			"Atributo": "fimObjeto",
 			"Multip.": "[0..1]",
-			"Definição": "Data do fim do objeto",
-			"Tipo": "Data",
+			"Definição": "Data e hora (até ao segundo) em que a versão em causa do objeto foi substituída.",
+			"Tipo": "Data/hora",
 			"D1": "x",
 			"D2": "x"
 		}, {
