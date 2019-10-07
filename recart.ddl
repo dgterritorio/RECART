@@ -1040,9 +1040,9 @@ CREATE TABLE via_rodov (
 	fonte_aquisicao_dados varchar(255) NOT NULL,
 	nome varchar(255) NOT NULL,
 	nome_alternativo varchar(255),
-	tipo_rodovia_abv varchar(255) NOT NULL,
-	tipo_rodovia_c varchar(255) NOT NULL,
-	tipo_rodovia_d varchar(255) NOT NULL,
+	tipo_via_rodov_abv varchar(255) NOT NULL,
+	tipo_via_rodov_c varchar(255) NOT NULL,
+	tipo_via_rodov_d varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
