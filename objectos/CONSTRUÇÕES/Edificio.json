@@ -737,17 +737,24 @@
 				"Definição": "Edifício associado à prestação de serviços."
 			}, {
 				"Valores": "7.1",
-				"Descrição": "Serviço público",
+				"Descrição": "Serviços da Administração Pública",
 				"Valores INSPIRE": "publicServices",
 				"D1": "x",
-				"D2": "",
-				"Definição": "Edifício destinado à educação, saúde, segurança e ordem pública, administração do Estado ou a serviços sociais."
-			}, {
+				"D2": "x",
+				"Definição": "Edifício afeto à Administração Pública e aos Órgãos de Soberania."
+			},  {
 				"Valores": "7.2",
+				"Descrição": "Serviços de utilização coletiva",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Edifício destinado à prestação de serviços de interesse coletivo."
+			}, {
+				"Valores": "7.3",
 				"Descrição": "Outros - Serviços",
 				"Valores INSPIRE": "",
 				"D1": "x",
-				"D2": "",
+				"D2": "x",
 				"Definição": "Edifício onde se desenvolvem atividades financeiras, informáticas, imobiliárias ou outras."
 			}, {
 				"Valores": "8",
