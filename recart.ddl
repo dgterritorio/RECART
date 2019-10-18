@@ -194,7 +194,7 @@ CREATE TABLE distrito (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
-	dicofre varchar(255) NOT NULL,
+	di varchar(255) NOT NULL,
 	nome varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -570,7 +570,7 @@ CREATE TABLE numero_policia_edificio (
 
 ALTER TABLE numero_policia_edificio ADD CONSTRAINT numero_policia_edificio_id_edificio_id FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
 
-CREATE TABLE valor_utilizacao_atual_edificio (
+CREATE TABLE lig_valor_utilizacao_atual_edificio (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
         edificio_id uuid NOT NULL,
 	valor_utilizacao_atual_id varchar(10) NOT NULL,
@@ -650,8 +650,8 @@ CREATE TABLE valor_elemento_edificio_xy (
 );
 
 
-ALTER TABLE valor_utilizacao_atual_edificio ADD CONSTRAINT valor_utilizacao_atual_edificio_edificio FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
-ALTER TABLE valor_utilizacao_atual_edificio ADD CONSTRAINT valor_utilizacao_atual_edificio_valor_utilizacao_atual FOREIGN KEY (valor_utilizacao_atual_id) REFERENCES valor_utilizacao_atual (identificador);
+ALTER TABLE lig_valor_utilizacao_atual_edificio ADD CONSTRAINT lig_valor_utilizacao_atual_edificio_edificio FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
+ALTER TABLE lig_valor_utilizacao_atual_edificio ADD CONSTRAINT lig_valor_utilizacao_atual_edificio_valor_utilizacao_atual FOREIGN KEY (valor_utilizacao_atual_id) REFERENCES valor_utilizacao_atual (identificador);
 ALTER TABLE sinal_geodesico ADD CONSTRAINT valor_local_geodesico_id FOREIGN KEY (valor_local_geodesico) REFERENCES valor_local_geodesico (identificador);
 ALTER TABLE sinal_geodesico ADD CONSTRAINT valor_ordem_id FOREIGN KEY (valor_ordem) REFERENCES valor_ordem (identificador);
 ALTER TABLE sinal_geodesico ADD CONSTRAINT valor_tipo_sinal_geodesico_id FOREIGN KEY (valor_tipo_sinal_geodesico) REFERENCES valor_tipo_sinal_geodesico (identificador);

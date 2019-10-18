@@ -56,6 +56,13 @@
 			"D2": "",
 			"Definição": "Código da infraestrutura de transporte ferroviário."
 		}, {
+			"Atributo": "nplataformas",
+			"Multip.": "[0..1]",
+			"Tipo": "Inteiro",
+			"D1": "",
+			"D2": "",
+			"Definição": "Número de plataformas da infraestrutura de transporte ferroviário."
+		}, {
 			"Atributo": "nome",
 			"Multip.": "[0..1]",
 			"Tipo": "Texto",
