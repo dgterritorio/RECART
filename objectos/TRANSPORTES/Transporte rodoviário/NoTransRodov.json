@@ -41,6 +41,13 @@
 			"D1": "x",
 			"D2": "x",
 			"Definição": "Tipo de nó rodoviário."
+		}, {
+			"Atributo": "ligacaoInfraTransRodov",
+			"Multip.": "[0..n]",
+			"Tipo": "Relação Transportes: Infraestrutura de Transporte Rodoviário",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Ligação às infraestruturas de transporte rodoviário."
 		}],
 		"listas de códigos": [{
 			"nome": "valorTipoNoTransRodov",

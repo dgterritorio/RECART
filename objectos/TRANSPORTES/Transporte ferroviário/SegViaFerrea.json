@@ -105,6 +105,13 @@
 			"D2": "",
 			"Definição": "Autoridade que tem a jurisdição da ferrovia."
 		}, {
+			"Atributo": "ligacaoLinhaFerrea",
+			"Multip.": "[1..n]",
+			"Tipo": "Relação Transportes: Linha Férrea",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Ligação à tabela das linhas ferroriárias."
+		}, {
 			"Atributo": "velocidadeMax",
 			"Multip.": "1",
 			"Tipo": "Inteiro",

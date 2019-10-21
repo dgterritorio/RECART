@@ -1050,7 +1050,6 @@ CREATE TABLE via_rodov_limite (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
-	codigo_via_rodov varchar(255),
 	valor_tipo_limite varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );

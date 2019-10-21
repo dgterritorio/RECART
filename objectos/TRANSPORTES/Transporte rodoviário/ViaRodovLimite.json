@@ -42,12 +42,12 @@
 			"D2": "x",
 			"Definição": "Identifica o tipo de limite."
 		}, {
-			"Atributo": "codigoViaRodov",
-			"Multip.": "[0..*]",
-			"Tipo": "Texto",
-			"D1": "",
-			"D2": "",
-			"Definição": "Código da via rodoviária."
+			"Atributo": "ligacaoViaRodov",
+			"Multip.": "[0..n]",
+			"Tipo": "Relação Transportes: Via Rodoviária",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Ligação à tabela das vias rodoviárias."
 		}],
 		"listas de códigos": [{
 			"nome": "valorTipoLimite",
