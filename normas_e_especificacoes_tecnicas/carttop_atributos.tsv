@@ -1,0 +1,223 @@
+entidade_id	entidade	classe	dimensao	atributo	atributo_tipo	atributo_definicao	multiplicidade	ndd1	ndd2	listacodigos	pag	versao	tema_id	tema
+01.01	Freguesia	Freguesia	2D	geometria	Geometria (polígono)		1	TRUE	TRUE	FALSE	27	v1.0	01	Unidades Administrativas
+01.01	Freguesia	Freguesia	2D	dicofre	Texto	Código da freguesia.	1	TRUE	TRUE	FALSE	27	v1.0	01	Unidades Administrativas
+01.01	Freguesia	Freguesia	2D	nome	Texto	Topónimo da freguesia.	1	TRUE	TRUE	FALSE	27	v1.0	01	Unidades Administrativas
+01.02	Concelho	Concelho	2D	geometria	Geometria (polígono)		1	TRUE	TRUE	FALSE	28	v1.0	01	Unidades Administrativas
+01.02	Concelho	Concelho	2D	dico	Texto	Código do concelho.	1	TRUE	TRUE	FALSE	28	v1.0	01	Unidades Administrativas
+01.02	Concelho	Concelho	2D	nome	Texto	Topónimo do concelho.	1	TRUE	TRUE	FALSE	28	v1.0	01	Unidades Administrativas
+01.03	Distrito	Distrito	2D	geometria	Geometria (polígono)		1	TRUE	TRUE	FALSE	28	v1.0	01	Unidades Administrativas
+01.03	Distrito	Distrito	2D	di	Texto	Código do distrito.	1	TRUE	TRUE	FALSE	28	v1.0	01	Unidades Administrativas
+01.03	Distrito	Distrito	2D	nome	Texto	Topónimo do distrito.	1	TRUE	TRUE	FALSE	29	v1.0	01	Unidades Administrativas
+01.04	Fronteira	Fronteira	2D	geometria	Geometria (linha)		1	TRUE	TRUE	FALSE	29	v1.0	01	Unidades Administrativas
+01.04	Fronteira	Fronteira	2D	valorEstadoFronteira	Lista de códigos	Descrição do estado de aceitação oficial da linha de fronteira.	1	TRUE	TRUE	TRUE	29	v1.0	01	Unidades Administrativas
+02.01	Designação local	DesignacaoLocal	2D	geometria	Geometria (ponto)		1	TRUE	TRUE	FALSE	30	v1.0	02	Toponímia
+02.01	Designação local	DesignacaoLocal	2D	valorLocalNomeado	Lista de códigos	Nome de local.	1	TRUE	TRUE	TRUE	30	v1.0	02	Toponímia
+02.01	Designação local	DesignacaoLocal	2D	nome	Texto	Topónimo utilizado para identificar o objeto no mundo real.	1	TRUE	TRUE	FALSE	30	v1.0	02	Toponímia
+03.01	Curva de nível	CurvaDeNivel	3D	geometria	Geometria (linha)		1	TRUE	TRUE	FALSE	31	v1.0	03	Altimetria
+03.01	Curva de nível	CurvaDeNivel	3D	valorTipoCurva	Lista de códigos	Curva diferenciada pelos intervalos altimétricos na sua representação.	1	TRUE	TRUE	TRUE	31	v1.0	03	Altimetria
+03.02	Linha de quebra	LinhaDeQuebra	3D	geometria	Geometria (linha)		1	TRUE	TRUE	FALSE	32	v1.0	03	Altimetria
+03.02	Linha de quebra	LinhaDeQuebra	3D	valorClassifica	Lista de códigos	Caracterização da linha de quebra.	1	TRUE	TRUE	TRUE	32	v1.0	03	Altimetria
+03.02	Linha de quebra	LinhaDeQuebra	3D	valorNaturezaLinha	Lista de códigos	Identificação do tipo de linha de quebra.	1	TRUE	TRUE	TRUE	32	v1.0	03	Altimetria
+03.02	Linha de quebra	LinhaDeQuebra	3D	artificial	Booleano	Indica se a linha de quebra, que representa a descontinuidade altimétrica, é devida a uma construção artificial presente no terreno.	1	FALSE	FALSE	FALSE	32	v1.0	03	Altimetria
+03.03	Ponto cotado	PontoCotado	3D	geometria	Geometria (ponto)		1	TRUE	TRUE	FALSE	32	v1.0	03	Altimetria
+03.03	Ponto cotado	PontoCotado	3D	valorClassificaLAS	Lista de códigos	Identificação da localização geográfica do ponto cotado. Classificação decorrente da ASPRS Standard LIDAR Point Classes.	1	TRUE	TRUE	TRUE	32	v1.0	03	Altimetria
+04.01	Água lêntica	AguaLentica	3D	geometria	Geometria (polígono)		1	TRUE	TRUE	FALSE	35	v1.0	04	Hidrografia
+04.01	Água lêntica	AguaLentica	3D	valorAguaLentica	Lista de códigos	Classificação do tipo de água lêntica.	1	TRUE	TRUE	TRUE	35	v1.0	04	Hidrografia
+04.01	Água lêntica	AguaLentica	3D	valorPersistenciaHidrologica	Lista de códigos	Categoria de persistência hidrológica de uma massa de água.	1	FALSE	FALSE	TRUE	35	v1.0	04	Hidrografia
+04.01	Água lêntica	AguaLentica	3D	cotaPlenoArmazenamento	Booleano	Indica se foi usada a cota de pleno armazenamento na aquisição do objeto (nível de pleno armazenamento – NPA).	1	TRUE	TRUE	FALSE	35	v1.0	04	Hidrografia
+04.01	Água lêntica	AguaLentica	3D	dataFonteDados	Data	Data da fonte de dados usada para a representação do objeto. Aplicável apenas quando o objeto é adquirido a partir da informação visual disponível e não aplicável quando foi usada, para a sua representação, o nível de pleno armazenamento – NPA. 	[0..1]	TRUE	TRUE	FALSE	35	v1.0	04	Hidrografia
+04.01	Água lêntica	AguaLentica	3D	iDHidrografico	Identificador hidrográfico	Identificador do objeto no mundo real.	1	FALSE	FALSE	FALSE	35	v1.0	04	Hidrografia
+04.01	Água lêntica	AguaLentica	3D	mare	Booleano	Indica se a massa de água é afetada por águas flúvio-marítimas, sujeita a marés.	1	TRUE	TRUE	FALSE	36	v1.0	04	Hidrografia
+04.01	Água lêntica	AguaLentica	3D	nome	Texto	Topónimo da entidade no mundo real.	[0..1]	TRUE	TRUE	FALSE	36	v1.0	04	Hidrografia
+04.01	Água lêntica	AguaLentica	3D	origemNatural	Booleano	Identifica se a entidade tem origem natural (e não artificial).	1	FALSE	FALSE	FALSE	36	v1.0	04	Hidrografia
+04.01	Água lêntica	AguaLentica	3D	profundidadeMedia	Real	Profundidade média da massa de água.	1	FALSE	FALSE	FALSE	36	v1.0	04	Hidrografia
+04.02	Barreira	Barreira	2D	geometria	Geometria (ponto; polígono)		1	TRUE	TRUE	FALSE	36	v1.0	04	Hidrografia
+04.02	Barreira	Barreira	2D	valorBarreira	Lista de códigos	Tipo de barreira.	1	TRUE	TRUE	TRUE	36	v1.0	04	Hidrografia
+04.02	Barreira	Barreira	2D	iDHidrografico	Identificador hidrográfico	Identificador do objeto no mundo real.	1	FALSE	FALSE	FALSE	37	v1.0	04	Hidrografia
+04.02	Barreira	Barreira	2D	nome	Texto	Topónimo da entidade no mundo real.	[0..1]	TRUE	TRUE	FALSE	37	v1.0	04	Hidrografia
+04.03	Curso de água	CursoDeAgua	3D	geometria	Geometria (linha; polígono)		1	TRUE	TRUE	FALSE	37	v1.0	04	Hidrografia
+04.03	Curso de água	CursoDeAgua	3D	valorCursoDeAgua	Lista de códigos	Caracterização do curso de água em função da sua navegabilidade e largura.	1	TRUE	TRUE	TRUE	37	v1.0	04	Hidrografia
+04.03	Curso de água	CursoDeAgua	3D	valorPersistenciaHidrologica	Lista de códigos	Categoria de persistência hidrológica de uma massa de água.	1	FALSE	FALSE	TRUE	37	v1.0	04	Hidrografia
+04.03	Curso de água	CursoDeAgua	3D	valorPosicaoVertical	Lista de códigos	A posição vertical relativa da entidade (do fenómeno no mundo real).	1	TRUE	TRUE	TRUE	37	v1.0	04	Hidrografia
+04.03	Curso de água	CursoDeAgua	3D	comprimento	Real	Comprimento do curso de água.	1	FALSE	FALSE	FALSE	38	v1.0	04	Hidrografia
+04.03	Curso de água	CursoDeAgua	3D	delimitacaoConhecida	Booleano	Indica que a delimitação da entidade (fenómeno no mundo real) é conhecida. A delimitação pode não ser conhecida quando se trata de um curso de água subterrâneo ou não visível porque tapado pela vegetação.	1	TRUE	TRUE	FALSE	38	v1.0	04	Hidrografia
+04.03	Curso de água	CursoDeAgua	3D	eixo	Booleano	Indica se o objeto corresponde ao eixo do curso de água.	1	TRUE	TRUE	FALSE	38	v1.0	04	Hidrografia
+04.03	Curso de água	CursoDeAgua	3D	ficticio	Booleano	Indica se o objeto corresponde a uma extensão de um eixo para assegurar a ligação com outro curso de água.	1	TRUE	TRUE	FALSE	38	v1.0	04	Hidrografia
+04.03	Curso de água	CursoDeAgua	3D	iDHidrografico	Identificador hidrográfico	Identificador do objeto no mundo real.	1	FALSE	FALSE	FALSE	38	v1.0	04	Hidrografia
+04.03	Curso de água	CursoDeAgua	3D	largura	Real	Largura do curso de água (como amplitude) ao longo do seu comprimento.	1	FALSE	FALSE	FALSE	38	v1.0	04	Hidrografia
+04.03	Curso de água	CursoDeAgua	3D	nome	Texto	Topónimo da entidade no mundo real.	[0..1]	TRUE	TRUE	FALSE	38	v1.0	04	Hidrografia
+04.03	Curso de água	CursoDeAgua	3D	ordemHidrologica	Texto	Código que exprime o grau de ramificação num sistema hidrológico.	1	FALSE	FALSE	FALSE	39	v1.0	04	Hidrografia
+04.03	Curso de água	CursoDeAgua	3D	origemNatural	Booleano	Identifica se a entidade tem origem natural (e não artificial).	1	FALSE	FALSE	FALSE	39	v1.0	04	Hidrografia
+04.04	Fronteira terra-água	FronteiraTerraAgua	3D	geometria	Geometria (linha)		1	TRUE	TRUE	FALSE	39	v1.0	04	Hidrografia
+04.04	Fronteira terra-água	FronteiraTerraAgua	3D	dataFonteDados	Data	Data da fonte de dados usada para recolha do objeto.	1	TRUE	TRUE	FALSE	39	v1.0	04	Hidrografia
+04.04	Fronteira terra-água	FronteiraTerraAgua	3D	ilha	Booleano	Indica se o objeto corresponde a uma ilha.	1	TRUE	TRUE	FALSE	39	v1.0	04	Hidrografia
+04.05	Margem	Margem	2D	geometria	Geometria (polígono)		1	TRUE	TRUE	FALSE	40	v1.0	04	Hidrografia
+04.05	Margem	Margem	2D	valorTipoMargem	Lista de códigos	Categorias em função dos materiais que compõem a área das margens.	1	TRUE	TRUE	TRUE	40	v1.0	04	Hidrografia
+04.05	Margem	Margem	2D	iDHidrografico	Identificador hidrográfico	Identificador do objeto no mundo real.	1	FALSE	FALSE	FALSE	40	v1.0	04	Hidrografia
+04.05	Margem	Margem	2D	nome	Texto	Topónimo da entidade no mundo real.	[0..1]	TRUE	TRUE	FALSE	40	v1.0	04	Hidrografia
+04.06	Nascente	Nascente	3D	geometria	Geometria (ponto)		1	TRUE	TRUE	FALSE	40	v1.0	04	Hidrografia
+04.06	Nascente	Nascente	3D	valorPersistenciaHidrologica	Lista de códigos	Categorias de persistência hidrológica de uma massa de água.	1	FALSE	FALSE	TRUE	41	v1.0	04	Hidrografia
+04.06	Nascente	Nascente	3D	valorTipoNascente	Lista de códigos	Caracterização do tipo de nascente.	1	FALSE	FALSE	TRUE	41	v1.0	04	Hidrografia
+04.06	Nascente	Nascente	3D	iDHidrografico	Identificador hidrográfico	Identificador do objeto no mundo real.	1	FALSE	FALSE	FALSE	41	v1.0	04	Hidrografia
+04.06	Nascente	Nascente	3D	nome	Texto	Topónimo da entidade no mundo real.	[0..1]	TRUE	TRUE	FALSE	41	v1.0	04	Hidrografia
+04.07	Nó hidrográfico	NoHidrografico	3D	geometria	Geometria (ponto)		1	TRUE	TRUE	FALSE	41	v1.0	04	Hidrografia
+04.07	Nó hidrográfico	NoHidrografico	3D	valorTipoNoHidrografico	Lista de códigos	Categorias dos diferentes tipos de nós das redes hidrográficas.	1	TRUE	TRUE	TRUE	42	v1.0	04	Hidrografia
+04.07	Nó hidrográfico	NoHidrografico	3D	iDHidrografico	Identificador hidrográfico	Identificador do objeto no mundo real.	1	FALSE	FALSE	FALSE	42	v1.0	04	Hidrografia
+04.08	Queda de água	QuedaDeAgua	2D	geometria	Geometria (ponto)		1	TRUE	TRUE	FALSE	42	v1.0	04	Hidrografia
+04.08	Queda de água	QuedaDeAgua	2D	altura	Real	Distância medida a partir do ponto mais baixo da base ao nível do solo ou da água (na base do declive/a jusante) até ao ponto mais elevado do objeto geográfico.	1	FALSE	FALSE	FALSE	42	v1.0	04	Hidrografia
+04.08	Queda de água	QuedaDeAgua	2D	iDHidrografico	Identificador hidrográfico	Identificador do objeto no mundo real.	1	FALSE	FALSE	FALSE	42	v1.0	04	Hidrografia
+04.08	Queda de água	QuedaDeAgua	2D	nome	Texto	Topónimo da entidade no mundo real.	[0..1]	TRUE	TRUE	FALSE	43	v1.0	04	Hidrografia
+04.09	Zona húmida	ZonaHumida	3D	geometria	Geometria (polígono)		1	TRUE	TRUE	FALSE	43	v1.0	04	Hidrografia
+04.09	Zona húmida	ZonaHumida	3D	valorZonaHumida	Lista de códigos	Caracterização em função da quantidade de água e de vegetação.	1	TRUE	TRUE	TRUE	43	v1.0	04	Hidrografia
+04.09	Zona húmida	ZonaHumida	3D	iDHidrografico	Identificador hidrográfico	Identificador do objeto no mundo real.	1	FALSE	FALSE	FALSE	43	v1.0	04	Hidrografia
+04.09	Zona húmida	ZonaHumida	3D	mare	Booleano	Indica se a zona húmida é afetada por águas flúvio-marítimas.	1	TRUE	TRUE	FALSE	43	v1.0	04	Hidrografia
+04.09	Zona húmida	ZonaHumida	3D	nome	Texto	Topónimo da entidade no mundo real.	[0..1]	TRUE	TRUE	FALSE	44	v1.0	04	Hidrografia
+05.01	Área da infraestrutura de transporte aéreo	AreaInfraTransAereo	2D	geometria	Geometria (polígono)		1	TRUE	TRUE	FALSE	53	v1.0	05	Transportes
+05.01	Área da infraestrutura de transporte aéreo	AreaInfraTransAereo	2D	valorTipoAreaInfraTransAereo	Lista de códigos	Tipo de área associada ao transporte aéreo.	1	TRUE	TRUE	TRUE	53	v1.0	05	Transportes
+05.02	Infraestrutura de transporte aéreo	InfraTransAereo	2D	geometria	Geometria (ponto)		1	TRUE	TRUE	FALSE	53	v1.0	05	Transportes
+05.02	Infraestrutura de transporte aéreo	InfraTransAereo	2D	valorCategoriaInfraTransAereo	Lista de códigos	Categoria da infraestrutura de transporte aéreo.	1	TRUE	TRUE	TRUE	54	v1.0	05	Transportes
+05.02	Infraestrutura de transporte aéreo	InfraTransAereo	2D	valorRestricaoInfraTransAereo	Lista de códigos	Restrição de utilização aérea.	1	TRUE	TRUE	TRUE	54	v1.0	05	Transportes
+05.02	Infraestrutura de transporte aéreo	InfraTransAereo	2D	valorTipoInfraTransAereo	Lista de códigos	Tipo de infraestrutura de transporte aéreo.	1	TRUE	TRUE	TRUE	54	v1.0	05	Transportes
+05.02	Infraestrutura de transporte aéreo	InfraTransAereo	2D	codigoIATA	Texto	Código IATA (International Air Transport Association).	1	FALSE	FALSE	FALSE	54	v1.0	05	Transportes
+05.02	Infraestrutura de transporte aéreo	InfraTransAereo	2D	codigoICAO	Texto	Código ICAO (International Civil Aviation Organization).	1	FALSE	FALSE	FALSE	54	v1.0	05	Transportes
+05.02	Infraestrutura de transporte aéreo	InfraTransAereo	2D	nome	Texto	Nome da infraestrutura de transporte aéreo.	[0..1]	TRUE	TRUE	FALSE	54	v1.0	05	Transportes
+05.03	Área da infraestrutura de transporte ferroviário	AreaInfraTransFerrov	2D	geometria	Geometria (polígono)		1	TRUE	TRUE	FALSE	55	v1.0	05	Transportes
+05.04	Infraestrutura de transporte ferroviário	InfraTransFerrov	2D	geometria	Geometria (ponto)		1	TRUE	TRUE	FALSE	55	v1.0	05	Transportes
+05.04	Infraestrutura de transporte ferroviário	InfraTransFerrov	2D	valorTipoInfraTransFerrov	Lista de códigos	Tipo de infraestrutura ferroviária.	1	TRUE	TRUE	TRUE	55	v1.0	05	Transportes
+05.04	Infraestrutura de transporte ferroviário	InfraTransFerrov	2D	valorTipoUsoInfraTransFerrov	Lista de códigos	Tipo de utilização atual da linha férrea.	1	FALSE	FALSE	TRUE	55	v1.0	05	Transportes
+05.04	Infraestrutura de transporte ferroviário	InfraTransFerrov	2D	codigoInfraTransFerrov	Texto	Código da infraestrutura de transporte ferroviário.	1	FALSE	FALSE	FALSE	55	v1.0	05	Transportes
+05.04	Infraestrutura de transporte ferroviário	InfraTransFerrov	2D	nome	Texto	Nome da infraestrutura de transporte ferroviário.	[0..1]	TRUE	TRUE	FALSE	55	v1.0	05	Transportes
+05.05	Linha férrea	LinhaFerrea	-	codigoLinhaFerrea	Texto	Código da linha férrea.	1	TRUE	TRUE	FALSE	56	v1.0	05	Transportes
+05.05	Linha férrea	LinhaFerrea	-	nome	Texto	Designação da Linha Férrea.	1	TRUE	TRUE	FALSE	56	v1.0	05	Transportes
+05.06	Nó de transporte ferroviário	NoTransFerrov	3D	geometria	Geometria (ponto)		1	TRUE	TRUE	FALSE	56	v1.0	05	Transportes
+05.06	Nó de transporte ferroviário	NoTransFerrov	3D	valorTipoNoTransFerrov	Lista de códigos	Tipo de nó ferroviário.	1	TRUE	TRUE	TRUE	56	v1.0	05	Transportes
+05.07	Segmento da via férrea	SegViaFerrea	3D	geometria	Geometria (linha)		1	TRUE	TRUE	FALSE	57	v1.0	05	Transportes
+05.07	Segmento da via férrea	SegViaFerrea	3D	valorCategoriaBitola	Lista de códigos	Tipo de bitola (apenas aplicável ao comboio (dois carris paralelos).	1	TRUE	TRUE	TRUE	57	v1.0	05	Transportes
+05.07	Segmento da via férrea	SegViaFerrea	3D	valorEstadoLinhaFerrea	Lista de códigos	Estado da infraestrutura.	1	TRUE	TRUE	TRUE	57	v1.0	05	Transportes
+05.07	Segmento da via férrea	SegViaFerrea	3D	valorPosicaoVerticalTransportes	Lista de códigos	A posição vertical relativa da entidade (fenómeno do mundo real).	1	TRUE	TRUE	TRUE	57	v1.0	05	Transportes
+05.07	Segmento da via férrea	SegViaFerrea	3D	valorTipoLinhaFerrea	Lista de códigos	Tipo de transporte ferroviário para o qual a linha foi projetada.	1	TRUE	TRUE	TRUE	57	v1.0	05	Transportes
+05.07	Segmento da via férrea	SegViaFerrea	3D	valorTipoTrocoViaFerroviaria	Lista de códigos	Tipo de troço da via ferroviária.	1	TRUE	TRUE	TRUE	57	v1.0	05	Transportes
+05.07	Segmento da via férrea	SegViaFerrea	3D	valorViaFerrea	Lista de códigos	Tipo de via férrea.	1	FALSE	FALSE	TRUE	58	v1.0	05	Transportes
+05.07	Segmento da via férrea	SegViaFerrea	3D	codigoLinhaFerrea	Texto	Código da linha férrea.	[1..*]	TRUE	TRUE	FALSE	58	v1.0	05	Transportes
+05.07	Segmento da via férrea	SegViaFerrea	3D	eletrific	Booleano	Indica se a linha está eletrificada.	1	TRUE	TRUE	FALSE	58	v1.0	05	Transportes
+05.07	Segmento da via férrea	SegViaFerrea	3D	gestao	Texto	Autoridade que gere a ferrovia.	1	FALSE	FALSE	FALSE	58	v1.0	05	Transportes
+05.07	Segmento da via férrea	SegViaFerrea	3D	jurisdicao	Texto	Autoridade que tem a jurisdição da ferrovia.	1	FALSE	FALSE	FALSE	58	v1.0	05	Transportes
+05.07	Segmento da via férrea	SegViaFerrea	3D	velocidadeMax	Inteiro	Especificação da velocidade máxima para a qual a linha férrea foi projetada.	1	FALSE	FALSE	FALSE	58	v1.0	05	Transportes
+05.08	Área da infraestrutura de transporte por cabo	AreaInfraTransCabo	2D	geometria	Geometria (polígono)		1	TRUE	TRUE	FALSE	59	v1.0	05	Transportes
+05.09	Segmento da via por cabo	SegViaCabo	2D	geometria	Geometria (linha)		1	TRUE	TRUE	FALSE	59	v1.0	05	Transportes
+05.09	Segmento da via por cabo	SegViaCabo	2D	valorTipoViaCabo	Lista de códigos	Tipo de transporte por cabo.	1	TRUE	FALSE	FALSE	59	v1.0	05	Transportes
+05.09	Segmento da via por cabo	SegViaCabo	2D	nome	Texto	Nome da via de transporte por cabo.	[0..1]	TRUE	TRUE	FALSE	59	v1.0	05	Transportes
+05.10	Área da infraestrutura de transporte por via navegável	AreaInfraTransViaNavegavel	2D	geometria	Geometria (polígono)		1	TRUE	TRUE	FALSE	60	v1.0	05	Transportes
+05.10	Área da infraestrutura de transporte por via navegável	AreaInfraTransViaNavegavel	2D	valorTipoAreaInfraTransViaNavegavel	Lista de códigos	Tipo de infraestrutura.	1	TRUE	TRUE	TRUE	60	v1.0	05	Transportes
+05.11	Infraestrutura de transporte por via navegável	InfraTransViaNavegavel	2D	geometria	Geometria (ponto)		1	TRUE	TRUE	FALSE	60	v1.0	05	Transportes
+05.11	Infraestrutura de transporte por via navegável	InfraTransViaNavegavel	2D	valorTipoInfraTransViaNavegavel	Lista de códigos	Tipo de infraestrutura.	1	TRUE	TRUE	TRUE	60	v1.0	05	Transportes
+05.11	Infraestrutura de transporte por via navegável	InfraTransViaNavegavel	2D	codigoViaNavegavel	Texto	Código ISPS (International Ships and Ports Security), adotado pela Organização Maritima Internacionl. Apenas aplicável aos portos.	1	FALSE	FALSE	FALSE	61	v1.0	05	Transportes
+05.11	Infraestrutura de transporte por via navegável	InfraTransViaNavegavel	2D	nome	Texto	Nome da infraestrutura.	1	TRUE	TRUE	FALSE	61	v1.0	05	Transportes
+05.12	Área da infraestrutura de transporte rodoviário	AreaInfraTransRodov	2D	geometria	Geometria (polígono)		1	TRUE	TRUE	FALSE	61	v1.0	05	Transportes
+05.13	Infraestrutura de transporte rodoviário	InfraTransRodov	2D	geometria	Geometria (ponto)		1	TRUE	TRUE	FALSE	61	v1.0	05	Transportes
+05.13	Infraestrutura de transporte rodoviário	InfraTransRodov	2D	valorTipoInfraTransRodov	Lista de códigos	Tipo de infraestrutura rodoviária.	1	TRUE	TRUE	TRUE	62	v1.0	05	Transportes
+05.13	Infraestrutura de transporte rodoviário	InfraTransRodov	2D	valorTipoServico	Lista de códigos	Tipo de serviços prestados.	[1..*]	TRUE	TRUE	TRUE	62	v1.0	05	Transportes
+05.13	Infraestrutura de transporte rodoviário	InfraTransRodov	2D	nome	Texto	Nome da infraestrutura de transporte rodoviário.	[0..1]	TRUE	TRUE	FALSE	62	v1.0	05	Transportes
+05.14	Nó de transporte rodoviário	NoTransRodov	3D	geometria	Geometria (ponto)		1	TRUE	TRUE	FALSE	62	v1.0	05	Transportes
+05.14	Nó de transporte rodoviário	NoTransRodov	3D	valorTipoNoTransRodov	Lista de códigos	Tipo de nó rodoviário.	1	TRUE	TRUE	TRUE	62	v1.0	05	Transportes
+05.15	Obra de arte	ObraArte	3D	geometria	Geometria (polígono)		1	TRUE	TRUE	FALSE	63	v1.0	05	Transportes
+05.15	Obra de arte	ObraArte	3D	valorTipoObraArte	Lista de códigos	Tipo de obra de arte.	1	TRUE	TRUE	TRUE	63	v1.0	05	Transportes
+05.15	Obra de arte	ObraArte	3D	nome	Texto	Nome da obra de arte.	[0..1]	TRUE	TRUE	FALSE	63	v1.0	05	Transportes
+05.16	Segmento da via rodoviária	SegViaRodov	3D	geometria	Geometria (linha)		1	TRUE	TRUE	FALSE	63	v1.0	05	Transportes
+05.16	Segmento da via rodoviária	SegViaRodov	3D	valorEstadoViaRodov	Lista de códigos	Estado da infraestrutura.	1	TRUE	TRUE	TRUE	63	v1.0	05	Transportes
+05.16	Segmento da via rodoviária	SegViaRodov	3D	valorCaractFisicaViaRodov	Lista de códigos	Classificação da via rodoviária em função das suas características físicas.	1	TRUE	TRUE	TRUE	64	v1.0	05	Transportes
+05.16	Segmento da via rodoviária	SegViaRodov	3D	valorPosicaoVerticalTransportes	Lista de códigos	A posição vertical relativa da entidade (fenómeno do mundo real).	1	TRUE	TRUE	TRUE	64	v1.0	05	Transportes
+05.16	Segmento da via rodoviária	SegViaRodov	3D	valorRestricaoAcesso	Lista de códigos	Tipo de restrições de acesso para um elemento de transporte.	1	FALSE	FALSE	TRUE	64	v1.0	05	Transportes
+05.16	Segmento da via rodoviária	SegViaRodov	3D	valorSentido	Lista de códigos	Indica o sentido de circulação na via rodoviária.	1	TRUE	TRUE	TRUE	64	v1.0	05	Transportes
+05.16	Segmento da via rodoviária	SegViaRodov	3D	valorTipoCirculacao	Lista de códigos	Identificação do tipo de veículo que pode circular na via rodoviária.	[1..*]	TRUE	TRUE	TRUE	64	v1.0	05	Transportes
+05.16	Segmento da via rodoviária	SegViaRodov	3D	valorTipoTrocoRodoviario	Lista de códigos	Tipo de troço.	1	TRUE	TRUE	TRUE	64	v1.0	05	Transportes
+05.16	Segmento da via rodoviária	SegViaRodov	3D	codigoViaRodov	Texto	Código da via rodoviária.	[1..*]	TRUE	TRUE	FALSE	64	v1.0	05	Transportes
+05.16	Segmento da via rodoviária	SegViaRodov	3D	gestao	Texto	Autoridade que gere a via rodoviária.	1	FALSE	FALSE	FALSE	64	v1.0	05	Transportes
+05.16	Segmento da via rodoviária	SegViaRodov	3D	jurisdicao	Texto	Autoridade que tem a jurisdição da via rodoviária	1	FALSE	FALSE	FALSE	65	v1.0	05	Transportes
+05.16	Segmento da via rodoviária	SegViaRodov	3D	multiplaFaixaRodagem	Booleano	Indica se a via rodoviária correspondente a este segmento tem mais do que uma faixa de rodagem.	1	FALSE	FALSE	FALSE	65	v1.0	05	Transportes
+05.16	Segmento da via rodoviária	SegViaRodov	3D	numViasTransito	Inteiro	Número de vias de trânsito da faixa de rodagem.	1	TRUE	TRUE	FALSE	65	v1.0	05	Transportes
+05.16	Segmento da via rodoviária	SegViaRodov	3D	pavimentado	Booleano	Identifica se a via rodoviária está pavimentada com aglomerado asfáltico, betão, mistura betuminosa ou pedra.	1	TRUE	TRUE	FALSE	65	v1.0	05	Transportes
+05.16	Segmento da via rodoviária	SegViaRodov	3D	velocidadeMax	Inteiro	Especificação da velocidade máxima definida para a via rodoviária.	1	FALSE	FALSE	FALSE	65	v1.0	05	Transportes
+05.17	Via rodoviária	ViaRodov	-	codigoViaRodov	Texto	Código da via rodoviária.	1	TRUE	TRUE	FALSE	66	v1.0	05	Transportes
+05.17	Via rodoviária	ViaRodov	-	dataCat	Data	Data em que a estrada foi registada no catálogo de vias rodoviárias.	1	TRUE	TRUE	FALSE	66	v1.0	05	Transportes
+05.17	Via rodoviária	ViaRodov	-	fonteAquisicaoDados	Texto	Identificação da fonte dos dados.	1	TRUE	TRUE	FALSE	66	v1.0	05	Transportes
+05.17	Via rodoviária	ViaRodov	-	nome	Texto	Nome da via rodoviária que consta no catálogo.	1	TRUE	TRUE	FALSE	66	v1.0	05	Transportes
+05.17	Via rodoviária	ViaRodov	-	nomeAlternativo	Topónimo	Nome alternativo da via rodoviária que consta no catálogo.	[0..1]	FALSE	FALSE	FALSE	66	v1.0	05	Transportes
+05.17	Via rodoviária	ViaRodov	-	tipoViaRodovAbv	Texto	Identificação do tipo de via rodoviária como consta no catálogo de vias rodoviárias - Abreviatura (tipoViaRodovAbv).	1	TRUE	TRUE	FALSE	66	v1.0	05	Transportes
+05.17	Via rodoviária	ViaRodov	-	tipoViaRodovC	Texto	Identificação do tipo de via rodoviária como consta no catálogo de vias rodoviárias - Código (tipoViaRodovC).	1	TRUE	TRUE	FALSE	66	v1.0	05	Transportes
+05.17	Via rodoviária	ViaRodov	-	tipoViaRodovD	Texto	Identificação do tipo de via rodoviária como consta no catálogo de vias rodoviárias - Designação (tipoViaRodovD).	1	TRUE	TRUE	FALSE	66	v1.0	05	Transportes
+05.18	Via rodoviária - Limite	ViaRodovLimite	3D	geometria	Geometria (linha)		1	TRUE	TRUE	FALSE	67	v1.0	05	Transportes
+05.18	Via rodoviária - Limite	ViaRodovLimite	3D	valorTipoLimite	Lista de códigos	Identifica o tipo de limite.	1	TRUE	TRUE	TRUE	67	v1.0	05	Transportes
+06.01	Construção linear	ConstruLinear	2D	geometria	Geometria (linha)		1	TRUE	TRUE	FALSE	68	v1.0	06	Construções
+06.01	Construção linear	ConstruLinear	2D	valorConstrucaoLinear	Lista de códigos	Tipo de construção linear	1	TRUE	TRUE	TRUE	68	v1.0	06	Construções
+06.01	Construção linear	ConstruLinear	2D	largura	Real	Indicação da largura da construção linear.	1	FALSE	FALSE	FALSE	68	v1.0	06	Construções
+06.01	Construção linear	ConstruLinear	2D	nome	Texto	Nome da construção.	[0..1]	TRUE	TRUE	FALSE	69	v1.0	06	Construções
+06.01	Construção linear	ConstruLinear	2D	suporte	Booleano	Identifica se a construção é suporte de terras.	1	TRUE	TRUE	FALSE	69	v1.0	06	Construções
+06.02	Construção poligonal	ConstruPolig	2D	geometria	Geometria (ponto; polígono)		1	TRUE	TRUE	FALSE	69	v1.0	06	Construções
+06.02	Construção poligonal	ConstruPolig	2D	valorTipoConstrucao	Lista de códigos	Tipo de construção poligonal.	1	TRUE	TRUE	TRUE	69	v1.0	06	Construções
+06.02	Construção poligonal	ConstruPolig	2D	nome	Texto	Nome da construção	[0..1]	TRUE	TRUE	FALSE	69	v1.0	06	Construções
+06.03	Edifício	Edificio	2D	geometria	Geometria (ponto; polígono)		1	TRUE	TRUE	FALSE	70	v1.0	06	Construções
+06.03	Edifício	Edificio	2D	valorCondicaoConst	Lista de códigos	Estado da construção.	[0..1]	TRUE	TRUE	TRUE	70	v1.0	06	Construções
+06.03	Edifício	Edificio	2D	valorElementoEdificioXY	Lista de códigos	Referência utilizada para a definição da geometria horizontal do edifício.	1	TRUE	TRUE	TRUE	70	v1.0	06	Construções
+06.03	Edifício	Edificio	2D	valorElementoEdificioZ	Lista de códigos	Referência utilizada para a determinação da altura do edifício.	1	TRUE	TRUE	TRUE	70	v1.0	06	Construções
+06.03	Edifício	Edificio	2D	valorFormaEdificio	Lista de códigos	Caracterização física do edifício relevante à sua representação cartográfica.	[0..1]	TRUE	TRUE	TRUE	70	v1.0	06	Construções
+06.03	Edifício	Edificio	2D	valorUtilizacaoAtual	Lista de códigos	Valores que indicam a utilização atual do edifício.	[1..*]	TRUE	TRUE	TRUE	70	v1.0	06	Construções
+06.03	Edifício	Edificio	2D	alturaEdificio	Real	Altura acima do solo.	1	TRUE	TRUE	FALSE	71	v1.0	06	Construções
+06.03	Edifício	Edificio	2D	dataConst	Data	Data de construção.	1	FALSE	FALSE	FALSE	71	v1.0	06	Construções
+06.03	Edifício	Edificio	2D	nome	Texto	Nome da construção.	[0..*]	TRUE	TRUE	FALSE	71	v1.0	06	Construções
+06.03	Edifício	Edificio	2D	numeroPolicia	Texto	Número, por vezes acompanhado de letras, que permite identificar um edifício, uma habitação, uma entrada ou um recinto, geralmente colocado ou inscrito por cima ou ao lado de uma porta.	[0..*]	TRUE	FALSE	FALSE	71	v1.0	06	Construções
+06.04	Ponto de interesse	PontoInteresse	2D	geometria	Geometria (ponto; polígono)		1	TRUE	TRUE	FALSE	71	v1.0	06	Construções
+06.04	Ponto de interesse	PontoInteresse	2D	valorTipoPontoInteresse	Lista de códigos	Identificação do tipo de ponto de interesse.	1	TRUE	TRUE	FALSE	71	v1.0	06	Construções
+06.04	Ponto de interesse	PontoInteresse	2D	nome	Texto	Nome do ponto de interesse.	1	TRUE	TRUE	FALSE	72	v1.0	06	Construções
+06.05	Sinal geodésico	SinalGeodesico	3D	geometria	Geometria (ponto)		1	TRUE	TRUE	FALSE	72	v1.0	06	Construções
+06.05	Sinal geodésico	SinalGeodesico	3D	valorLocalGeodesico	Lista de códigos	Identificação do local em que o sinal geodésico está instalado.	1	TRUE	TRUE	TRUE	72	v1.0	06	Construções
+06.05	Sinal geodésico	SinalGeodesico	3D	valorOrdem	Lista de códigos	Identificação da ordem a que pertence o sinal geodésico.	1	TRUE	TRUE	TRUE	72	v1.0	06	Construções
+06.05	Sinal geodésico	SinalGeodesico	3D	valorTipoSinalGeodesico	Lista de códigos	Especifica qual o tipo de sinal geodésico.	[1..*]	TRUE	TRUE	TRUE	72	v1.0	06	Construções
+06.05	Sinal geodésico	SinalGeodesico	3D	cotaSinal	Real	Cota ortométrica no topo do sinal geodésico.	1	TRUE	TRUE	FALSE	73	v1.0	06	Construções
+06.05	Sinal geodésico	SinalGeodesico	3D	nome	Texto	Nome do sinal geodésico.	1	TRUE	TRUE	FALSE	73	v1.0	06	Construções
+07.01	Área agrícola, florestal ou mato	AreaAgricolaFlorestalMato	2D	geometria	Geometria (polígono)		1	TRUE	TRUE	FALSE	74	v1.0	07	Ocupação do solo
+07.01	Área agrícola, florestal ou mato	AreaAgricolaFlorestalMato	2D	valorAreasAgricolasFlorestaisMatos	Lista de códigos	Tipo de área verde.	1	TRUE	TRUE	TRUE	74	v1.0	07	Ocupação do solo
+07.01	Área agrícola, florestal ou mato	AreaAgricolaFlorestalMato	2D	nome	Texto	Nome da área.	[0..1]	TRUE	TRUE	FALSE	74	v1.0	07	Ocupação do solo
+07.02	Área artificializada	AreasArtificializadas	2D	geometria	Geometria (polígono)		1	TRUE	TRUE	FALSE	75	v1.0	07	Ocupação do solo
+07.02	Área artificializada	AreasArtificializadas	2D	valorAreasArtificializadas	Lista de códigos	Tipo de área artificializada.	1	TRUE	TRUE	TRUE	75	v1.0	07	Ocupação do solo
+07.02	Área artificializada	AreasArtificializadas	2D	nome	Texto	Nome da área	[0..1]	TRUE	TRUE	FALSE	75	v1.0	07	Ocupação do solo
+08.01	Administração pública e órgãos de soberania	AdmPublica	-	valorTipoAdmPublica	Lista de códigos	Caracterização do serviço da Administração Pública.	[1..*]	TRUE	TRUE	TRUE	76	v1.0	08	Infraestruturas e serviços de interesse público
+08.01	Administração pública e órgãos de soberania	AdmPublica	-	localizacaoServicoPublico	Construções: Edifício; Ocupação do Solo: Áreas artificializadas	Local geográfico em que o serviço é prestado.	1	TRUE	TRUE	FALSE	76	v1.0	08	Infraestruturas e serviços de interesse público
+08.01	Administração pública e órgãos de soberania	AdmPublica	-	pontoDeContacto	Texto	Identificação do serviço ou a pessoa de contacto.	1	FALSE	FALSE	FALSE	76	v1.0	08	Infraestruturas e serviços de interesse público
+08.02	Cabo elétrico	CaboEletrico	2D	geometria	Geometria (linha)		1	TRUE	TRUE	FALSE	77	v1.0	08	Infraestruturas e serviços de interesse público
+08.02	Cabo elétrico	CaboEletrico	2D	valorPosicaoVertical	Lista de códigos	A posição vertical relativa da entidade (fenómeno no mundo real).	1	TRUE	TRUE	TRUE	77	v1.0	08	Infraestruturas e serviços de interesse público
+08.02	Cabo elétrico	CaboEletrico	2D	valorDesignacaoTensao	Lista de códigos	Categoria da tensão entre fases.	1	TRUE	TRUE	TRUE	77	v1.0	08	Infraestruturas e serviços de interesse público
+08.02	Cabo elétrico	CaboEletrico	2D	voltagemNominal	Real	Valor da tensão nominal entre fases.	1	FALSE	FALSE	FALSE	77	v1.0	08	Infraestruturas e serviços de interesse público
+08.03	Conduta de água	CondutaDeAgua	2D	geometria	Geometria (linha)		1	TRUE	TRUE	FALSE	77	v1.0	08	Infraestruturas e serviços de interesse público
+08.03	Conduta de água	CondutaDeAgua	2D	valorCondutaAgua	Lista de códigos	Tipo de conduta utilizada para transportar água.	1	TRUE	TRUE	TRUE	78	v1.0	08	Infraestruturas e serviços de interesse público
+08.03	Conduta de água	CondutaDeAgua	2D	valorPosicaoVertical	Lista de códigos	A posição vertical relativa da entidade (fenómeno no mundo real).	1	TRUE	TRUE	TRUE	78	v1.0	08	Infraestruturas e serviços de interesse público
+08.03	Conduta de água	CondutaDeAgua	2D	diametro	Real	Diâmetro da conduta.	1	FALSE	FALSE	FALSE	78	v1.0	08	Infraestruturas e serviços de interesse público
+08.04	Elemento associado de água	ElemAssocAgua	2D	geometria	Geometria (ponto; polígono)		1	TRUE	TRUE	FALSE	78	v1.0	08	Infraestruturas e serviços de interesse público
+08.04	Elemento associado de água	ElemAssocAgua	2D	valorElementoAssociadoAgua	Lista de códigos	Classificação de elementos associados de redes de água.	1	TRUE	TRUE	FALSE	78	v1.0	08	Infraestruturas e serviços de interesse público
+08.05	Elemento associado de eletricidade	ElemAssocEletricidade	2D	geometria	Geometria (ponto; polígono)		1	TRUE	TRUE	FALSE	79	v1.0	08	Infraestruturas e serviços de interesse público
+08.05	Elemento associado de eletricidade	ElemAssocEletricidade	2D	valorElementoAssociadoElectricidade	Lista de códigos	Classificação de elementos associados de redes de eletricidade.	1	TRUE	TRUE	TRUE	79	v1.0	08	Infraestruturas e serviços de interesse público
+08.06	Elemento associado de petróleo, gás e substâncias químicas	ElemAssocPGQ	2D	geometria	Geometria (ponto; polígono)		1	TRUE	TRUE	FALSE	79	v1.0	08	Infraestruturas e serviços de interesse público
+08.06	Elemento associado de petróleo, gás e substâncias químicas	ElemAssocPGQ	2D	valorElementoAssociadoPGQ	Lista de códigos	Classificação de elementos associados de redes de petróleo, gás, substâncias químicas.	1	TRUE	TRUE	TRUE	79	v1.0	08	Infraestruturas e serviços de interesse público
+08.07	Elemento associado de telecomunicações	ElemAssocTelecomunicacoes	2D	geometria	Geometria (ponto)		1	TRUE	TRUE	FALSE	80	v1.0	08	Infraestruturas e serviços de interesse público
+08.07	Elemento associado de telecomunicações	ElemAssocTelecomunicacoes	2D	valorElementoAssociadoTelecomunicacoes	Lista de códigos	Tipo de elemento associado às telecomunicações.	1	TRUE	TRUE	TRUE	80	v1.0	08	Infraestruturas e serviços de interesse público
+08.08	Equipamento de utilização coletiva	EquipUtilColetiva	-	valorTipoEquipamentoColetivo	Lista de códigos	Caracterização do tipo de serviço de interesse coletivo.	[1..*]	TRUE	TRUE	TRUE	80	v1.0	08	Infraestruturas e serviços de interesse público
+08.08	Equipamento de utilização coletiva	EquipUtilColetiva	-	localizacaoServicoPublico	Construções: Edifício; Ocupação do Solo: Áreas artificializadas	Local geográfico em que o serviço é prestado.	1	TRUE	TRUE	FALSE	80	v1.0	08	Infraestruturas e serviços de interesse público
+08.08	Equipamento de utilização coletiva	EquipUtilColetiva	-	pontoDeContacto	Texto	Identificação do serviço ou a pessoa de contacto.	1	FALSE	FALSE	FALSE	80	v1.0	08	Infraestruturas e serviços de interesse público
+08.09	Instalação de gestão ambiental	InstGestaoAmbiental	-	valorInstalacaoDeGestaoAmbiental	Lista de códigos	Caracterização da instalação de gestão ambiental.	1	TRUE	TRUE	TRUE	81	v1.0	08	Infraestruturas e serviços de interesse público
+08.09	Instalação de gestão ambiental	InstGestaoAmbiental	-	localizacaoInstalacaoAmbiental	Construções: Edifício; Ocupação do solo: Áreas artificializadas	Local geográfico da instalação de gestão ambiental.	1	TRUE	TRUE	FALSE	81	v1.0	08	Infraestruturas e serviços de interesse público
+08.10	Instalação de produção	InstProducao	-	valorInstalacaoProducao	Lista de códigos	Tipo de instalação de produção	1	TRUE	TRUE	TRUE	81	v1.0	08	Infraestruturas e serviços de interesse público
+08.10	Instalação de produção	InstProducao	-	descricaoDaFuncao	Texto	Descrição detalhada da função.	1	FALSE	FALSE	FALSE	81	v1.0	08	Infraestruturas e serviços de interesse público
+08.10	Instalação de produção	InstProducao	-	localizacaoInstalacaoProducao	Construções: Edifício; Construções: Construção poligonal; Ocupação do Solo: Áreas artificializadas	Local geográfico da instalação de produção.	1	TRUE	TRUE	FALSE	82	v1.0	08	Infraestruturas e serviços de interesse público
+08.11	Oleoduto, gasoduto ou substâncias químicas	OleodutoGasodutoSubtanciasQuimicas	2D	geometria	Geometria (linha)		1	TRUE	TRUE	FALSE	82	v1.0	08	Infraestruturas e serviços de interesse público
+08.11	Oleoduto, gasoduto ou substâncias químicas	OleodutoGasodutoSubtanciasQuimicas	2D	valorGasodutoOleodutoSubQuimicas	Lista de códigos	Tipo de infraestrutura.	1	TRUE	TRUE	TRUE	82	v1.0	08	Infraestruturas e serviços de interesse público
+08.11	Oleoduto, gasoduto ou substâncias químicas	OleodutoGasodutoSubtanciasQuimicas	2D	valorPosicaoVertical	Lista de códigos	A posição vertical relativa da entidade (fenómeno no mundo real).	1	TRUE	TRUE	FALSE	82	v1.0	08	Infraestruturas e serviços de interesse público
+08.11	Oleoduto, gasoduto ou substâncias químicas	OleodutoGasodutoSubtanciasQuimicas	2D	diametro	Real	Diâmetro da conduta.	1	FALSE	FALSE	FALSE	82	v1.0	08	Infraestruturas e serviços de interesse público
+09.01	Mobiliário urbano e sinalização	MobUrbanoSinal	2D	geometria	Geometria (ponto; polígono)		1	TRUE	TRUE	FALSE	83	v1.0	09	Mobiliário urbano e sinalização
+09.01	Mobiliário urbano e sinalização	MobUrbanoSinal	2D	valorTipoMobUrbSinal	Lista de códigos	Caracterização do tipo de mobiliário urbano e sinalização.	1	TRUE	TRUE	TRUE	83	v1.0	09	Mobiliário urbano e sinalização
+11.01	Área de trabalho	AreaTrabalho	2D	geometria	Geometria (polígono)		1	FALSE	FALSE	FALSE	85	v1.0	11	Auxiliar
+11.01	Área de trabalho	AreaTrabalho	2D	data	Data	Data de conclusão do trabalho.	1	TRUE	TRUE	FALSE	85	v1.0	11	Auxiliar
+11.01	Área de trabalho	AreaTrabalho	2D	dataHomologacao	Data	Data de homologação do trabalho (da responsabilidade da DGT).	1	FALSE	FALSE	FALSE	85	v1.0	11	Auxiliar
+11.01	Área de trabalho	AreaTrabalho	2D	nivelDeDetalhe	Texto	Indicação do nível de detalhe dos dados.	1	TRUE	TRUE	FALSE	85	v1.0	11	Auxiliar
+11.01	Área de trabalho	AreaTrabalho	2D	Nome	Texto	Nome atribuído ao trabalho (de acordo com a nomenclatura).	1	TRUE	TRUE	FALSE	86	v1.0	11	Auxiliar
+11.01	Área de trabalho	AreaTrabalho	2D	nomeDoProdutor	Texto	Nome do produtor do trabalho.	1	TRUE	TRUE	FALSE	86	v1.0	11	Auxiliar
+11.01	Área de trabalho	AreaTrabalho	2D	nomeDoProprietario	Texto	Nome do proprietário do trabalho.	1	TRUE	TRUE	FALSE	86	v1.0	11	Auxiliar
