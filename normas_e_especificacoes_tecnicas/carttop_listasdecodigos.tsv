@@ -507,7 +507,7 @@ valorutilizacaoatual	6.6	Outro - transportes	Outro edifício ou equipamento asso
 valorutilizacaoatual	7	Serviços	Edifício associado à prestação de serviços.	FALSE	FALSE	v1.0	116	06	Construções	06.03	Edifício	Edificio	2D
 valorutilizacaoatual	7.1	Serviços da Administração Pública	Edifício afeto à Administração Pública e aos Órgãos de Soberania.	TRUE	TRUE	v1.0	117	06	Construções	06.03	Edifício	Edificio	2D
 valorutilizacaoatual	7.2	Serviços de utilização coletiva	Edifício destinado à prestação de serviços de interesse coletivo.	TRUE	TRUE	v1.0	117	06	Construções	06.03	Edifício	Edificio	2D
-valorutilizacaoatual	7.2	Outros - Serviços	Edifício onde se desenvolvem atividades financeiras, informáticas, imobiliárias ou outras.	TRUE	TRUE	v1.0	117	06	Construções	06.03	Edifício	Edificio	2D
+valorutilizacaoatual	7.3	Outros - Serviços	Edifício onde se desenvolvem atividades financeiras, informáticas, imobiliárias ou outras.	TRUE	TRUE	v1.0	117	06	Construções	06.03	Edifício	Edificio	2D
 valorutilizacaoatual	8	Outros serviços coletivos, sociais e pessoais	Edifício destinado a atividades associativas, recreativas, culturais ou desportivas.	FALSE	FALSE	v1.0	117	06	Construções	06.03	Edifício	Edificio	2D
 valorutilizacaoatual	8.1	Atividades associativas	Organizações económicas, patronais e profissionais, sindicais, políticas ou associativas.	TRUE	TRUE	v1.0	117	06	Construções	06.03	Edifício	Edificio	2D
 valorutilizacaoatual	8.2	Culto e inumação	Edifício onde se exerce práticas de diferentes confissões religiosas e de apoio às atividades de inumação.	TRUE	TRUE	v1.0	117	06	Construções	06.03	Edifício	Edificio	2D
