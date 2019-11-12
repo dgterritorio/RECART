@@ -509,7 +509,6 @@ ALTER TABLE constru_linear ALTER COLUMN geometria SET NOT NULL;
 --Ponto, Poligono
 CREATE TABLE constru_polig (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
-	inst_producao_id uuid,
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
 	nome varchar(255),
