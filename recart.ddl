@@ -1469,17 +1469,6 @@ RAISE EXCEPTION 'Invalid geometry type only point or polygon are accepted!';
 END;
 $BODY$ LANGUAGE plpgsql VOLATILE;
 
-/**
- * Cria trigger para validacao de geometria linha ou poligono
- */
-CREATE OR REPLACE FUNCTION trigger_line_polygon_validation() RETURNS trigger AS $BODY$
-BEGIN
-if(st_geometrytype(NEW.geometria) like 'ST_Line' OR st_geometrytype(NEW.geometria) like 'ST_Polygon') then
-	RETURN NEW;
-end if;
-RAISE EXCEPTION 'Invalid geometry type only line or polygon are accepted!';
-END;
-$BODY$ LANGUAGE plpgsql VOLATILE;
 
 /**
  * Cria trigger dominio Equipamento Urbano
@@ -1532,10 +1521,6 @@ FOR EACH ROW EXECUTE PROCEDURE trigger_point_polygon_validation();
 CREATE TRIGGER barreira_geometry_check
 BEFORE INSERT ON "barreira"
 FOR EACH ROW EXECUTE PROCEDURE trigger_point_polygon_validation();
-
-CREATE TRIGGER curso_de_agua_geometry_check
-BEFORE INSERT ON "curso_de_agua"
-FOR EACH ROW EXECUTE PROCEDURE trigger_line_polygon_validation();
 
 
 
