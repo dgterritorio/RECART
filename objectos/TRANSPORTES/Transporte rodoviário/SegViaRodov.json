@@ -40,7 +40,7 @@
 			"Tipo": "Lista de códigos",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Estado da infraestrutura."
+			"Definição": "Estado da instalação."
 		}, {
 			"Atributo": "valorCaractFisicaViaRodov",
 			"Multip.": "1",
@@ -163,6 +163,13 @@
 				"D1": "",
 				"D2": "",
 				"Definição": "A instalação encontra-se em fase de projeto. Os trabalhos de construção ainda não tiveram início."
+			}, {
+				"Valores": "5",
+				"Descrição": "Funcional",
+				"Valores INSPIRE": "functional",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A instalação está concluída, independentemente de estar ou não a ser utilizada para o fim que se destina."
 			}]
 		}, {
 			"nome": "valorCaractFisicaViaRodov",
