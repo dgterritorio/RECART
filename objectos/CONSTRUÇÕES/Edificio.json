@@ -141,7 +141,7 @@
 				"Valores INSPIRE": "functional",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Construção concluída, independentemente de estar ou não a ser utilizada para o fim que se destina."
+				"Definição": "Construção concluída, independentemente de estar ou não a ser utilizada para o fim a que se destina."
 			}]
 		}, {
 			"nome": "valorElementoEdificioXY",

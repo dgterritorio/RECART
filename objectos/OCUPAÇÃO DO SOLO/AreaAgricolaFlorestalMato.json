@@ -106,14 +106,14 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Área permanentemente ocupada com vegetação essencialmente do tipo herbácea (cultivada ou natural)."
+				"Definição": "Área ocupada com vegetação predominantemente herbácea semeada, não incluída em sistemas de rotação de culturas, podendo ou não ter pastoreio in situ, e que acessoriamente pode ou não ser cortada em determinados períodos do ano."
 			}, {
 				"Valores": "2.2",
 				"Descrição": "Vegetação herbácea natural",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Área de vegetação herbácea que se desenvolvem sem adubação, cultivo, sementeira ou drenagem."
+				"Definição": "Área ocupada com vegetação predominantemente herbácea espontânea onde não existe qualquer intervenção do homem."
 			},{
 				"Valores": "3",
 				"Descrição": "Sistema agroflorestal",
