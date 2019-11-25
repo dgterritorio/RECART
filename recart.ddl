@@ -539,7 +539,7 @@ CREATE TABLE edificio (
 	inst_gestao_ambiental_id uuid,
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
-	altura_edificio int4 NOT NULL,
+	altura_edificio real NOT NULL,
 	data_const date,
 	valor_condicao_const varchar(10),
 	valor_elemento_edificio_xy varchar(10) NOT NULL,
