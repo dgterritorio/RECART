@@ -1428,7 +1428,6 @@ ALTER TABLE areas_artificializadas ADD CONSTRAINT localizacao_instalacao_produca
 
 ALTER TABLE edificio ADD CONSTRAINT localizacao_instalacao_ambiental FOREIGN KEY (inst_gestao_ambiental_id) REFERENCES inst_gestao_ambiental (identificador);
 ALTER TABLE edificio ADD CONSTRAINT localizacao_instalacao_producao FOREIGN KEY (inst_producao_id) REFERENCES inst_producao (identificador);
-ALTER TABLE constru_polig ADD CONSTRAINT localizacao_instalacao_producao FOREIGN KEY (inst_producao_id) REFERENCES inst_producao (identificador);
 
 /**
  * Dominio Infraestruturas e Servicos Publicos
