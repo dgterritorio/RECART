@@ -820,7 +820,6 @@ CREATE TABLE seg_via_ferrea (
 	eletrific bool NOT NULL,
 	gestao varchar(255),
 	velocidade_max int4,
-	codigo_ferroviario varchar(255) NOT NULL,
 	valor_categoria_bitola varchar(10) NOT NULL,
 	valor_estado_linha_ferrea varchar(10),
 	valor_posicao_vertical_transportes varchar(10) NOT NULL,
