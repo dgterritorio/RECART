@@ -3,10 +3,16 @@
  */
 
 /**
- * Criar base de dados
+ * Criar base de dados em Windows
  */
 
 CREATE DATABASE recart WITH ENCODING 'UTF8' LC_COLLATE='Portuguese_Portugal' LC_CTYPE='Portuguese_Portugal' TEMPLATE='template0';
+
+/**
+ * Criar base de dados em Linux
+
+CREATE DATABASE recart WITH ENCODING 'UTF8' LC_COLLATE='pt_PT.UTF-8' LC_CTYPE='pt_PT.UTF-8' TEMPLATE='template0';
+ */
 
 /**
  * Conectar a base de dados recart
