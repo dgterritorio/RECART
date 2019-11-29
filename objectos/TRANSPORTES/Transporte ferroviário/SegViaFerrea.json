@@ -47,7 +47,7 @@
 			"Tipo": "Lista de códigos",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Estado da infraestrutura."
+			"Definição": "Estado da instalação."
 		}, {
 			"Atributo": "valorPosicaoVerticalTransportes",
 			"Multip.": "1",
@@ -147,53 +147,39 @@
 			"nome": "valorEstadoLinhaFerrea",
 			"valores": [{
 				"Valores": "1",
+				"Descrição": "Desmantelada",
+				"Valores INSPIRE": "decommissioned",
+				"D1": "",
+				"D2": "",
+				"Definição": "A instalação já não é utilizada e foi ou está a ser desmantelada."
+			}, {
+				"Valores": "2",
 				"Descrição": "Em construção",
 				"Valores INSPIRE": "underConstruction",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Linha ferroviária em construção iniciada e não concluída."
+				"Definição": "A instalação encontra-se em fase de construção e ainda não está funcional. Este valor aplica-se unicamente à construção inicial da instalação e não a trabalhos de manutenção."
 			}, {
-				"Valores": "2",
-				"Descrição": "Em projeto",
+				"Valores": "3",
+				"Descrição": "Em desuso",
+				"Valores INSPIRE": "disused",
+				"D1": "",
+				"D2": "",
+				"Definição": "A instalação já não é utilizada, mas não está a ser ou não foi desmantelada (linha férrea fora de serviço)."
+			}, {
+				"Valores": "4",
+				"Descrição": "Projetada",
 				"Valores INSPIRE": "projected",
 				"D1": "",
 				"D2": "",
-				"Definição": "Linha ferroviária em fase de projeto. "
-			}, {
-				"Valores": "3",
-				"Descrição": "Linha em exploração",
-				"Valores INSPIRE": "functional",
-				"D1": "",
-				"D2": "",
-				"Definição": "Linha ferroviária aberta ao tráfego."
-			}, {
-				"Valores": "4",
-				"Descrição": "Linha fechada ao tráfego",
-				"Valores INSPIRE": "disused",
-				"D1": "",
-				"D2": "",
-				"Definição": "Linha ferroviária não utilizada em condições normais."
+				"Definição": "A instalação encontra-se em fase de projeto. Os trabalhos de construção ainda não tiveram início."
 			}, {
 				"Valores": "5",
-				"Descrição": "Ramal particular",
+				"Descrição": "Funcional",
 				"Valores INSPIRE": "functional",
-				"D1": "",
-				"D2": "",
-				"Definição": "Troço de via férrea que penetra diretamente nas instalações de uma empresa."
-			}, {
-				"Valores": "6",
-				"Descrição": "Linha desafetada",
-				"Valores INSPIRE": "disused",
-				"D1": "",
-				"D2": "",
-				"Definição": "Linha ferroviária fora de serviço."
-			}, {
-				"Valores": "7",
-				"Descrição": "Linha desmantelada",
-				"Valores INSPIRE": "decommissioned",
-				"D1": "",
-				"D2": "",
-				"Definição": "A linha ferroviária já não é utilizada e foi ou está a ser desmantelada."
+				"D1": "x",
+				"D2": "x",
+				"Definição": "A instalação está concluída, independentemente de estar ou não a ser utilizada para o fim a que se destina  (a linha férrea pode estar em exploração, fechada ao tráfego ou corresponder a um ramal particular)."
 			}]
 		}, {
 			"nome": "valorPosicaoVerticalTransportes",
