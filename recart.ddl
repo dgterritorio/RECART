@@ -1,12 +1,12 @@
 /**
- * Para executar o script executar `psql -U postgres postgres -f recart.ddl`
+ * Para executar o script executar `psql -f recart.ddl -U postgres postgres`
  */
 
 /**
  * Criar base de dados
  */
 
-CREATE DATABASE recart WITH ENCODING 'UTF8' LC_COLLATE='pt_PT.UTF-8' LC_CTYPE='pt_PT.UTF-8' TEMPLATE='template0';
+CREATE DATABASE recart WITH ENCODING 'UTF8' LC_COLLATE='Portuguese_Portugal' LC_CTYPE='Portuguese_Portugal' TEMPLATE='template0';
 
 /**
  * Conectar a base de dados recart
@@ -1212,8 +1212,8 @@ CREATE TABLE margem (
 SELECT AddGeometryColumn ('public','margem','geometria',3763,'POLYGON',2);
 ALTER TABLE margem ALTER COLUMN geometria SET NOT NULL;
 
--- Linha, Poligono
-CREATE TABLE curso_de_agua (
+-- Linha
+CREATE TABLE curso_de_agua_eixo (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
@@ -1223,7 +1223,7 @@ CREATE TABLE curso_de_agua (
 	ficticio bool NOT NULL,
 	largura real,
 	id_hidrografico varchar(255),
-	id_area_curso_de_agua uuid,
+	id_curso_de_agua_area uuid,
 	ordem_hidrologica varchar(255),
 	origem_natural bool,
 	valor_curso_de_agua varchar(10) NOT NULL,
@@ -1232,11 +1232,11 @@ CREATE TABLE curso_de_agua (
 	PRIMARY KEY (identificador)
 );
 
-SELECT AddGeometryColumn ('public','curso_de_agua','geometria',3763,'LINESTRING',3);
-ALTER TABLE curso_de_agua ALTER COLUMN geometria SET NOT NULL;
+SELECT AddGeometryColumn ('public','curso_de_agua_eixo','geometria',3763,'LINESTRING',3);
+ALTER TABLE curso_de_agua_eixo ALTER COLUMN geometria SET NOT NULL;
 
 -- Poligono
-CREATE TABLE area_curso_de_agua (
+CREATE TABLE curso_de_agua_area (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
@@ -1244,8 +1244,8 @@ CREATE TABLE area_curso_de_agua (
 	PRIMARY KEY (identificador)
 );
 
-SELECT AddGeometryColumn ('public','area_curso_de_agua','geometria',3763,'POLYGON',3);
-ALTER TABLE area_curso_de_agua ALTER COLUMN geometria SET NOT NULL;
+SELECT AddGeometryColumn ('public','curso_de_agua_area','geometria',3763,'POLYGON',3);
+ALTER TABLE curso_de_agua_area ALTER COLUMN geometria SET NOT NULL;
 
 -- Ponto, Poligono
 CREATE TABLE queda_de_agua (
@@ -1385,9 +1385,9 @@ ALTER TABLE nascente ADD CONSTRAINT valor_tipo_nascente_id FOREIGN KEY (valor_ti
 ALTER TABLE agua_lentica ADD CONSTRAINT valor_agua_lentica_id FOREIGN KEY (valor_agua_lentica) REFERENCES valor_agua_lentica (identificador);
 ALTER TABLE agua_lentica ADD CONSTRAINT valor_persistencia_hidrologica_id FOREIGN KEY (valor_persistencia_hidrologica) REFERENCES valor_persistencia_hidrologica (identificador);
 ALTER TABLE margem ADD CONSTRAINT valor_tipo_margem_id FOREIGN KEY (valor_tipo_margem) REFERENCES valor_tipo_margem (identificador);
-ALTER TABLE curso_de_agua ADD CONSTRAINT valor_curso_de_agua_id FOREIGN KEY (valor_curso_de_agua) REFERENCES valor_curso_de_agua (identificador);
-ALTER TABLE curso_de_agua ADD CONSTRAINT valor_persistencia_hidrologica_id FOREIGN KEY (valor_persistencia_hidrologica) REFERENCES valor_persistencia_hidrologica (identificador);
-ALTER TABLE curso_de_agua ADD CONSTRAINT valor_posicao_vertical_id FOREIGN KEY (valor_posicao_vertical) REFERENCES valor_posicao_vertical (identificador);
+ALTER TABLE curso_de_agua_eixo ADD CONSTRAINT valor_curso_de_agua_id FOREIGN KEY (valor_curso_de_agua) REFERENCES valor_curso_de_agua (identificador);
+ALTER TABLE curso_de_agua_eixo ADD CONSTRAINT valor_persistencia_hidrologica_id FOREIGN KEY (valor_persistencia_hidrologica) REFERENCES valor_persistencia_hidrologica (identificador);
+ALTER TABLE curso_de_agua_eixo ADD CONSTRAINT valor_posicao_vertical_id FOREIGN KEY (valor_posicao_vertical) REFERENCES valor_posicao_vertical (identificador);
 ALTER TABLE zona_humida ADD CONSTRAINT valor_zona_humida_id FOREIGN KEY (valor_zona_humida) REFERENCES valor_zona_humida (identificador);
 ALTER TABLE no_hidrografico ADD CONSTRAINT valor_tipo_no_hidrografico_id FOREIGN KEY (valor_tipo_no_hidrografico) REFERENCES valor_tipo_no_hidrografico (identificador);
 ALTER TABLE barreira ADD CONSTRAINT valor_barreira_id FOREIGN KEY (valor_barreira) REFERENCES valor_barreira (identificador);

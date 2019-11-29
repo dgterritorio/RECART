@@ -3,8 +3,8 @@
 		"Tema": "HIDROGRAFIA",
 		"Característica geográfica": "Área do Curso de água",
 		"Objeto INSPIRE": "Watercourse",
-		"objeto": "AreaCursoDeAgua",
-		"Definição": "Traçado ou trajeto das águas de um rio, riacho, ribeira ou outra corrente.",
+		"objeto": "CursoDeAguaArea",
+		"Definição": "Área limite das águas de um rio, ribeira ou outra corrente natural ou artificial.",
 		"Dim.": "3D",
 		"Atributos": [{
 			"Atributo": "identificador",
