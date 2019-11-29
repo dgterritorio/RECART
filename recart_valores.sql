@@ -474,7 +474,7 @@ INSERT INTO valor_tipo_uso_infra_trans_ferrov VALUES ('3','Misto');
 INSERT INTO valor_tipo_via_cabo VALUES ('1','Cabina');
 INSERT INTO valor_tipo_via_cabo VALUES ('2','Cadeira');
 INSERT INTO valor_tipo_via_cabo VALUES ('3','Teleski');
-INSERT INTO valor_utilizacao_atual VALUES ('1','Residencial');
+INSERT INTO valor_utilizacao_atual VALUES ('1','Habitação');
 INSERT INTO valor_utilizacao_atual VALUES ('1.1','Residencial');
 INSERT INTO valor_utilizacao_atual VALUES ('1.2','Asssociado à residencia');
 INSERT INTO valor_utilizacao_atual VALUES ('2','Agricultura e pescas');
