@@ -73,8 +73,8 @@ ALTER TABLE area_agricola_florestal_mato ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE areas_artificializadas (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
-	inst_producao_id uuid NOT NULL,
-	inst_gestao_ambiental_id uuid NOT NULL,
+	inst_producao_id uuid,
+	inst_gestao_ambiental_id uuid,
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
 	valor_areas_artificializadas varchar(10) NOT NULL,
