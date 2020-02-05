@@ -551,6 +551,8 @@ CREATE TABLE edificio (
 	valor_elemento_edificio_xy varchar(10) NOT NULL,
 	valor_elemento_edificio_z varchar(10) NOT NULL,
 	valor_forma_edificio varchar(10),
+	valor_utilizacao_atual varchar(10) NOT NULL,
+   	numero_policia varchar(10),
 	PRIMARY KEY (identificador)
 );
 
