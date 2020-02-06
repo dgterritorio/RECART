@@ -636,12 +636,6 @@ CREATE TABLE valor_ordem (
 	PRIMARY KEY (identificador)
 );
 
-CREATE TABLE valor_metodo_aquis (
-	identificador varchar(10) NOT NULL,
-	descricao varchar(255) NOT NULL,
-	PRIMARY KEY (identificador)
-);
-
 CREATE TABLE valor_tipo_construcao (
 	identificador varchar(10) NOT NULL,
 	descricao varchar(255) NOT NULL,
@@ -1344,12 +1338,6 @@ CREATE TABLE valor_tipo_nascente (
 	PRIMARY KEY (identificador)
 );
 
-CREATE TABLE valor_origem (
-	identificador varchar(10) NOT NULL,
-	descricao varchar(255) NOT NULL,
-	PRIMARY KEY (identificador)
-);
-
 CREATE TABLE valor_tipo_no_hidrografico (
 	identificador varchar(10) NOT NULL,
 	descricao varchar(255) NOT NULL,
@@ -1374,17 +1362,6 @@ CREATE TABLE valor_zona_humida (
 	PRIMARY KEY (identificador)
 );
 
-CREATE TABLE valor_elemento_associado_rede_agua (
-	identificador varchar(10) NOT NULL,
-	descricao varchar(255) NOT NULL,
-	PRIMARY KEY (identificador)
-);
-
-CREATE TABLE valor_prop_gravidade (
-	identificador varchar(10) NOT NULL,
-	descricao varchar(255) NOT NULL,
-	PRIMARY KEY (identificador)
-);
 
 ALTER TABLE nascente ADD CONSTRAINT valor_persistencia_hidrologica_id FOREIGN KEY (valor_persistencia_hidrologica) REFERENCES valor_persistencia_hidrologica (identificador);
 ALTER TABLE nascente ADD CONSTRAINT valor_tipo_nascente_id FOREIGN KEY (valor_tipo_nascente) REFERENCES valor_tipo_nascente (identificador);
