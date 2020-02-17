@@ -5,7 +5,7 @@
 		"Objeto INSPIRE": "",
 		"objeto": "ElemAssocPGQ",
 		"Definição": "Infraestrutura de armazenamento ou distribuição de produtos químicos.",
-		"Dim.": "2D",
+		"Dim.": "-",
 		"Atributos": [{
 			"Atributo": "identificador",
 			"Multip.": "1",
@@ -28,13 +28,13 @@
 			"D1": "x",
 			"D2": "x"
 		}, {
-			"Atributo": "geometria",
+			"Atributo": "localizacaoElemAssocPGQ",
 			"Multip.": "1",
-			"Tipo": "Geometria (ponto; polígono)",
+			"Tipo": "Construções: Edifício",
 			"D1": "x",
 			"D2": "x",
-			"Definição": ""
-		}, {
+			"Definição": "Local geográfico da infraestrutura."
+		},{
 			"Atributo": "valorElementoAssociadoPGQ",
 			"Multip.": "1",
 			"Tipo": "Lista de códigos",

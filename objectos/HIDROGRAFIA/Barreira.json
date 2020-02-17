@@ -30,7 +30,7 @@
 		}, {
 			"Atributo": "geometria",
 			"Multip.": "1",
-			"Tipo": "Geometria (ponto; polígono)",
+			"Tipo": "Geometria (linha; polígono)",
 			"D1": "x",
 			"D2": "x",
 			"Definição": ""
@@ -74,18 +74,32 @@
 				"Definição": "Obra hidráulica, construída sobre um rio ou em zona portuária, com uma ou várias comportas, que permite a navegação quando é necessário vencer grandes desníveis."
 			}, {
 				"Valores": "3",
-				"Descrição": "Açude",
+				"Descrição": "Barreira da barragem de betão",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Construção de pedra, terra, madeira ou betão, transversal ao percurso de um curso de água de modo a reter águas e canalizá-las para diversos fins."
+				"Definição": "Barreira numa barragem de betão que retém a água de um curso de água."
 			}, {
 				"Valores": "4",
-				"Descrição": "Represa",
+				"Descrição": "Barreira da barragem de terra",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Pequena barreira natural que retém a água de um curso de água."
+				"Definição": "Barreira numa barragem de terra que retém a água de um curso de água."
+			}, {
+				"Valores": "5",
+				"Descrição": "Barreira do açude ou represa",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Pequena barreira artificial ou natural que retém a água de um curso de água."
+			}, {
+				"Valores": "6",
+				"Descrição": "Dique",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Obra hidráulica, construída para desviar ou conter a invasão da água do mar ou de um curso de água."
 			}]
 		}]
 	}

@@ -287,17 +287,15 @@ CREATE TABLE conduta_de_agua (
 SELECT AddGeometryColumn ('public','conduta_de_agua','geometria',3763,'LINESTRING',2);
 ALTER TABLE conduta_de_agua ALTER COLUMN geometria SET NOT NULL;
 
--- Ponto, Poligono
 CREATE TABLE elem_assoc_pgq (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
+	edificio_id uuid NOT NULL,
 	valor_elemento_associado_pgq varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
-SELECT AddGeometryColumn ('public','elem_assoc_pgq','geometria',3763,'GEOMETRY',2);
-ALTER TABLE elem_assoc_pgq ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE oleoduto_gasoduto_subtancias_quimicas (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
@@ -1449,6 +1447,17 @@ RAISE EXCEPTION 'Invalid geometry type only point or polygon are accepted!';
 END;
 $BODY$ LANGUAGE plpgsql VOLATILE;
 
+/**
+ * Cria trigger para validacao de geometria linha ou poligono
+ */
+CREATE OR REPLACE FUNCTION trigger_linestring_polygon_validation() RETURNS trigger AS $BODY$
+BEGIN
+if(st_geometrytype(NEW.geometria) like 'ST_Linestring' OR st_geometrytype(NEW.geometria) like 'ST_Polygon') then
+	RETURN NEW;
+end if;
+RAISE EXCEPTION 'Invalid geometry type only linestring or polygon are accepted!';
+END;
+$BODY$ LANGUAGE plpgsql VOLATILE;
 
 /**
  * Cria trigger dominio Equipamento Urbano
@@ -1461,10 +1470,6 @@ FOR EACH ROW EXECUTE PROCEDURE trigger_point_polygon_validation();
 /**
  * Cria trigger dominio Infraestruturas e Servicos Publicos
  */
-
-CREATE TRIGGER elem_assoc_pgq_geometry_check
-BEFORE INSERT ON "elem_assoc_pgq"
-FOR EACH ROW EXECUTE PROCEDURE trigger_point_polygon_validation();
 
 CREATE TRIGGER elem_assoc_agua_geometry_check
 BEFORE INSERT ON "elem_assoc_agua"
@@ -1500,7 +1505,7 @@ FOR EACH ROW EXECUTE PROCEDURE trigger_point_polygon_validation();
 
 CREATE TRIGGER barreira_geometry_check
 BEFORE INSERT ON "barreira"
-FOR EACH ROW EXECUTE PROCEDURE trigger_point_polygon_validation();
+FOR EACH ROW EXECUTE PROCEDURE trigger_linestring_polygon_validation();
 
 
 
