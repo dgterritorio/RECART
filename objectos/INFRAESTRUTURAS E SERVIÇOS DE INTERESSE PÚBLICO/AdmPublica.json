@@ -44,7 +44,7 @@
 		}, {
 			"Atributo": "localizacaoServicoPublico",
 			"Multip.": "1",
-			"Tipo": "Construções: Edifício; Ocupação do Solo: Áreas artificializadas",
+			"Tipo": "Construções: Edifício",
 			"D1": "x",
 			"D2": "x",
 			"Definição": "Local geográfico em que o serviço é prestado."

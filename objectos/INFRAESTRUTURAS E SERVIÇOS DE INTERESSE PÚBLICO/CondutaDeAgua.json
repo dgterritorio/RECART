@@ -85,7 +85,14 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Fosso longo artificial, mais ou menos largo, para conduzir as águas."
+				"Definição": "Fosso longo artificializado, mais ou menos largo, para conduzir as águas."
+			}, {
+				"Valores": "5",
+				"Descrição": "Valeta",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Fosso estreito artificial que se destina a coletar e a conduzir as águas superficiais para fora da via rodoviária."
 			}]
 		}, {
 			"nome": "valorPosicaoVertical",

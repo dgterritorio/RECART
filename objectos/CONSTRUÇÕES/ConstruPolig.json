@@ -85,7 +85,7 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Limite da área de prática desportiva."
+				"Definição": "Limite do campo de jogos."
 			}, {
 				"Valores": "6",
 				"Descrição": "Lago de jardim",
@@ -107,6 +107,13 @@
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Conjunto de assentos dispostos em filas sucessivas, cada uma num nível superior ao da anterior (existe em estádios ou anfiteatros)."
+			}, {
+				"Valores": "9",
+				"Descrição": "Passeio",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Superfície da via pública que ladeia a faixa de rodagem e que se destina à circulação de peões, ou local ou percurso urbano, geralmente largo e extenso, destinado a passeios a pé."
 			}]
 		}]
 	}
