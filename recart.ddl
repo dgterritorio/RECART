@@ -73,10 +73,11 @@ ALTER TABLE area_agricola_florestal_mato ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE areas_artificializadas (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
-	inst_producao_id uuid,
-	inst_gestao_ambiental_id uuid,
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
+	inst_producao_id uuid,
+	inst_gestao_ambiental_id uuid,
+	equip_util_coletiva_id uuid,
 	valor_areas_artificializadas varchar(10) NOT NULL,
 	nome varchar(255),
 	PRIMARY KEY (identificador)
@@ -1001,7 +1002,7 @@ CREATE TABLE infra_trans_rodov (
 SELECT AddGeometryColumn ('public','infra_trans_rodov','geometria',3763,'POINT',2);
 ALTER TABLE infra_trans_rodov ALTER COLUMN geometria SET NOT NULL;
 
-CREATE TABLE valor_tipo_servico_infra_trans_rodov (
+CREATE TABLE lig_valor_tipo_servico_infra_trans_rodov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	infra_trans_rodov_id uuid NOT NULL,
 	valor_tipo_servico_id varchar(10) NOT NULL,
@@ -1145,8 +1146,8 @@ CREATE TABLE valor_tipo_no_trans_rodov (
 	PRIMARY KEY (identificador)
 );
 
-ALTER TABLE valor_tipo_servico_infra_trans_rodov ADD CONSTRAINT valor_tipo_servico_infra_trans_rodov_infra_trans_rodov FOREIGN KEY (infra_trans_rodov_id) REFERENCES infra_trans_rodov (identificador);
-ALTER TABLE valor_tipo_servico_infra_trans_rodov ADD CONSTRAINT valor_tipo_servico_infra_trans_rodov_valor_tipo_servico FOREIGN KEY (valor_tipo_servico_id) REFERENCES valor_tipo_servico (identificador);
+ALTER TABLE lig_valor_tipo_servico_infra_trans_rodov ADD CONSTRAINT valor_tipo_servico_infra_trans_rodov_infra_trans_rodov FOREIGN KEY (infra_trans_rodov_id) REFERENCES infra_trans_rodov (identificador);
+ALTER TABLE lig_valor_tipo_servico_infra_trans_rodov ADD CONSTRAINT valor_tipo_servico_infra_trans_rodov_valor_tipo_servico FOREIGN KEY (valor_tipo_servico_id) REFERENCES valor_tipo_servico (identificador);
 ALTER TABLE seg_via_rodov ADD CONSTRAINT valor_caract_fisica_rodov_id FOREIGN KEY (valor_caract_fisica_rodov) REFERENCES valor_caract_fisica_rodov (identificador);
 ALTER TABLE seg_via_rodov ADD CONSTRAINT valor_estado_via_rodov_id FOREIGN KEY (valor_estado_via_rodov) REFERENCES valor_estado_via_rodov (identificador);
 ALTER TABLE seg_via_rodov ADD CONSTRAINT valor_posicao_vertical_transportes_id FOREIGN KEY (valor_posicao_vertical_transportes) REFERENCES valor_posicao_vertical_transportes (identificador);
@@ -1401,6 +1402,7 @@ ALTER TABLE area_trabalho ALTER COLUMN geometria SET NOT NULL;
 
 ALTER TABLE areas_artificializadas ADD CONSTRAINT localizacao_instalacao_ambiental FOREIGN KEY (inst_gestao_ambiental_id) REFERENCES inst_gestao_ambiental (identificador);
 ALTER TABLE areas_artificializadas ADD CONSTRAINT localizacao_instalacao_producao FOREIGN KEY (inst_producao_id) REFERENCES inst_producao (identificador);
+ALTER TABLE areas_artificializadas ADD CONSTRAINT localizacao_equip_util_coletiva FOREIGN KEY (equip_util_coletiva_id) REFERENCES equip_util_coletiva (identificador);
 
 /**
  * Dominio Construcoes
@@ -1414,8 +1416,8 @@ ALTER TABLE edificio ADD CONSTRAINT localizacao_instalacao_producao FOREIGN KEY 
  */
 
 ALTER TABLE lig_adm_publica_edificio ADD CONSTRAINT localizacao_servico_publico_1 FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
-
 ALTER TABLE lig_equip_util_coletiva_edificio ADD CONSTRAINT localizacao_servico_publico_2 FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
+ALTER TABLE elem_assoc_pgq ADD CONSTRAINT localizacao_elem_assoc_pgq FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
 
 /**
  * Dominio Transporte Ferroviario
