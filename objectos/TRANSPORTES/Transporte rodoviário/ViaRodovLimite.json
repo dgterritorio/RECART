@@ -53,18 +53,25 @@
 			"nome": "valorTipoLimite",
 			"valores": [{
 				"Valores": "1",
-				"Descrição": "Limite",
+				"Descrição": "Limite exterior sem berma",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Linha que materializa o limite da via rodoviária."
+				"Definição": "Linha que materializa o limite da via rodoviária pelo limite exterior da zona utilizada pelo tráfego (sem berma direita), ou seja, pelo limite geométrico exterior da faixa de rodagem (constituída unicamente pela largura das vias de trânsito), caso exista sinalização horizontal (guia). Caso esta sinalização não exista, também não existirá berma direita e como tal o limite da via rodoviária coincide com o limite exterior da área pavimentada ou não pavimentada."
 			}, {
 				"Valores": "2",
 				"Descrição": "Separador",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Linha que delimita a área destinada a separar o tráfego do mesmo sentido ou de sentidos opostos, incluindo rotunda, separador central ou lateral e ilhéu direcional ou dispositivo semelhante."
+				"Definição": "Linha que delimita a área destinada a separar o tráfego do mesmo sentido ou de sentidos opostos, incluindo, caso exista, as bermas esquerdas. Aplica-se em: rotunda, separador central (distância entre os bordos interiores das faixas unidirecionais) ou lateral, ilhéu direcional ou dispositivo semelhante."
+			}, {
+				"Valores": "3",
+				"Descrição": "Limite exterior com berma pavimentada",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Linha que materializa o limite da via rodoviária pelo limite exterior da berma direita pavimentada, caso exista sinalização horizontal (guia). Caso esta sinalização não exista também não existirá berma direita e como tal o limite da via rodoviária não é representável."
 			}]
 		}]
 	}

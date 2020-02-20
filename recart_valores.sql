@@ -365,8 +365,9 @@ INSERT INTO valor_tipo_infra_trans_rodov VALUES ('8','Posto de abastecimento de 
 INSERT INTO valor_tipo_infra_trans_via_navegavel VALUES ('1','Porto');
 INSERT INTO valor_tipo_infra_trans_via_navegavel VALUES ('2','Cais');
 INSERT INTO valor_tipo_infra_trans_via_navegavel VALUES ('3','Doca');
-INSERT INTO valor_tipo_limite VALUES ('1','Limite');
+INSERT INTO valor_tipo_limite VALUES ('1','Limite exterior sem berma');
 INSERT INTO valor_tipo_limite VALUES ('2','Separador');
+INSERT INTO valor_tipo_limite VALUES ('3','Limite exterior com berma pavimentada');
 INSERT INTO valor_tipo_linha_ferrea VALUES ('1','Ferrovia de cremalheira');
 INSERT INTO valor_tipo_linha_ferrea VALUES ('2','Funicular');
 INSERT INTO valor_tipo_linha_ferrea VALUES ('3','Levitação magnética');
