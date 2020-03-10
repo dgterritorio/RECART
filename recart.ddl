@@ -381,15 +381,17 @@ SELECT AddGeometryColumn ('public','cabo_electrico','geometria',3763,'LINESTRING
 ALTER TABLE cabo_electrico ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE lig_adm_publica_edificio (
+	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	adm_publica_id uuid NOT NULL,
 	edificio_id uuid NOT NULL,
-	PRIMARY KEY (adm_publica_id, edificio_id)
+	PRIMARY KEY (identificador)
 );
 
 CREATE TABLE lig_equip_util_coletiva_edificio (
+	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	equip_util_coletiva_id uuid NOT NULL,
 	edificio_id uuid NOT NULL,
-	PRIMARY KEY (equip_util_coletiva_id, edificio_id)
+	PRIMARY KEY (identificador)
 );
 
 CREATE TABLE valor_elemento_associado_pgq (
@@ -1416,7 +1418,9 @@ ALTER TABLE edificio ADD CONSTRAINT localizacao_instalacao_producao FOREIGN KEY 
  */
 
 ALTER TABLE lig_adm_publica_edificio ADD CONSTRAINT localizacao_servico_publico_1 FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
-ALTER TABLE lig_equip_util_coletiva_edificio ADD CONSTRAINT localizacao_servico_publico_2 FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
+ALTER TABLE lig_adm_publica_edificio ADD CONSTRAINT localizacao_servico_publico_2 FOREIGN KEY (adm_publica_id) REFERENCES adm_publica (identificador);
+ALTER TABLE lig_equip_util_coletiva_edificio ADD CONSTRAINT localizacao_equip_util_coletiva_1 FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
+ALTER TABLE lig_equip_util_coletiva_edificio ADD CONSTRAINT localizacao_equip_util_coletiva_2 FOREIGN KEY (equip_util_coletiva_id) REFERENCES equip_util_coletiva (identificador);
 ALTER TABLE elem_assoc_pgq ADD CONSTRAINT localizacao_elem_assoc_pgq FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
 
 /**
