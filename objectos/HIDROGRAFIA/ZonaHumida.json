@@ -44,10 +44,10 @@
 		}, {
 			"Atributo": "iDHidrografico",
 			"Multip.": "1",
-			"Tipo": "Identificador hidrográfico",
+			"Tipo": "Texto",
 			"D1": "",
 			"D2": "",
-			"Definição": "Identificador utilizado para identificar o objeto hidrográfico no mundo real. "
+			"Definição": "Identificador do objeto no mundo real."
 		}, {
 			"Atributo": "mare",
 			"Multip.": "1",
