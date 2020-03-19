@@ -43,7 +43,7 @@
 			"Definição": "Categoria da infraestrutura de transporte aéreo."
 		}, {
 			"Atributo": "valorRestricaoInfraTransAereo",
-			"Multip.": "1",
+			"Multip.": "[0..1]",
 			"Tipo": "Lista de códigos",
 			"D1": "x",
 			"D2": "x",

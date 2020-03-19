@@ -57,7 +57,7 @@
 			"Definição": "Identificação da ordem a que pertence o sinal geodésico."
 		}, {
 			"Atributo": "valorTipoSinalGeodesico",
-			"Multip.": "[1..*]",
+			"Multip.": "[1]",
 			"Tipo": "Lista de códigos",
 			"D1": "x",
 			"D2": "x",

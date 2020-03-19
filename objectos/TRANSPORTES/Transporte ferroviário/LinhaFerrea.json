@@ -4,7 +4,7 @@
 		"Característica geográfica": "Linha férrea",
 		"Objeto INSPIRE": "RailwayLine",
 		"objeto": "LinhaFerrea",
-		"Definição": "Caracterização da linha férrea. Corresponde a um extrato do catálogo de linhas férreas para  a área geográfica representada.",
+		"Definição": "Caracterização da linha férrea para a área geográfica representada.",
 		"Dim.": "-",
 		"Atributos": [{
 			"Atributo": "identificador",
@@ -40,7 +40,7 @@
 			"Tipo": "Texto",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Nome da linha férrea."
+			"Definição": "Nome da linha férrea. Para as vias não catalogadas inserir a designação que caracteriza a linha férrea."
 		}],
 		"listas de códigos": []
 	}

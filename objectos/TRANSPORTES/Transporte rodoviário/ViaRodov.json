@@ -4,7 +4,7 @@
 		"Característica geográfica": "Via rodoviária",
 		"Objeto INSPIRE": "Road",
 		"objeto": "ViaRodov",
-		"Definição": "Caracterização das vias rodoviárias. Corresponde a um extrato do catálogo de vias rodoviárias para  a área geográfica representada.",
+		"Definição": "Caracterização das vias rodoviárias para a área geográfica representada.",
 		"Dim.": "-",
 		"Atributos": [{
 			"Atributo": "identificador",
@@ -40,49 +40,49 @@
 			"Tipo": "Data",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Data em que a via rodoviária foi registada no catálogo de vias rodoviárias."
+			"Definição": "Data em que a via rodoviária foi registada no catálogo de vias rodoviárias. Para as vias não catalogadas inserir data do trabalho."
 		}, {
 			"Atributo": "fonteAquisicaoDados",
 			"Multip.": "1",
 			"Tipo": "Texto",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Identificação da fonte dos dados."
+			"Definição": "Identificação da fonte de dados registada no catálogo de vias rodoviárias. Para as vias não catalogadas inserir a fonte de dados utilizada."
 		}, {
 			"Atributo": "nome",
 			"Multip.": "1",
 			"Tipo": "Texto",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Nome da via rodoviária que consta no catálogo."
+			"Definição": "Nome da via rodoviária que consta no catálogo. Para as vias não catalogadas inserir o nome que caracteriza a via."
 		}, {
 			"Atributo": "nomeAlternativo",
 			"Multip.": "[0..1]",
 			"Tipo": "Texto",
 			"D1": "",
 			"D2": "",
-			"Definição": "Nome alternativo da via rodoviária que consta no catálogo."
+			"Definição": "Nome alternativo da via rodoviária que consta no catálogo. Para as vias não catalogadas inserir o nome alternativo (caso exista) que caracteriza a via."
 		}, {
 			"Atributo": "tipoViaRodovAbv",
 			"Multip.": "1",
 			"Tipo": "Texto",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Identificação do tipo de via rodoviária como consta no catálogo de vias rodoviárias - Abreviatura (tipoViaRodovAbv)."
+			"Definição": "Identificação do tipo de via rodoviária como consta no catálogo de vias rodoviárias - Abreviatura (tipoViaRodovAbv). Para as vias não catalogadas inserir a abreviatura que caracteriza a via."
 		}, {
 			"Atributo": "tipoViaRodovC",
 			"Multip.": "1",
 			"Tipo": "Texto",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Identificação do tipo de via rodoviária como consta no catálogo de vias rodoviárias - Código (tipoViaRodovC)."
+			"Definição": "Identificação do tipo de via rodoviária como consta no catálogo de vias rodoviárias - Código (tipoViaRodovC). Para as vias não catalogadas inserir a abreviatura que caracteriza a via."
 		}, {
 			"Atributo": "tipoViaRodovD",
 			"Multip.": "1",
 			"Tipo": "Texto",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Identificação do tipo de via rodoviária como consta no catálogo de vias rodoviárias - Designação (tipoViaRodovD)."
+			"Definição": "Identificação do tipo de via rodoviária como consta no catálogo de vias rodoviárias - Designação (tipoViaRodovD). Para as vias não catalogadas inserir a abreviatura que caracteriza a via."
 		}],
 		"listas de códigos": []
 	}
