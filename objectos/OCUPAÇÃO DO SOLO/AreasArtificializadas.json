@@ -95,46 +95,25 @@
 				"Definição": "Área em construção (inclui escavações, estaleiros de obra, etc.) e áreas abandonadas inseridas num contexto urbano."
 			}, {
 				"Valores": "7",
-				"Descrição": "Parque e jardim",
+				"Descrição": "Instalação desportiva e de lazer",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Área de terreno relvado ou arborizado que inclui parque, jardim de enquadramento da estrutura urbana, área de floresta ou bosque para uso público com funções de recreio, jardim botânico, etc."
+				"Definição": "Área ocupada por instalações desportivas (estádios de futebol e infraestruturas anexas, estádios de hóquei, piscinas e campos de ténis, pistas de ciclismo, hipódromos, pistas de atletismo, campos de tiro, etc.) e por outros equipamentos de lazer (parques e jardins, áreas verdes, campos de golfe, etc.)."
 			}, {
 				"Valores": "8",
-				"Descrição": "Área verde",
-				"Valores INSPIRE": "",
-				"D1": "x",
-				"D2": "x",
-				"Definição": "Área verde em contexto urbano."
-			}, {
-				"Valores": "9",
-				"Descrição": "Campo de golfe",
-				"Valores INSPIRE": "",
-				"D1": "x",
-				"D2": "x",
-				"Definição": "Área delimitada para a prática de golfe, na qual se pode observar pequenos bosques, lagos, relvados e outras infraestruturas associadas."
-			}, {
-				"Valores": "10",
-				"Descrição": "Instalação desportiva e equipamentos de lazer",
-				"Valores INSPIRE": "",
-				"D1": "x",
-				"D2": "x",
-				"Definição": "Área ocupada por instalações desportivas (estádios de futebol e infraestruturas anexas, estádios de hóquei, piscinas e campos de ténis, pistas de ciclismo, hipódromos, pistas de atletismo, campos de tiro, etc.) e por outros equipamentos de lazer."
-			}, {
-				"Valores": "11",
 				"Descrição": "Parque de campismo",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Área ocupada por estruturas de apoio ao campismo ou ao caravanismo."
 			}, {
-				"Valores": "12",
-				"Descrição": "Cemitério",
+				"Valores": "9",
+				"Descrição": "Área de inumação",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Terreno ou local, geralmente murado, destinado à sepultura dos defuntos."
+				"Definição": "Terreno ou local, geralmente murado, destinado à sepultura dos defuntos (exemplo: cemitérios)."
 			}]
 		}]
 	}

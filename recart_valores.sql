@@ -41,12 +41,9 @@ INSERT INTO valor_areas_artificializadas VALUES ('3','Equipamentos industriais')
 INSERT INTO valor_areas_artificializadas VALUES ('4','Equipamentos comerciais ou de carácter geral');
 INSERT INTO valor_areas_artificializadas VALUES ('5','Área de deposição de resíduos');
 INSERT INTO valor_areas_artificializadas VALUES ('6','Área em construção');
-INSERT INTO valor_areas_artificializadas VALUES ('7','Parque e jardim');
-INSERT INTO valor_areas_artificializadas VALUES ('8','Área verde');
-INSERT INTO valor_areas_artificializadas VALUES ('9','Campo de golfe');
-INSERT INTO valor_areas_artificializadas VALUES ('10','Instalação desportiva e equipamentos de lazer');
-INSERT INTO valor_areas_artificializadas VALUES ('11','Parque de campismo');
-INSERT INTO valor_areas_artificializadas VALUES ('12','Cemitério');
+INSERT INTO valor_areas_artificializadas VALUES ('7','Instalação desportiva e de lazer');
+INSERT INTO valor_areas_artificializadas VALUES ('8','Parque de campismo');
+INSERT INTO valor_areas_artificializadas VALUES ('9','Área de inumação');
 INSERT INTO valor_barreira VALUES ('1','Comporta');
 INSERT INTO valor_barreira VALUES ('2','Eclusa');
 INSERT INTO valor_barreira VALUES ('3','Barreira da barragem de betão');
