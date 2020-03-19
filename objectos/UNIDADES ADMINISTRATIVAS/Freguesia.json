@@ -35,6 +35,13 @@
 			"D2": "x",
 			"Definição": ""
 		}, {
+			"Atributo": "dataPublicacao",
+			"Multip.": "1",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Data da publicação da Carta Administrativa Oficial de Portugal em vigor."
+		}, {
 			"Atributo": "dicofre",
 			"Multip.": "1",
 			"Tipo": "Texto",

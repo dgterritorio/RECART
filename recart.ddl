@@ -201,6 +201,7 @@ CREATE TABLE distrito (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
+	data_publicacao date NOT NULL,
 	di varchar(255) NOT NULL,
 	nome varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -213,6 +214,7 @@ CREATE TABLE concelho (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
+	data_publicacao date NOT NULL,
 	dico varchar(255) NOT NULL,
 	nome varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -225,6 +227,7 @@ CREATE TABLE freguesia (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
+	data_publicacao date NOT NULL,
 	dicofre varchar(255) NOT NULL,
 	nome varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -238,6 +241,7 @@ CREATE TABLE fronteira (
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
 	valor_estado_fronteira varchar(10) NOT NULL,
+	data_publicacao date NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
