@@ -4,7 +4,7 @@
 		"Característica geográfica": "Sinal geodésico",
 		"Objeto INSPIRE": "",
 		"objeto": "SinalGeodesico",
-		"Definição": "Ponto da rede geodésica nacional cujas coordenadas geográficas e posição relativa, referidas a um elipsoide de referência, são conhecidas com grande exatidão. A coordenada altimétrica é representada através da altitude ortométrica no terreno.",
+		"Definição": "Ponto da rede geodésica nacional cujas coordenadas geográficas e posição relativa, referidas a um elipsoide de referência, são conhecidas com grande exatidão. A coordenada altimétrica é representada através da altitude ortométrica do topo do sinal geodésico.",
 		"Dim.": "3D",
 		"Atributos": [{
 			"Atributo": "identificador",
@@ -34,6 +34,13 @@
 			"D1": "x",
 			"D2": "x",
 			"Definição": ""
+		},{
+			"Atributo": "dataRevisao",
+			"Multip.": "1",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Data da revisão da informação sobre o sinal geodésico."
 		}, {
 			"Atributo": "valorLocalGeodesico",
 			"Multip.": "1",
