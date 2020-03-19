@@ -53,11 +53,11 @@
 				"Definição": "Infraestrutura que contém instalação ou instalações de produção de energia."
 			}, {
 				"Valores": "1.1",
-				"Descrição": "Central elétrica",
+				"Descrição": "Central hidroelétrica",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Infraestrutura que contém instalação ou instalações de uma central elétrica."
+				"Definição": "Infraestrutura que contém uma instalação de produção elétrica a partir de uma barragem."
 			}, {
 				"Valores": "1.2",
 				"Descrição": "Central fotovoltaica",
@@ -81,11 +81,11 @@
 				"Definição": "Infraestrutura que contém uma instalação de produção de energia elétrica a partir de energia libertada em forma de calor."
 			}, {
 				"Valores": "2",
-				"Descrição": "Subestação",
+				"Descrição": "Subestação elétrica",
 				"Valores INSPIRE": "subStation",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Estação numa rede de distribuição de energia elétrica, onde se faz a transformação da corrente e se fiscalizam as linhas."
+				"Definição": "Instalação de rede elétrica onde confluem diversas linhas elétricas, dotada de equipamento de corte, seccionamento, medida, controlo, proteção e transformação de tensão."
 			}, {
 				"Valores": "3",
 				"Descrição": "Aeromotor",
@@ -106,49 +106,63 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "",
-				"Definição": "Equipamento utilizado para converter a energia solar em energia elétrica quando não estão sobre edifícios."
+				"Definição": "Equipamento utilizado para converter a energia solar em energia elétrica quando não estão sobre edifícios nem incluídos em centrais fotovoltaicas."
 			}, {
 				"Valores": "6",
-				"Descrição": "Poste de iluminação",
+				"Descrição": "Apoio de iluminação",
 				"Valores INSPIRE": "streetLight",
 				"D1": "",
 				"D2": "",
+				"Definição": "Estrutura de iluminação coincidente, ou não, com apoio de baixa tensão."
+			}, {
+				"Valores": "6.1",
+				"Descrição": "Apoio isolado de iluminação",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
 				"Definição": "Haste vertical, colocada no solo ou fixada em alvenaria, para suporte de luminárias de iluminação da via pública."
+			},{
+				"Valores": "6.2",
+				"Descrição": "Apoio de iluminação e baixa tensão",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Estrutura metálica reticulada ou de betão que suporta os cabos condutores, os cabos de guarda, os isoladores e os acessórios de fixação das linhas elétricas de tensão até 1kV e que coincide com suporte de iluminação vertical da via pública."
 			}, {
 				"Valores": "7",
-				"Descrição": "Poste de eletricidade",
+				"Descrição": "Apoio de eletricidade",
 				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "",
-				"Definição": "Equipamento para suporte das linhas de transporte de energia elétrica."
+				"Definição": "Elemento metálico ou de betão de uma linha aérea destinado a suportar os cabos condutores, os cabos de guarda, os isoladores e os acessórios de fixação."
 			}, {
 				"Valores": "7.1",
-				"Descrição": "Poste de alta tensão",
+				"Descrição": "Apoio de alta tensão",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Equipamento para suporte das linhas de transporte de energia elétrica com tensão maior que 45kV e menor ou igual a 110kV destinada à indústria."
+				"Definição": "Estrutura metálica reticulada, tubular ou de betão que suporta os cabos condutores, os cabos de guarda, os isoladores e os acessórios de fixação das linhas elétricas de tensão superior a 45kV e menor ou igual a 110kV."
 			}, {
 				"Valores": "7.2",
-				"Descrição": "Poste de média tensão",
+				"Descrição": "Apoio de média tensão",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "",
-				"Definição": "Equipamento para suporte das linhas de transporte de energia elétrica com tensão maior que 1Kv e menor ou igual a 45kV destinada à indústria de componentes automóveis, metalúrgica, moldes, vitrificação, grande hotelaria, etc. "
+				"Definição": "Estrutura metálica reticulada, tubular ou de betão que suporta os cabos condutores, os cabos de guarda, os isoladores e os acessórios de fixação das linhas elétricas de tensão superior a 1kV e menor ou igual a 45kV."
 			}, {
 				"Valores": "7.3",
-				"Descrição": "Poste de baixa tensão",
+				"Descrição": "Apoio de baixa tensão",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "",
-				"Definição": "Equipamento para suporte das linhas de transporte de energia elétrica com contratadas iguais ou inferiores a 41,4kVA e uma potência mínima contratada de 1,15kVA destinada a clientes residenciais, lojas, escritórios e pequenas empresas. "
+				"Definição": "Estrutura metálica reticulada ou de betão que suporta os cabos condutores, os cabos de guarda, os isoladores e os acessórios de fixação das linhas elétricas de tensão até 1kV."
 			}, {
 				"Valores": "7.4",
-				"Descrição": "Torre de alta tensão",
+				"Descrição": "Apoio de muito alta tensão",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Equipamento de altura mínima de 20 metros, para suporte das linhas de transporte de energia elétrica superior a 110kV."
+				"Definição": "Estrutura metálica reticulada ou tubular que suporta os cabos condutores, os cabos de guarda, os isoladores e os acessórios de fixação das linhas elétricas de tensão superior a 110kV."
 			}, {
 				"Valores": "8",
 				"Descrição": "Posto transformador",
