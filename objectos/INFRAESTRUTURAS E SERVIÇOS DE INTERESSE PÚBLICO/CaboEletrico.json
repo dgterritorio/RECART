@@ -4,7 +4,7 @@
 		"Característica geográfica": "Cabo elétrico",
 		"Objeto INSPIRE": "ElectricityCable",
 		"objeto": "CaboElectrico",
-		"Definição": "Feixe de fios entrelaçados para transportar eletricidade de um local para outro. ",
+		"Definição": "Linhas elétricas aéreas ou subterrâneas destinadas ao transporte ou distribuição de energia elétrica.",
 		"Dim.": "2D",
 		"Atributos": [{
 			"Atributo": "identificador",
@@ -49,7 +49,7 @@
 			"D2": "x",
 			"Definição": "A posição vertical relativa da entidade (fenómeno no mundo real)."
 		}, {
-			"Atributo": "voltagemNominal",
+			"Atributo": "tensaoNominal",
 			"Multip.": "1",
 			"Tipo": "Real",
 			"D1": "",

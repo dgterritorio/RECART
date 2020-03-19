@@ -327,7 +327,7 @@ SELECT AddGeometryColumn ('public','elem_assoc_telecomunicacoes','geometria',376
 ALTER TABLE elem_assoc_telecomunicacoes ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE adm_publica (
-	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
+	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),nomi
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
 	nome varchar(255) NOT NULL,
@@ -375,7 +375,7 @@ CREATE TABLE cabo_electrico (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
-	voltagem_nominal real,
+	tensao_nominal real,
 	valor_designacao_tensao varchar(10) NOT NULL,
 	valor_posicao_vertical varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
