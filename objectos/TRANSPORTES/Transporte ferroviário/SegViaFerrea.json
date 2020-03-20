@@ -158,14 +158,14 @@
 				"Valores INSPIRE": "underConstruction",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "A instalação encontra-se em fase de construção e ainda não está funcional. Este valor aplica-se unicamente à construção inicial da instalação e não a trabalhos de manutenção."
+				"Definição": "A instalação encontra-se em fase de construção e ainda não está concluída. Este valor aplica-se unicamente à construção inicial da instalação e não a trabalhos de manutenção."
 			}, {
 				"Valores": "3",
 				"Descrição": "Em desuso",
 				"Valores INSPIRE": "disused",
 				"D1": "",
 				"D2": "",
-				"Definição": "A instalação já não é utilizada, mas não está a ser ou não foi desmantelada (linha férrea fora de serviço)."
+				"Definição": "A instalação já não é utilizada, mas não está a ser ou não foi desmantelada. A linha pode estar desafetada (fora de serviço) ou fechada ao tráfego (linha não utilizada em condições normais)."
 			}, {
 				"Valores": "4",
 				"Descrição": "Projetada",
@@ -177,9 +177,9 @@
 				"Valores": "5",
 				"Descrição": "Funcional",
 				"Valores INSPIRE": "functional",
-				"D1": "x",
-				"D2": "x",
-				"Definição": "A instalação está concluída, independentemente de estar ou não a ser utilizada para o fim a que se destina  (a linha férrea pode estar em exploração, fechada ao tráfego ou corresponder a um ramal particular)."
+				"D1": "",
+				"D2": "",
+				"Definição": "A linha férrea está em exploração (aberta ao tráfego)."
 			}]
 		}, {
 			"nome": "valorPosicaoVerticalTransportes",
