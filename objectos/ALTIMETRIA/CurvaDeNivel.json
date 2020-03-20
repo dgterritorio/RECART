@@ -62,8 +62,8 @@
 				"Valores": "3",
 				"Descrição": "Auxiliar",
 				"Valores INSPIRE": "auxiliary",
-				"D1": "x",
-				"D2": "x",
+				"D1": "",
+				"D2": "",
 				"Definição": "Curva estimada ou interpolada a partir das curvas de nível circundantes. Utilizada em áreas onde a informação altimétrica é insuficiente."
 			}]
 		}]
