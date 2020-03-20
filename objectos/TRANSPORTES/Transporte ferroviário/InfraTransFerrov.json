@@ -56,19 +56,19 @@
 			"D2": "",
 			"Definição": "Código da infraestrutura de transporte ferroviário."
 		}, {
-			"Atributo": "nplataformas",
-			"Multip.": "[0..1]",
-			"Tipo": "Inteiro",
-			"D1": "",
-			"D2": "",
-			"Definição": "Número de plataformas da infraestrutura de transporte ferroviário."
-		}, {
 			"Atributo": "nome",
 			"Multip.": "[0..1]",
 			"Tipo": "Texto",
 			"D1": "x",
 			"D2": "x",
 			"Definição": "Nome da infraestrutura de transporte ferroviário."
+		}, {
+			"Atributo": "nplataformas",
+			"Multip.": "[0..1]",
+			"Tipo": "Inteiro",
+			"D1": "",
+			"D2": "",
+			"Definição": "Número de plataformas da infraestrutura de transporte ferroviário."
 		}],
 		"listas de códigos": [{
 			"nome": "valorTipoInfraTransFerrov",
