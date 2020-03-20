@@ -482,11 +482,11 @@
 				"Definição": "Edifício de culto judaico."
 			}, {
 				"Valores": "26",
-				"Descrição": "Tanque de armazenamento",
+				"Descrição": "Depósito de armazenamento",
 				"Valores INSPIRE": "storageTank",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Contentor geralmente para líquidos e gases comprimidos."
+				"Definição": "Depósito geralmente para líquidos e gases comprimidos."
 			}, {
 				"Valores": "27",
 				"Descrição": "Telheiro",

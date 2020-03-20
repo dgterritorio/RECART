@@ -205,7 +205,7 @@ INSERT INTO valor_forma_edificio VALUES ('22','Pombal');
 INSERT INTO valor_forma_edificio VALUES ('23','Praça de touros');
 INSERT INTO valor_forma_edificio VALUES ('24','Silo');
 INSERT INTO valor_forma_edificio VALUES ('25','Sinagoga');
-INSERT INTO valor_forma_edificio VALUES ('26','Tanque de armazenamento');
+INSERT INTO valor_forma_edificio VALUES ('26','Depósito de armazenamento');
 INSERT INTO valor_forma_edificio VALUES ('27','Telheiro');
 INSERT INTO valor_forma_edificio VALUES ('28','Templo');
 INSERT INTO valor_forma_edificio VALUES ('29','Torre');
