@@ -64,126 +64,168 @@
 				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "",
-				"Definição": "Edifício dedicado às questões da educação ou da investigação."
+				"Definição": "Equipamento dedicado às questões da educação ou da investigação."
 			}, {
 				"Valores": "1.1",
 				"Descrição": "Creche, infantário ou ensino pré-escolar",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifício de acolhimento de crianças até aos cinco anos de idade."
+				"Definição": "Equipamento de acolhimento de crianças até aos cinco anos de idade."
 			}, {
 				"Valores": "1.2",
 				"Descrição": "Ensino básico ou secundário",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifício onde se ministra qualquer nível de escolaridade obrigatória."
+				"Definição": "Equipamento onde se ministra qualquer nível de escolaridade obrigatória."
 			}, {
 				"Valores": "1.3",
 				"Descrição": "Ensino superior e investigação",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifício onde se ministra o ensino superior ou onde se desenvolve a pesquisa científica e tecnológica."
+				"Definição": "Equipamento onde se ministra o ensino superior ou onde se desenvolve a pesquisa científica e tecnológica."
 			}, {
 				"Valores": "1.4",
 				"Descrição": "Serviços de apoio - Educação e investigação",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifício onde se prestam serviços de apoio às atividades de educação ou investigação (ex. reitoria, cantina, biblioteca, residência, etc.)."
+				"Definição": "Equipamento onde se prestam serviços de apoio às atividades de educação ou investigação (ex. reitoria, cantina, biblioteca, residência, etc.)."
 			}, {
 				"Valores": "1.5",
 				"Descrição": "Outros - Educação e investigação",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Ensino para adultos e outras atividades educativas."
+				"Definição": "Equipamento de ensino para adultos e outras atividades educativas."
 			}, {
 				"Valores": "2",
 				"Descrição": "Saúde ",
 				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "",
-				"Definição": "Edifício dedicado às questões da saúde."
+				"Definição": "Equipamento dedicado às questões da saúde."
 			}, {
 				"Valores": "2.1",
 				"Descrição": "Hospital",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifício dotado de capacidade de internamento, de ambulatório ou de meios de diagnóstico e terapêutica, com o objetivo de prestar à população assistência médica curativa e de reabilitação."
+				"Definição": "Equipamento dotado de capacidade de internamento, de ambulatório ou de meios de diagnóstico e terapêutica, com o objetivo de prestar à população assistência médica curativa e de reabilitação."
 			}, {
 				"Valores": "2.2",
 				"Descrição": "Centro de saúde",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifício de uma unidade básica do Serviço Nacional de Saúde para atendimento e prestação de cuidados de saúde à população."
+				"Definição": "Equipamento de uma unidade básica do Serviço Nacional de Saúde para atendimento e prestação de cuidados de saúde à população."
 			}, {
 				"Valores": "2.3",
 				"Descrição": "Outro - saúde",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifício onde se exercem atividades de saúde como centros de reabilitação, sanatórios, clínicas, farmácias, etc. (inclui serviços veterinários)."
+				"Definição": "Equipamento onde se exercem atividades de saúde como centros de reabilitação, sanatórios, clínicas, farmácias, etc. (inclui serviços veterinários)."
 			}, {
 				"Valores": "3",
 				"Descrição": "Ação social",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifício dedicado aos serviços de proteção social (inclui a prestação de serviços de apoio à infância, ao idoso e à pessoa com deficiência)."
+				"Definição": "Equipamento dedicado aos serviços de proteção social (inclui a prestação de serviços de apoio à infância, ao idoso e à pessoa com deficiência)."
 			}, {
 				"Valores": "4",
 				"Descrição": "Segurança e ordem pública ",
 				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "",
-				"Definição": "Edifício dedicado aos serviços de segurança e ordem pública."
+				"Definição": "Equipamento dedicado aos serviços de segurança e ordem pública."
 			}, {
 				"Valores": "4.1",
 				"Descrição": "Proteção civil e Bombeiros",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifício de controlo ou execução de operações dos serviços de proteção civil ou onde se aloja um corpo de bombeiros e respetivos meios técnicos de intervenção."
+				"Definição": "Equipamento de controlo ou execução de operações dos serviços de proteção civil ou onde se aloja um corpo de bombeiros e respetivos meios técnicos de intervenção."
 			}, {
 				"Valores": "4.2",
 				"Descrição": "Forças de segurança",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifício dedicado à missão de proteger e garantir a ordem e a segurança pública (inclui edifício da Policia de Segurança Pública e da Guarda Nacional Republicana, as instalações da Policia Judiciária, a Policia Municipal, a Policia Marítima e os Postos Fronteiriços)."
+				"Definição": "Equipamento dedicado à missão de proteger e garantir a ordem e a segurança pública (inclui edifício da Policia de Segurança Pública e da Guarda Nacional Republicana, as instalações da Policia Judiciária, a Policia Municipal, a Policia Marítima e os Postos Fronteiriços)."
 			}, {
 				"Valores": "5",
 				"Descrição": "Defesa",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifício dedicado aos serviços de defesa militar do Estado (inclui quartel, Estado Maior, Capitania ou outros de apoio aos serviços prestados no âmbito da defesa militar.)."
+				"Definição": "Equipamento dedicado aos serviços de defesa militar do Estado (inclui quartel, Estado Maior, Capitania ou outros de apoio aos serviços prestados no âmbito da defesa militar.)."
 			}, {
 				"Valores": "6",
 				"Descrição": "Justiça",
 				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "",
-				"Definição": "Edifício dedicado aos serviços de aplicação do direito e das leis na resolução de litígios, julgamentos de causas, atribuição de penas."
+				"Definição": "Equipamento dedicado aos serviços de aplicação do direito e das leis na resolução de litígios, julgamentos de causas, atribuição de penas."
 			}, {
 				"Valores": "6.1",
 				"Descrição": "Tribunal",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifício onde se discutem, julgam e decidem questões forenses e do contencioso administrativo, onde se fazem julgamentos, onde se ministra a justiça, assegurando a defesa dos direitos e interesses juridicamente protegidos dos cidadãos."
+				"Definição": "Equipamento onde se discutem, julgam e decidem questões forenses e do contencioso administrativo, onde se fazem julgamentos, onde se ministra a justiça, assegurando a defesa dos direitos e interesses juridicamente protegidos dos cidadãos."
 			}, {
 				"Valores": "6.2",
 				"Descrição": "Estabelecimento prisional",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifício onde as pessoas são encerradas e mantidas privadas de liberdade por força de ordem de prisão preventiva ou por cumprimento de pena de prisão."
+				"Definição": "Equipamento onde as pessoas são encerradas e mantidas privadas de liberdade por força de ordem de prisão preventiva ou por cumprimento de pena de prisão."
+			}, {
+				"Valores": "7",
+				"Descrição": "Desporto e lazer",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Equipamento de desporto e lazer."
+			}, {
+				"Valores": "7.1",
+				"Descrição": "Parque e jardim",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Equipamento que inclui parque e jardim."
+			}, {
+				"Valores": "7.2",
+				"Descrição": "Área verde",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Equipamento normalmente em contexto urbano.""
+			}, {
+				"Valores": "7.3",
+				"Descrição": "Campo de golfe",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Equipamento para a prática de golfe."
+			}, {
+				"Valores": "7.4",
+				"Descrição": "Outro – desporto e lazer",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Outro equipamento para desporto e lazer."
+			}, {
+				"Valores": "8",
+				"Descrição": "Cemitério",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Equipamento de inumação."
 			}]
 		}]
 	}
