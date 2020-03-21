@@ -26,8 +26,8 @@
 			"Multip.": "[0..1]",
 			"Definição": "Data e hora (hora:minuto:segundo) em que a versão em causa do “objeto” foi substituída.",
 			"Tipo": "DataTempo",
-			"D1": "x",
-			"D2": "x"
+			"D1": "",
+			"D2": ""
 		}, {
 			"Atributo": "geometria",
 			"Multip.": "1",
