@@ -4,8 +4,9 @@
 		"Característica geográfica": "Fronteira",
 		"Objeto INSPIRE": "",
 		"objeto": "Fronteira",
-		"Definição": "Linha que representa a fronteira de Portugal. ",
+		"Definição": "Linha que representa a fronteira de Portugal.",
 		"Dim.": "2D",
+		"Observações": "Este tema das unidades administrativas deve conter apenas a linha da fronteira de Portugal, caso exista e que se situe sobre a área de trabalho."
 		"Atributos": [{
 			"Atributo": "identificador",
 			"Multip.": "1",
