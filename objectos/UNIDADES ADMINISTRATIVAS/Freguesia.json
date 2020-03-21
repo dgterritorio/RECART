@@ -6,6 +6,7 @@
 		"objeto": "Freguesia",
 		"Definição": "Classificação de mais baixa hierarquia dentro dos níveis possíveis no quadro de divisão administrativa estabelecida de acordo com a Constituição Portuguesa.",
 		"Dim.": "2D",
+		"Observações": "Este tema das unidades administrativas deve conter a(s) freguesia(s) que se situem sobre a área de trabalho, sendo que a geometria de polígonos deve corresponder à totalidade de cada unidade administrativa.",
 		"Atributos": [{
 			"Atributo": "identificador",
 			"Multip.": "1",
