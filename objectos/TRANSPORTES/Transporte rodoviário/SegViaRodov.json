@@ -1,6 +1,4 @@
-{
-	"objecto": {
-		"Tema": "TRANSPORTES (Transporte rodoviário)",
+"Tema": "TRANSPORTES (Transporte rodoviário)",
 		"Característica geográfica": "Segmento da via rodoviária",
 		"Objeto INSPIRE": "RoadLink",
 		"objeto": "SegViaRodov",
@@ -169,7 +167,7 @@
 				"Valores INSPIRE": "functional",
 				"D1": "",
 				"D2": "",
-				"Definição": "A instalação está concluída, independentemente de estar ou não a ser utilizada para o fim a que se destina."
+				"Definição": "A instalação está a ser utilizada (aberta ao tráfego)."
 			}]
 		}, {
 			"nome": "valorCaractFisicaViaRodov",
