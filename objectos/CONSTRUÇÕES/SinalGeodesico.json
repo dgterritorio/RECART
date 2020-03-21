@@ -35,13 +35,6 @@
 			"D2": "x",
 			"Definição": ""
 		},{
-			"Atributo": "dataRevisao",
-			"Multip.": "1",
-			"Tipo": "Data",
-			"D1": "x",
-			"D2": "x",
-			"Definição": "Data da revisão da informação sobre o sinal geodésico."
-		}, {
 			"Atributo": "valorLocalGeodesico",
 			"Multip.": "1",
 			"Tipo": "Lista de códigos",
@@ -69,6 +62,13 @@
 			"D1": "x",
 			"D2": "x",
 			"Definição": "Cota ortométrica no topo do sinal geodésico."
+		}, {
+			"Atributo": "dataRevisao",
+			"Multip.": "1",
+			"Tipo": "Data",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Data da revisão da informação sobre o sinal geodésico."
 		}, {
 			"Atributo": "nome",
 			"Multip.": "1",
