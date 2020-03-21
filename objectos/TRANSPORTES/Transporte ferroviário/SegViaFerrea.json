@@ -346,6 +346,13 @@
 				"D1": "",
 				"D2": "",
 				"Definição": "Linha destinada ao resguardo de um comboio, permitindo a sua ultrapassagem, em segurança, por outro considerado prioritário."
+			}, {
+				"Valores": "5",
+				"Descrição": "Ramal particular",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Via inserida nas instalações de uma empresa."
 			}]
 		}]
 	}
