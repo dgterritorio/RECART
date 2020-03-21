@@ -47,7 +47,7 @@
 			"Tipo": "Texto",
 			"D1": "",
 			"D2": "",
-			"Definição": "Código ISPS (International Ships and Ports Security), adotado pela Organização Maritima Internacional. Apenas aplicável aos portos.\n\n"
+			"Definição": "Código ISPS (International Ships and Ports Security), adotado pela Organização Maritima Internacional. Apenas aplicável aos portos."
 		}, {
 			"Atributo": "nome",
 			"Multip.": "1",
