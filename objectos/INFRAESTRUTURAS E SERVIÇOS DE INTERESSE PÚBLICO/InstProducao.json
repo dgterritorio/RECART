@@ -35,13 +35,6 @@
 			"D2": "x",
 			"Definição": "Tipo de instalação de produção"
 		}, {
-			"Atributo": "nome",
-			"Multip.": "1",
-			"Tipo": "Texto",
-			"D1": "x",
-			"D2": "x",
-			"Definição": "Topónimo utilizado para identificar o objeto no mundo real."
-		}, {
 			"Atributo": "descricaoDaFuncao",
 			"Multip.": "1",
 			"Tipo": "Texto",
@@ -55,6 +48,13 @@
 			"D1": "x",
 			"D2": "x",
 			"Definição": "Local geográfico da instalação de produção."
+		}, {
+			"Atributo": "nome",
+			"Multip.": "1",
+			"Tipo": "Texto",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Topónimo utilizado para identificar o objeto no mundo real."
 		}],
 		"listas de códigos": [{
 			"nome": "valorInstalacaoProducao",
