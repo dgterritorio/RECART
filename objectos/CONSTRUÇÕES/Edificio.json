@@ -514,23 +514,23 @@
 			"valores": [{
 				"Valores": "1",
 				"Descrição": "Habitação",
-				"Valores INSPIRE": "residential",
+				"Valores INSPIRE": "",
 				"D1": "",
-				"D2": "x",
+				"D2": "",
 				"Definição": "Edifício utilizado para fins exclusivos ou parcialmente residenciais."
 			}, {
 				"Valores": "1.1",
 				"Descrição": "Residencial",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "residential",
 				"D1": "x",
-				"D2": "",
+				"D2": "x",
 				"Definição": "Edifício utilizado para fins residenciais."
 			}, {
 				"Valores": "1.2",
 				"Descrição": "Associado à residência",
 				"Valores INSPIRE": "ancillary",
 				"D1": "x",
-				"D2": "",
+				"D2": "x",
 				"Definição": "Edifício ou construção de apoio à residência (inclui garagem, telheiro, arrecadação e escadas)."
 			}, {
 				"Valores": "2",
@@ -657,7 +657,7 @@
 				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "x",
-				"Definição": "Edifício associado a tráfego ferroviário."
+				"Definição": "Edifício associado ao tráfego ferroviário."
 			}, {
 				"Valores": "6.2.1",
 				"Descrição": "Estação",
