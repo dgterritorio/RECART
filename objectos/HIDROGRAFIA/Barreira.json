@@ -2,31 +2,31 @@
 	"objecto": {
 		"Tema": "HIDROGRAFIA",
 		"Característica geográfica": "Barreira",
-		"Objeto INSPIRE": "DamOrWeir; Sluice; Lock",
+		"Objeto INSPIRE": "",
 		"objeto": "Barreira",
 		"Definição": "Barreira permanente num curso de água utilizada para reter a água ou para controlar o seu caudal.",
 		"Dim.": "2D",
 		"Atributos": [{
 			"Atributo": "identificador",
 			"Multip.": "1",
-			"Definição": "Identificador único do objeto",
+			"Definição": "Identificador unívoco - Universal Unique Identifier gerado através da função uuid_generate_v1mc().",
 			"Tipo": "UUID",
 			"D1": "x",
 			"D2": "x"
 		}, {
 			"Atributo": "inicioObjeto",
 			"Multip.": "1",
-			"Definição": "Data e hora (até ao segundo) em que a versão em causa do objeto foi inserida ou alterada.",
-			"Tipo": "Data/hora",
+			"Definição": "Data e hora (hora:minuto:segundo) em que a versão em causa do “objeto” foi inserida ou alterada.",
+			"Tipo": "DataTempo",
 			"D1": "x",
 			"D2": "x"
 		}, {
 			"Atributo": "fimObjeto",
 			"Multip.": "[0..1]",
-			"Definição": "Data e hora (até ao segundo) em que a versão em causa do objeto foi substituída.",
-			"Tipo": "Data/hora",
-			"D1": "x",
-			"D2": "x"
+			"Definição": "Data e hora (hora:minuto:segundo) em que a versão em causa do “objeto” foi substituída.",
+			"Tipo": "DataTempo",
+			"D1": "",
+			"D2": ""
 		}, {
 			"Atributo": "geometria",
 			"Multip.": "1",
@@ -54,49 +54,49 @@
 			"Tipo": "Texto",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Topónimo da entidade no mundo real. "
+			"Definição": "Topónimo da entidade no mundo real."
 		}],
 		"listas de códigos": [{
 			"nome": "valorBarreira",
 			"valores": [{
 				"Valores": "1",
 				"Descrição": "Comporta",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "Lock",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Porta que sustem as águas de diques, açudes, represas ou barragens e que pode abrir-se para o seu escoamento."
 			}, {
 				"Valores": "2",
 				"Descrição": "Eclusa",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "Sluice",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Obra hidráulica, construída sobre um rio ou em zona portuária, com uma ou várias comportas, que permite a navegação quando é necessário vencer grandes desníveis."
 			}, {
 				"Valores": "3",
 				"Descrição": "Barreira da barragem de betão",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "DamOrWeir",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Barreira numa barragem de betão que retém a água de um curso de água."
 			}, {
 				"Valores": "4",
 				"Descrição": "Barreira da barragem de terra",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "DamOrWeir",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Barreira numa barragem de terra que retém a água de um curso de água."
 			}, {
 				"Valores": "5",
 				"Descrição": "Barreira do açude ou represa",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "DamOrWeir",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Pequena barreira artificial ou natural que retém a água de um curso de água."
 			}, {
 				"Valores": "6",
 				"Descrição": "Dique",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "Embankment",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Obra hidráulica, construída para desviar ou conter a invasão da água do mar ou de um curso de água."
