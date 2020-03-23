@@ -68,28 +68,28 @@
 			"valores": [{
 				"Valores": "1",
 				"Descrição": "Seco",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "dry",
 				"D1": "",
 				"D2": "",
 				"Definição": "Cheio e/ou a correr raramente, de um modo geral, unicamente durante e /ou logo após forte precipitação."
 			}, {
 				"Valores": "2",
 				"Descrição": "Efémero",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "ephemeral",
 				"D1": "",
 				"D2": "",
 				"Definição": "Cheio e/ou a correr durante e logo após precipitações."
 			}, {
 				"Valores": "3",
 				"Descrição": "Intermitente",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "intermittent",
 				"D1": "",
 				"D2": "",
 				"Definição": "Cheio e/ou a correr durante uma parte do ano."
 			}, {
 				"Valores": "4",
 				"Descrição": "Perene",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "perennial",
 				"D1": "",
 				"D2": "",
 				"Definição": "Cheio e/ou a correr continuamente ao longo do ano."
