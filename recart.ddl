@@ -327,7 +327,7 @@ SELECT AddGeometryColumn ('public','elem_assoc_telecomunicacoes','geometria',376
 ALTER TABLE elem_assoc_telecomunicacoes ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE adm_publica (
-	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),nomi
+	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
 	nome varchar(255) NOT NULL,
@@ -343,7 +343,13 @@ CREATE TABLE equip_util_coletiva (
 	fim_objeto timestamp without time zone,
 	nome varchar(255) NOT NULL,
 	ponto_de_contacto varchar(255) NOT NULL,
-	valor_tipo_equipamento_coletivo varchar(10) NOT NULL,
+	PRIMARY KEY (identificador)
+);
+
+CREATE TABLE lig_valor_tipo_equipamento_coletivo_equip_util_coletiva (
+	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
+  equip_util_coletiva_id uuid NOT NULL,
+	valor_tipo_equipamento_coletivo_id varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
@@ -478,11 +484,13 @@ ALTER TABLE oleoduto_gasoduto_subtancias_quimicas ADD CONSTRAINT valor_gasoduto_
 ALTER TABLE oleoduto_gasoduto_subtancias_quimicas ADD CONSTRAINT valor_posicao_vertical_id FOREIGN KEY (valor_posicao_vertical) REFERENCES valor_posicao_vertical (identificador);
 ALTER TABLE elem_assoc_telecomunicacoes ADD CONSTRAINT valor_elemento_associado_telecomunicacoes_id FOREIGN KEY (valor_elemento_associado_telecomunicacoes) REFERENCES valor_elemento_associado_telecomunicacoes (identificador);
 ALTER TABLE adm_publica ADD CONSTRAINT valor_tipo_adm_publica_id FOREIGN KEY (valor_tipo_adm_publica) REFERENCES valor_tipo_adm_publica (identificador);
-ALTER TABLE equip_util_coletiva ADD CONSTRAINT valor_tipo_equipamento_coletivo_id FOREIGN KEY (valor_tipo_equipamento_coletivo) REFERENCES valor_tipo_equipamento_coletivo (identificador);
 ALTER TABLE elem_assoc_agua ADD CONSTRAINT valor_elemento_associado_agua_id FOREIGN KEY (valor_elemento_associado_agua) REFERENCES valor_elemento_associado_agua (identificador);
 ALTER TABLE elem_assoc_eletricidade ADD CONSTRAINT valor_elemento_associado_electricidade_id FOREIGN KEY (valor_elemento_associado_electricidade) REFERENCES valor_elemento_associado_electricidade (identificador);
 ALTER TABLE cabo_electrico ADD CONSTRAINT valor_designacao_tensao_id FOREIGN KEY (valor_designacao_tensao) REFERENCES valor_designacao_tensao (identificador);
 ALTER TABLE cabo_electrico ADD CONSTRAINT valor_posicao_vertical_id FOREIGN KEY (valor_posicao_vertical) REFERENCES valor_posicao_vertical (identificador);
+ALTER TABLE lig_valor_tipo_equipamento_coletivo_equip_util_coletiva ADD CONSTRAINT lig_valor_tipo_equipamento_coletivo_equip_util_coletiva_1 FOREIGN KEY (equip_util_coletiva_id) REFERENCES equip_util_coletiva (identificador);
+ALTER TABLE lig_valor_tipo_equipamento_coletivo_equip_util_coletiva ADD CONSTRAINT lig_valor_tipo_equipamento_coletivo_equip_util_coletiva_2 FOREIGN KEY (valor_tipo_equipamento_coletivo_id) REFERENCES valor_tipo_equipamento_coletivo (identificador);
+
 
 /**
  * Criar dominio Construções
@@ -1293,7 +1301,7 @@ CREATE TABLE no_hidrografico (
 SELECT AddGeometryColumn ('public','no_hidrografico','geometria',3763,'POINT',3);
 ALTER TABLE no_hidrografico ALTER COLUMN geometria SET NOT NULL;
 
--- Ponto, Poligono
+-- Linha, Poligono
 CREATE TABLE barreira (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto timestamp without time zone NOT NULL,
