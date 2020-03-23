@@ -42,13 +42,6 @@
 			"D2": "x",
 			"Definição": "Topónimo utilizado para identificar o objeto no mundo real."
 		}, {
-			"Atributo": "localizacaoServicoPublico",
-			"Multip.": "1",
-			"Tipo": "Construções: Edifício",
-			"D1": "x",
-			"D2": "x",
-			"Definição": "Local geográfico em que o serviço é prestado."
-		}, {
 			"Atributo": "pontoDeContacto",
 			"Multip.": "1",
 			"Tipo": "Texto",

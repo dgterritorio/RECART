@@ -42,13 +42,6 @@
 			"D2": "",
 			"Definição": "Descrição detalhada da função."
 		}, {
-			"Atributo": "localizacaoInstalacaoProducao",
-			"Multip.": "1",
-			"Tipo": "Construções: Edifício; Ocupação do Solo: Áreas artificializadas",
-			"D1": "x",
-			"D2": "x",
-			"Definição": "Local geográfico da instalação de produção."
-		}, {
 			"Atributo": "nome",
 			"Multip.": "1",
 			"Tipo": "Texto",

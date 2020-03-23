@@ -41,13 +41,6 @@
 			"D1": "x",
 			"D2": "x",
 			"Definição": "Topónimo utilizado para identificar o objeto no mundo real."
-		}, {
-			"Atributo": "localizacaoDaInstalacao",
-			"Multip.": "1",
-			"Tipo": "Construções: Edifício; Ocupação do solo: Áreas artificializadas",
-			"D1": "x",
-			"D2": "x",
-			"Definição": "Local geográfico da instalação de gestão ambiental."
 		}],
 		"listas de códigos": [{
 			"nome": "valorInstalacaoDeGestaoAmbiental",
