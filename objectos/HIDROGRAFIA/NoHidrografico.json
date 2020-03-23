@@ -54,45 +54,45 @@
 			"valores": [{
 				"Valores": "1",
 				"Descrição": "Início",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "source",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Nó que identifica o inicio de uma série de linhas de \"Curso de água\". Na representação do \"Curso de água\" através das margens considerar apenas o eixo."
+				"Definição": "Nó que identifica o inicio de uma série de linhas de \"Curso de água - eixo\"."
 			}, {
 				"Valores": "2",
 				"Descrição": "Fim",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "outlet",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Nó que identifica o final de uma série de linhas de \"Curso de água\". Na representação do \"Curso de água\" através das margens considerar apenas o eixo."
+				"Definição": "Nó que identifica o final de uma série de linhas de \"Curso de água - eixo\"."
 			}, {
 				"Valores": "3",
 				"Descrição": "Junção",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "junction",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Nó que identifica a intersecção de 3 ou mais linhas de \"Curso de água\". Na representação do \"Curso de água\" através das margens considerar apenas o eixo."
+				"Definição": "Nó que identifica a intersecção de 3 ou mais linhas de \"Curso de água - eixo\"."
 			}, {
 				"Valores": "4",
 				"Descrição": "Pseudo-nó",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Nó que representa um ponto que une 2 linhas \"Curso de água\" com características distintas. Aplicável apenas aos eixos."
+				"Definição": "Nó que representa um ponto que une 2 linhas \"Curso de água- eixo\" com características distintas."
 			}, {
 				"Valores": "5",
 				"Descrição": "Variação de fluxo",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "flowConstriction",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Nó que representa um local que condiciona o fluxo do \"Curso de água\" (\"Queda de água\", \"Zona húmida\")."
+				"Definição": "Nó que representa um local que condiciona o fluxo do curso de água (ex: \"Queda de água\"; \"Zona húmida\")."
 			}, {
 				"Valores": "6",
 				"Descrição": "Regulação de fluxo",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "flowRegulation",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Nó que representa um local que regula o fluxo do \"Curso de água\" (\"Barreira\")."
+				"Definição": "Nó que representa um local que regula o fluxo do curso de água. (ex: \"Barreira\")."
 			}]
 		}]
 	}
