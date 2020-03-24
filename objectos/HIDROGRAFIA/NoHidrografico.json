@@ -93,6 +93,13 @@
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Nó que representa um local que regula o fluxo do curso de água. (ex: \"Barreira\")."
+			}, {
+				"Valores": "7",
+				"Descrição": "Fronteira",
+				"Valores INSPIRE": "boundary",
+				"D1": "",
+				"D2": "",
+				"Definição": "Nó usado para conectar redes diferentes. O curso de água atravessa uma fronteira."
 			}]
 		}]
 	}
