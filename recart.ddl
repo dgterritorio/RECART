@@ -1528,27 +1528,19 @@ FOR EACH ROW EXECUTE PROCEDURE trigger_linestring_polygon_validation();
 
 
 /**
- * Criar utilizador com acesso de leitura
+ * Criar grupo com acesso de leitura
  */
 
-CREATE ROLE leitor LOGIN PASSWORD 'leitor';
+CREATE ROLE leitor NOLOGIN;
 GRANT CONNECT ON DATABASE recart TO leitor;
 GRANT SELECT ON ALL TABLES IN SCHEMA public TO leitor;
 
 /**
- * Criar utilizador com acesso de leitura e escrita
+ * Criar grupo com acesso de leitura e escrita
  */
 
-CREATE ROLE editor LOGIN PASSWORD 'editor';
+CREATE ROLE editor NOLOGIN;
 GRANT CONNECT ON DATABASE recart TO editor;
 GRANT SELECT ON ALL TABLES IN SCHEMA public TO editor;
 GRANT INSERT ON ALL TABLES IN SCHEMA public TO editor;
 GRANT UPDATE ON ALL TABLES IN SCHEMA public TO editor;
-
-/**
- * Criar utilizador com acesso de administrador
- */
-
-CREATE ROLE administrador LOGIN PASSWORD 'administrador';
-GRANT CONNECT ON DATABASE recart TO administrador;
-GRANT ALL PRIVILEGES ON DATABASE recart TO administrador;
