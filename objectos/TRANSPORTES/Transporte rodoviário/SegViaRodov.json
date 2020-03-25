@@ -410,6 +410,13 @@
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Caminho rudimentar, vereda, carreiro ou atalho."
+			}, {
+				"Valores": "7",
+				"Descrição": "Passadiço",
+				"Valores INSPIRE": "pedestrianZone / walkway",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Passagem estreita para peões e/ou velocípedes construída sobre o terreno ou suspensa/elevada sobre um curso de água, via de comunicação ou depressão do terreno."
 			}]
 		}]
 	}
