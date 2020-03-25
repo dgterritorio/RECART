@@ -5,7 +5,6 @@
 		"Objeto INSPIRE": "",
 		"objeto": "Distrito",
 		"Definição": "Divisão administrativa estabelecida de acordo com a Constituição Portuguesa. ",
-		"Observações": "Este tema das unidades administrativas deve conter o(s) distrito(s) que se situem sobre a área de trabalho, sendo que a geometria de polígonos deve corresponder à totalidade de cada unidade administrativa.",
 		"Dim.": "2D",
 		"Atributos": [{
 			"Atributo": "identificador",
