@@ -103,7 +103,7 @@
 			"Tipo": "Texto",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Topónimo da entidade no mundo real. "
+			"Definição": "Topónimo da entidade no mundo real."
 		}, {
 			"Atributo": "ordemHidrologica",
 			"Multip.": "1",
