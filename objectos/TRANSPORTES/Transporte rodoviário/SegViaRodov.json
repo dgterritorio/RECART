@@ -226,14 +226,14 @@
 			}, {
 				"Valores": "2",
 				"Descrição": "Suspenso ou elevado: nível 2, acima de nível 1",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "suspendedOrElevated",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "A entidade geográfica está assente no segundo nível acima do solo."
 			}, {
 				"Valores": "1",
 				"Descrição": "Suspenso ou elevado: nível 1",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "suspendedOrElevated",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "A entidade geográfica está assente no primeiro nível acima do solo."
@@ -254,16 +254,16 @@
 			}, {
 				"Valores": "-2",
 				"Descrição": "No subsolo: nível mais profundo que nível -1",
-				"Valores INSPIRE": "",
-				"D1": "",
-				"D2": "",
+				"Valores INSPIRE": "underground",
+				"D1": "x",
+				"D2": "x",
 				"Definição": "A entidade geográfica está assente no segundo nível abaixo do solo."
 			}, {
 				"Valores": "-3",
 				"Descrição": "No subsolo: nível mais profundo que nível -2",
-				"Valores INSPIRE": "",
-				"D1": "",
-				"D2": "",
+				"Valores INSPIRE": "underground",
+				"D1": "x",
+				"D2": "x",
 				"Definição": "A entidade geográfica está assente no terceiro ou inferior nível abaixo do solo."
 			}]
 		}, {
