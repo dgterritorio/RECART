@@ -77,7 +77,7 @@
 			"D2": "x",
 			"Definição": "Indica se o objeto corresponde a uma extensão de um eixo para assegurar a ligação com outro curso de água."
 		}, {
-			"Atributo": "idAreaCursoDeAgua",
+			"Atributo": "idCursoDeAguaArea",
 			"Multip.": "[0..1]",
 			"Tipo": "UUID",
 			"D1": "x",
