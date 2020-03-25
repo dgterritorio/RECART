@@ -54,7 +54,7 @@
 			"Tipo": "Real",
 			"D1": "",
 			"D2": "",
-			"Definição": "Diâmetro da conduta. [unidade: metro]"
+			"Definição": "Diâmetro ou largura da conduta. [unidade: metro]"
 		}],
 		"listas de códigos": [{
 			"nome": "valorCondutaAgua",
