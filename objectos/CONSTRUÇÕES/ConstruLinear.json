@@ -4,7 +4,7 @@
 		"Característica geográfica": "Construção linear",
 		"Objeto INSPIRE": "",
 		"objeto": "ConstruLinear",
-		"Definição": "Construção com forma linear utilizada para separar ou limitar áreas geográficas.",
+		"Definição": "Eixo da construção com forma linear.",
 		"Dim.": "2D",
 		"Atributos": [{
 			"Atributo": "identificador",
