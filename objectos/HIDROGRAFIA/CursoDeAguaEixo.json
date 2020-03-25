@@ -149,6 +149,20 @@
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Linha correspondente ao talvegue definido por duas ou mais vertentes, onde corre água com caudal permanente ou temporário."
+			}, {
+				"Valores": "5",
+				"Descrição": "Canal",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Passagem artificial de águas por vezes em forma de calha, para conduzir águas de caudal mais ou menos constante, para usos geralmente industriais ou agrícolas."
+			}, {
+				"Valores": "6",
+				"Descrição": "Vala",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Fosso longo, mais ou menos largo, para conduzir águas de caudal mais ou menos constante, para usos geralmente industriais ou agrícolas."
 			}]
 		}, {
 			"nome": "valorPersistenciaHidrologica",
