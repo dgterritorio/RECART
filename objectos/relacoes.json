@@ -49,10 +49,10 @@
 			"D1": "x",
 			"D2": "x"
 		}, {
-			"Relação": "ligacaoViaRodovLimiteViaRodov",
-			"Tipo": "Relação TRANSPORTES (Transporte rodoviário): Associação 'Via rodoviária - Limite' e 'Via rodoviária'",
-			"Definição": "Ligação entre a 'Via rodoviária - Limite' e a 'Via rodoviária'",
-			"Multip.": "'Via rodoviária - Limite' [0..n], 'Via rodoviária' [0..n]",
+			"Relação": "ligacaoSegViaRodovViaRodovLimite",
+			"Tipo": "Relação TRANSPORTES (Transporte rodoviário): Associação 'Segmento da via rodoviária' e 'Via rodoviária - Limite'",
+			"Definição": "Ligação entre o 'Segmento da via rodoviária' e a 'Via rodoviária - Limite'",
+			"Multip.": "'Segmento da via rodoviária' [1], 'Via rodoviária - Limite' [0..4]",
 			"D1": "",
 			"D2": ""
 		}, {

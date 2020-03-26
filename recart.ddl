@@ -1087,10 +1087,10 @@ CREATE TABLE lig_segviarodov_viarodov (
 	PRIMARY KEY (identificador)
 );
 
-CREATE TABLE lig_viarodovlimite_viarodov (
+CREATE TABLE lig_segviarodov_viarodovlimite (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
+	seg_via_rodov_id uuid NOT NULL,
 	via_rodov_limite_id uuid NOT NULL,
-	via_rodov_id uuid NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
@@ -1450,8 +1450,8 @@ ALTER TABLE lig_segviaferrea_linhaferrea ADD CONSTRAINT lig_segviaferrea_linhafe
 ALTER TABLE area_infra_trans_rodov ADD CONSTRAINT area_infra_trans_rodov FOREIGN KEY (infra_trans_rodov_id) REFERENCES infra_trans_rodov (identificador);
 ALTER TABLE lig_segviarodov_viarodov ADD CONSTRAINT lig_segviarodov_viarodov_1 FOREIGN KEY (seg_via_rodov_id) REFERENCES seg_via_rodov (identificador);
 ALTER TABLE lig_segviarodov_viarodov ADD CONSTRAINT lig_segviarodov_viarodov_2 FOREIGN KEY (via_rodov_id) REFERENCES via_rodov (identificador);
-ALTER TABLE lig_viarodovlimite_viarodov ADD CONSTRAINT codigo_via_rodov_3 FOREIGN KEY (via_rodov_limite_id) REFERENCES via_rodov_limite (identificador);
-ALTER TABLE lig_viarodovlimite_viarodov ADD CONSTRAINT codigo_via_rodov_4 FOREIGN KEY (via_rodov_id) REFERENCES via_rodov (identificador);
+ALTER TABLE lig_segviarodov_viarodovlimite ADD CONSTRAINT lig_segviarodov_viarodovlimite_1 FOREIGN KEY (via_rodov_limite_id) REFERENCES via_rodov_limite (identificador);
+ALTER TABLE lig_segviarodov_viarodovlimite ADD CONSTRAINT lig_segviarodov_viarodovlimite_2 FOREIGN KEY (seg_via_rodov_id) REFERENCES seg_via_rodov (identificador);
 
 /**
  * Cria trigger para validacao de geometria ponto ou poligono
