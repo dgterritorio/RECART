@@ -41,13 +41,6 @@
 			"D1": "x",
 			"D2": "x",
 			"Definição": "Tipo de nó ferroviário."
-		}, {
-			"Atributo": "ligacaoInfraTransFerrov",
-			"Multip.": "[0..n]",
-			"Tipo": "Relação Transportes: Infraestrutura de Transporte Ferroviário",
-			"D1": "x",
-			"D2": "x",
-			"Definição": "Ligação às infraestruturas de transporte ferroviário."
 		}],
 		"listas de códigos": [{
 			"nome": "valorTipoNoTransFerrov",
