@@ -1,7 +1,7 @@
 {
 	"objecto": {
 		"Tema": "TRANSPORTES (Transporte ferroviário)",
-		"Característica geográfica": "Segmento da via férrea",
+		"Característica geográfica": "Segmento da via-férrea",
 		"Objeto INSPIRE": "RailwayLink",
 		"objeto": "SegViaFerrea",
 		"Definição": "Eixo da via-férrea.",
