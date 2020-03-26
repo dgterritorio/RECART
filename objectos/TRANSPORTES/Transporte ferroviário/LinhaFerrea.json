@@ -40,7 +40,7 @@
 			"Tipo": "Texto",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Nome da linha férrea. Para as vias não catalogadas inserir a designação que caracteriza a linha férrea."
+			"Definição": "Designação da linha férrea. Para as vias não catalogadas inserir a designação que caracteriza a linha férrea."
 		}],
 		"listas de códigos": []
 	}
