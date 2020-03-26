@@ -4,7 +4,7 @@
 		"Característica geográfica": "Segmento da via férrea",
 		"Objeto INSPIRE": "RailwayLink",
 		"objeto": "SegViaFerrea",
-		"Definição": "Eixo da via férrea.",
+		"Definição": "Eixo da via-férrea.",
 		"Dim.": "3D",
 		"Atributos": [{
 			"Atributo": "identificador",
