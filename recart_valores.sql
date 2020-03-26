@@ -405,6 +405,7 @@ INSERT INTO valor_tipo_no_hidrografico VALUES ('3','Junção');
 INSERT INTO valor_tipo_no_hidrografico VALUES ('4','Pseudo-nó');
 INSERT INTO valor_tipo_no_hidrografico VALUES ('5','Variação de fluxo');
 INSERT INTO valor_tipo_no_hidrografico VALUES ('6','Regulação de fluxo');
+INSERT INTO valor_tipo_no_hidrografico VALUES ('7','Fronteira');
 INSERT INTO valor_tipo_no_trans_ferrov VALUES ('1','Junção');
 INSERT INTO valor_tipo_no_trans_ferrov VALUES ('2','Passagem de nível');
 INSERT INTO valor_tipo_no_trans_ferrov VALUES ('3','Pseudo-nó');
