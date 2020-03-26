@@ -2,7 +2,7 @@
 	"objecto": {
 		"Tema": "INFRAESTRUTURAS E SERVIÇOS DE INTERESSE PÚBLICO",
 		"Característica geográfica": "Conduta de água",
-		"Objeto INSPIRE": "WaterPipe",
+		"Objeto INSPIRE": "",
 		"objeto": "CondutaDeAgua",
 		"Definição": "Conduta utilizada para transportar água de um local para outro.",
 		"Dim.": "2D",
@@ -62,14 +62,14 @@
 			"valores": [{
 				"Valores": "1",
 				"Descrição": "Aqueduto",
-				"Valores INSPIRE": "aqueduct",
+				"Valores INSPIRE": "Crossing: aqueduct",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Construção de pedra ou destinada ao transporte de água, incluindo aqueduto sobre arcadas ou pilares."
 			}, {
 				"Valores": "2",
 				"Descrição": "Conduta",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "WaterPipe",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Tubo condutor de água."
