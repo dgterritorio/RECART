@@ -1440,16 +1440,16 @@ ALTER TABLE elem_assoc_pgq ADD CONSTRAINT localizacao_elem_assoc_pgq FOREIGN KEY
  */
 
 ALTER TABLE area_infra_trans_ferrov ADD CONSTRAINT area_infra_trans_ferrov FOREIGN KEY (infra_trans_ferrov_id) REFERENCES infra_trans_ferrov (identificador);
-ALTER TABLE lig_segviaferrea_linhaferrea ADD CONSTRAINT codigo_ferroviario_1 FOREIGN KEY (seg_via_ferrea_id) REFERENCES seg_via_ferrea (identificador);
-ALTER TABLE lig_segviaferrea_linhaferrea ADD CONSTRAINT codigo_ferroviario_2 FOREIGN KEY (linha_ferrea_id) REFERENCES linha_ferrea (identificador);
+ALTER TABLE lig_segviaferrea_linhaferrea ADD CONSTRAINT lig_segviaferrea_linhaferrea_1 FOREIGN KEY (seg_via_ferrea_id) REFERENCES seg_via_ferrea (identificador);
+ALTER TABLE lig_segviaferrea_linhaferrea ADD CONSTRAINT lig_segviaferrea_linhaferrea_2 FOREIGN KEY (linha_ferrea_id) REFERENCES linha_ferrea (identificador);
 
 /**
  * Dominio Transporte Rodoviario
  */
 
 ALTER TABLE area_infra_trans_rodov ADD CONSTRAINT area_infra_trans_rodov FOREIGN KEY (infra_trans_rodov_id) REFERENCES infra_trans_rodov (identificador);
-ALTER TABLE lig_segviarodov_viarodov ADD CONSTRAINT codigo_via_rodov_1 FOREIGN KEY (seg_via_rodov_id) REFERENCES seg_via_rodov (identificador);
-ALTER TABLE lig_segviarodov_viarodov ADD CONSTRAINT codigo_via_rodov_2 FOREIGN KEY (via_rodov_id) REFERENCES via_rodov (identificador);
+ALTER TABLE lig_segviarodov_viarodov ADD CONSTRAINT lig_segviarodov_viarodov_1 FOREIGN KEY (seg_via_rodov_id) REFERENCES seg_via_rodov (identificador);
+ALTER TABLE lig_segviarodov_viarodov ADD CONSTRAINT lig_segviarodov_viarodov_2 FOREIGN KEY (via_rodov_id) REFERENCES via_rodov (identificador);
 ALTER TABLE lig_viarodovlimite_viarodov ADD CONSTRAINT codigo_via_rodov_3 FOREIGN KEY (via_rodov_limite_id) REFERENCES via_rodov_limite (identificador);
 ALTER TABLE lig_viarodovlimite_viarodov ADD CONSTRAINT codigo_via_rodov_4 FOREIGN KEY (via_rodov_id) REFERENCES via_rodov (identificador);
 
