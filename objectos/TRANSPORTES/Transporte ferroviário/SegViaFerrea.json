@@ -82,7 +82,7 @@
 			"Tipo": "Booleano",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Indica se a linha está eletrificada."
+			"Definição": "Indica se a via está eletrificada."
 		}, {
 			"Atributo": "gestao",
 			"Multip.": "1",
@@ -103,7 +103,7 @@
 			"Tipo": "Inteiro",
 			"D1": "",
 			"D2": "",
-			"Definição": "Especificação da velocidade máxima para a qual a linha férrea foi projetada. [unidade: Km/h]"
+			"Definição": "Especificação da velocidade máxima para a qual a via-férrea foi projetada. [unidade: Km/h]"
 		}],
 		"listas de códigos": [{
 			"nome": "valorCategoriaBitola",
