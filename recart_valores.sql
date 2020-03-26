@@ -330,6 +330,7 @@ INSERT INTO valor_tipo_construcao VALUES ('6','Lago de jardim');
 INSERT INTO valor_tipo_construcao VALUES ('7','Escadaria');
 INSERT INTO valor_tipo_construcao VALUES ('8','Bancada');
 INSERT INTO valor_tipo_construcao VALUES ('9','Passeio');
+INSERT INTO valor_tipo_construcao VALUES ('10','Limite da construção linear');
 INSERT INTO valor_tipo_curva VALUES ('1','Mestra');
 INSERT INTO valor_tipo_curva VALUES ('2','Secundária');
 INSERT INTO valor_tipo_curva VALUES ('3','Auxiliar');
