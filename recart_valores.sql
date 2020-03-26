@@ -86,7 +86,7 @@ INSERT INTO valor_conduta_agua VALUES ('3','Canal');
 INSERT INTO valor_conduta_agua VALUES ('4','Vala');
 INSERT INTO valor_conduta_agua VALUES ('5','Valeta');
 INSERT INTO valor_construcao_linear VALUES ('1','Muro de alvenaria ou betão');
-INSERT INTO valor_construcao_linear VALUES ('2','Muro de pedra solta');
+INSERT INTO valor_construcao_linear VALUES ('2','Muro de pedra');
 INSERT INTO valor_construcao_linear VALUES ('3','Sebe');
 INSERT INTO valor_construcao_linear VALUES ('4','Gradeamento ou vedação');
 INSERT INTO valor_construcao_linear VALUES ('5','Muralha');
