@@ -4,7 +4,7 @@
 		"Característica geográfica": "Infraestrutura de transporte rodoviário",
 		"Objeto INSPIRE": "RoadNode",
 		"objeto": "InfraTransRodov",
-		"Definição": "Ponto que caracteriza a área da infraestrutura de transporte rodoviário.",
+		"Definição": "Ponto que caracteriza a infraestrutura de transporte rodoviário.",
 		"Dim.": "2D",
 		"Atributos": [{
 			"Atributo": "identificador",
