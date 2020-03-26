@@ -71,14 +71,14 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Construção destinada a dar passagem a uma via rodoviária sobre uma linha férrea ou uma via rodoviária de maior importância."
+				"Definição": "Construção destinada a dar passagem a uma via rodoviária sobre uma via-férrea ou uma via rodoviária de maior importância."
 			}, {
 				"Valores": "4",
 				"Descrição": "Passagem inferior",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Construção destinada a dar passagem a uma via rodoviária sob um linha férrea ou uma via rodoviária de maior importância, incluindo passagens agrícolas."
+				"Definição": "Construção destinada a dar passagem a uma via rodoviária sob um via-férrea ou uma via rodoviária de maior importância, incluindo passagens agrícolas."
 			}, {
 				"Valores": "5",
 				"Descrição": "Túnel",
@@ -92,7 +92,7 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Construção destinada à passagem de água sob uma linha férrea ou via rodoviária."
+				"Definição": "Construção destinada à passagem de água sob uma via-férrea ou via rodoviária."
 			}, {
 				"Valores": "7",
 				"Descrição": "Passagem pedonal",
