@@ -54,7 +54,7 @@
 			"valores": [{
 				"Valores": "1",
 				"Descrição": "Ponte",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "Crossing: bridge",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Construção que liga dois pontos separados por um curso de água."
@@ -89,7 +89,7 @@
 			}, {
 				"Valores": "6",
 				"Descrição": "Passagem hidráulica",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "Crossing: culvert",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Construção destinada à passagem de água sob uma via-férrea ou via rodoviária."
