@@ -493,6 +493,7 @@ INSERT INTO valor_tipo_troco_rodoviario VALUES ('3','Rotunda');
 INSERT INTO valor_tipo_troco_rodoviario VALUES ('4','Via de serviço');
 INSERT INTO valor_tipo_troco_rodoviario VALUES ('5','Via em escada');
 INSERT INTO valor_tipo_troco_rodoviario VALUES ('6','Trilho');
+INSERT INTO valor_tipo_troco_rodoviario VALUES ('7','Passadiço');
 INSERT INTO valor_tipo_uso_infra_trans_ferrov VALUES ('1','Passageiros');
 INSERT INTO valor_tipo_uso_infra_trans_ferrov VALUES ('2','Mercadorias');
 INSERT INTO valor_tipo_uso_infra_trans_ferrov VALUES ('3','Misto');
