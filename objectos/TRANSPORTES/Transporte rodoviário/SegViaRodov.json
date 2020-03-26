@@ -94,14 +94,7 @@
 			"Tipo": "Texto",
 			"D1": "",
 			"D2": "",
-			"Definição": "Autoridade que tem a jurisdição da via rodoviária"
-		}, {
-			"Atributo": "ligacaoViaRodov",
-			"Multip.": "[0..n]",
-			"Tipo": "Relação Transportes: Via Rodoviária",
-			"D1": "x",
-			"D2": "x",
-			"Definição": "Ligação à tabela das vias rodoviárias."
+			"Definição": "Autoridade que tem a jurisdição da via rodoviária."
 		}, {
 			"Atributo": "multiplaFaixaRodagem",
 			"Multip.": "1",
