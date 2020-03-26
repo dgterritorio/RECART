@@ -4,7 +4,7 @@
 		"Característica geográfica": "Infraestrutura de transporte ferroviário",
 		"Objeto INSPIRE": "RailwayStationNode",
 		"objeto": "InfraTransFerrov",
-		"Definição": "Ponto que caracteriza a área da infraestrutura de transporte ferroviário.",
+		"Definição": "Ponto que caracteriza a infraestrutura de transporte ferroviário.",
 		"Dim.": "2D",
 		"Atributos": [{
 			"Atributo": "identificador",
