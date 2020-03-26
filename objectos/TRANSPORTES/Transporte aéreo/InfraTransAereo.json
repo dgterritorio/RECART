@@ -4,7 +4,7 @@
 		"Característica geográfica": "Infraestrutura de transporte aéreo",
 		"Objeto INSPIRE": "AerodromeNode",
 		"objeto": "InfraTransAereo",
-		"Definição": "Ponto que caracteriza a área da infraestrutura de transporte aéreo.",
+		"Definição": "Ponto que caracteriza a infraestrutura de transporte aéreo.",
 		"Dim.": "2D",
 		"Atributos": [{
 			"Atributo": "identificador",
