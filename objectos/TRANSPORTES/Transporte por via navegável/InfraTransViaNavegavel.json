@@ -4,7 +4,7 @@
 		"Característica geográfica": "Infraestrutura de transporte por via navegável",
 		"Objeto INSPIRE": "",
 		"objeto": "InfraTransViaNavegavel",
-		"Definição": "Ponto que caracteriza a área da infraestrutura de transporte por via navegável.",
+		"Definição": "Ponto que caracteriza a infraestrutura de transporte por via navegável.",
 		"Dim.": "2D",
 		"Atributos": [{
 			"Atributo": "identificador",
