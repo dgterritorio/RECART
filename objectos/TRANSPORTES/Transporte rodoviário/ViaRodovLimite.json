@@ -47,7 +47,7 @@
 			"valores": [{
 				"Valores": "1",
 				"Descrição": "Limite exterior sem berma",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "carriageway",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Linha que materializa o limite da via rodoviária pelo limite exterior da zona utilizada pelo tráfego (sem berma direita), ou seja, pelo limite geométrico exterior da faixa de rodagem (constituída unicamente pela largura das vias de trânsito), caso exista sinalização horizontal (guia). Caso esta sinalização não exista, também não existirá berma direita e como tal o limite da via rodoviária coincide com o limite exterior da área pavimentada ou não pavimentada."
@@ -61,7 +61,7 @@
 			}, {
 				"Valores": "3",
 				"Descrição": "Limite exterior com berma pavimentada",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "pavedSurface",
 				"D1": "",
 				"D2": "",
 				"Definição": "Linha que materializa o limite da via rodoviária pelo limite exterior da berma direita pavimentada, caso exista sinalização horizontal (guia). Caso esta sinalização não exista também não existirá berma direita e como tal o limite da via rodoviária não é representável."
