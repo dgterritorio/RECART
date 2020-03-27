@@ -3,49 +3,49 @@
 			"Relação": "ligacaoCursodeAguaAreaCursodeAguaEixo",
 			"Tipo": "Relação HIDROGRAFIA: Associação 'Curso de água – área' e 'Curso de água – eixo'",
 			"Definição": "Ligação entre o 'Curso de água – eixo' e o 'Curso de água – área'",
-			"Multip.": "'Curso de água – eixo' [0.. n], 'Curso de água – área' [0..1]",
+			"Multip.": "'Curso de água – eixo' [0..*], 'Curso de água – área' [0..1]",
 			"D1": "x",
 			"D2": "x"
 		}, {
 			"Relação": "ligacaoAreaInfraTransFerrovInfraTransFerrov",
 			"Tipo": "Relação TRANSPORTES (Transporte ferroviário): Associação 'Área da infraestrutura de transporte ferroviário' e 'Infraestrutura de transporte ferroviário'",
 			"Definição": "Ligação entre a 'Área da infraestrutura de transporte ferroviário' e a 'Infraestrutura de transporte ferroviário'",
-			"Multip.": "'Área da infraestrutura de transporte ferroviário' [0..n], 'Infraestrutura de transporte ferroviário' [1]",
+			"Multip.": "'Área da infraestrutura de transporte ferroviário' [0..*], 'Infraestrutura de transporte ferroviário' [1]",
 			"D1": "x",
 			"D2": "x"
 		}, {
 			"Relação": "ligacaoSegViaFerreaLinhaFerrea",
 			"Tipo": "Relação TRANSPORTES (Transporte ferroviário): Associação 'Segmento da via-férrea' e 'Linha Férrea'",
 			"Definição": "Ligação entre o 'Segmento da via-férrea' e a 'Linha Férrea'",
-			"Multip.": "'Segmento da via-férrea' [0..n], 'Linha Férrea' [0..n]",
+			"Multip.": "'Segmento da via-férrea' [0..*], 'Linha Férrea' [0..*]",
 			"D1": "x",
 			"D2": "x"
 		}, {
 			"Relação": "ligacaoInfraTransFerrovNoTransFerrov",
 			"Tipo": "Relação TRANSPORTES (Transporte ferroviário): Associação 'Infraestrutura de transporte ferroviário' e 'Nó de transporte ferroviário'",
 			"Definição": "Ligação entre a(s) 'Infraestrutura de transporte ferroviário' e o 'Nó de transporte ferroviário'",
-			"Multip.": "'Infraestrutura de transporte ferroviário' [1..n], 'Nó de transporte ferroviário' [1..n]",
+			"Multip.": "'Infraestrutura de transporte ferroviário' [1..*], 'Nó de transporte ferroviário' [1..*]",
 			"D1": "x",
 			"D2": "x"
 		}, {
 			"Relação": "ligacaoAreaInfraTransRodovInfraTransRodov",
 			"Tipo": "Relação TRANSPORTES (Transporte rodoviário): Associação 'Área da infraestrutura de transporte rodoviário' e 'Infraestrutura de transporte rodoviário'",
 			"Definição": "Ligação entre a 'Área da infraestrutura de transporte rodoviário' e a 'Infraestrutura de transporte rodoviário'",
-			"Multip.": "'Área da infraestrutura de transporte rodoviário' [0..n], 'Infraestrutura de transporte rodoviário' [1]",
+			"Multip.": "'Área da infraestrutura de transporte rodoviário' [0..*], 'Infraestrutura de transporte rodoviário' [1]",
 			"D1": "x",
 			"D2": "x"
 		}, {
 			"Relação": "ligacaoSegViaRodovViaRodov",
 			"Tipo": "Relação TRANSPORTES (Transporte rodoviário): Associação 'Segmento da via rodoviária' e 'Via rodoviária'",
 			"Definição": "Ligação entre o 'Segmento da via rodoviária' e a 'Via rodoviária'",
-			"Multip.": "'Segmento da via rodoviária' [0..n], 'Via rodoviária' [0..n]",
+			"Multip.": "'Segmento da via rodoviária' [0..*], 'Via rodoviária' [0..*]",
 			"D1": "x",
 			"D2": "x"
 		}, {
 			"Relação": "ligacaoInfraTransRodovNoTransRodov",
 			"Tipo": "Relação TRANSPORTES (Transporte rodoviário): Associação 'Infraestrutura de transporte rodoviário' e 'Nó de transporte rodoviário'",
 			"Definição": "Ligação entre a 'Infraestrutura de transporte rodoviário' e o 'Nó de transporte rodoviário'",
-			"Multip.": "'Infraestrutura de transporte rodoviário' [1..n], 'Nó de transporte rodoviário' [1..n]",
+			"Multip.": "'Infraestrutura de transporte rodoviário' [1..*], 'Nó de transporte rodoviário' [1..*]",
 			"D1": "x",
 			"D2": "x"
 		}, {
@@ -59,49 +59,49 @@
 			"Relação": "ligacaoAdmPublicaEdificio",
 			"Tipo": "Relação INFRAESTRUTURAS E SERVIÇOS DE INTERESSE PÚBLICO e CONSTRUÇÕES: Associação 'Administração pública e órgãos de soberania' e 'Edifício'",
 			"Definição": "Ligação ao edifício em que o serviço da administração pública é prestado.",
-			"Multip.": "'Administração pública e órgãos de soberania' [0..n], 'Edifício' [1..n]",
+			"Multip.": "'Administração pública e órgãos de soberania' [0..*], 'Edifício' [1..*]",
 			"D1": "x",
 			"D2": "x"
 		}, {
 			"Relação": "ligacaoEquipUtilColetivaEdificio",
 			"Tipo": "Relação INFRAESTRUTURAS E SERVIÇOS DE INTERESSE PÚBLICO e CONSTRUÇÕES: Associação 'Equipamento de utilização coletiva' e 'Edifício'",
 			"Definição": "Ligação ao edifício em que o serviço de interesse coletivo é prestado.",
-			"Multip.": "'Equipamento de utilização coletiva' [0..n], 'Edifício' [1..n]",
+			"Multip.": "'Equipamento de utilização coletiva' [0..*], 'Edifício' [1..*]",
 			"D1": "x",
 			"D2": "x"
 		}, {
 			"Relação": "ligacaoEquipUtilColetivaAreasArtificializadas",
 			"Tipo": "Relação INFRAESTRUTURAS E SERVIÇOS DE INTERESSE PÚBLICO e OCUPAÇÃO DO SOLO: Associação 'Equipamento de utilização coletiva' e 'Área artificializada'",
 			"Definição": "Ligação ao local geográfico em que o serviço de interesse coletivo é prestado.",
-			"Multip.": "'Equipamento de utilização coletiva' [0..n], 'Área artificializada' [0..n]",
+			"Multip.": "'Equipamento de utilização coletiva' [0..*], 'Área artificializada' [0..*]",
 			"D1": "x",
 			"D2": "x"
 		}, {
 			"Relação": "ligacaoInstalacaoAmbientalEdificio",
 			"Tipo": "Relação INFRAESTRUTURAS E SERVIÇOS DE INTERESSE PÚBLICO e CONSTRUÇÕES: Associação 'Instalação de gestão ambiental' e 'Edifício'",
 			"Definição": "Ligação ao edifício da instalação de gestão ambiental.",
-			"Multip.": "'Instalação de gestão ambiental' [0..1], 'Edifício' [1..n]",
+			"Multip.": "'Instalação de gestão ambiental' [0..1], 'Edifício' [1..*]",
 			"D1": "x",
 			"D2": "x"
 		}, {
 			"Relação": "ligacaoInstalacaoAmbientalAreasArtificializadas",
 			"Tipo": "Relação INFRAESTRUTURAS E SERVIÇOS DE INTERESSE PÚBLICO e OCUPAÇÃO DO SOLO: Associação 'Instalação de gestão ambiental' e 'Área artificializada'",
 			"Definição": "Ligação ao local geográfico da instalação de gestão ambiental.",
-			"Multip.": "'Instalação de gestão ambiental' [0..1], 'Área artificializada' [1..n]",
+			"Multip.": "'Instalação de gestão ambiental' [0..1], 'Área artificializada' [1..*]",
 			"D1": "x",
 			"D2": "x"
 		}, {
 			"Relação": "ligacaoInstProducaoEdificio",
 			"Tipo": "Relação INFRAESTRUTURAS E SERVIÇOS DE INTERESSE PÚBLICO e CONSTRUÇÕES: Associação 'Instalação de produção' e 'Edifício'",
 			"Definição": "Ligação ao edifício da instalação de produção.",
-			"Multip.": "'Instalação de produção' [0..1], 'Edifício' [0..n]",
+			"Multip.": "'Instalação de produção' [0..1], 'Edifício' [0..*]",
 			"D1": "x",
 			"D2": "x"
 		}, {
 			"Relação": "ligacaoInstProducaoAreasArtificializadas",
 			"Tipo": "Relação INFRAESTRUTURAS E SERVIÇOS DE INTERESSE PÚBLICO e OCUPAÇÃO DO SOLO: Associação 'Instalação de produção' e 'Área artificializada'",
 			"Definição": "Ligação ao local geográfico da instalação de produção.",
-			"Multip.": "'Instalação de produção' [0..n], 'Área artificializada' [0..n]",
+			"Multip.": "'Instalação de produção' [0..*], 'Área artificializada' [0..*]",
 			"D1": "x",
 			"D2": "x"
 		}]
