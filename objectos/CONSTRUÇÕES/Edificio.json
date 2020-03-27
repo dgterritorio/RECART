@@ -9,24 +9,24 @@
 		"Atributos": [{
 			"Atributo": "identificador",
 			"Multip.": "1",
-			"Definição": "Identificador único do objeto",
+			"Definição": "Identificador unívoco - Universal Unique Identifier gerado através da função uuid_generate_v1mc().",
 			"Tipo": "UUID",
 			"D1": "x",
 			"D2": "x"
 		}, {
 			"Atributo": "inicioObjeto",
 			"Multip.": "1",
-			"Definição": "Data e hora (até ao segundo) em que a versão em causa do objeto foi inserida ou alterada.",
-			"Tipo": "Data/hora",
+			"Definição": "Data e hora (hora:minuto:segundo) em que a versão em causa do “objeto” foi inserida ou alterada.",
+			"Tipo": "DataTempo",
 			"D1": "x",
 			"D2": "x"
 		}, {
 			"Atributo": "fimObjeto",
 			"Multip.": "[0..1]",
-			"Definição": "Data e hora (até ao segundo) em que a versão em causa do objeto foi substituída.",
-			"Tipo": "Data/hora",
-			"D1": "x",
-			"D2": "x"
+			"Definição": "Data e hora (hora:minuto:segundo) em que a versão em causa do “objeto” foi substituída.",
+			"Tipo": "DataTempo",
+			"D1": "",
+			"D2": ""
 		}, {
 			"Atributo": "geometria",
 			"Multip.": "1",
@@ -388,7 +388,7 @@
 				"Valores INSPIRE": "stadium",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Grande recinto destinado essencialmente à realização de competições desportivas e circundada de bancadas em anfiteatro para acomodação de público"
+				"Definição": "Grande recinto destinado essencialmente à realização de competições desportivas e circundada de bancadas em anfiteatro para acomodação de público."
 			}, {
 				"Valores": "13",
 				"Descrição": "Estufa",
@@ -790,7 +790,7 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifício onde se exerce atividades lúdicas ou culturais (cinema, vídeo, rádio, televisão, atividades artísticas e de espetáculo, agências de noticias, bibliotecas, arquivos, museus, etc.)"
+				"Definição": "Edifício onde se exerce atividades lúdicas ou culturais (cinema, vídeo, rádio, televisão, atividades artísticas e de espetáculo, agências de noticias, bibliotecas, arquivos, museus, etc.)."
 			}, {
 				"Valores": "8.4",
 				"Descrição": "Atividades desportivas e de lazer",
