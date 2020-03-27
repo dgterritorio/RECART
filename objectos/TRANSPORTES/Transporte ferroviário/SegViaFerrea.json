@@ -182,7 +182,7 @@
 				"Valores INSPIRE": "suspendedOrElevated",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "A entidade geográfica está assente no segundo nível acima do solo."
+				"Definição": "A entidade geográfica está assente no terceiro ou superior nível acima do solo."
 			}, {
 				"Valores": "2",
 				"Descrição": "Suspenso ou elevado: nível 2, acima de nível 1",
