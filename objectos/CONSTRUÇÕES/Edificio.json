@@ -578,7 +578,7 @@
 				"Valores": "4.1",
 				"Descrição": "Comércio tradicional",
 				"Valores INSPIRE": "trade",
-				"D1": "",
+				"D1": "x",
 				"D2": "",
 				"Definição": "Estabelecimento de pequena/média dimensão num ambiente em que predomina a proximidade entre o cliente e o vendedor."
 			}, {
@@ -635,70 +635,70 @@
 				"Descrição": "Transporte aéreo",
 				"Valores INSPIRE": "",
 				"D1": "",
-				"D2": "x",
-				"Definição": "Edifício associado a tráfego aéreo."
+				"D2": "",
+				"Definição": "Edifício associado ao tráfego aéreo."
 			}, {
 				"Valores": "6.1.1",
 				"Descrição": "Terminal aéreo",
 				"Valores INSPIRE": "",
 				"D1": "x",
-				"D2": "",
+				"D2": "x",
 				"Definição": "Edifício destinado aos serviços associados ao transporte aéreo (incluindo os serviços de check-in, embarque e desembarque, comércio, etc.)."
 			}, {
 				"Valores": "6.1.2",
 				"Descrição": "Torre de controlo",
 				"Valores INSPIRE": "",
 				"D1": "x",
-				"D2": "",
+				"D2": "x",
 				"Definição": "Edifício destinado ao controlo do tráfego aéreo."
 			}, {
 				"Valores": "6.2",
 				"Descrição": "Transporte ferroviário",
 				"Valores INSPIRE": "",
 				"D1": "",
-				"D2": "x",
+				"D2": "",
 				"Definição": "Edifício associado ao tráfego ferroviário."
 			}, {
 				"Valores": "6.2.1",
 				"Descrição": "Estação",
 				"Valores INSPIRE": "",
 				"D1": "x",
-				"D2": "",
+				"D2": "x",
 				"Definição": "Edifício da estação ferroviária."
 			}, {
 				"Valores": "6.2.2",
 				"Descrição": "Apeadeiro",
 				"Valores INSPIRE": "",
 				"D1": "x",
-				"D2": "",
+				"D2": "x",
 				"Definição": "Edifício do apeadeiro ferroviário."
 			}, {
 				"Valores": "6.3",
 				"Descrição": "Transporte por via navegável",
 				"Valores INSPIRE": "",
 				"D1": "",
-				"D2": "x",
+				"D2": "",
 				"Definição": "Edifício associado ao tráfego marítimo ou fluvial."
 			}, {
 				"Valores": "6.3.1",
 				"Descrição": "Terminal marítimo ou fluvial",
 				"Valores INSPIRE": "",
 				"D1": "x",
-				"D2": "",
+				"D2": "x",
 				"Definição": "Edifício destinado aos serviços associados ao transporte marítimo ou fluvial (incluindo os serviços de check-in, embarque e desembarque, comercio, etc.)."
 			}, {
 				"Valores": "6.3.2",
 				"Descrição": "Centro de controlo",
 				"Valores INSPIRE": "",
 				"D1": "x",
-				"D2": "",
+				"D2": "x",
 				"Definição": "Edifício destinado ao controlo do tráfego marítimo ou fluvial."
 			}, {
 				"Valores": "6.4",
 				"Descrição": "Transporte rodoviário",
 				"Valores INSPIRE": "",
 				"D1": "",
-				"D2": "x",
+				"D2": "",
 				"Definição": "Edifício associado a tráfego rodoviário."
 			}, {
 				"Valores": "6.4.1",
@@ -712,21 +712,21 @@
 				"Descrição": "Terminal rodoviário",
 				"Valores INSPIRE": "",
 				"D1": "x",
-				"D2": "",
+				"D2": "x",
 				"Definição": "Edifício destinado aos serviços associados ao transporte rodoviário (incluindo os serviços de check-in, embarque e desembarque, comércio, etc.)."
 			}, {
 				"Valores": "6.4.3",
 				"Descrição": "Parque de estacionamento em edifício",
 				"Valores INSPIRE": "",
 				"D1": "x",
-				"D2": "",
+				"D2": "x",
 				"Definição": "Edifício associado a parques de estacionamento ou interfaces."
 			}, {
 				"Valores": "6.5",
 				"Descrição": "Elevador ou ascensor",
 				"Valores INSPIRE": "",
 				"D1": "x",
-				"D2": "",
+				"D2": "x",
 				"Definição": "Equipamento que conduz pessoas ou carga aos vários andares de um edifício."
 			}, {
 				"Valores": "6.6",
@@ -740,7 +740,7 @@
 				"Descrição": "Serviços",
 				"Valores INSPIRE": "",
 				"D1": "",
-				"D2": "x",
+				"D2": "",
 				"Definição": "Edifício associado à prestação de serviços."
 			}, {
 				"Valores": "7.1",
