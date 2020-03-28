@@ -47,7 +47,7 @@
 			"Tipo": "Real",
 			"D1": "",
 			"D2": "",
-			"Definição": "Indicação da largura da construção linear."
+			"Definição": "Indicação da largura da construção linear. [unidade: metro]"
 		}, {
 			"Atributo": "nome",
 			"Multip.": "[0..1]",
