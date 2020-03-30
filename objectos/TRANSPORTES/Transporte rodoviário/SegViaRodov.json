@@ -1,4 +1,6 @@
-"Tema": "TRANSPORTES (Transporte rodoviário)",
+{
+	"objecto": {
+		"Tema": "TRANSPORTES (Transporte rodoviário)",
 		"Característica geográfica": "Segmento da via rodoviária",
 		"Objeto INSPIRE": "RoadLink",
 		"objeto": "SegViaRodov",

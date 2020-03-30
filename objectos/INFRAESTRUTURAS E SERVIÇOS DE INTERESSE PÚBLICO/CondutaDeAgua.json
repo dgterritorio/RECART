@@ -7,7 +7,6 @@
 		"Definição": "Conduta utilizada para transportar água de um local para outro.",
 		"Dim.": "2D",
 		"Atributos": [{
-			"Atributos": [{
 			"Atributo": "identificador",
 			"Multip.": "1",
 			"Definição": "Identificador unívoco - Universal Unique Identifier gerado através da função uuid_generate_v1mc().",
