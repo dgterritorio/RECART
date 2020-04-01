@@ -1,6 +1,6 @@
 # RECART
 Espaço de trabalho para o desenvolvimento da base de dados das especificações técnicas de cartografia topográfica:
-- Base De Dados Geográfica em PostgreSQL
+- Base De Dados Geográficos em PostgreSQL
     - Versão 1.1: https://github.com/dgterritorio/RECART/releases/tag/v1.1
     - Versão de desenvolvimento: https://github.com/dgterritorio/RECART (branch:master)
 - Dicionário de objetos v1.1: http://www.dgterritorio.gov.pt/recart/
