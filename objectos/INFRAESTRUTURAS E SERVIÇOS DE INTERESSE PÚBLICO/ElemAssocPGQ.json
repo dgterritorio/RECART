@@ -27,6 +27,13 @@
 			"Tipo": "DataTempo",
 			"D1": "",
 			"D2": ""
+		},{
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (ponto; polígono)",
+			"D1": "x",
+			"D2": "x",
+			"Definição": ""
 		}, {
 			"Atributo": "valorElementoAssociadoPGQ",
 			"Multip.": "1",

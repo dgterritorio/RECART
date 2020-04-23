@@ -296,11 +296,12 @@ CREATE TABLE elem_assoc_pgq (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
-	edificio_id uuid NOT NULL,
 	valor_elemento_associado_pgq varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
+SELECT AddGeometryColumn ('public','elem_assoc_pgq','geometria',3763,'GEOMETRY',2);
+ALTER TABLE elem_assoc_pgq ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE oleoduto_gasoduto_subtancias_quimicas (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
@@ -1433,7 +1434,6 @@ ALTER TABLE lig_adm_publica_edificio ADD CONSTRAINT localizacao_servico_publico_
 ALTER TABLE lig_adm_publica_edificio ADD CONSTRAINT localizacao_servico_publico_2 FOREIGN KEY (adm_publica_id) REFERENCES adm_publica (identificador);
 ALTER TABLE lig_equip_util_coletiva_edificio ADD CONSTRAINT localizacao_equip_util_coletiva_1 FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
 ALTER TABLE lig_equip_util_coletiva_edificio ADD CONSTRAINT localizacao_equip_util_coletiva_2 FOREIGN KEY (equip_util_coletiva_id) REFERENCES equip_util_coletiva (identificador);
-ALTER TABLE elem_assoc_pgq ADD CONSTRAINT localizacao_elem_assoc_pgq FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
 
 /**
  * Dominio Transporte Ferroviario
@@ -1495,6 +1495,10 @@ FOR EACH ROW EXECUTE PROCEDURE trigger_point_polygon_validation();
 
 CREATE TRIGGER elem_assoc_eletricidade_geometry_check
 BEFORE INSERT ON "elem_assoc_eletricidade"
+FOR EACH ROW EXECUTE PROCEDURE trigger_point_polygon_validation();
+
+CREATE TRIGGER elem_assoc_pgq_geometry_check
+BEFORE INSERT ON "elem_assoc_pgq"
 FOR EACH ROW EXECUTE PROCEDURE trigger_point_polygon_validation();
 
 /**
