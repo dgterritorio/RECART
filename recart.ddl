@@ -1010,7 +1010,6 @@ CREATE TABLE infra_trans_rodov (
 	fim_objeto timestamp without time zone,
 	nome varchar(255),
 	valor_tipo_infra_trans_rodov varchar(10) NOT NULL,
-	valor_tipo_servico varchar(10),
 	PRIMARY KEY (identificador)
 );
 
@@ -1171,7 +1170,6 @@ ALTER TABLE seg_via_rodov ADD CONSTRAINT valor_sentido_id FOREIGN KEY (valor_sen
 ALTER TABLE seg_via_rodov ADD CONSTRAINT valor_tipo_circulacao_id FOREIGN KEY (valor_tipo_circulacao) REFERENCES valor_tipo_circulacao (identificador);
 ALTER TABLE seg_via_rodov ADD CONSTRAINT valor_tipo_troco_rodoviario_id FOREIGN KEY (valor_tipo_troco_rodoviario) REFERENCES valor_tipo_troco_rodoviario (identificador);
 ALTER TABLE infra_trans_rodov ADD CONSTRAINT valor_tipo_infra_trans_rodov_id FOREIGN KEY (valor_tipo_infra_trans_rodov) REFERENCES valor_tipo_infra_trans_rodov (identificador);
-ALTER TABLE infra_trans_rodov ADD CONSTRAINT valor_tipo_servico_id FOREIGN KEY (valor_tipo_servico) REFERENCES valor_tipo_servico (identificador);
 ALTER TABLE no_trans_rodov ADD CONSTRAINT valor_tipo_no_trans_rodov_id FOREIGN KEY (valor_tipo_no_trans_rodov) REFERENCES valor_tipo_no_trans_rodov (identificador);
 ALTER TABLE via_rodov_limite ADD CONSTRAINT valor_tipo_limite_id FOREIGN KEY (valor_tipo_limite) REFERENCES valor_tipo_limite (identificador);
 ALTER TABLE obra_arte ADD CONSTRAINT valor_tipo_obra_arte_id FOREIGN KEY (valor_tipo_obra_arte) REFERENCES valor_tipo_obra_arte (identificador);
