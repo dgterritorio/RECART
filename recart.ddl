@@ -274,7 +274,7 @@ CREATE TABLE inst_producao (
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
 	nome varchar(255) NOT NULL,
-	descricao_da_funcao varchar(255) NOT NULL,
+	descricao_da_funcao varchar(255),
 	valor_instalacao_producao varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -332,7 +332,7 @@ CREATE TABLE adm_publica (
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
 	nome varchar(255) NOT NULL,
-	ponto_de_contacto varchar(255) NOT NULL,
+	ponto_de_contacto varchar(255),
 	valor_tipo_adm_publica varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -343,7 +343,7 @@ CREATE TABLE equip_util_coletiva (
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
 	nome varchar(255) NOT NULL,
-	ponto_de_contacto varchar(255) NOT NULL,
+	ponto_de_contacto varchar(255),
 	PRIMARY KEY (identificador)
 );
 
