@@ -73,7 +73,7 @@
 			"Relação": "ligacaoEquipUtilColetivaAreasArtificializadas",
 			"Tipo": "Relação INFRAESTRUTURAS E SERVIÇOS DE INTERESSE PÚBLICO e OCUPAÇÃO DO SOLO: Associação 'Equipamento de utilização coletiva' e 'Área artificializada'",
 			"Definição": "Ligação ao local geográfico em que o serviço de interesse coletivo é prestado.",
-			"Multip.": "'Equipamento de utilização coletiva' [0..*], 'Área artificializada' [0..*]",
+			"Multip.": "'Equipamento de utilização coletiva' [0..1], 'Área artificializada' [0..*]",
 			"D1": "x",
 			"D2": "x"
 		}, {
@@ -101,7 +101,7 @@
 			"Relação": "ligacaoInstProducaoAreasArtificializadas",
 			"Tipo": "Relação INFRAESTRUTURAS E SERVIÇOS DE INTERESSE PÚBLICO e OCUPAÇÃO DO SOLO: Associação 'Instalação de produção' e 'Área artificializada'",
 			"Definição": "Ligação ao local geográfico da instalação de produção.",
-			"Multip.": "'Instalação de produção' [0..*], 'Área artificializada' [0..*]",
+			"Multip.": "'Instalação de produção' [0..1], 'Área artificializada' [0..*]",
 			"D1": "x",
 			"D2": "x"
 		}]
