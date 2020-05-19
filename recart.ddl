@@ -170,7 +170,7 @@ ALTER TABLE ponto_cotado ADD CONSTRAINT valor_classifica_las_id FOREIGN KEY (val
 ALTER TABLE curva_de_nivel ADD CONSTRAINT valor_tipo_curva_id FOREIGN KEY (valor_tipo_curva) REFERENCES valor_tipo_curva (identificador);
 
 /**
- * Criar dominio Equipamento Urbano
+ * Criar dominio Mobiliário Urbano
  */
 
 -- Ponto, Poligono
@@ -1476,7 +1476,7 @@ END;
 $BODY$ LANGUAGE plpgsql VOLATILE;
 
 /**
- * Cria trigger dominio Equipamento Urbano
+ * Cria trigger dominio Mobiliário Urbano
  */
 
 CREATE TRIGGER mob_urbano_sinal_geometry_check
