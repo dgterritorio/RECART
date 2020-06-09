@@ -489,7 +489,7 @@ ALTER TABLE elem_assoc_agua ADD CONSTRAINT valor_elemento_associado_agua_id FORE
 ALTER TABLE elem_assoc_eletricidade ADD CONSTRAINT valor_elemento_associado_electricidade_id FOREIGN KEY (valor_elemento_associado_electricidade) REFERENCES valor_elemento_associado_electricidade (identificador);
 ALTER TABLE cabo_electrico ADD CONSTRAINT valor_designacao_tensao_id FOREIGN KEY (valor_designacao_tensao) REFERENCES valor_designacao_tensao (identificador);
 ALTER TABLE cabo_electrico ADD CONSTRAINT valor_posicao_vertical_id FOREIGN KEY (valor_posicao_vertical) REFERENCES valor_posicao_vertical (identificador);
-ALTER TABLE lig_valor_tipo_equipamento_coletivo_equip_util_coletiva ADD CONSTRAINT lig_valor_tipo_equipamento_coletivo_equip_util_coletiva_1 FOREIGN KEY (equip_util_coletiva_id) REFERENCES equip_util_coletiva (identificador);
+ALTER TABLE lig_valor_tipo_equipamento_coletivo_equip_util_coletiva ADD CONSTRAINT lig_valor_tipo_equipamento_coletivo_equip_util_coletiva_1 FOREIGN KEY (equip_util_coletiva_id) REFERENCES equip_util_coletiva (identificador) ON DELETE CASCADE;
 ALTER TABLE lig_valor_tipo_equipamento_coletivo_equip_util_coletiva ADD CONSTRAINT lig_valor_tipo_equipamento_coletivo_equip_util_coletiva_2 FOREIGN KEY (valor_tipo_equipamento_coletivo_id) REFERENCES valor_tipo_equipamento_coletivo (identificador);
 
 
@@ -578,7 +578,7 @@ CREATE TABLE nome_edificio (
 	PRIMARY KEY (identificador)
 );
 
-ALTER TABLE nome_edificio ADD CONSTRAINT nome_edificio_id_edificio_id FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
+ALTER TABLE nome_edificio ADD CONSTRAINT nome_edificio_id_edificio_id FOREIGN KEY (edificio_id) REFERENCES edificio (identificador) ON DELETE CASCADE;
 
 CREATE TABLE numero_policia_edificio (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
@@ -587,7 +587,7 @@ CREATE TABLE numero_policia_edificio (
 	PRIMARY KEY (identificador)
 );
 
-ALTER TABLE numero_policia_edificio ADD CONSTRAINT numero_policia_edificio_id_edificio_id FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
+ALTER TABLE numero_policia_edificio ADD CONSTRAINT numero_policia_edificio_id_edificio_id FOREIGN KEY (edificio_id) REFERENCES edificio (identificador) ON DELETE CASCADE;
 
 CREATE TABLE lig_valor_utilizacao_atual_edificio (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
@@ -663,7 +663,7 @@ CREATE TABLE valor_elemento_edificio_xy (
 );
 
 
-ALTER TABLE lig_valor_utilizacao_atual_edificio ADD CONSTRAINT lig_valor_utilizacao_atual_edificio_edificio FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
+ALTER TABLE lig_valor_utilizacao_atual_edificio ADD CONSTRAINT lig_valor_utilizacao_atual_edificio_edificio FOREIGN KEY (edificio_id) REFERENCES edificio (identificador) ON DELETE CASCADE;
 ALTER TABLE lig_valor_utilizacao_atual_edificio ADD CONSTRAINT lig_valor_utilizacao_atual_edificio_valor_utilizacao_atual FOREIGN KEY (valor_utilizacao_atual_id) REFERENCES valor_utilizacao_atual (identificador);
 ALTER TABLE sinal_geodesico ADD CONSTRAINT valor_local_geodesico_id FOREIGN KEY (valor_local_geodesico) REFERENCES valor_local_geodesico (identificador);
 ALTER TABLE sinal_geodesico ADD CONSTRAINT valor_ordem_id FOREIGN KEY (valor_ordem) REFERENCES valor_ordem (identificador);
@@ -1160,7 +1160,7 @@ CREATE TABLE valor_tipo_no_trans_rodov (
 	PRIMARY KEY (identificador)
 );
 
-ALTER TABLE lig_valor_tipo_servico_infra_trans_rodov ADD CONSTRAINT valor_tipo_servico_infra_trans_rodov_infra_trans_rodov FOREIGN KEY (infra_trans_rodov_id) REFERENCES infra_trans_rodov (identificador);
+ALTER TABLE lig_valor_tipo_servico_infra_trans_rodov ADD CONSTRAINT valor_tipo_servico_infra_trans_rodov_infra_trans_rodov FOREIGN KEY (infra_trans_rodov_id) REFERENCES infra_trans_rodov (identificador) ON DELETE CASCADE;
 ALTER TABLE lig_valor_tipo_servico_infra_trans_rodov ADD CONSTRAINT valor_tipo_servico_infra_trans_rodov_valor_tipo_servico FOREIGN KEY (valor_tipo_servico_id) REFERENCES valor_tipo_servico (identificador);
 ALTER TABLE seg_via_rodov ADD CONSTRAINT valor_caract_fisica_rodov_id FOREIGN KEY (valor_caract_fisica_rodov) REFERENCES valor_caract_fisica_rodov (identificador);
 ALTER TABLE seg_via_rodov ADD CONSTRAINT valor_estado_via_rodov_id FOREIGN KEY (valor_estado_via_rodov) REFERENCES valor_estado_via_rodov (identificador);
