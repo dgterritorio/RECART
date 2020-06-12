@@ -985,13 +985,19 @@ CREATE TABLE seg_via_rodov (
 	valor_posicao_vertical_transportes varchar(10) NOT NULL,
 	valor_restricao_acesso varchar(10),
 	valor_sentido varchar(10) NOT NULL,
-	valor_tipo_circulacao varchar(10) NOT NULL,
 	valor_tipo_troco_rodoviario varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
 SELECT AddGeometryColumn ('public','seg_via_rodov','geometria',3763,'LINESTRING',3);
 ALTER TABLE seg_via_rodov ALTER COLUMN geometria SET NOT NULL;
+
+CREATE TABLE lig_valor_tipo_circulacao_seg_via_rodov (
+	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
+	seg_via_rodov_id uuid NOT NULL,
+	valor_tipo_circulacao_id varchar(10) NOT NULL,
+	PRIMARY KEY (identificador)
+);
 
 CREATE TABLE area_infra_trans_rodov (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
@@ -1162,12 +1168,13 @@ CREATE TABLE valor_tipo_no_trans_rodov (
 
 ALTER TABLE lig_valor_tipo_servico_infra_trans_rodov ADD CONSTRAINT valor_tipo_servico_infra_trans_rodov_infra_trans_rodov FOREIGN KEY (infra_trans_rodov_id) REFERENCES infra_trans_rodov (identificador) ON DELETE CASCADE;
 ALTER TABLE lig_valor_tipo_servico_infra_trans_rodov ADD CONSTRAINT valor_tipo_servico_infra_trans_rodov_valor_tipo_servico FOREIGN KEY (valor_tipo_servico_id) REFERENCES valor_tipo_servico (identificador);
+ALTER TABLE lig_valor_tipo_circulacao_seg_via_rodov ADD CONSTRAINT valor_tipo_circulacao_seg_via_rodov_seg_via_rodov FOREIGN KEY (seg_via_rodov_id) REFERENCES seg_via_rodov (identificador) ON DELETE CASCADE;
+ALTER TABLE lig_valor_tipo_circulacao_seg_via_rodov ADD CONSTRAINT valor_tipo_circulacao_seg_via_rodov_valor_tipo_circulacao FOREIGN KEY (valor_tipo_circulacao_id) REFERENCES valor_tipo_circulacao (identificador);
 ALTER TABLE seg_via_rodov ADD CONSTRAINT valor_caract_fisica_rodov_id FOREIGN KEY (valor_caract_fisica_rodov) REFERENCES valor_caract_fisica_rodov (identificador);
 ALTER TABLE seg_via_rodov ADD CONSTRAINT valor_estado_via_rodov_id FOREIGN KEY (valor_estado_via_rodov) REFERENCES valor_estado_via_rodov (identificador);
 ALTER TABLE seg_via_rodov ADD CONSTRAINT valor_posicao_vertical_transportes_id FOREIGN KEY (valor_posicao_vertical_transportes) REFERENCES valor_posicao_vertical_transportes (identificador);
 ALTER TABLE seg_via_rodov ADD CONSTRAINT valor_restricao_acesso_id FOREIGN KEY (valor_restricao_acesso) REFERENCES valor_restricao_acesso (identificador);
 ALTER TABLE seg_via_rodov ADD CONSTRAINT valor_sentido_id FOREIGN KEY (valor_sentido) REFERENCES valor_sentido (identificador);
-ALTER TABLE seg_via_rodov ADD CONSTRAINT valor_tipo_circulacao_id FOREIGN KEY (valor_tipo_circulacao) REFERENCES valor_tipo_circulacao (identificador);
 ALTER TABLE seg_via_rodov ADD CONSTRAINT valor_tipo_troco_rodoviario_id FOREIGN KEY (valor_tipo_troco_rodoviario) REFERENCES valor_tipo_troco_rodoviario (identificador);
 ALTER TABLE infra_trans_rodov ADD CONSTRAINT valor_tipo_infra_trans_rodov_id FOREIGN KEY (valor_tipo_infra_trans_rodov) REFERENCES valor_tipo_infra_trans_rodov (identificador);
 ALTER TABLE no_trans_rodov ADD CONSTRAINT valor_tipo_no_trans_rodov_id FOREIGN KEY (valor_tipo_no_trans_rodov) REFERENCES valor_tipo_no_trans_rodov (identificador);
