@@ -64,7 +64,7 @@
 			"Definição": "Data da revisão da informação sobre o sinal geodésico."
 		}, {
 			"Atributo": "nome",
-			"Multip.": "1",
+			"Multip.": "[0..1]",
 			"Tipo": "Texto",
 			"D1": "x",
 			"D2": "x",

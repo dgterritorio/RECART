@@ -64,7 +64,7 @@
 			"Definição": "Caracterização física do edifício relevante à sua representação cartográfica."
 		}, {
 			"Atributo": "valorUtilizacaoAtual",
-			"Multip.": "[1..*]",
+			"Multip.": "[0..*]",
 			"Tipo": "Lista de códigos",
 			"D1": "x",
 			"D2": "x",
