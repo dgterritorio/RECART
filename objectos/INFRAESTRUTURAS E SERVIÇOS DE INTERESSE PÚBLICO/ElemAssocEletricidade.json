@@ -170,6 +170,13 @@
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Instalação ou equipamento sobre o solo, destinado à transformação da corrente elétrica."
+			}, {
+				"Valores": "9",
+				"Descrição": "Posto de transformação aéreo",
+				"Valores INSPIRE": "transformer",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Instalação ou equipamento elevado sobre um apoio, destinado à transformação da corrente elétrica."
 			}]
 		}]
 	}

@@ -172,7 +172,7 @@
 				"Valores INSPIRE": "footPrint",
 				"D1": "x",
 				"D2": "",
-				"Definição": "A geometria horizontal foi obtida utilizando a implantação do edifício, ou seja, a sua extensão ao nível do solo, incluindo os alpendres."
+				"Definição": "A geometria horizontal foi obtida utilizando a implantação do edifício, ou seja, a sua extensão ao nível do solo."
 			}, {
 				"Valores": "5",
 				"Descrição": "Piso mais baixo acima do solo",
@@ -595,6 +595,13 @@
 				"D1": "x",
 				"D2": "",
 				"Definição": "Estabelecimento que contém uma grande área comercial com um conjunto de estabelecimentos para consumo, prestação de serviços e lazer."
+			}, {
+				"Valores": "4.4",
+				"Descrição": "Grande loja",
+				"Valores INSPIRE": "trade",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Estabelecimento de grande dimensão não inserido num centro comercial."
 			}, {
 				"Valores": "5",
 				"Descrição": "Alojamento e restauração",
