@@ -5,5 +5,5 @@ Espaço de trabalho para o desenvolvimento da base de dados das especificações
     - Todas as versões: https://github.com/dgterritorio/RECART/releases
     - Versão de desenvolvimento: https://github.com/dgterritorio/RECART (Branch: master)
 - Dicionário de objetos v1.1.2: http://www.dgterritorio.gov.pt/recart/
-- Especificações técnicas v1.1: http://www.dgterritorio.pt/filedownload.aspx?schema=f7664ca7-3a1a-4b25-9f46-2056eef44c33&channel=822A9394-2740-4D34-A6C1-8ED04570B3B5&content_id=E4C2B2B0-E761-49A1-82A2-AA546A0E8580&field=storage_image&lang=pt&ver=1&filetype=pdf&dtestate=2020-03-30145704
+- Especificações técnicas v1.1: https://www.dgterritorio.pt/sites/default/files/ficheiros-cartografia/NormasEspecificacoesTecnicasCartTop.pdf
   - Errata das especificações técnicas v1.1: https://www.dgterritorio.pt/sites/default/files/ficheiros-cartografia/NormasEspecificacoesTecnicasCartTopErrata.pdf
