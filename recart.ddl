@@ -1475,7 +1475,7 @@ $BODY$ LANGUAGE plpgsql VOLATILE;
  */
 CREATE OR REPLACE FUNCTION trigger_linestring_polygon_validation() RETURNS trigger AS $BODY$
 BEGIN
-if(st_geometrytype(NEW.geometria) like 'ST_Linestring' OR st_geometrytype(NEW.geometria) like 'ST_Polygon') then
+if(st_geometrytype(NEW.geometria) like 'ST_LineString' OR st_geometrytype(NEW.geometria) like 'ST_Polygon') then
 	RETURN NEW;
 end if;
 RAISE EXCEPTION 'Invalid geometry type only linestring or polygon are accepted!';
