@@ -438,7 +438,7 @@ INSERT INTO valor_tipo_ponto_interesse VALUES ('9','Miradouro');
 INSERT INTO valor_tipo_ponto_interesse VALUES ('10','Padrão');
 INSERT INTO valor_tipo_ponto_interesse VALUES ('11','Pelourinho');
 INSERT INTO valor_tipo_ponto_interesse VALUES ('12','Ruínas com interesse histórico');
-INSERT INTO valor_tipo_ponto_interesse VALUES ('13','Outro');
+INSERT INTO valor_tipo_ponto_interesse VALUES ('13','Outro - Ponto de Interesse');
 INSERT INTO valor_tipo_servico VALUES ('1','Abastecimento de combustível');
 INSERT INTO valor_tipo_servico VALUES ('2','Carregamento elétrico');
 INSERT INTO valor_tipo_servico VALUES ('3','Loja de conveniência');
