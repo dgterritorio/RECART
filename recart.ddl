@@ -536,7 +536,7 @@ CREATE TABLE constru_polig (
 	PRIMARY KEY (identificador)
 );
 
-SELECT AddGeometryColumn ('public','constru_polig','geometria',3763,'GEOMETRY',2);
+SELECT AddGeometryColumn ('public','constru_polig','geometria',3763,'POLYGON',2);
 ALTER TABLE constru_polig ALTER COLUMN geometria SET NOT NULL;
 
 --Ponto, Poligono
@@ -1512,10 +1512,6 @@ FOR EACH ROW EXECUTE PROCEDURE trigger_point_polygon_validation();
 
 CREATE TRIGGER edifico_geometry_check
 BEFORE INSERT ON "edificio"
-FOR EACH ROW EXECUTE PROCEDURE trigger_point_polygon_validation();
-
-CREATE TRIGGER constru_polig_geometry_check
-BEFORE INSERT ON "constru_polig"
 FOR EACH ROW EXECUTE PROCEDURE trigger_point_polygon_validation();
 
 CREATE TRIGGER ponto_interesse_geometry_check
