@@ -69,8 +69,8 @@
 				"Valores": "1.3",
 				"Descrição": "Central eólica",
 				"Valores INSPIRE": "",
-				"D1": "x",
-				"D2": "x",
+				"D1": "",
+				"D2": "",
 				"Definição": "Infraestrutura que contém uma instalação de produção de energia elétrica a partir da energia cinética dos ventos."
 			}, {
 				"Valores": "1.4",
