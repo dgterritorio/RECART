@@ -1455,9 +1455,10 @@ ALTER TABLE lig_segviaferrea_linhaferrea ADD CONSTRAINT lig_segviaferrea_linhafe
 ALTER TABLE area_infra_trans_rodov ADD CONSTRAINT area_infra_trans_rodov FOREIGN KEY (infra_trans_rodov_id) REFERENCES infra_trans_rodov (identificador);
 ALTER TABLE lig_segviarodov_viarodov ADD CONSTRAINT lig_segviarodov_viarodov_1 FOREIGN KEY (seg_via_rodov_id) REFERENCES seg_via_rodov (identificador) ON DELETE CASCADE;;
 ALTER TABLE lig_segviarodov_viarodov ADD CONSTRAINT lig_segviarodov_viarodov_2 FOREIGN KEY (via_rodov_id) REFERENCES via_rodov (identificador) ON DELETE CASCADE;;
-ALTER TABLE lig_segviarodov_viarodovlimite ADD CONSTRAINT lig_segviarodov_viarodovlimite_1 FOREIGN KEY (via_rodov_limite_id) REFERENCES via_rodov_limite (identificador) ON DELETE CASCADE;;
-ALTER TABLE lig_segviarodov_viarodovlimite ADD CONSTRAINT lig_segviarodov_viarodovlimite_2 FOREIGN KEY (seg_via_rodov_id) REFERENCES seg_via_rodov (identificador) ON DELETE CASCADE;;
-
+ALTER TABLE lig_segviarodov_viarodovlimite ADD CONSTRAINT lig_segviarodov_viarodovlimite_1 FOREIGN KEY (via_rodov_limite_id) REFERENCES via_rodov_limite (identificador) ON DELETE CASCADE;
+ALTER TABLE lig_segviarodov_viarodovlimite ADD CONSTRAINT lig_segviarodov_viarodovlimite_2 FOREIGN KEY (seg_via_rodov_id) REFERENCES seg_via_rodov (identificador) ON DELETE CASCADE;
+ALTER TABLE lig_infratransrodov_notransrodov ADD CONSTRAINT lig_infratransrodov_notransrodov_1 FOREIGN KEY (NO_trans_rodov_id) REFERENCES no_trans_rodov (identificador) ON DELETE CASCADE;
+ALTER TABLE lig_infratransrodov_notransrodov ADD CONSTRAINT lig_infratransrodov_notransrodov_2 FOREIGN KEY (infra_trans_rodov_id) REFERENCES infra_trans_rodov (identificador) ON DELETE CASCADE;
 /**
  * Cria trigger para validacao de geometria ponto ou poligono
  */
