@@ -61,14 +61,14 @@
 			"valores": [{
 				"Valores": "1",
 				"Descrição": "Comporta",
-				"Valores INSPIRE": "Lock",
+				"Valores INSPIRE": "Sluice",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Porta que sustem as águas de diques, açudes, represas ou barragens e que pode abrir-se para o seu escoamento."
 			}, {
 				"Valores": "2",
 				"Descrição": "Eclusa",
-				"Valores INSPIRE": "Sluice",
+				"Valores INSPIRE": "Lock",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Obra hidráulica, construída sobre um rio ou em zona portuária, com uma ou várias comportas, que permite a navegação quando é necessário vencer grandes desníveis."
