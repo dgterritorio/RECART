@@ -7,6 +7,7 @@ Espaço de trabalho para o desenvolvimento da base de dados das especificações
     - Versão estável para produção (v1.1.2 2020-07-20): https://github.com/dgterritorio/RECART/releases/tag/v1.1.2
     - Todas as versões: https://github.com/dgterritorio/RECART/releases
     - Versão de desenvolvimento: https://github.com/dgterritorio/RECART (Branch: master)
+- Exemplo de projetos QGIS para visualização da cartografia topográfica: https://github.com/dgterritorio/RECART/tree/master/projetoQGIS_exemplos
 - Dicionário de objetos v1.1.2: http://www.dgterritorio.gov.pt/recart/
 - Especificações técnicas v1.1: https://www.dgterritorio.pt/sites/default/files/ficheiros-cartografia/NormasEspecificacoesTecnicasCartTop.pdf
   - Errata das especificações técnicas v1.1: https://www.dgterritorio.pt/sites/default/files/ficheiros-cartografia/NormasEspecificacoesTecnicasCartTopErrata.pdf
