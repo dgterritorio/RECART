@@ -13,4 +13,5 @@ Para adaptar este ficheiro de projeto QGIS (nomedaBD_BDv1.1.2_QGISv3.16.11LTR_19
 
 Depois deve executar o script sql (schema_carttop_20220318.sql) já que o projeto QGIS está preparado para as relações estabelecidas neste ficheiro SQL.
 
-Nota: Pode, por exemplo, executar o script, de várias formas. Uma forma possível é no software opensource dBeaver colar o código disponibilizado neste script e executar (Execute SQL Script [Alt+X]) no SQL Editor (ver SQL_Editor.jpg).
+Nota: Pode executar o script, de várias formas. 
+Uma forma possível é ativar (set default) a base de dados onde vai ser criado um novo schema carttop, por exemplo, no software opensource dBeaver e colar o código disponibilizado neste script. Depois deve executar (Execute SQL Script [Alt+X]) no SQL Editor (ver SQL_Editor.jpg).
