@@ -11,5 +11,6 @@ Para adaptar este ficheiro de projeto QGIS (nomedaBD_BDv1.1.2_QGISv3.16.11LTR_19
 	- 192.168.0.0 -> deve substituir este IP pelo IP do seu computador onde estiver a sua base de dados; 
 	- 5432 -> deve substituir para o número da sua porta se a sua base de dados estiver com outra porta configurada. 
 
+Depois deve executar o script sql (schema_carttop_20220318.sql) já que o projeto QGIS está preparado para as relações estabelecidas neste ficheiro SQL.
 
-Também deve executar o script sql (schema_carttop_20220318.sql).
+Nota: Pode, por exemplo, executar o script, de várias formas, no software opensource dBeaver.
