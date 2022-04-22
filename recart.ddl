@@ -1545,23 +1545,3 @@ FOR EACH ROW EXECUTE PROCEDURE trigger_point_polygon_validation();
 CREATE TRIGGER barreira_geometry_check
 BEFORE INSERT ON "barreira"
 FOR EACH ROW EXECUTE PROCEDURE trigger_linestring_polygon_validation();
-
-
-
-/**
- * Criar grupo com acesso de leitura
- */
-
-CREATE ROLE leitor NOLOGIN;
-GRANT CONNECT ON DATABASE recart TO leitor;
-GRANT SELECT ON ALL TABLES IN SCHEMA public TO leitor;
-
-/**
- * Criar grupo com acesso de leitura e escrita
- */
-
-CREATE ROLE editor NOLOGIN;
-GRANT CONNECT ON DATABASE recart TO editor;
-GRANT SELECT ON ALL TABLES IN SCHEMA public TO editor;
-GRANT INSERT ON ALL TABLES IN SCHEMA public TO editor;
-GRANT UPDATE ON ALL TABLES IN SCHEMA public TO editor;
