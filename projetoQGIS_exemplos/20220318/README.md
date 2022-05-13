@@ -14,4 +14,5 @@ Para adaptar este ficheiro de projeto QGIS (nomedaBD_BDv1.1.2_QGISv3.16.11LTR_19
 Nota: Pode executar o script, de várias formas. 
 Uma forma possível é ativar (Set as default) a base de dados onde vai ser criado um novo schema carttop, por exemplo, no software opensource dBeaver e colar o código disponibilizado neste script. 
 Depois deve executar o script (Execute SQL Script [Alt+X]) no SQL Editor:
+
 ![image](https://user-images.githubusercontent.com/46351849/168269963-c6351375-e0dc-44e5-b1d0-875fc66dd9ec.png)
