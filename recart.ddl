@@ -1303,7 +1303,6 @@ CREATE TABLE no_hidrografico (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
-	nome varchar(255),
 	id_hidrografico varchar(255),
 	valor_tipo_no_hidrografico varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
