@@ -4,7 +4,7 @@
 		"Característica geográfica": "Ponto cotado",
 		"Objeto INSPIRE": "SpotElevation",
 		"objeto": "PontoCotado",
-		"Definição": "Projeção ortogonal de um ponto do terreno no plano.",
+		"Definição": "Objeto pontual espacial que descreve a elevação numa localização geográfica específica.",
 		"Dim.": "3D",
 		"Atributos": [{
 			"Atributo": "identificador",
