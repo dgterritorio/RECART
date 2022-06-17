@@ -16,7 +16,7 @@
 		}, {
 			"Atributo": "inicioObjeto",
 			"Multip.": "1",
-			"Definição": "Data e hora (hora:minuto:segundo) em que a versão em causa do “objeto” foi inserida ou alterada.",
+			"Definição": "Data e hora (até ao segundo) em que a versão em causa do objeto foi inserida ou alterada na base de dados.",
 			"Tipo": "DataTempo",
 			"D1": "x",
 			"D2": "x"
