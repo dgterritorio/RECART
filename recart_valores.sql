@@ -18,6 +18,9 @@ INSERT INTO valor_areas_agricolas_florestais_matos VALUES ('1.2','Arrozal');
 INSERT INTO valor_areas_agricolas_florestais_matos VALUES ('1.3','Vinha');
 INSERT INTO valor_areas_agricolas_florestais_matos VALUES ('1.4','Pomar');
 INSERT INTO valor_areas_agricolas_florestais_matos VALUES ('1.5','Olival');
+INSERT INTO valor_areas_agricolas_florestais_matos VALUES ('1.6','Bananal');
+INSERT INTO valor_areas_agricolas_florestais_matos VALUES ('1.7','Misto de culturas permanentes');
+INSERT INTO valor_areas_agricolas_florestais_matos VALUES ('1.8','Outras culturas permanentes');
 INSERT INTO valor_areas_agricolas_florestais_matos VALUES ('2','Pastagem');
 INSERT INTO valor_areas_agricolas_florestais_matos VALUES ('2.1','Pastagem permanente');
 INSERT INTO valor_areas_agricolas_florestais_matos VALUES ('2.2','Vegetação herbácea natural');
@@ -35,6 +38,7 @@ INSERT INTO valor_areas_agricolas_florestais_matos VALUES ('4.2','Floresta de re
 INSERT INTO valor_areas_agricolas_florestais_matos VALUES ('4.2.1','Pinheiro manso');
 INSERT INTO valor_areas_agricolas_florestais_matos VALUES ('4.2.2','Pinheiro bravo');
 INSERT INTO valor_areas_agricolas_florestais_matos VALUES ('4.2.3','Outras resinosas');
+INSERT INTO valor_areas_agricolas_florestais_matos VALUES ('4.3','Floresta de Laurissilva');
 INSERT INTO valor_areas_agricolas_florestais_matos VALUES ('5','Mato');
 INSERT INTO valor_areas_artificializadas VALUES ('1','Equipamentos de saúde');
 INSERT INTO valor_areas_artificializadas VALUES ('2','Equipamentos de educação');
