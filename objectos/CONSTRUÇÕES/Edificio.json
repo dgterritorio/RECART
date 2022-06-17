@@ -96,7 +96,7 @@
 			"Tipo": "Texto",
 			"D1": "x",
 			"D2": "",
-			"Definição": "Número, por vezes acompanhado de letras, que permite identificar um edifício, uma habitação, uma entrada ou um recinto, geralmente colocado ou inscrito por cima ou ao lado de uma porta."
+			"Definição": "Número, por vezes acompanhado de letras, que permite identificar um edifício, geralmente colocado ou inscrito por cima ou ao lado de uma porta."
 		}],
 		"listas de códigos": [{
 			"nome": "valorCondicaoConst",
