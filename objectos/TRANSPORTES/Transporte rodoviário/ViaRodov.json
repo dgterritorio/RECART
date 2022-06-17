@@ -54,14 +54,14 @@
 			"Tipo": "Texto",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Nome da via rodoviária que consta no catálogo. Para as vias não catalogadas inserir o nome que caracteriza a via."
+			"Definição": "Nome da via rodoviária como consta no catálogo. Para as vias não catalogadas devem ser usadas letras maiúsculas, a abreviatura do tipo de via rodoviária de acordo com o catálogo, seguida da designação completa e por extenso."
 		}, {
 			"Atributo": "nomeAlternativo",
 			"Multip.": "[0..1]",
 			"Tipo": "Texto",
 			"D1": "",
 			"D2": "",
-			"Definição": "Nome alternativo da via rodoviária que consta no catálogo. Para as vias não catalogadas inserir o nome alternativo (caso exista) que caracteriza a via."
+			"Definição": "Nome alternativo da via rodoviária como consta no catálogo. Para as vias não catalogadas inserir o nome alternativo (caso exista) que caracteriza a via."
 		}, {
 			"Atributo": "tipoViaRodovAbv",
 			"Multip.": "1",
