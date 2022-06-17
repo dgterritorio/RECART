@@ -97,6 +97,13 @@
 			"D1": "",
 			"D2": "",
 			"Definição": "Autoridade que tem a jurisdição da via rodoviária."
+		},  {
+			"Atributo": "larguraViaRodov",
+			"Multip.": "1",
+			"Tipo": "Real",
+			"D1": "",
+			"D2": "",
+			"Definição": "Largura da faixa de rodagem, que pode ser composta por uma ou mais vias de trânsito, medida entre as linhas que materializam o “Limite/Separador”.  [unidade: metro]"
 		}, {
 			"Atributo": "multiplaFaixaRodagem",
 			"Multip.": "1",
