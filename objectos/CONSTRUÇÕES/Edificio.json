@@ -36,7 +36,7 @@
 			"Definição": ""
 		}, {
 			"Atributo": "valorCondicaoConst",
-			"Multip.": "[0..1]",
+			"Multip.": "1",
 			"Tipo": "Lista de códigos",
 			"D1": "x",
 			"D2": "x",
