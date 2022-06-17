@@ -8,9 +8,10 @@
  * Inserir tabelas de valores
  */
 
-INSERT INTO valor_agua_lentica VALUES ('1','Lagoa');
+INSERT INTO valor_agua_lentica VALUES ('1','Lago ou lagoa');
 INSERT INTO valor_agua_lentica VALUES ('2','Albufeira');
 INSERT INTO valor_agua_lentica VALUES ('3','Charca');
+INSERT INTO valor_agua_lentica VALUES ('4','Charco ou poça');
 INSERT INTO valor_areas_agricolas_florestais_matos VALUES ('1','Agricultura');
 INSERT INTO valor_areas_agricolas_florestais_matos VALUES ('1.1','Cultura temporária de sequeiro e regadio');
 INSERT INTO valor_areas_agricolas_florestais_matos VALUES ('1.2','Arrozal');
