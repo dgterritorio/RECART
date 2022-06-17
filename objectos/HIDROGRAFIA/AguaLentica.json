@@ -54,14 +54,14 @@
 			"Tipo": "Booleano",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Indica se foi usada a cota de pleno armazenamento na aquisição do objeto (nível de pleno armazenamento – NPA)."
+			"Definição": "Indica se foi usada a cota de pleno armazenamento na aquisição do objeto (nível de pleno armazenamento oficial – NPA oficial)."
 		}, {
 			"Atributo": "dataFonteDados",
 			"Multip.": "[0..1]",
 			"Tipo": "Data",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Data da fonte de dados usada para a representação do objeto. Aplicável apenas quando o objeto é adquirido a partir da informação visual disponível e não aplicável quando foi usada, para a sua representação, o nível de pleno armazenamento – NPA."
+			"Definição": "Data da fonte de dados usada para a representação do objeto. Aplicável apenas quando o objeto é adquirido a partir da informação visual disponível e não aplicável quando foi usada, para a sua representação, o nível de pleno armazenamento oficial – NPA oficial"
 		}, {
 			"Atributo": "iDHidrografico",
 			"Multip.": "1",
