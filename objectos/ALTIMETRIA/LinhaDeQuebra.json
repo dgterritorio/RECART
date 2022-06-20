@@ -101,6 +101,13 @@
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Linha definidora do bordo superior de terreno inclinado."
+			}, {
+				"Valores": "7",
+				"Descrição": "Limite de área plana",
+				"Valores INSPIRE": "flat area boundary",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Linha de rutura que delimita uma parte isolada do território onde o valor altimétrico é constante. Este limite deve ser fechado e recolhido apenas para representar a área plana das Albufeiras quando estas foram representadas no tema Hidrografia pelo NPA."
 			}]
 		}, {
 			"nome": "valorNaturezaLinha",

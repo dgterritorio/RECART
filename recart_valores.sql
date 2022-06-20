@@ -76,6 +76,7 @@ INSERT INTO valor_classifica VALUES ('3','Linha de forma');
 INSERT INTO valor_classifica VALUES ('4','Linha de talvegue');
 INSERT INTO valor_classifica VALUES ('5','Linha de cumeada');
 INSERT INTO valor_classifica VALUES ('6','Topo do declive');
+INSERT INTO valor_classifica VALUES ('7','Limite de área plana');
 INSERT INTO valor_classifica_las VALUES ('1','Terreno');
 INSERT INTO valor_classifica_las VALUES ('2','Edifício');
 INSERT INTO valor_classifica_las VALUES ('2.1','Edifício - soleira');
