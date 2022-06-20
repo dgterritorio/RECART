@@ -62,6 +62,7 @@ INSERT INTO valor_caract_fisica_rodov VALUES ('3','Via urbana');
 INSERT INTO valor_caract_fisica_rodov VALUES ('4','Via rural');
 INSERT INTO valor_caract_fisica_rodov VALUES ('5','Aceiro');
 INSERT INTO valor_caract_fisica_rodov VALUES ('6','Ciclovia');
+INSERT INTO valor_caract_fisica_rodov VALUES ('7','Vereda');
 INSERT INTO valor_categoria_bitola VALUES ('1','Ibérica');
 INSERT INTO valor_categoria_bitola VALUES ('2','Europeia');
 INSERT INTO valor_categoria_bitola VALUES ('3','Métrica');
