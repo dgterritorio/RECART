@@ -144,6 +144,8 @@ INSERT INTO valor_elemento_associado_electricidade VALUES ('7.3','Apoio de baixa
 INSERT INTO valor_elemento_associado_electricidade VALUES ('7.4','Apoio de muito alta tensão');
 INSERT INTO valor_elemento_associado_electricidade VALUES ('8','Posto transformador');
 INSERT INTO valor_elemento_associado_electricidade VALUES ('9','Posto de transformação aéreo');
+INSERT INTO valor_elemento_associado_electricidade VALUES ('10','Armário de distribuição');
+INSERT INTO valor_elemento_associado_electricidade VALUES ('11','Câmara de visita');
 INSERT INTO valor_elemento_associado_pgq VALUES ('1','Petróleo ou derivados');
 INSERT INTO valor_elemento_associado_pgq VALUES ('2','Gás');
 INSERT INTO valor_elemento_associado_pgq VALUES ('2.1','Estação da RNTGN');

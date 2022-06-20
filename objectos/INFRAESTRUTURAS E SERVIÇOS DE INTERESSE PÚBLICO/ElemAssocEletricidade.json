@@ -80,6 +80,20 @@
 				"D2": "x",
 				"Definição": "Infraestrutura que contém uma instalação de produção de energia elétrica a partir de energia libertada em forma de calor."
 			}, {
+				"Valores": "1.5",
+				"Descrição": "Central de biomassa",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Infraestrutura que contém uma instalação de produção de energia elétrica a partir de energia libertada em forma de calor."
+			}, {
+				"Valores": "1.6",
+				"Descrição": "Central geotérmica",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Infraestrutura que contém uma instalação de produção de energia elétrica a partir de energia obtida do calor proveniente do interior da Terra."
+			}, {
 				"Valores": "2",
 				"Descrição": "Subestação elétrica",
 				"Valores INSPIRE": "subStation",
@@ -120,14 +134,14 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "",
-				"Definição": "Haste vertical, colocada no solo ou fixada em alvenaria, para suporte de luminárias de iluminação da via pública."
+				"Definição": "Haste normalmente vertical, que pode estar ou não apoiada no solo, para suporte de luminárias de iluminação da via pública."
 			},{
 				"Valores": "6.2",
 				"Descrição": "Apoio de iluminação e baixa tensão",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "",
-				"Definição": "Estrutura metálica reticulada ou de betão que suporta os cabos condutores, os cabos de guarda, os isoladores e os acessórios de fixação das linhas elétricas de tensão até 1kV e que coincide com suporte de iluminação vertical da via pública."
+				"Definição": "Estrutura metálica reticulada ou de betão, tubo metálico, apoio de madeira ou outro material que suporta os cabos e os acessórios de fixação das linhas elétricas de tensão até 1kV e que coincide com suporte de iluminação vertical da via pública."
 			}, {
 				"Valores": "7",
 				"Descrição": "Apoio de eletricidade",
@@ -155,7 +169,7 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "",
-				"Definição": "Estrutura metálica reticulada ou de betão que suporta os cabos condutores, os cabos de guarda, os isoladores e os acessórios de fixação das linhas elétricas de tensão até 1kV."
+				"Definição": "Estrutura metálica reticulada ou de betão, tubo metálico, apoio de madeira ou outro material, que suporta os cabos condutores e os acessórios de fixação das linhas elétricas de tensão até 1kV."
 			}, {
 				"Valores": "7.4",
 				"Descrição": "Apoio de muito alta tensão",
@@ -177,6 +191,20 @@
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Instalação ou equipamento elevado sobre um apoio, destinado à transformação da corrente elétrica."
+			}, {
+				"Valores": "10",
+				"Descrição": "Armário de distribuição",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Estrutura metálica monobloco colocada na via pública destinada ao apoio à distribuição de energia elétrica."
+			}, {
+				"Valores": "11",
+				"Descrição": "Câmara de visita",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Compartimento que permite aceder à rede elétrica subterrânea."
 			}]
 		}]
 	}
