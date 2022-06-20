@@ -87,6 +87,20 @@
 				"D2": "",
 				"Definição": "Edifício onde se abatem animais cuja carne é para consumo público."
 			}, {
+				"Valores": "1.5",
+				"Descrição": "Ovil",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Instalação ou edifício onde é exercida uma atividade pecuária relacionada com exploração, reprodução e recriação de gado ovino."
+			}, {
+				"Valores": "1.6",
+				"Descrição": "Outros - Pecuária",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Outro tipo de instalação ou edifício onde é exercida uma atividade pecuária."
+			}, {
 				"Valores": "2",
 				"Descrição": "Adega",
 				"Valores INSPIRE": "",
@@ -212,6 +226,13 @@
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Área onde se depositam materiais de ferro velho e onde se compram e vendem esses materiais."
+			}, {
+				"Valores": "13",
+				"Descrição": "Engenho",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Instalação ou edifício agro-industrial onde é exercida a atividade relacionada com a transformação da cana-de-açúcar em mel e aguardente de cana."
 			}]
 		}]
 	}
