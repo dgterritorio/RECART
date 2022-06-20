@@ -79,6 +79,13 @@
 				"D1": "",
 				"D2": "",
 				"Definição": "Ponto cotado em cumeeira ou na zona mais elevada do edifício."
+			}, {
+				"Valores": "3",
+				"Descrição": "Tabuleiro suspenso ou elevado",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Ponto cotado sobre via rodoviária ou ferroviária elevada ou suspensa."
 			}]
 		}]
 	}

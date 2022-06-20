@@ -82,6 +82,7 @@ INSERT INTO valor_classifica_las VALUES ('2','Edifício');
 INSERT INTO valor_classifica_las VALUES ('2.1','Edifício - soleira');
 INSERT INTO valor_classifica_las VALUES ('2.2','Edifício - beirado');
 INSERT INTO valor_classifica_las VALUES ('2.3','Edifício - ponto mais alto');
+INSERT INTO valor_classifica_las VALUES ('3','Tabuleiro suspenso ou elevado');
 INSERT INTO valor_condicao_const VALUES ('1','Demolido');
 INSERT INTO valor_condicao_const VALUES ('2','Desafetado');
 INSERT INTO valor_condicao_const VALUES ('3','Em construção');
