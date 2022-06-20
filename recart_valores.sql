@@ -157,9 +157,11 @@ INSERT INTO valor_elemento_associado_pgq VALUES ('2.2','Instalação de armazena
 INSERT INTO valor_elemento_associado_pgq VALUES ('2.3','Terminal de GNL');
 INSERT INTO valor_elemento_associado_pgq VALUES ('2.4','Unidade autónoma de gás natural (UAG)');
 INSERT INTO valor_elemento_associado_pgq VALUES ('3','Substâncias químicas');
-INSERT INTO valor_elemento_associado_telecomunicacoes VALUES ('1','Poste telefónico');
+INSERT INTO valor_elemento_associado_telecomunicacoes VALUES ('1','Poste');
 INSERT INTO valor_elemento_associado_telecomunicacoes VALUES ('2','Cabina telefónica');
 INSERT INTO valor_elemento_associado_telecomunicacoes VALUES ('3','Antena');
+INSERT INTO valor_elemento_associado_telecomunicacoes VALUES ('4','Armário');
+INSERT INTO valor_elemento_associado_telecomunicacoes VALUES ('5','Câmara de visita');
 INSERT INTO valor_elemento_edificio_xy VALUES ('1','Combinado');
 INSERT INTO valor_elemento_edificio_xy VALUES ('2','Ponto de entrada');
 INSERT INTO valor_elemento_edificio_xy VALUES ('3','Invólucro');
