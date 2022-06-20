@@ -81,11 +81,11 @@
 				"Definição": "Barreira numa barragem de betão que retém a água de um curso de água."
 			}, {
 				"Valores": "4",
-				"Descrição": "Barreira da barragem de terra",
+				"Descrição": "Barreira da barragem de aterro",
 				"Valores INSPIRE": "DamOrWeir",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Barreira numa barragem de terra que retém a água de um curso de água."
+				"Definição": "Barreira numa barragem de aterro que retém a água de um curso de água. Estas barragens podem ser construídas com terra, madeira, pedra, pedra solta, enrocamento, mistas ou outro material."
 			}, {
 				"Valores": "5",
 				"Descrição": "Barreira do açude ou represa",

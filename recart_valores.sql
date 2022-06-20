@@ -53,7 +53,7 @@ INSERT INTO valor_areas_artificializadas VALUES ('10','Instalação de seguranç
 INSERT INTO valor_barreira VALUES ('1','Comporta');
 INSERT INTO valor_barreira VALUES ('2','Eclusa');
 INSERT INTO valor_barreira VALUES ('3','Barreira da barragem de betão');
-INSERT INTO valor_barreira VALUES ('4','Barreira da barragem de terra');
+INSERT INTO valor_barreira VALUES ('4','Barreira da barragem de aterro');
 INSERT INTO valor_barreira VALUES ('5','Barreira do açude ou represa');
 INSERT INTO valor_barreira VALUES ('6','Dique');
 INSERT INTO valor_caract_fisica_rodov VALUES ('1','Autoestrada ou via reservada a automóveis e motociclos');
