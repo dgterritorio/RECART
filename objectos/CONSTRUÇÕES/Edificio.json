@@ -508,6 +508,20 @@
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Estrutura relativamente alta e estreita que pode estar isolada ou fazer parte de outra estrutura."
+			}, {
+				"Valores": "30",
+				"Descrição": "Palheiro",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Construção rústica de pedra de variada dimensão com teto de colmo, palha e em alguns casos telha."
+			}, {
+				"Valores": "31",
+				"Descrição": "Moinho de maré",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Moinho movido pelo movimento da água, causado pelo desnível das marés nos estuários de rios."
 			}]
 		}, {
 			"nome": "valorUtilizacaoAtual",
