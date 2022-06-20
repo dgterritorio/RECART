@@ -116,7 +116,11 @@
 				"Definição": "Terreno ou local, geralmente murado, destinado à sepultura dos defuntos (exemplo: cemitérios, crematórios)."
 			}, {
 				"Valores": "10",
+<<<<<<< HEAD
 				"Descrição": "Instalação de segurança, defesa ou justiça",
+=======
+				"Descrição": "Instalação de segurança, defesa ou justiça.",
+>>>>>>> 8d090987618aaa0e9dbc46b0d8ac3bebc819dd0d
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
