@@ -120,14 +120,28 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Circuito para competição desportiva diversa (atletismo e desportos motorizados)."
+				"Definição": "Circuito para competição desportiva diversa (atletismo, desportos motorizados, etc.)"
 			}, {
 				"Valores": "9",
 				"Descrição": "Lancil",
 				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "",
-				"Definição": "Elemento, geralmente longo e estreito, de pedra ou cimento que, por vezes, forma o bordo de um passeio ou calçada."
+				"Definição": "Elemento geralmente longo e estreito, de pedra ou cimento que, por vezes, forma o bordo de um passeio, calçada ou via rodoviária e é utilizado para delimitação de áreas de circulação de peões e veículos, em superfícies interiores e/ou exteriores, podendo separar diferentes tipos de tráfego."
+			}, {
+				"Valores": "10",
+				"Descrição": "Guarda de segurança",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Limitador de faixas de rodagem que permite absorver as energias de impacto em caso de acidentes rodoviários e utiliza-se também como separador de vias rodoviárias (exemplos: guarda normalmente metálica, barreira New Jersey, etc.)"
+			}, {
+				"Valores": "11",
+				"Descrição": "Tapete para transporte de materiais",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Tapete com carácter permanente para transporte de materiais em contexto industrial."
 			}]
 		}]
 	}

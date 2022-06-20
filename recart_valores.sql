@@ -101,6 +101,8 @@ INSERT INTO valor_construcao_linear VALUES ('6','Portão');
 INSERT INTO valor_construcao_linear VALUES ('7','Barreira acústica');
 INSERT INTO valor_construcao_linear VALUES ('8','Pista');
 INSERT INTO valor_construcao_linear VALUES ('9','Lancil');
+INSERT INTO valor_construcao_linear VALUES ('10','Guarda de segurança');
+INSERT INTO valor_construcao_linear VALUES ('11','Tapete para transporte de materiais');
 INSERT INTO valor_curso_de_agua VALUES ('1','Rio navegável ou flutuável');
 INSERT INTO valor_curso_de_agua VALUES ('2','Rio não navegável nem flutuável');
 INSERT INTO valor_curso_de_agua VALUES ('3','Ribeira');
