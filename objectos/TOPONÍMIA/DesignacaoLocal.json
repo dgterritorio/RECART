@@ -164,6 +164,27 @@
 				"D2": "x",
 				"Definição": "Terreno plano ou em declive não muito acentuado, junto ao mar subjacente a uma arriba abrupta. Pode ter origem na solidificação de mantos de lavas que escorreram pelas encostas, ou no depósito de materiais provenientes do desmoronamento das arribas erodidas"
 			}, {
+				"Valores": "6.11",
+				"Descrição": "Lombo",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Formato de dorso e limitados por linhas de água que recebem a designação local de 'lombos', 'lombinhos' ou 'lombadas'."
+			},  {
+				"Valores": "6.12",
+				"Descrição": "Achada",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Pequena rechã ou planície, geralmente localizada entre terrenos acidentados."
+			},  {
+				"Valores": "6.13",
+				"Descrição": "Vale",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Depressão alongada da superfície terrestre entre duas vertentes, com forma variada (côncava, convexa ou retilínea). É tipicamente uma área de baixa altitude cercada por áreas mais altas, como montanhas ou colinas."
+			}, {
 				"Valores": "7",
 				"Descrição": "Lugar",
 				"Valores INSPIRE": "",
