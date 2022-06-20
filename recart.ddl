@@ -967,7 +967,8 @@ ALTER TABLE infra_trans_ferrov ADD CONSTRAINT valor_tipo_uso_infra_trans_ferrov_
 ALTER TABLE infra_trans_ferrov ADD CONSTRAINT valor_tipo_infra_trans_ferrov_id FOREIGN KEY (valor_tipo_infra_trans_ferrov) REFERENCES valor_tipo_infra_trans_ferrov (identificador);
 ALTER TABLE no_trans_ferrov ADD CONSTRAINT valor_tipo_no_trans_ferrov_id FOREIGN KEY (valor_tipo_no_trans_ferrov) REFERENCES valor_tipo_no_trans_ferrov (identificador);
 ALTER TABLE lig_infratransferrov_notransferrov ADD CONSTRAINT infra_trans_ferrov_id_no_trans_ferrov_id_uk UNIQUE (infra_trans_ferrov_id, no_trans_ferrov_id)
-
+ALTER TABLE lig_infratransferrov_notransferrov ADD CONSTRAINT lig_infratransferrov_notransferrov_1 FOREIGN KEY (no_trans_ferrov_id) REFERENCES no_trans_ferrov (identificador) ON DELETE CASCADE;
+ALTER TABLE lig_infratransferrov_notransferrov ADD CONSTRAINT lig_infratransferrov_notransferrov_2 FOREIGN KEY (infra_trans_ferrov_id) REFERENCES infra_trans_ferrov (identificador) ON DELETE CASCADE;
 /**
  * Criar dominio Transporte Rodoviario
  */
