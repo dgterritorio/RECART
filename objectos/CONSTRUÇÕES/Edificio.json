@@ -171,7 +171,7 @@
 				"Descrição": "Implantação",
 				"Valores INSPIRE": "footPrint",
 				"D1": "x",
-				"D2": "",
+				"D2": "x",
 				"Definição": "A geometria horizontal foi obtida utilizando a implantação do edifício, ou seja, a sua extensão ao nível do solo."
 			}, {
 				"Valores": "5",
@@ -184,7 +184,7 @@
 				"Valores": "6",
 				"Descrição": "Beira do telhado",
 				"Valores INSPIRE": "roofEdge",
-				"D1": "",
+				"D1": "x",
 				"D2": "x",
 				"Definição": "A geometria horizontal foi obtida utilizando as beiras do telhado do edifício."
 			}]
