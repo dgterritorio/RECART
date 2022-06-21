@@ -304,6 +304,8 @@ INSERT INTO valor_natureza_linha VALUES ('1','Escarpado');
 INSERT INTO valor_natureza_linha VALUES ('2','Talude');
 INSERT INTO valor_natureza_linha VALUES ('3','Socalco');
 INSERT INTO valor_natureza_linha VALUES ('4','Combro');
+INSERT INTO valor_nivel_de_detalhe VALUES ('1','NdD1');
+INSERT INTO valor_nivel_de_detalhe VALUES ('2','NdD2');
 INSERT INTO valor_ordem VALUES ('1','Primeira');
 INSERT INTO valor_ordem VALUES ('2','Segunda ou terceira');
 INSERT INTO valor_ordem VALUES ('995','Não aplicável');

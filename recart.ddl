@@ -1406,7 +1406,7 @@ ALTER TABLE barreira ADD CONSTRAINT valor_barreira_id FOREIGN KEY (valor_barreir
 CREATE TABLE area_trabalho (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	data date NOT NULL,
-	nivel_de_detalhe varchar(255) NOT NULL,
+	valor_nivel_de_detalhe varchar(10) NOT NULL,
 	nome varchar(255) NOT NULL,
 	nome_proprietario varchar(255) NOT NULL,
 	nome_produtor varchar(255) NOT NULL,
@@ -1417,9 +1417,16 @@ CREATE TABLE area_trabalho (
 SELECT AddGeometryColumn ('public','area_trabalho','geometria',3763,'POLYGON',2);
 ALTER TABLE area_trabalho ALTER COLUMN geometria SET NOT NULL;
 
+CREATE TABLE valor_nivel_de_detalhe (
+	identificador varchar(10) NOT NULL,
+	descricao varchar(255) NOT NULL,
+	PRIMARY KEY (identificador)
+);
+
 /**
  * Criar relacoes entre tabelas
  */
+ ALTER TABLE area_trabalho ADD CONSTRAINT valor_nivel_de_detalhe_id FOREIGN KEY (valor_nivel_de_detalhe) REFERENCES valor_nivel_de_detalhe (identificador);
 
 /**
  * Dominio Ocupacao de Solos
