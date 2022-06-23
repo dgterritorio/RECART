@@ -1405,6 +1405,8 @@ ALTER TABLE barreira ADD CONSTRAINT valor_barreira_id FOREIGN KEY (valor_barreir
 
 CREATE TABLE area_trabalho (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
+	inicio_objeto timestamp without time zone NOT NULL,
+	fim_objeto timestamp without time zone,
 	data date NOT NULL,
 	valor_nivel_de_detalhe varchar(10) NOT NULL,
 	nome varchar(255) NOT NULL,
