@@ -387,7 +387,7 @@ INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('17','Quiosque fixo');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('18','Sanitário público');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('19','Semáforo');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('20','Sinal de trânsito');
-INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('21','Sinalização');
+INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('22','Contentor de reutilização');
 INSERT INTO valor_tipo_infra_trans_aereo VALUES ('1','Aeródromo');
 INSERT INTO valor_tipo_infra_trans_aereo VALUES ('2','Heliporto');
 INSERT INTO valor_tipo_infra_trans_aereo VALUES ('3','Aeródromo com heliporto');

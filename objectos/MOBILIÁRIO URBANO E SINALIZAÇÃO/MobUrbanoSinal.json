@@ -57,7 +57,7 @@
 				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "",
-				"Definição": "Assento estreito e comprido, de material variável, com ou sem encosto, para várias pessoas, localizado em jardim ou área de lazer."
+				"Definição": "Assento, de material variável, com ou sem encosto, localizado em jardim ou área de lazer."
 			}, {
 				"Valores": "3",
 				"Descrição": "Canteiro",
@@ -71,14 +71,14 @@
 				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "",
-				"Definição": "Recetáculo de dimensões normalizadas que se destina à recolha de lixo."
+				"Definição": "Área onde se encontram localizados um ou vários contentores que se destinam à recolha de resíduos indiferenciados."
 			}, {
 				"Valores": "5",
 				"Descrição": "Ecoponto",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Área onde se encontram localizados um ou vários contentores para recolha de substâncias diversas, como lixo orgânico, vidros, plásticos ou produtos químicos bem identificados."
+				"Definição": "Área onde se encontram localizados um ou vários contentores para recolha diferenciada de resíduos para reciclagem."
 			}, {
 				"Valores": "6",
 				"Descrição": "Equipamento de exercício físico ao ar livre",
@@ -185,12 +185,12 @@
 				"D2": "",
 				"Definição": "Sinal que, devido à sua localização, forma, cor, tipo ou ainda símbolo e/ou caracteres alfanuméricos, transmite aos condutores uma mensagem visual com um determinado significado."
 			}, {
-				"Valores": "21",
-				"Descrição": "Sinalização",
+				"Valores": "22",
+				"Descrição": "Contentor de reutilização",
 				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "",
-				"Definição": "Sinal que transmite aos condutores uma mensagem visual."
+				"Definição": "Ponto de recolha de resíduos têxteis ou não têxteis de origem domiciliária."
 			}]
 		}]
 	}
