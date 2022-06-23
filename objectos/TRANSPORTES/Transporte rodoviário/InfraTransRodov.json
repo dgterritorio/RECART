@@ -209,6 +209,13 @@
 				"D2": "",
 				"Definição": "Área de piquenique disponível."
 			}, {
+				"Valores": "13",
+				"Descrição": "Estacionamento reservado",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Estacionamento específico para pessoas com mobilidade reduzida."
+			}, {
 				"Valores": "995",
 				"Descrição": "Não aplicável",
 				"Valores INSPIRE": "notApplicable",
