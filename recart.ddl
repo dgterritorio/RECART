@@ -1252,6 +1252,7 @@ CREATE TABLE curso_de_agua_eixo (
 	largura real,
 	id_hidrografico varchar(255),
 	id_curso_de_agua_area uuid,
+	id_agua_lentica uuid,
 	ordem_hidrologica varchar(255),
 	origem_natural bool,
 	valor_curso_de_agua varchar(10) NOT NULL,

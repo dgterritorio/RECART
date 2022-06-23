@@ -7,6 +7,13 @@
 			"D1": "x",
 			"D2": "x"
 		}, {
+			"Relação": "ligacaoAguaLenticaCursodeAguaEixo",
+			"Tipo": "Relação HIDROGRAFIA: Associação 'Água lêntica' e 'Curso de água – eixo'",
+			"Definição": "Ligação entre o 'Curso de água – eixo' e o 'Água lêntica'",
+			"Multip.": "'Curso de água – eixo' [0..*], 'Água lêntica' [0..1]",
+			"D1": "x",
+			"D2": "x"
+		}, {
 			"Relação": "ligacaoAreaInfraTransFerrovInfraTransFerrov",
 			"Tipo": "Relação TRANSPORTES (Transporte ferroviário): Associação 'Área da infraestrutura de transporte ferroviário' e 'Infraestrutura de transporte ferroviário'",
 			"Definição": "Ligação entre a 'Área da infraestrutura de transporte ferroviário' e a 'Infraestrutura de transporte ferroviário'",
