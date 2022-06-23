@@ -426,7 +426,6 @@ INSERT INTO valor_tipo_margem VALUES ('5','Rocha');
 INSERT INTO valor_tipo_margem VALUES ('6','Areia');
 INSERT INTO valor_tipo_margem VALUES ('7','Seixos');
 INSERT INTO valor_tipo_margem VALUES ('8','Pedra');
-INSERT INTO valor_tipo_margem VALUES ('995','Não aplicável');
 INSERT INTO valor_tipo_nascente VALUES ('1','Água de nascente');
 INSERT INTO valor_tipo_nascente VALUES ('2','Água mineral');
 INSERT INTO valor_tipo_no_hidrografico VALUES ('1','Início');
