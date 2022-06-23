@@ -64,7 +64,7 @@
 				"Valores INSPIRE": "auxiliary",
 				"D1": "",
 				"D2": "",
-				"Definição": "Curva estimada ou interpolada a partir das curvas de nível circundantes. Utilizada em áreas onde a informação altimétrica é insuficiente."
+				"Definição": "Curva estimada ou interpolada a partir das curvas de nível circundantes. Utilizada em áreas onde a informação altimétrica é insuficiente ou quando é aconselhável uma representação altimétrica mais detalhada devido a uma exatidão posicional mais exigente."
 			}]
 		}]
 	}
