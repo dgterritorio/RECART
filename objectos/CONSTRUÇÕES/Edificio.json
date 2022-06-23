@@ -545,14 +545,14 @@
 				"Valores INSPIRE": "ancillary",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifício ou construção de apoio à residência (inclui garagem, telheiro, arrecadação e escadas)."
+				"Definição": "Edifício ou construção de apoio à residência (inclui garagem, telheiro, arrecadação e similares)."
 			}, {
 				"Valores": "2",
 				"Descrição": "Agricultura e pescas",
 				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "x",
-				"Definição": "Edifício utilizado para fins de produção animal, caça, floresta ou pesca."
+				"Definição": "Edifício utilizado para fins agrícolas, de produção animal, caça, floresta ou pesca."
 			}, {
 				"Valores": "2.1",
 				"Descrição": "Agricultura",
@@ -804,7 +804,7 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifício onde se exerce práticas de diferentes confissões religiosas e de apoio às atividades de inumação. "
+				"Definição": "Edifício onde se exerce práticas de diferentes confissões religiosas e de apoio às atividades de inumação ou cremação. "
 			}, {
 				"Valores": "8.3",
 				"Descrição": "Atividades recreativas e culturais",
@@ -818,7 +818,7 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifício de apoio à prática de atividades desportivas (inclui apoio a estádios, pavilhões gimnodesportivos, ginásios, piscinas e edifícios de apoio a diferentes modalidades desportivas)."
+				"Definição": "Edifício relacionado com atividades desportivas (estádios, pavilhões gimnodesportivos, ginásios, piscinas, edifícios de apoio, etc.)."
 			}, {
 				"Valores": "9",
 				"Descrição": "Organismos internacionais",
