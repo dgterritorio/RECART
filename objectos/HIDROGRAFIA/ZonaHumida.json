@@ -67,7 +67,7 @@
 			"nome": "valorZonaHumida",
 			"valores": [{
 				"Valores": "1",
-				"Descrição": "Sapal",
+				"Descrição": "Sapal ou terreno inundável",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",

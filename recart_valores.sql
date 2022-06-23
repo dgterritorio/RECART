@@ -584,6 +584,6 @@ INSERT INTO valor_via_ferrea VALUES ('2','Linha de estação');
 INSERT INTO valor_via_ferrea VALUES ('3','Linha de estacionamento');
 INSERT INTO valor_via_ferrea VALUES ('4','Linha de segurança');
 INSERT INTO valor_via_ferrea VALUES ('5','Ramal particular');
-INSERT INTO valor_zona_humida VALUES ('1','Sapal');
+INSERT INTO valor_zona_humida VALUES ('1','Sapal ou terreno inundável');
 INSERT INTO valor_zona_humida VALUES ('2','Turfeira');
 INSERT INTO valor_zona_humida VALUES ('3','Paul');
