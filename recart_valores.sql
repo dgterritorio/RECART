@@ -503,6 +503,7 @@ INSERT INTO valor_tipo_equipamento_coletivo VALUES ('7.2','Área verde');
 INSERT INTO valor_tipo_equipamento_coletivo VALUES ('7.3','Campo de golfe');
 INSERT INTO valor_tipo_equipamento_coletivo VALUES ('7.4','Outro – desporto e lazer');
 INSERT INTO valor_tipo_equipamento_coletivo VALUES ('8','Cemitério');
+INSERT INTO valor_tipo_equipamento_coletivo VALUES ('9','Centro cívico');
 INSERT INTO valor_tipo_adm_publica VALUES ('1','Assembleia da República, Assembleia Regional');
 INSERT INTO valor_tipo_adm_publica VALUES ('2','Ministério, Gabinete do Secretário de Estado; Secretária-geral');
 INSERT INTO valor_tipo_adm_publica VALUES ('3','Câmara Municipal, Assembleia Municipal');
