@@ -85,7 +85,7 @@
 				"Valores INSPIRE": "parking",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Área delimitada ao ar livre para guardar temporariamente veículos, em geral mediante pagamento."
+				"Definição": "Área delimitada ao ar livre para guardar temporariamente veículos, por vezes mediante pagamento."
 			}, {
 				"Valores": "5",
 				"Descrição": "Portagem",
@@ -114,6 +114,13 @@
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Instalação marginal à via rodoviária contendo equipamentos destinados ao fornecimento de combustíveis e energia."
+			}, {
+				"Valores": "9",
+				"Descrição": "Praça de táxis",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Local destinado ao estacionamento de veículos de aluguer para transporte de passageiros."
 			}]
 		}, {
 			"nome": "valorTipoServico",

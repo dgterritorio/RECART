@@ -403,6 +403,7 @@ INSERT INTO valor_tipo_infra_trans_rodov VALUES ('5','Portagem');
 INSERT INTO valor_tipo_infra_trans_rodov VALUES ('6','Área de repouso');
 INSERT INTO valor_tipo_infra_trans_rodov VALUES ('7','Área de serviço');
 INSERT INTO valor_tipo_infra_trans_rodov VALUES ('8','Posto de abastecimento de combustíveis');
+INSERT INTO valor_tipo_infra_trans_rodov VALUES ('9','Praça de táxis');
 INSERT INTO valor_tipo_infra_trans_via_navegavel VALUES ('1','Porto');
 INSERT INTO valor_tipo_infra_trans_via_navegavel VALUES ('2','Cais');
 INSERT INTO valor_tipo_infra_trans_via_navegavel VALUES ('3','Doca');
