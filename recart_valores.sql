@@ -334,6 +334,8 @@ INSERT INTO valor_restricao_acesso VALUES ('2','Pago');
 INSERT INTO valor_restricao_acesso VALUES ('3','Privado');
 INSERT INTO valor_restricao_acesso VALUES ('4','Proibido por lei');
 INSERT INTO valor_restricao_acesso VALUES ('5','Sazonal');
+INSERT INTO valor_restricao_acesso VALUES ('5.1','Diário');
+INSERT INTO valor_restricao_acesso VALUES ('5.2','Estação do ano');
 INSERT INTO valor_restricao_acesso VALUES ('6','Acesso físico impossível');
 INSERT INTO valor_restricao_infra_trans_aereo VALUES ('1','Fins exclusivamente militares');
 INSERT INTO valor_restricao_infra_trans_aereo VALUES ('2','Restrições temporais');

@@ -313,6 +313,20 @@
 				"D2": "",
 				"Definição": "Restrição de caracter temporário."
 			}, {
+				"Valores": "5.1",
+				"Descrição": "Diário",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Restrição de tempo máximo diário."
+			},{
+				"Valores": "5.2",
+				"Descrição": "Estação do ano",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Restrição numa ou mais estações do ano."
+			},{
 				"Valores": "6",
 				"Descrição": "Acesso físico impossível",
 				"Valores INSPIRE": "physicallyImpossible",
