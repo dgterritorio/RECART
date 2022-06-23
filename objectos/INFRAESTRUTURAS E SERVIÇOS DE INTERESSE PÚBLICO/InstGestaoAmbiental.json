@@ -57,21 +57,21 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Instalação para depósito tratamento de resíduos líquidos."
+				"Definição": "Instalação para depósito e tratamento de resíduos líquidos."
 			}, {
 				"Valores": "3",
 				"Descrição": "Resíduos industriais",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Instalação para depósito tratamento de resíduos industriais."
+				"Definição": "Instalação para depósito e tratamento de resíduos industriais."
 			}, {
 				"Valores": "4",
 				"Descrição": "Resíduos tóxicos",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Instalação para depósito tratamento de resíduos tóxicos."
+				"Definição": "Instalação para depósito e tratamento de resíduos tóxicos."
 			}]
 		}]
 	}
