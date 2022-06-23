@@ -57,7 +57,7 @@
 				"Valores INSPIRE": "levelCrossing",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Nó que identifica a interseção ao mesmo nível do segmento da via rodoviária com o segmento da via ferroviária."
+				"Definição": "Nó que identifica a interseção ao mesmo nível do segmento da via rodoviária com o segmento da via ferroviária. Aplicável apenas quando ambas as vias estão classificadas como funcionais."
 			}, {
 				"Valores": "3",
 				"Descrição": "Pseudo-nó",
@@ -79,6 +79,20 @@
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Nó que identifica a presença de uma infraestrutura de transporte rodoviário."
+			}, {
+				"Valores": "6",
+				"Descrição": "Fronteira",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Nó usado para conectar redes rodoviárias de países diferentes."
+			}, {
+				"Valores": "7",
+				"Descrição": "Limite do trabalho",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Nó que identifica o limite da área de trabalho."
 			}]
 		}]
 	}
