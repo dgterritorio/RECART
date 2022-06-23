@@ -64,7 +64,7 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Construção que entra pelo mar, curso ou massa de água adentro. Local específico no cais ou ponte-cais, onde um navio pode acostar ou amarrar para proceder a operações de embarque ou desembarque de carga ou passageiros."
+				"Definição": "Construção que entra pelo mar, curso ou massa de água adentro e onde as embarcações podem acostar ou amarrar para proceder a operações de embarque ou desembarque de carga ou passageiros."
 			}, {
 				"Valores": "3",
 				"Descrição": "Piscina",
@@ -78,7 +78,7 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Reservatório feito de pedra, cimento ou outro material, onde se armazena água para fins diversos como rega, lavagem de roupa ou para bebedouro de animais."
+				"Definição": "Reservatório feito de pedra, cimento ou outro material, onde se armazena água para fins diversos como rega, lavagem de roupa, bebedouro de animais, salinas, aquicultura ou para tratamento de águas residuais ou águas de abastecimento."
 			}, {
 				"Valores": "5",
 				"Descrição": "Campo de jogos",
@@ -99,7 +99,7 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Elemento arquitetónico não relacionado com vias de comunicação nem com edifício residencial."
+				"Definição": "Escada ou série de escadas que podem estar separadas por descansos."
 			}, {
 				"Valores": "8",
 				"Descrição": "Bancada",
@@ -120,14 +120,14 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Limite das construções delimitadoras definidas na “Construção linear” (exemplo: muros, muralhas e sebes)."
+				"Definição": "Limite das construções delimitadoras definidas na “Construção linear”."
 			}, {
 				"Valores": "11",
 				"Descrição": "Rampa de acesso",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Passagem em plano inclinado usada habitualmente em alternativa às escadas por pessoas com mobilidade."
+				"Definição": "Passagem em plano inclinado usada habitualmente em alternativa às escadas por pessoas com mobilidade condicionada."
 			}]
 		}]
 	}
