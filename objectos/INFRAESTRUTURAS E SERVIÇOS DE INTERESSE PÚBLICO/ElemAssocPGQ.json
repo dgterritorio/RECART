@@ -5,7 +5,7 @@
 		"Objeto INSPIRE": "",
 		"objeto": "ElemAssocPGQ",
 		"Definição": "Infraestrutura de armazenamento ou distribuição de produtos químicos.",
-		"Dim.": "-",
+		"Dim.": "2D",
 		"Atributos": [{
 			"Atributo": "identificador",
 			"Multip.": "1",
@@ -41,6 +41,13 @@
 			"D1": "x",
 			"D2": "x",
 			"Definição": "Classificação de elementos associados de redes de petróleo, gás, substâncias químicas."
+		}, {
+			"Atributo": "nome",
+			"Multip.": "[0..1]",
+			"Tipo": "Texto",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Topónimo utilizado para identificar o objeto no mundo real."
 		}],
 		"listas de códigos": [{
 			"nome": "valorElementoAssociadoPGQ",

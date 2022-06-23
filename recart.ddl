@@ -297,6 +297,7 @@ CREATE TABLE elem_assoc_pgq (
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
 	valor_elemento_associado_pgq varchar(10) NOT NULL,
+	nome varchar(255),
 	PRIMARY KEY (identificador)
 );
 
@@ -360,6 +361,7 @@ CREATE TABLE elem_assoc_agua (
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
 	valor_elemento_associado_agua varchar(10) NOT NULL,
+	nome varchar(255),
 	PRIMARY KEY (identificador)
 );
 
@@ -372,6 +374,7 @@ CREATE TABLE elem_assoc_eletricidade (
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
 	valor_elemento_associado_electricidade varchar(10) NOT NULL,
+	nome varchar(255),
 	PRIMARY KEY (identificador)
 );
 
