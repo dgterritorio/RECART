@@ -43,7 +43,7 @@
 			"Definição": "Topónimo utilizado para identificar o objeto no mundo real."
 		}, {
 			"Atributo": "pontoDeContacto",
-			"Multip.": "1",
+			"Multip.": "[0..1]",
 			"Tipo": "Texto",
 			"D1": "",
 			"D2": "",
