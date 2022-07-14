@@ -75,7 +75,7 @@
 			"Tipo": "Booleano",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Indica se o objeto corresponde a uma extensão de um eixo para assegurar a ligação com outro curso de água."
+			"Definição": "Indica que o objeto corresponde à representação artificial do eixo com vista a assegurar a conetividade hidrográfica e aplica-se exclusivamente quando o eixo está localizado no interior do “Curso de água - área” ou “Água lêntica” (Albufeira, lago ou lagoa)."
 		}, {
 			"Atributo": "iDHidrografico",
 			"Multip.": "1",
