@@ -103,7 +103,7 @@
 			"Tipo": "Real",
 			"D1": "",
 			"D2": "",
-			"Definição": "Largura da faixa de rodagem, que pode ser composta por uma ou mais vias de trânsito, medida entre as linhas que materializam o “Limite/Separador”.  [unidade: metro]"
+			"Definição": "Largura da faixa de rodagem, que pode ser composta por uma ou mais vias de trânsito, medida entre as linhas que materializam os limites da via rodoviária (Limite exterior sem berma / Separador).  [unidade: metro]"
 		}, {
 			"Atributo": "multiplaFaixaRodagem",
 			"Multip.": "1",
