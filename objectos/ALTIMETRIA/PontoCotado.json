@@ -47,42 +47,42 @@
 			"valores": [{
 				"Valores": "1",
 				"Descrição": "Terreno",
-				"Valores INSPIRE": "SpotElevationClassValue = 2",
+				"Valores INSPIRE": "Ground (Lidar point classification = 2)",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Ponto cotado no terreno."
 			}, {
 				"Valores": "2",
 				"Descrição": "Edifício",
-				"Valores INSPIRE": "SpotElevationClassValue = 6",
+				"Valores INSPIRE": "Building (Lidar point classification = 6)",
 				"D1": "",
 				"D2": "",
 				"Definição": "Ponto cotado no edifício."
 			}, {
 				"Valores": "2.1",
 				"Descrição": "Edifício - soleira",
-				"Valores INSPIRE": "Extensão à LC SpotElevationClassValue",
+				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "",
 				"Definição": "Ponto cotado na soleira do edifício."
 			}, {
 				"Valores": "2.2",
 				"Descrição": "Edifício - beirado",
-				"Valores INSPIRE": "Extensão à LC SpotElevationClassValue",
+				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "",
 				"Definição": "Ponto cotado no remate inferior do telhado."
 			}, {
 				"Valores": "2.3",
 				"Descrição": "Edifício - ponto mais alto",
-				"Valores INSPIRE": "Extensão à LC SpotElevationClassValue",
+				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "",
 				"Definição": "Ponto cotado em cumeeira ou na zona mais elevada do edifício."
 			}, {
 				"Valores": "3",
 				"Descrição": "Tabuleiro suspenso ou elevado",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "Bridge Deck (Lidar point classification = 17)",
 				"D1": "",
 				"D2": "",
 				"Definição": "Ponto cotado sobre via rodoviária ou ferroviária elevada ou suspensa."
