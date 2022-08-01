@@ -169,7 +169,7 @@
             <property value="1" key="showFeatureCount"/>
           </customproperties>
         </layer-tree-layer>
-        <layer-tree-layer legend_exp="" name="lig_segviaferrea_linhaferrea" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;lig_segviaferrea_linhaferrea&quot;" id="lig_segviaferrea_linhaferrea_22c68b91_26dc_43a6_a418_73ca0434dcfa" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
+        <layer-tree-layer legend_exp="" name="lig_segviaferrea_linhaferrea" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;lig_segviaferrea_linhaferrea&quot;" id="lig_segviaferrea_linhaferrea_22c68b91_26dc_43a6_a418_73ca0434dcfa" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
           <customproperties>
             <property value="1" key="showFeatureCount"/>
           </customproperties>
@@ -379,12 +379,12 @@
           <property value="1" key="showFeatureCount"/>
         </customproperties>
       </layer-tree-layer>
-      <layer-tree-layer legend_exp="" name="Elemento associado de petróleo, gás e substâncias químicas (Ponto)" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' sslmode=disable key='identificador' srid=3763 type=Point checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;elem_assoc_pgq&quot; (geometria)" id="elem_assoc_pgq_990285df_83fb_4386_b3c5_7679d82cdee2" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
+      <layer-tree-layer legend_exp="" name="Elemento associado de petróleo, gás e substâncias químicas (Ponto)" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' sslmode=disable key='identificador' srid=3763 type=Point checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;elem_assoc_pgq&quot; (geometria)" id="elem_assoc_pgq_990285df_83fb_4386_b3c5_7679d82cdee2" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
         <customproperties>
           <property value="1" key="showFeatureCount"/>
         </customproperties>
       </layer-tree-layer>
-      <layer-tree-layer legend_exp="" name="Elemento associado de petróleo, gás e substâncias químicas (Polígono)" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' sslmode=disable key='identificador' srid=3763 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;elem_assoc_pgq&quot; (geometria)" id="elem_assoc_pgq_333e37fd_3991_4d98_bfe8_b597175a9fa3" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
+      <layer-tree-layer legend_exp="" name="Elemento associado de petróleo, gás e substâncias químicas (Polígono)" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' sslmode=disable key='identificador' srid=3763 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;elem_assoc_pgq&quot; (geometria)" id="elem_assoc_pgq_333e37fd_3991_4d98_bfe8_b597175a9fa3" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
         <customproperties>
           <property value="1" key="showFeatureCount"/>
         </customproperties>
@@ -422,12 +422,12 @@
     </layer-tree-group>
     <layer-tree-group name="[09] MOBILIÁRIO URBANO E SINALIZAÇÃO" checked="Qt::Checked" expanded="0">
       <customproperties/>
-      <layer-tree-layer legend_exp="" name="Mobiliário Urbano e sinalização (Ponto)" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' sslmode=disable key='identificador' srid=3763 type=Point checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;mob_urbano_sinal&quot; (geometria)" id="mob_urbano_sinal_72a9d79f_5ab4_4f6b_a888_c9ec0894b47f" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
+      <layer-tree-layer legend_exp="" name="Mobiliário Urbano e sinalização (Ponto)" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' sslmode=disable key='identificador' srid=3763 type=Point checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;mob_urbano_sinal&quot; (geometria)" id="mob_urbano_sinal_72a9d79f_5ab4_4f6b_a888_c9ec0894b47f" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
         <customproperties>
           <property value="1" key="showFeatureCount"/>
         </customproperties>
       </layer-tree-layer>
-      <layer-tree-layer legend_exp="" name="Mobiliário Urbano e sinalização (Polígono)" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' sslmode=disable key='identificador' srid=3763 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;mob_urbano_sinal&quot; (geometria)" id="mob_urbano_sinal_8672e234_cd91_4491_9419_fab608c34287" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
+      <layer-tree-layer legend_exp="" name="Mobiliário Urbano e sinalização (Polígono)" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' sslmode=disable key='identificador' srid=3763 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;mob_urbano_sinal&quot; (geometria)" id="mob_urbano_sinal_8672e234_cd91_4491_9419_fab608c34287" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
         <customproperties>
           <property value="1" key="showFeatureCount"/>
         </customproperties>
@@ -538,7 +538,7 @@
           <property value="1" key="showFeatureCount"/>
         </customproperties>
       </layer-tree-layer>
-      <layer-tree-layer legend_exp="" name="valor_estado_linha_ferrea" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;valor_estado_linha_ferrea&quot;" id="valor_estado_linha_ferrea_c9a70530_e199_4f4c_a18c_17bde91d4d34" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
+      <layer-tree-layer legend_exp="" name="valor_estado_linha_ferrea" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;valor_estado_linha_ferrea&quot;" id="valor_estado_linha_ferrea_c9a70530_e199_4f4c_a18c_17bde91d4d34" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
         <customproperties>
           <property value="1" key="showFeatureCount"/>
         </customproperties>
@@ -563,17 +563,17 @@
           <property value="1" key="showFeatureCount"/>
         </customproperties>
       </layer-tree-layer>
-      <layer-tree-layer legend_exp="" name="valor_tipo_linha_ferrea" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;valor_tipo_linha_ferrea&quot;" id="valor_tipo_linha_ferrea_bed6b53e_5965_4b82_ae17_af2df70a9d17" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
+      <layer-tree-layer legend_exp="" name="valor_tipo_linha_ferrea" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;valor_tipo_linha_ferrea&quot;" id="valor_tipo_linha_ferrea_bed6b53e_5965_4b82_ae17_af2df70a9d17" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
         <customproperties>
           <property value="1" key="showFeatureCount"/>
         </customproperties>
       </layer-tree-layer>
-      <layer-tree-layer legend_exp="" name="valor_tipo_troco_via_ferrea" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;valor_tipo_troco_via_ferrea&quot;" id="valor_tipo_troco_via_ferrea_84dc7334_9476_4019_9ca2_77476d0f0921" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
+      <layer-tree-layer legend_exp="" name="valor_tipo_troco_via_ferrea" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;valor_tipo_troco_via_ferrea&quot;" id="valor_tipo_troco_via_ferrea_84dc7334_9476_4019_9ca2_77476d0f0921" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
         <customproperties>
           <property value="1" key="showFeatureCount"/>
         </customproperties>
       </layer-tree-layer>
-      <layer-tree-layer legend_exp="" name="valor_via_ferrea" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;valor_via_ferrea&quot;" id="valor_via_ferrea_9aab6363_a4b5_4f21_b68d_b8e795e5ba60" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
+      <layer-tree-layer legend_exp="" name="valor_via_ferrea" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;valor_via_ferrea&quot;" id="valor_via_ferrea_9aab6363_a4b5_4f21_b68d_b8e795e5ba60" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
         <customproperties>
           <property value="1" key="showFeatureCount"/>
         </customproperties>
@@ -796,47 +796,47 @@
     </layer-tree-group>
     <layer-tree-group name="CARTTOP PARA SIMBOLOGIA" checked="Qt::Checked" expanded="0">
       <customproperties/>
-      <layer-tree-layer legend_exp="" name="nomes_seg_via_ferrea" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' sslmode=disable key='identificador' checkPrimaryKeyUnicity='1' table=&quot;carttop&quot;.&quot;nomes_seg_via_ferrea&quot;" id="nomes_seg_via_ferrea_3d653aee_7583_499d_beef_1555c4128cad" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
+      <layer-tree-layer legend_exp="" name="nomes_seg_via_ferrea" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' sslmode=disable key='identificador' checkPrimaryKeyUnicity='1' table=&quot;carttop&quot;.&quot;nomes_seg_via_ferrea&quot;" id="nomes_seg_via_ferrea_3d653aee_7583_499d_beef_1555c4128cad" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
         <customproperties>
           <property value="1" key="showFeatureCount"/>
         </customproperties>
       </layer-tree-layer>
-      <layer-tree-layer legend_exp="" name="nomes_seg_via_rodov" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' sslmode=disable key='identificador' checkPrimaryKeyUnicity='1' table=&quot;carttop&quot;.&quot;nomes_seg_via_rodov&quot;" id="nomes_seg_via_rodov_196e428c_42f4_4582_b14a_74406503ee8f" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
+      <layer-tree-layer legend_exp="" name="nomes_seg_via_rodov" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' sslmode=disable key='identificador' checkPrimaryKeyUnicity='1' table=&quot;carttop&quot;.&quot;nomes_seg_via_rodov&quot;" id="nomes_seg_via_rodov_196e428c_42f4_4582_b14a_74406503ee8f" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
         <customproperties>
           <property value="1" key="showFeatureCount"/>
         </customproperties>
       </layer-tree-layer>
-      <layer-tree-layer legend_exp="" name="curvas_nivel_mediana" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' sslmode=disable key='identificador' srid=3763 type=LineStringZ checkPrimaryKeyUnicity='1' table=&quot;carttop&quot;.&quot;curvas_nivel_mediana&quot; (geometria)" id="curvas_nivel_mediana_46667102_c09d_4740_8640_e055c56c2f2f" checked="Qt::Unchecked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
+      <layer-tree-layer legend_exp="" name="curvas_nivel_mediana" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' sslmode=disable key='identificador' srid=3763 type=LineStringZ checkPrimaryKeyUnicity='1' table=&quot;carttop&quot;.&quot;curvas_nivel_mediana&quot; (geometria)" id="curvas_nivel_mediana_46667102_c09d_4740_8640_e055c56c2f2f" checked="Qt::Unchecked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
         <customproperties>
           <property value="1" key="showFeatureCount"/>
         </customproperties>
       </layer-tree-layer>
-      <layer-tree-layer legend_exp="" name="edificio_nome_edificio" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' sslmode=disable key='identificador' srid=3763 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;carttop&quot;.&quot;edificio_nome_edificio&quot; (geometria)" id="edificio_nome_edificio_02f6a694_fec6_4b61_a094_fed5d23bbbd7" checked="Qt::Unchecked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
+      <layer-tree-layer legend_exp="" name="edificio_nome_edificio" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' sslmode=disable key='identificador' srid=3763 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;carttop&quot;.&quot;edificio_nome_edificio&quot; (geometria)" id="edificio_nome_edificio_02f6a694_fec6_4b61_a094_fed5d23bbbd7" checked="Qt::Unchecked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
         <customproperties>
           <property value="1" key="showFeatureCount"/>
         </customproperties>
       </layer-tree-layer>
-      <layer-tree-layer legend_exp="" name="edificio_valor_utilizacao_atual" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' sslmode=disable key='identificador' srid=3763 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;carttop&quot;.&quot;edificio_valor_utilizacao_atual&quot; (geometria)" id="edificio_valor_utilizacao_atual_47e35f3b_b37b_4cf3_b935_cb64f7d694ce" checked="Qt::Unchecked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
+      <layer-tree-layer legend_exp="" name="edificio_valor_utilizacao_atual" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' sslmode=disable key='identificador' srid=3763 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;carttop&quot;.&quot;edificio_valor_utilizacao_atual&quot; (geometria)" id="edificio_valor_utilizacao_atual_47e35f3b_b37b_4cf3_b935_cb64f7d694ce" checked="Qt::Unchecked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
         <customproperties>
           <property value="1" key="showFeatureCount"/>
         </customproperties>
       </layer-tree-layer>
-      <layer-tree-layer legend_exp="" name="nome_geometria_inst_producao" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' sslmode=disable key='id' srid=3763 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;carttop&quot;.&quot;nome_geometria_inst_producao&quot; (geometria)" id="nome_geometria_inst_producao_9ef61ef9_14b5_4974_a4c3_07a4569fa462" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
+      <layer-tree-layer legend_exp="" name="nome_geometria_inst_producao" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' sslmode=disable key='id' srid=3763 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;carttop&quot;.&quot;nome_geometria_inst_producao&quot; (geometria)" id="nome_geometria_inst_producao_9ef61ef9_14b5_4974_a4c3_07a4569fa462" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
         <customproperties>
           <property value="1" key="showFeatureCount"/>
         </customproperties>
       </layer-tree-layer>
-      <layer-tree-layer legend_exp="" name="nome_geometria_inst_gestao_ambiental" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' sslmode=disable key='id' srid=3763 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;carttop&quot;.&quot;nome_geometria_inst_gestao_ambiental&quot; (geometria)" id="nome_geometria_inst_gestao_ambiental_de1f5cab_3b4b_4780_bfdd_9b46c39c7118" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
+      <layer-tree-layer legend_exp="" name="nome_geometria_inst_gestao_ambiental" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' sslmode=disable key='id' srid=3763 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;carttop&quot;.&quot;nome_geometria_inst_gestao_ambiental&quot; (geometria)" id="nome_geometria_inst_gestao_ambiental_de1f5cab_3b4b_4780_bfdd_9b46c39c7118" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
         <customproperties>
           <property value="1" key="showFeatureCount"/>
         </customproperties>
       </layer-tree-layer>
-      <layer-tree-layer legend_exp="" name="nome_geometria_adm_publica" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' sslmode=disable key='id' srid=3763 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;carttop&quot;.&quot;nome_geometria_adm_publica&quot; (geometria)" id="nome_geometria_adm_publica_4172617b_c9b4_4235_983e_0e8e7095be05" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
+      <layer-tree-layer legend_exp="" name="nome_geometria_adm_publica" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' sslmode=disable key='id' srid=3763 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;carttop&quot;.&quot;nome_geometria_adm_publica&quot; (geometria)" id="nome_geometria_adm_publica_4172617b_c9b4_4235_983e_0e8e7095be05" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
         <customproperties>
           <property value="1" key="showFeatureCount"/>
         </customproperties>
       </layer-tree-layer>
-      <layer-tree-layer legend_exp="" name="nome_geometria_equip_util_coletiva" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' sslmode=disable key='id' srid=3763 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;carttop&quot;.&quot;nome_geometria_equip_util_coletiva&quot; (geometria)" id="nome_geometria_equip_util_coletiva_4546ab0d_5884_48eb_ab8f_71124d59649f" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
+      <layer-tree-layer legend_exp="" name="nome_geometria_equip_util_coletiva" source="dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' sslmode=disable key='id' srid=3763 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;carttop&quot;.&quot;nome_geometria_equip_util_coletiva&quot; (geometria)" id="nome_geometria_equip_util_coletiva_4546ab0d_5884_48eb_ab8f_71124d59649f" checked="Qt::Checked" providerKey="postgres" expanded="1" legend_split_behavior="0" patch_size="-1,-1">
         <customproperties>
           <property value="1" key="showFeatureCount"/>
         </customproperties>
@@ -12037,7 +12037,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>178416.17193385300925002</ymax>
       </extent>
       <id>curvas_nivel_mediana_46667102_c09d_4740_8640_e055c56c2f2f</id>
-      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' password='bnmWERTYU98#' sslmode=disable key='identificador' srid=3763 type=LineStringZ checkPrimaryKeyUnicity='1' table="carttop"."curvas_nivel_mediana" (geometria)</datasource>
+      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' password='password123456789' sslmode=disable key='identificador' srid=3763 type=LineStringZ checkPrimaryKeyUnicity='1' table="carttop"."curvas_nivel_mediana" (geometria)</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -16082,7 +16082,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>178321.08999999999650754</ymax>
       </extent>
       <id>edificio_dd957dce_9019_4963_b212_9954375391bd</id>
-      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' password='bnmWERTYU98#' key='identificador' type=Polygon checkPrimaryKeyUnicity='1' table="public"."edificio" (geometria)</datasource>
+      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' password='password123456789' key='identificador' type=Polygon checkPrimaryKeyUnicity='1' table="public"."edificio" (geometria)</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -16348,7 +16348,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>177881.27999999999883585</ymax>
       </extent>
       <id>edificio_nome_edificio_02f6a694_fec6_4b61_a094_fed5d23bbbd7</id>
-      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' password='bnmWERTYU98#' sslmode=disable key='identificador' srid=3763 type=Polygon checkPrimaryKeyUnicity='1' table="carttop"."edificio_nome_edificio" (geometria)</datasource>
+      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' password='password123456789' sslmode=disable key='identificador' srid=3763 type=Polygon checkPrimaryKeyUnicity='1' table="carttop"."edificio_nome_edificio" (geometria)</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -16633,7 +16633,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>178321.08999999999650754</ymax>
       </extent>
       <id>edificio_valor_utilizacao_atual_47e35f3b_b37b_4cf3_b935_cb64f7d694ce</id>
-      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' password='bnmWERTYU98#' sslmode=disable key='identificador' srid=3763 type=Polygon checkPrimaryKeyUnicity='1' table="carttop"."edificio_valor_utilizacao_atual" (geometria)</datasource>
+      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' password='password123456789' sslmode=disable key='identificador' srid=3763 type=Polygon checkPrimaryKeyUnicity='1' table="carttop"."edificio_valor_utilizacao_atual" (geometria)</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -18406,7 +18406,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>174123.98999999999068677</ymax>
       </extent>
       <id>elem_assoc_pgq_333e37fd_3991_4d98_bfe8_b597175a9fa3</id>
-      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' password='bnmWERTYU98#' sslmode=disable key='identificador' srid=3763 type=Polygon checkPrimaryKeyUnicity='0' table="public"."elem_assoc_pgq" (geometria)</datasource>
+      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' password='password123456789' sslmode=disable key='identificador' srid=3763 type=Polygon checkPrimaryKeyUnicity='0' table="public"."elem_assoc_pgq" (geometria)</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -18799,7 +18799,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>174063.70499999998719431</ymax>
       </extent>
       <id>elem_assoc_pgq_990285df_83fb_4386_b3c5_7679d82cdee2</id>
-      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' password='bnmWERTYU98#' sslmode=disable key='identificador' srid=3763 type=Point checkPrimaryKeyUnicity='0' table="public"."elem_assoc_pgq" (geometria)</datasource>
+      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' password='password123456789' sslmode=disable key='identificador' srid=3763 type=Point checkPrimaryKeyUnicity='0' table="public"."elem_assoc_pgq" (geometria)</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -23686,7 +23686,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer hasScaleBasedVisibilityFlag="0" type="vector" minScale="1e+08" wkbType="NoGeometry" readOnly="0" autoRefreshEnabled="0" styleCategories="AllStyleCategories" refreshOnNotifyEnabled="0" maxScale="0" autoRefreshTime="0" refreshOnNotifyMessage="" geometry="No geometry">
       <id>lig_segviaferrea_linhaferrea_22c68b91_26dc_43a6_a418_73ca0434dcfa</id>
-      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' password='bnmWERTYU98#' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table="public"."lig_segviaferrea_linhaferrea"</datasource>
+      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' password='password123456789' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table="public"."lig_segviaferrea_linhaferrea"</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -26317,7 +26317,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>177763.03999999997904524</ymax>
       </extent>
       <id>mob_urbano_sinal_72a9d79f_5ab4_4f6b_a888_c9ec0894b47f</id>
-      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' password='bnmWERTYU98#' sslmode=disable key='identificador' srid=3763 type=Point checkPrimaryKeyUnicity='0' table="public"."mob_urbano_sinal" (geometria)</datasource>
+      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' password='password123456789' sslmode=disable key='identificador' srid=3763 type=Point checkPrimaryKeyUnicity='0' table="public"."mob_urbano_sinal" (geometria)</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -26642,7 +26642,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>177890.79000000000814907</ymax>
       </extent>
       <id>mob_urbano_sinal_8672e234_cd91_4491_9419_fab608c34287</id>
-      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' password='bnmWERTYU98#' sslmode=disable key='identificador' srid=3763 type=Polygon checkPrimaryKeyUnicity='0' table="public"."mob_urbano_sinal" (geometria)</datasource>
+      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' password='password123456789' sslmode=disable key='identificador' srid=3763 type=Polygon checkPrimaryKeyUnicity='0' table="public"."mob_urbano_sinal" (geometria)</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -26987,7 +26987,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyMaxScale="1" refreshOnNotifyEnabled="0" autoRefreshTime="0" wkbType="Polygon" styleCategories="AllStyleCategories" simplifyDrawingHints="1" labelsEnabled="0" simplifyDrawingTol="1" minScale="100000000" maxScale="0" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" geometry="Polygon" type="vector" simplifyAlgorithm="0" autoRefreshEnabled="0" refreshOnNotifyMessage="" readOnly="0">
       <id>mob_urbano_sinal_fa0e69cd_37de_4b44_901f_cd68901c4c8f</id>
-      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' password='bnmWERTYU98#' key='identificador' checkPrimaryKeyUnicity='1' table="public"."mob_urbano_sinal" (geometria)</datasource>
+      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' password='password123456789' key='identificador' checkPrimaryKeyUnicity='1' table="public"."mob_urbano_sinal" (geometria)</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -29253,7 +29253,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>176969.69000000000232831</ymax>
       </extent>
       <id>nome_geometria_adm_publica_4172617b_c9b4_4235_983e_0e8e7095be05</id>
-      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' password='bnmWERTYU98#' sslmode=disable key='id' srid=3763 type=Polygon checkPrimaryKeyUnicity='1' table="carttop"."nome_geometria_adm_publica" (geometria)</datasource>
+      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' password='password123456789' sslmode=disable key='id' srid=3763 type=Polygon checkPrimaryKeyUnicity='1' table="carttop"."nome_geometria_adm_publica" (geometria)</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -29687,7 +29687,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>177795.70000000001164153</ymax>
       </extent>
       <id>nome_geometria_equip_util_coletiva_4546ab0d_5884_48eb_ab8f_71124d59649f</id>
-      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' password='bnmWERTYU98#' sslmode=disable key='id' srid=3763 type=Polygon checkPrimaryKeyUnicity='1' table="carttop"."nome_geometria_equip_util_coletiva" (geometria)</datasource>
+      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' password='password123456789' sslmode=disable key='id' srid=3763 type=Polygon checkPrimaryKeyUnicity='1' table="carttop"."nome_geometria_equip_util_coletiva" (geometria)</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -30121,7 +30121,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>178165.55999999999767169</ymax>
       </extent>
       <id>nome_geometria_inst_gestao_ambiental_de1f5cab_3b4b_4780_bfdd_9b46c39c7118</id>
-      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' password='bnmWERTYU98#' sslmode=disable key='id' srid=3763 type=Polygon checkPrimaryKeyUnicity='1' table="carttop"."nome_geometria_inst_gestao_ambiental" (geometria)</datasource>
+      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' password='password123456789' sslmode=disable key='id' srid=3763 type=Polygon checkPrimaryKeyUnicity='1' table="carttop"."nome_geometria_inst_gestao_ambiental" (geometria)</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -30555,7 +30555,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>176607.57000000000698492</ymax>
       </extent>
       <id>nome_geometria_inst_producao_9ef61ef9_14b5_4974_a4c3_07a4569fa462</id>
-      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' password='bnmWERTYU98#' sslmode=disable key='id' srid=3763 type=Polygon checkPrimaryKeyUnicity='1' table="carttop"."nome_geometria_inst_producao" (geometria)</datasource>
+      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' password='password123456789' sslmode=disable key='id' srid=3763 type=Polygon checkPrimaryKeyUnicity='1' table="carttop"."nome_geometria_inst_producao" (geometria)</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -30983,7 +30983,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer hasScaleBasedVisibilityFlag="0" type="vector" minScale="1e+08" wkbType="NoGeometry" readOnly="0" autoRefreshEnabled="0" styleCategories="AllStyleCategories" refreshOnNotifyEnabled="0" maxScale="0" autoRefreshTime="0" refreshOnNotifyMessage="" geometry="No geometry">
       <id>nomes_seg_via_ferrea_3d653aee_7583_499d_beef_1555c4128cad</id>
-      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' password='bnmWERTYU98#' sslmode=disable key='identificador' checkPrimaryKeyUnicity='1' table="carttop"."nomes_seg_via_ferrea"</datasource>
+      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' password='password123456789' sslmode=disable key='identificador' checkPrimaryKeyUnicity='1' table="carttop"."nomes_seg_via_ferrea"</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -31115,7 +31115,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer hasScaleBasedVisibilityFlag="0" type="vector" minScale="1e+08" wkbType="NoGeometry" readOnly="0" autoRefreshEnabled="0" styleCategories="AllStyleCategories" refreshOnNotifyEnabled="0" maxScale="0" autoRefreshTime="0" refreshOnNotifyMessage="" geometry="No geometry">
       <id>nomes_seg_via_rodov_196e428c_42f4_4582_b14a_74406503ee8f</id>
-      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' password='bnmWERTYU98#' sslmode=disable key='identificador' checkPrimaryKeyUnicity='1' table="carttop"."nomes_seg_via_rodov"</datasource>
+      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' password='password123456789' sslmode=disable key='identificador' checkPrimaryKeyUnicity='1' table="carttop"."nomes_seg_via_rodov"</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -35235,7 +35235,7 @@ def my_form_open(dialog, layer, feature):
                 <Option type="QString" value="valor_estado_linha_ferrea_c9a70530_e199_4f4c_a18c_17bde91d4d34" name="Layer"/>
                 <Option type="QString" value="valor_estado_linha_ferrea" name="LayerName"/>
                 <Option type="QString" value="postgres" name="LayerProviderName"/>
-                <Option type="QString" value="dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;valor_estado_linha_ferrea&quot;" name="LayerSource"/>
+                <Option type="QString" value="dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;valor_estado_linha_ferrea&quot;" name="LayerSource"/>
                 <Option type="int" value="1" name="NofColumns"/>
                 <Option type="bool" value="false" name="OrderByValue"/>
                 <Option type="bool" value="false" name="UseCompleter"/>
@@ -35277,7 +35277,7 @@ def my_form_open(dialog, layer, feature):
                 <Option type="QString" value="valor_tipo_linha_ferrea_bed6b53e_5965_4b82_ae17_af2df70a9d17" name="Layer"/>
                 <Option type="QString" value="valor_tipo_linha_ferrea" name="LayerName"/>
                 <Option type="QString" value="postgres" name="LayerProviderName"/>
-                <Option type="QString" value="dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;valor_tipo_linha_ferrea&quot;" name="LayerSource"/>
+                <Option type="QString" value="dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;valor_tipo_linha_ferrea&quot;" name="LayerSource"/>
                 <Option type="int" value="1" name="NofColumns"/>
                 <Option type="bool" value="false" name="OrderByValue"/>
                 <Option type="bool" value="false" name="UseCompleter"/>
@@ -35298,7 +35298,7 @@ def my_form_open(dialog, layer, feature):
                 <Option type="QString" value="valor_tipo_troco_via_ferrea_84dc7334_9476_4019_9ca2_77476d0f0921" name="Layer"/>
                 <Option type="QString" value="valor_tipo_troco_via_ferrea" name="LayerName"/>
                 <Option type="QString" value="postgres" name="LayerProviderName"/>
-                <Option type="QString" value="dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;valor_tipo_troco_via_ferrea&quot;" name="LayerSource"/>
+                <Option type="QString" value="dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;valor_tipo_troco_via_ferrea&quot;" name="LayerSource"/>
                 <Option type="int" value="1" name="NofColumns"/>
                 <Option type="bool" value="false" name="OrderByValue"/>
                 <Option type="bool" value="false" name="UseCompleter"/>
@@ -35319,7 +35319,7 @@ def my_form_open(dialog, layer, feature):
                 <Option type="QString" value="valor_via_ferrea_9aab6363_a4b5_4f21_b68d_b8e795e5ba60" name="Layer"/>
                 <Option type="QString" value="valor_via_ferrea" name="LayerName"/>
                 <Option type="QString" value="postgres" name="LayerProviderName"/>
-                <Option type="QString" value="dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;valor_via_ferrea&quot;" name="LayerSource"/>
+                <Option type="QString" value="dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table=&quot;public&quot;.&quot;valor_via_ferrea&quot;" name="LayerSource"/>
                 <Option type="int" value="1" name="NofColumns"/>
                 <Option type="bool" value="false" name="OrderByValue"/>
                 <Option type="bool" value="false" name="UseCompleter"/>
@@ -41259,7 +41259,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer hasScaleBasedVisibilityFlag="0" type="vector" minScale="1e+08" wkbType="NoGeometry" readOnly="0" autoRefreshEnabled="0" styleCategories="AllStyleCategories" refreshOnNotifyEnabled="0" maxScale="0" autoRefreshTime="0" refreshOnNotifyMessage="" geometry="No geometry">
       <id>valor_estado_linha_ferrea_c9a70530_e199_4f4c_a18c_17bde91d4d34</id>
-      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' password='bnmWERTYU98#' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table="public"."valor_estado_linha_ferrea"</datasource>
+      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' password='password123456789' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table="public"."valor_estado_linha_ferrea"</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -45554,7 +45554,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer hasScaleBasedVisibilityFlag="0" type="vector" minScale="1e+08" wkbType="NoGeometry" readOnly="0" autoRefreshEnabled="0" styleCategories="AllStyleCategories" refreshOnNotifyEnabled="0" maxScale="0" autoRefreshTime="0" refreshOnNotifyMessage="" geometry="No geometry">
       <id>valor_tipo_linha_ferrea_bed6b53e_5965_4b82_ae17_af2df70a9d17</id>
-      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' password='bnmWERTYU98#' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table="public"."valor_tipo_linha_ferrea"</datasource>
+      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' password='password123456789' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table="public"."valor_tipo_linha_ferrea"</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -47002,7 +47002,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer hasScaleBasedVisibilityFlag="0" type="vector" minScale="1e+08" wkbType="NoGeometry" readOnly="0" autoRefreshEnabled="0" styleCategories="AllStyleCategories" refreshOnNotifyEnabled="0" maxScale="0" autoRefreshTime="0" refreshOnNotifyMessage="" geometry="No geometry">
       <id>valor_tipo_troco_via_ferrea_84dc7334_9476_4019_9ca2_77476d0f0921</id>
-      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' password='bnmWERTYU98#' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table="public"."valor_tipo_troco_via_ferrea"</datasource>
+      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' password='password123456789' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table="public"."valor_tipo_troco_via_ferrea"</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -47773,7 +47773,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer hasScaleBasedVisibilityFlag="0" type="vector" minScale="1e+08" wkbType="NoGeometry" readOnly="0" autoRefreshEnabled="0" styleCategories="AllStyleCategories" refreshOnNotifyEnabled="0" maxScale="0" autoRefreshTime="0" refreshOnNotifyMessage="" geometry="No geometry">
       <id>valor_via_ferrea_9aab6363_a4b5_4f21_b68d_b8e795e5ba60</id>
-      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='userdgt_leitura' password='bnmWERTYU98#' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table="public"."valor_via_ferrea"</datasource>
+      <datasource>dbname='nomedaBD' host=192.168.0.0 port=5432 user='utilizador_exemplo' password='password123456789' sslmode=disable key='identificador' checkPrimaryKeyUnicity='0' table="public"."valor_via_ferrea"</datasource>
       <keywordList>
         <value></value>
       </keywordList>
