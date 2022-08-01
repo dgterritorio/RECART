@@ -8,7 +8,9 @@ Para adaptar este ficheiro de projeto QGIS (nomedaBD_BDv1.1.2_QGISv3.16.11LTR_19
 1) Editar o ficheiro (por exemplo com find/replace no seu bloco de notas) substituindo os seguintes parâmetros: 
 	- nomedaBD -> deve substituir pelo nome da sua base de dados;
 	- 192.168.0.0 -> deve substituir este IP pelo IP do seu computador onde estiver a sua base de dados; 
-	- 5432 -> deve substituir para o número da sua porta se a sua base de dados estiver com outra porta configurada. 
+	- 5432 -> deve substituir para o número da sua porta se a sua base de dados estiver com outra porta configurada; 
+	- utilizador_exemplo -> deve substituir pelo utilizador que se adequa às configurações de utilizadores da sua base de dados;
+	- password123456789 -> deve substituir pela password do respetivo utilizador que se adequa às configurações de utilizadores da sua base de dados.
 2) Executar o script sql (schema_carttop_20220318.sql) já que o projeto QGIS está preparado para as relações estabelecidas neste ficheiro SQL.
 
 Nota: Pode executar o script, de várias formas. 
