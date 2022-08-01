@@ -105,14 +105,14 @@
 				"Descrição": "Adega",
 				"Valores INSPIRE": "",
 				"D1": "x",
-				"D2": "",
+				"D2": "x",
 				"Definição": "Instalação ou edifício onde é exercida a atividade de vinificação relacionada com a transformação da uva em vinho e a conservação, acondicionamento e comercialização de vinhos."
 			}, {
 				"Valores": "3",
 				"Descrição": "Lagar de azeite",
 				"Valores INSPIRE": "",
 				"D1": "x",
-				"D2": "",
+				"D2": "x",
 				"Definição": "Instalação ou edifício onde é exercida a atividade relacionada com a transformação da azeitona em azeite."
 			}, {
 				"Valores": "4",
