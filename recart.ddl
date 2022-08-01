@@ -1412,11 +1412,11 @@ CREATE TABLE area_trabalho (
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
 	data date NOT NULL,
-	valor_nivel_de_detalhe varchar(10) NOT NULL,
+	data_homologacao date,
 	nome varchar(255) NOT NULL,
 	nome_proprietario varchar(255) NOT NULL,
 	nome_produtor varchar(255) NOT NULL,
-	data_homologacao date,
+	valor_nivel_de_detalhe varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
