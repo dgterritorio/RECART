@@ -440,7 +440,13 @@
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Passagem estreita para peões e/ou velocípedes construída sobre o terreno ou suspensa/elevada sobre um curso de água, via de comunicação ou depressão do terreno."
-			}]
+			}, {
+				"Valores": "8",
+				"Descrição": "Escapatória",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Via de emergência com a finalidade de obrigar a parar, fora da faixa de rodagem, um veículo descontrolado"]
 		}]
 	}
 }
