@@ -81,20 +81,6 @@
 				"D2": "",
 				"Definição": "Linha de rutura que representa uma orientação local em que a superfície altimétrica objeto de descrição apresenta o maior declive."
 			}, {
-				"Valores": "4",
-				"Descrição": "Linha de talvegue",
-				"Valores INSPIRE": "",
-				"D1": "",
-				"D2": "",
-				"Definição": "Linha de reunião de duas vertentes do terreno com concavidade voltada para cima (pontos de menor cota)."
-			}, {
-				"Valores": "5",
-				"Descrição": "Linha de cumeada",
-				"Valores INSPIRE": "",
-				"D1": "",
-				"D2": "",
-				"Definição": "Linha de reunião de duas vertentes do terreno com concavidade voltada para baixo (pontos de maior cota). Linha de festo."
-			}, {
 				"Valores": "6",
 				"Descrição": "Topo do declive",
 				"Valores INSPIRE": "top of slope",
@@ -105,9 +91,9 @@
 				"Valores": "7",
 				"Descrição": "Limite de área plana",
 				"Valores INSPIRE": "flat area boundary",
-				"D1": "x",
-				"D2": "x",
-				"Definição": "Linha de rutura que delimita uma parte isolada do território onde o valor altimétrico é constante. Este limite deve ser fechado e recolhido apenas para representar a área plana das Albufeiras quando estas foram representadas no tema Hidrografia pelo NPA."
+				"D1": "",
+				"D2": "",
+				"Definição": "Linha que delimita uma parte do território onde o modelo de elevação tem que ser restringido ao mesmo valor de elevação."
 			}]
 		}, {
 			"nome": "valorNaturezaLinha",
@@ -124,21 +110,42 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Linha delimitadora da zona superior de aterro (zona onde se depositaram terras para definir uma sobrelevação) ou da zona superior do desaterro (zonas de onde se retiraram terras para gerar uma depressão)."
+				"Definição": "Linha delimitadora de aterro (zona onde se depositaram terras para definir uma sobrelevação) ou do desaterro (zona de onde se retiraram terras para gerar uma depressão)."
 			}, {
 				"Valores": "3",
 				"Descrição": "Socalco",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Limite superior da porção de terreno determinada natural ou artificialmente em encostas, relativamente estreita, destinando-se a cultivo."
+				"Definição": "Linha delimitadora da porção de terreno mais ou menos plano existente em encostas, destinando-se normalmente a cultivo."
 			}, {
 				"Valores": "4",
 				"Descrição": "Combro",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Limite superior de pequena elevação no terreno, normalmente artificial para separar várias zonas de água, nomeadamente em arrozais e outras culturas semelhantes."
+				"Definição": "Linha delimitadora de pequena elevação no terreno, normalmente para separar várias zonas de água, nomeadamente em arrozais e outras culturas semelhantes."
+			}, {
+				"Valores": "5",
+				"Descrição": "Talvegue",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Linha de forma que resulta da reunião de duas vertentes do terreno com concavidade voltada para cima."
+			}, {
+				"Valores": "6",
+				"Descrição": "Cumeada",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Linha de forma que resulta da reunião de duas vertentes do terreno com concavidade voltada para baixo (Linha de festo)."
+			}, {
+				"Valores": "7",
+				"Descrição": "Plano",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Limite de área plana que delimita uma parte do território onde o valor altimétrico é constante. Este limite deve ser fechado e recolhido apenas para representar as áreas planas (Albufeiras, Lagos, Lagoas, etc.)."
 			}]
 		}]
 	}
