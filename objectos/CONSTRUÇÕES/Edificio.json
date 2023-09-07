@@ -328,11 +328,11 @@
 				"Definição": "Estrutura com dispositivo para funcionar com base na energia hídrica e destinado à moagem de cereais."
 			}, {
 				"Valores": "4",
-				"Descrição": "Barraca",
+				"Descrição": "Construção precária",
 				"Valores INSPIRE": "shed",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifício de construção ligeira, que normalmente tem um ou mais lados abertos e que é geralmente utilizado para fins de armazenamento."
+				"Definição": "Edifício de construção ligeira, que é geralmente utilizado para fins de habitação (exemplo: barracas; barracos; casebres; cabanas; abrigos de montanha, praia ou floresta; casas com portabilidade; caravanas estáticas; contentores usados de forma permanente excluindo contentores de obras e dos serviços portuários; tendas permanentes)."
 			}, {
 				"Valores": "5",
 				"Descrição": "Barragem",
@@ -522,6 +522,20 @@
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Moinho movido pelo movimento da água, causado pelo desnível das marés nos estuários de rios."
+			}, {
+				"Valores": "32",
+				"Descrição": "Barracão",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Edifício de construção ligeira, que normalmente tem um ou mais lados abertos e que é geralmente utilizado para fins de armazenamento."
+			}, {
+				"Valores": "33",
+				"Descrição": "Quiosque fixo",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Pavilhão pequeno, de madeira, ferro, alumínio ou de cimento, situado geralmente nos aglomerados urbanos, ou em zonas de grande afluência de público, destinado à venda de artesanato, jornais, tabacos, bebidas e outras miudezas."
 			}]
 		}, {
 			"nome": "valorUtilizacaoAtual",
