@@ -1330,6 +1330,31 @@ CREATE TABLE barreira (
 SELECT AddGeometryColumn ('public','barreira','geometria',3763,'GEOMETRY',2);
 ALTER TABLE barreira ALTER COLUMN geometria SET NOT NULL;
 
+CREATE TABLE valor_barreira (
+	identificador varchar(10) NOT NULL,
+	descricao varchar(255) NOT NULL,
+	PRIMARY KEY (identificador)
+);
+
+-- Poligono
+CREATE TABLE constru_na_margem (
+	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
+	inicio_objeto timestamp without time zone NOT NULL,
+	fim_objeto timestamp without time zone,
+	valor_tipo_const_margem varchar(10) NOT NULL,
+	nome varchar(255),
+	PRIMARY KEY (identificador)
+);
+
+SELECT AddGeometryColumn ('public','constru_na_margem','geometria',3763,'POLYGON',2);
+ALTER TABLE constru_na_margem ALTER COLUMN geometria SET NOT NULL;
+
+CREATE TABLE valor_tipo_const_margem (
+	identificador varchar(10) NOT NULL,
+	descricao varchar(255) NOT NULL,
+	PRIMARY KEY (identificador)
+);
+
 CREATE TABLE fronteira_terra_agua (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto timestamp without time zone NOT NULL,
@@ -1342,11 +1367,7 @@ CREATE TABLE fronteira_terra_agua (
 SELECT AddGeometryColumn ('public','fronteira_terra_agua','geometria',3763,'LINESTRING',3);
 ALTER TABLE fronteira_terra_agua ALTER COLUMN geometria SET NOT NULL;
 
-CREATE TABLE valor_barreira (
-	identificador varchar(10) NOT NULL,
-	descricao varchar(255) NOT NULL,
-	PRIMARY KEY (identificador)
-);
+
 
 CREATE TABLE valor_tipo_margem (
 	identificador varchar(10) NOT NULL,
@@ -1402,6 +1423,7 @@ ALTER TABLE curso_de_agua_eixo ADD CONSTRAINT valor_posicao_vertical_id FOREIGN 
 ALTER TABLE zona_humida ADD CONSTRAINT valor_zona_humida_id FOREIGN KEY (valor_zona_humida) REFERENCES valor_zona_humida (identificador);
 ALTER TABLE no_hidrografico ADD CONSTRAINT valor_tipo_no_hidrografico_id FOREIGN KEY (valor_tipo_no_hidrografico) REFERENCES valor_tipo_no_hidrografico (identificador);
 ALTER TABLE barreira ADD CONSTRAINT valor_barreira_id FOREIGN KEY (valor_barreira) REFERENCES valor_barreira (identificador);
+ALTER TABLE constru_na_margem ADD CONSTRAINT valor_tipo_const_margem_id FOREIGN KEY (valor_tipo_const_margem) REFERENCES valor_tipo_const_margem (identificador);
 
 /**
  * Criar tabela area_trabalho auxiliar
