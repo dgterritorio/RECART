@@ -350,8 +350,6 @@ INSERT INTO valor_tipo_area_infra_trans_aereo VALUES ('4','Plataforma de estacio
 INSERT INTO valor_tipo_area_infra_trans_via_navegavel VALUES ('1','Área do porto');
 INSERT INTO valor_tipo_area_infra_trans_via_navegavel VALUES ('2','Área do cais');
 INSERT INTO valor_tipo_area_infra_trans_via_navegavel VALUES ('3','Área da doca');
-INSERT INTO valor_tipo_construcao VALUES ('1','Molhe');
-INSERT INTO valor_tipo_construcao VALUES ('2','Pontão');
 INSERT INTO valor_tipo_construcao VALUES ('3','Piscina');
 INSERT INTO valor_tipo_construcao VALUES ('4','Tanque');
 INSERT INTO valor_tipo_construcao VALUES ('5','Campo de jogos');
