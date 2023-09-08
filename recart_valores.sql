@@ -128,6 +128,8 @@ INSERT INTO valor_elemento_associado_electricidade VALUES ('1.1','Central hidroe
 INSERT INTO valor_elemento_associado_electricidade VALUES ('1.2','Central fotovoltaica');
 INSERT INTO valor_elemento_associado_electricidade VALUES ('1.3','Central eólica');
 INSERT INTO valor_elemento_associado_electricidade VALUES ('1.4','Central termoelétrica');
+INSERT INTO valor_elemento_associado_electricidade VALUES ('1.5','Central de biomassa');
+INSERT INTO valor_elemento_associado_electricidade VALUES ('1.6','Central geotérmica');
 INSERT INTO valor_elemento_associado_electricidade VALUES ('2','Subestação elétrica');
 INSERT INTO valor_elemento_associado_electricidade VALUES ('3','Aeromotor');
 INSERT INTO valor_elemento_associado_electricidade VALUES ('4','Gerador eólico');
