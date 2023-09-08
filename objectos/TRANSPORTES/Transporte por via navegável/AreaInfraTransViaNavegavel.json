@@ -50,21 +50,21 @@
 				"Valores INSPIRE": "PortArea",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Área localizada na costa, rio ou lago que dispõe de um conjunto de infraestruturas e de serviços , incluindo os de logística, de suporte ao comercio marítimo, pesca, transporte de passageiros, náutica de recreio, marítimo-turística, desportos náuticos, e, ainda de bases navais militares."
+				"Definição": "Área da infraestrutura localizada na costa, rio ou lago que dispõe de um conjunto de serviços, incluindo os de logística, de suporte ao comércio marítimo, pesca, transporte de passageiros, náutica de recreio, marítimo-turística, desportos náuticos, e ainda, de bases navais militares."
 			}, {
 				"Valores": "2",
 				"Descrição": "Área do cais",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Área da estrutura junto da qual os navios procedem à acostagem a fim de efetuarem operações de embarque e desembarque de passageiros ou mercadorias."
+				"Definição": "Área da infraestrutura na qual os navios procedem à acostagem a fim de efetuarem operações de embarque e desembarque de passageiros ou mercadorias."
 			}, {
 				"Valores": "3",
 				"Descrição": "Área da doca",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Área dotada de cais acostáveis para navios e embarcações (inclui as marinas)."
+				"Definição": "Área da infraestrutura dotada de cais acostáveis para navios e embarcações (inclui as marinas)."
 			}]
 		}]
 	}

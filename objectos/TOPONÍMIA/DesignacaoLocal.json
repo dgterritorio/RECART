@@ -97,7 +97,7 @@
 				"Valores": "6.1",
 				"Descrição": "Serra",
 				"Valores INSPIRE": "",
-				"D1": "",
+				"D1": "x",
 				"D2": "x",
 				"Definição": "Forma natural de relevo constituída por uma cadeia de montanhas."
 			}, {
@@ -169,7 +169,7 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Formato de dorso e limitados por linhas de água que recebem a designação local de 'lombos', 'lombinhos' ou 'lombadas'."
+				"Definição": "Formato de dorso e limitados por linhas de água que recebem a designação local de “lombos”, “lombinhos” ou “lombadas”."
 			},  {
 				"Valores": "6.12",
 				"Descrição": "Achada",

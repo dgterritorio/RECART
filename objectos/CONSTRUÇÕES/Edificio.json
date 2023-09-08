@@ -97,6 +97,13 @@
 			"D1": "x",
 			"D2": "",
 			"Definição": "Número, por vezes acompanhado de letras, que permite identificar um edifício, geralmente colocado ou inscrito por cima ou ao lado de uma porta."
+		}, {
+			"Atributo": "numeroTotalPisos",
+			"Multip.": "1",
+			"Tipo": "Inteiro",
+			"D1": "",
+			"D2": "",
+			"Definição": "Cada um dos planos sobrepostos e cobertos nos quais se divide um edifício e que se destinam a satisfazer exigências funcionais ligadas à sua utilização. O número total de pisos inclui o rés-do-chão, as caves, subcaves e águas furtadas habitáveis ou utilizáveis."
 		}],
 		"listas de códigos": [{
 			"nome": "valorCondicaoConst",

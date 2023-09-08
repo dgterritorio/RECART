@@ -46,11 +46,11 @@
 			"nome": "valorElementoAssociadoTelecomunicacoes",
 			"valores": [{
 				"Valores": "1",
-				"Descrição": "Poste de telecomunicações",
+				"Descrição": "Apoio de telecomunicações",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "",
-				"Definição": "Elemento vertical de sustentação apto para interligação de cabos e equipamentos de traçados aéreos de redes de comunicações eletrónicas."
+				"Definição": "Elemento de sustentação apto para interligação de cabos e equipamentos de traçados aéreos de redes de comunicações eletrónicas."
 			}, {
 				"Valores": "2",
 				"Descrição": "Cabina telefónica",
