@@ -4,7 +4,7 @@
 		"Característica geográfica": "Edifício",
 		"Objeto INSPIRE": "building",
 		"objeto": "Edificio",
-		"Definição": "Construção em alvenaria, betão ou outro material, com um ou vários pisos, de caráter permanente, em geral limitada por paredes e teto, que serve de habitação ou constitui um espaço comercial, industrial, administrativo, religioso, cultural, etc.",
+		"Definição": "Construção com um ou vários pisos, usada de forma permanente, em geral limitada por paredes e teto, que serve de habitação ou constitui um espaço comercial, industrial, administrativo, religioso, cultural, etc.",
 		"Dim.": "2D",
 		"Atributos": [{
 			"Atributo": "identificador",
