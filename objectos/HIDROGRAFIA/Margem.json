@@ -62,58 +62,58 @@
 				"Valores": "1",
 				"Descrição": "Pedregulho",
 				"Valores INSPIRE": "boulders",
-				"D1": "",
-				"D2": "",
-				"Definição": "Margem constituída por pedras grandes erodidas pela água ou pela ação do tempo."
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Margem predominantemente constituída por pedras grandes erodidas pela água ou pela ação do tempo."
 			}, {
 				"Valores": "2",
 				"Descrição": "Argila",
 				"Valores INSPIRE": "clay",
-				"D1": "",
-				"D2": "",
-				"Definição": "Margem constituída por terra dura e tenaz de grão fino, constituída sobretudo por alumino-silicatos."
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Margem predominantemente constituída por terra dura e tenaz de grão fino, constituída sobretudo por alumino-silicatos."
 			}, {
 				"Valores": "3",
 				"Descrição": "Cascalho",
 				"Valores INSPIRE": "gravel",
-				"D1": "",
-				"D2": "",
-				"Definição": "Margem constituída por pedra miúda misturada geralmente com areia grossa."
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Margem predominantemente constituída por pedra miúda misturada geralmente com areia grossa."
 			}, {
 				"Valores": "4",
 				"Descrição": "Lama",
 				"Valores INSPIRE": "mud",
-				"D1": "",
-				"D2": "",
-				"Definição": "Margem constituída por solo macio e húmido, areia, pó ou qualquer outro material terroso."
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Margem predominantemente constituída por solo macio e húmido, areia, pó ou qualquer outro material terroso."
 			}, {
 				"Valores": "5",
 				"Descrição": "Rocha",
 				"Valores INSPIRE": "rock",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Margem constituída por rochas de qualquer tamanho."
+				"Definição": "Margem predominantemente constituída por rochas de qualquer tamanho."
 			}, {
 				"Valores": "6",
 				"Descrição": "Areia",
 				"Valores INSPIRE": "sand",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Margem constituída por fragmentos pequenos e erodidos de rochas (sobretudo silicatos), mais finas que o cascalho e maiores que o grão de lodo solto."
+				"Definição": "Margem predominantemente constituída por fragmentos pequenos e erodidos de rochas (sobretudo silicatos), mais finas que o cascalho e maiores que o grão de lodo solto."
 			}, {
 				"Valores": "7",
 				"Descrição": "Seixos",
 				"Valores INSPIRE": "shingle",
-				"D1": "",
-				"D2": "",
-				"Definição": "Margem constituída por calhaus pequenos, soltos e arredondados pela ação da água."
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Margem predominantemente constituída por calhaus pequenos, soltos e arredondados pela ação da água."
 			}, {
 				"Valores": "8",
 				"Descrição": "Pedra",
 				"Valores INSPIRE": "stone",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Margem artificializada constituída por partes de rocha ou de outra substância mineral, de forma e tamanhos bem definidos e com um propósito especial (tetrápodes, etc.)."
+				"Definição": "Margem predominantemente constituída por partes de rocha, ou de uma substância mineral."
 			}]
 		}]
 	}
