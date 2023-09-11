@@ -573,7 +573,7 @@ INSERT INTO valor_utilizacao_atual VALUES ('6.3','Transporte por via navegável'
 INSERT INTO valor_utilizacao_atual VALUES ('6.3.1','Terminal marítimo ou fluvial');
 INSERT INTO valor_utilizacao_atual VALUES ('6.3.2','Centro de controlo');
 INSERT INTO valor_utilizacao_atual VALUES ('6.4','Transporte rodoviário');
-INSERT INTO valor_utilizacao_atual VALUES ('6.4.1','Paragem rodoviária');
+INSERT INTO valor_utilizacao_atual VALUES ('6.4.1','Abrigo de passageiros');
 INSERT INTO valor_utilizacao_atual VALUES ('6.4.2','Terminal rodoviário');
 INSERT INTO valor_utilizacao_atual VALUES ('6.4.3','Parque de estacionamento em edifício');
 INSERT INTO valor_utilizacao_atual VALUES ('6.5','Elevador ou ascensor');
