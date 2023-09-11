@@ -76,8 +76,8 @@
 				"Valores": "5",
 				"Descrição": "Ecoponto",
 				"Valores INSPIRE": "",
-				"D1": "x",
-				"D2": "x",
+				"D1": "",
+				"D2": "",
 				"Definição": "Área onde se encontram localizados um ou vários contentores para recolha diferenciada de resíduos para reciclagem."
 			}, {
 				"Valores": "6",
@@ -149,20 +149,6 @@
 				"D1": "",
 				"D2": "",
 				"Definição": "Ponto de carregamento de eletricidade para a mobilidade elétrica."
-			}, {
-				"Valores": "17",
-				"Descrição": "Quiosque fixo",
-				"Valores INSPIRE": "",
-				"D1": "x",
-				"D2": "x",
-				"Definição": "Pavilhão pequeno, de madeira, ferro, alumínio ou de cimento, situado geralmente nos aglomerados urbanos, ou em zonas de grande afluência de público, destinado à venda de jornais, tabacos, bebidas e outras miudezas."
-			}, {
-				"Valores": "18",
-				"Descrição": "Sanitário público",
-				"Valores INSPIRE": "",
-				"D1": "",
-				"D2": "",
-				"Definição": "Instalação ou conjunto de instalações públicas próprias para higiene pessoal ou para banho."
 			}, {
 				"Valores": "19",
 				"Descrição": "Semáforo",

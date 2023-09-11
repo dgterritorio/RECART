@@ -392,8 +392,6 @@ INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('13','Passadeira de peões');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('14','Placa informativa');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('15','Pérgula');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('16','Posto de carregamento elétrico');
-INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('17','Quiosque fixo');
-INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('18','Sanitário público');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('19','Semáforo');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('20','Sinal de trânsito');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('22','Contentor de reutilização');
