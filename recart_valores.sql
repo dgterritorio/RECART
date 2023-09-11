@@ -387,7 +387,6 @@ INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('7','Estacionamento para velo
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('8','Marco de correio');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('9','Painel publicitário');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('10','Papeleira');
-INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('11','Parque infantil');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('12','Parquímetro');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('13','Passadeira de peões');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('14','Placa informativa');
@@ -518,6 +517,7 @@ INSERT INTO valor_tipo_equipamento_coletivo VALUES ('7.1','Parque e jardim');
 INSERT INTO valor_tipo_equipamento_coletivo VALUES ('7.2','Área verde');
 INSERT INTO valor_tipo_equipamento_coletivo VALUES ('7.3','Campo de golfe');
 INSERT INTO valor_tipo_equipamento_coletivo VALUES ('7.4','Outro – desporto e lazer');
+INSERT INTO valor_tipo_equipamento_coletivo VALUES ('7.5','Parque infantil');
 INSERT INTO valor_tipo_equipamento_coletivo VALUES ('8','Cemitério');
 INSERT INTO valor_tipo_equipamento_coletivo VALUES ('9','Centro cívico');
 INSERT INTO valor_tipo_adm_publica VALUES ('1','Assembleia da República, Assembleia Regional');
