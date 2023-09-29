@@ -78,14 +78,14 @@
 				"Valores INSPIRE": "parking",
 				"D1": "x",
 				"D2": "",
-				"Definição": "Local destinado ao estacionamento de veículos."
+				"Definição": "Fogos/lugares destinados ao estacionamento de veículos na via pública, de acesso livre, que pode ser de utilização gratuita ou mediante pagamento, em zonas delimitadas, geralmente com recurso a sinalização horizontal e/ou vertical."
 			}, {
 				"Valores": "4",
 				"Descrição": "Parque de estacionamento",
 				"Valores INSPIRE": "parking",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Área delimitada ao ar livre para guardar temporariamente veículos, por vezes mediante pagamento."
+				"Definição": "Área delimitada ao ar livre, de acesso livre, para guardar temporariamente veículos, que pode ser de utilização gratuita ou mediante pagamento."
 			}, {
 				"Valores": "5",
 				"Descrição": "Portagem",

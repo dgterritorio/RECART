@@ -4,7 +4,7 @@
 		"Característica geográfica": "Construção na margem",
 		"Objeto INSPIRE": "",
 		"objeto": "ConstruNaMargem",
-		"Definição": "Uma estrutura artificial ligada de forma permanente a terra na margem de uma massa de água em zona costeira ou em águas interiores.",
+		"Definição": "Estrutura artificial permanente, situada na margem de uma massa de água, em zonas costeiras ou junto a águas interiores.",
 		"Dim.": "2D",
 		"Atributos": [{
 			"Atributo": "identificador",
@@ -64,7 +64,7 @@
 				"Valores INSPIRE": "Pontoon, wharf (quay), solid face wharf, open face wharf, pier jetty, promenade pier",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Construção fixa ou flutuante que entra pela água dentro e onde as embarcações podem acostar ou amarrar para proceder a operações de embarque ou desembarque de carga ou passageiros.São considerados os cais de amarração fixos ou flutuantes, ponte-cais e passadiços."
+				"Definição": "Construção fixa ou flutuante que entra pela água dentro e onde as embarcações podem acostar ou amarrar para proceder a operações de embarque ou desembarque de carga ou passageiros. São considerados os cais de amarração fixos ou flutuantes, ponte-cais e passadiços."
 			}, {
 				"Valores": "3",
 				"Descrição": "Esporão",

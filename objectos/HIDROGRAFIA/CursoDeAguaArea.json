@@ -4,7 +4,7 @@
 		"Característica geográfica": "Curso de água - área",
 		"Objeto INSPIRE": "Watercourse",
 		"objeto": "CursoDeAguaArea",
-		"Definição": "Área limite das águas de um rio, ribeira ou outra corrente natural ou artificial.",
+		"Definição": "Área limite das águas de um rio, ribeira ou outra corrente natural ou artificial. O limite desta área deve ter em consideração os indícios da presença regular de água.",
 		"Dim.": "3D",
 		"Atributos": [{
 			"Atributo": "identificador",
