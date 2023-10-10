@@ -49,7 +49,7 @@
 			"D2": "",
 			"Definição": "Categoria de persistência hidrológica de uma massa de água."
 		}, {
-			"Atributo": "cotaPlenoArmazenamento",
+			"Atributo": "cotaPlenaArmazenamento",
 			"Multip.": "1",
 			"Tipo": "Booleano",
 			"D1": "x",

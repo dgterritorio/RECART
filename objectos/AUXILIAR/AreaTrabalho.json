@@ -63,14 +63,14 @@
 			"D2": "x",
 			"Definição": "Nome atribuído ao trabalho (de acordo com a nomenclatura)."
 		}, {
-			"Atributo": "nomeDoProdutor",
+			"Atributo": "nomeProdutor",
 			"Multip.": "1",
 			"Tipo": "Texto",
 			"D1": "x",
 			"D2": "x",
 			"Definição": "Nome do produtor do trabalho."
 		}, {
-			"Atributo": "nomeDoProprietario",
+			"Atributo": "nomeProprietario",
 			"Multip.": "1",
 			"Tipo": "Texto",
 			"D1": "x",
