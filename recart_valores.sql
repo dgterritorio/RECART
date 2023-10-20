@@ -482,7 +482,7 @@ INSERT INTO valor_tipo_servico VALUES ('1','Abastecimento de combustível');
 INSERT INTO valor_tipo_servico VALUES ('2','Carregamento elétrico');
 INSERT INTO valor_tipo_servico VALUES ('3','Loja de conveniência');
 INSERT INTO valor_tipo_servico VALUES ('4','Restauração');
-INSERT INTO valor_tipo_servico VALUES ('5','Estacionamento');
+INSERT INTO valor_tipo_servico VALUES ('5','Estacionamento para veículos ligeiros');
 INSERT INTO valor_tipo_servico VALUES ('6','Estacionamento para veículos pesados');
 INSERT INTO valor_tipo_servico VALUES ('7','Estacionamento para caravanas');
 INSERT INTO valor_tipo_servico VALUES ('8','Apoio automóvel');

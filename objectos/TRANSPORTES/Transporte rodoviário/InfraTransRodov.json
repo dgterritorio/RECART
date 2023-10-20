@@ -154,7 +154,7 @@
 				"Definição": "Restauração disponível."
 			}, {
 				"Valores": "5",
-				"Descrição": "Estacionamento",
+				"Descrição": "Estacionamento para veículos ligeiros",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
@@ -215,6 +215,13 @@
 				"D1": "",
 				"D2": "",
 				"Definição": "Estacionamento específico para pessoas com mobilidade reduzida."
+			}, {
+				"Valores": "14",
+				"Descrição": "Estacionamento para velocípedes",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Estacionamento para velocípedes disponível."
 			}, {
 				"Valores": "995",
 				"Descrição": "Não aplicável",
