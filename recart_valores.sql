@@ -107,6 +107,7 @@ INSERT INTO valor_curso_de_agua VALUES ('3','Ribeira');
 INSERT INTO valor_curso_de_agua VALUES ('4','Linha de água');
 INSERT INTO valor_curso_de_agua VALUES ('5','Canal');
 INSERT INTO valor_curso_de_agua VALUES ('6','Vala');
+INSERT INTO valor_curso_de_agua VALUES ('7','Curso de água entubado');
 INSERT INTO valor_designacao_tensao VALUES ('1','Muito alta');
 INSERT INTO valor_designacao_tensao VALUES ('2','Alta');
 INSERT INTO valor_designacao_tensao VALUES ('3','Média');
