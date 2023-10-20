@@ -1258,6 +1258,7 @@ CREATE TABLE curso_de_agua_eixo (
 	valor_curso_de_agua varchar(10) NOT NULL,
 	valor_persistencia_hidrologica varchar(10),
 	valor_posicao_vertical varchar(10) NOT NULL,
+	valor_estado_instalacao varchar(10),
 	PRIMARY KEY (identificador)
 );
 
@@ -1324,6 +1325,7 @@ CREATE TABLE barreira (
 	nome varchar(255),
 	id_hidrografico varchar(255),
 	valor_barreira varchar(10) NOT NULL,
+	valor_estado_instalacao varchar(10),
 	PRIMARY KEY (identificador)
 );
 
@@ -1341,8 +1343,9 @@ CREATE TABLE constru_na_margem (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
-	valor_tipo_const_margem varchar(10) NOT NULL,
 	nome varchar(255),
+	valor_tipo_const_margem varchar(10) NOT NULL,
+	valor_estado_instalacao varchar(10),
 	PRIMARY KEY (identificador)
 );
 
@@ -1411,6 +1414,11 @@ CREATE TABLE valor_zona_humida (
 	PRIMARY KEY (identificador)
 );
 
+CREATE TABLE valor_estado_instalacao (
+	identificador varchar(10) NOT NULL,
+	descricao varchar(255) NOT NULL,
+	PRIMARY KEY (identificador)
+);
 
 ALTER TABLE nascente ADD CONSTRAINT valor_persistencia_hidrologica_id FOREIGN KEY (valor_persistencia_hidrologica) REFERENCES valor_persistencia_hidrologica (identificador);
 ALTER TABLE nascente ADD CONSTRAINT valor_tipo_nascente_id FOREIGN KEY (valor_tipo_nascente) REFERENCES valor_tipo_nascente (identificador);
@@ -1420,10 +1428,13 @@ ALTER TABLE margem ADD CONSTRAINT valor_tipo_margem_id FOREIGN KEY (valor_tipo_m
 ALTER TABLE curso_de_agua_eixo ADD CONSTRAINT valor_curso_de_agua_id FOREIGN KEY (valor_curso_de_agua) REFERENCES valor_curso_de_agua (identificador);
 ALTER TABLE curso_de_agua_eixo ADD CONSTRAINT valor_persistencia_hidrologica_id FOREIGN KEY (valor_persistencia_hidrologica) REFERENCES valor_persistencia_hidrologica (identificador);
 ALTER TABLE curso_de_agua_eixo ADD CONSTRAINT valor_posicao_vertical_id FOREIGN KEY (valor_posicao_vertical) REFERENCES valor_posicao_vertical (identificador);
+ALTER TABLE curso_de_agua_eixo ADD CONSTRAINT valor_estado_instalacao_id FOREIGN KEY (valor_estado_instalacao) REFERENCES valor_estado_instalacao (identificador);
 ALTER TABLE zona_humida ADD CONSTRAINT valor_zona_humida_id FOREIGN KEY (valor_zona_humida) REFERENCES valor_zona_humida (identificador);
 ALTER TABLE no_hidrografico ADD CONSTRAINT valor_tipo_no_hidrografico_id FOREIGN KEY (valor_tipo_no_hidrografico) REFERENCES valor_tipo_no_hidrografico (identificador);
 ALTER TABLE barreira ADD CONSTRAINT valor_barreira_id FOREIGN KEY (valor_barreira) REFERENCES valor_barreira (identificador);
+ALTER TABLE barreira ADD CONSTRAINT valor_estado_instalacao_id_2 FOREIGN KEY (valor_estado_instalacao) REFERENCES valor_estado_instalacao (identificador);
 ALTER TABLE constru_na_margem ADD CONSTRAINT valor_tipo_const_margem_id FOREIGN KEY (valor_tipo_const_margem) REFERENCES valor_tipo_const_margem (identificador);
+ALTER TABLE constru_na_margem ADD CONSTRAINT valor_estado_instalacao_id_3 FOREIGN KEY (valor_estado_instalacao) REFERENCES valor_estado_instalacao (identificador);
 
 /**
  * Criar tabela area_trabalho auxiliar
