@@ -109,11 +109,11 @@
 				"Definição": "Limite das construções delimitadoras definidas na “Construção linear”."
 			}, {
 				"Valores": "11",
-				"Descrição": "Rampa de acesso",
+				"Descrição": "Acesso a construção",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Passagem em plano inclinado usada habitualmente em alternativa às escadas por pessoas com mobilidade condicionada."
+				"Definição": "Estrutura usada habitualmente para acesso ou ligação entre construções, em plano inclinado (rampa) ou suspenso."
 			}]
 		}]
 	}

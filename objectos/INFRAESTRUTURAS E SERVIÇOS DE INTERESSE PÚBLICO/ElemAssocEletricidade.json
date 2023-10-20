@@ -196,7 +196,7 @@
 				"Descrição": "Posto de transformação aéreo",
 				"Valores INSPIRE": "transformer",
 				"D1": "x",
-				"D2": "x",
+				"D2": "",
 				"Definição": "Instalação ou equipamento elevado sobre um apoio, destinado à transformação da corrente elétrica."
 			}, {
 				"Valores": "10",
