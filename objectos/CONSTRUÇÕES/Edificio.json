@@ -99,7 +99,7 @@
 			"Definição": "Número, por vezes acompanhado de letras, que permite identificar um edifício, geralmente colocado ou inscrito por cima ou ao lado de uma porta."
 		}, {
 			"Atributo": "numeroTotalPisos",
-			"Multip.": "1",
+			"Multip.": "[0..1]",
 			"Tipo": "Inteiro",
 			"D1": "",
 			"D2": "",
