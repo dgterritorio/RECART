@@ -532,7 +532,7 @@
 			}, {
 				"Valores": "32",
 				"Descrição": "Barracão",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "shed",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Edifício de construção ligeira de grandes dimensões, que pode ter um ou mais lados abertos e que é geralmente utilizado para fins de armazenamento."
