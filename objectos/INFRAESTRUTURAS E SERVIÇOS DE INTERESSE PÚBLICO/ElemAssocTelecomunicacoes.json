@@ -64,7 +64,7 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Estrutura, sobre o solo, torre ou no topo dos edifícios, destinada às comunicações por meio da captação e irradiação de ondas eletromagnéticas ou radielétricas."
+				"Definição": "Estrutura destinada às comunicações por meio da captação e irradiação de ondas eletromagnéticas ou radielétricas. As antenas ligadas a edifícios (exceto torres) não devem ser consideradas."
 			}, {
 				"Valores": "4",
 				"Descrição": "Armário",

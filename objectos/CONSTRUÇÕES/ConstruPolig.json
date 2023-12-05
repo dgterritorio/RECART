@@ -85,7 +85,7 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Escada ou série de escadas que podem estar separadas por descansos."
+				"Definição": "Escada ou série de escadas que podem estar separadas por descansos. As escadarias ligadas aos edifícios não devem ser consideradas."
 			}, {
 				"Valores": "8",
 				"Descrição": "Bancada",
@@ -109,11 +109,11 @@
 				"Definição": "Limite das construções delimitadoras definidas na “Construção linear”."
 			}, {
 				"Valores": "11",
-				"Descrição": "Acesso a construção",
+				"Descrição": "Rampa de acesso",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Estrutura usada habitualmente para acesso ou ligação entre construções, em plano inclinado (rampa) ou suspenso."
+				"Definição": "Estrutura em plano inclinado usada habitualmente em alternativa às escadas por pessoas com mobilidade condicionada. As rampas de acesso ligadas aos edifícios não devem ser consideradas."
 			}]
 		}]
 	}

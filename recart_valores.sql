@@ -368,7 +368,7 @@ INSERT INTO valor_tipo_construcao VALUES ('7','Escadaria');
 INSERT INTO valor_tipo_construcao VALUES ('8','Bancada');
 INSERT INTO valor_tipo_construcao VALUES ('9','Passeio');
 INSERT INTO valor_tipo_construcao VALUES ('10','Limite da construção linear');
-INSERT INTO valor_tipo_construcao VALUES ('11','Acesso a construção');
+INSERT INTO valor_tipo_construcao VALUES ('11','Rampa de acesso');
 INSERT INTO valor_tipo_const_margem VALUES ('1','Molhe ou quebra-mar');
 INSERT INTO valor_tipo_const_margem VALUES ('2','Pontão ou cais');
 INSERT INTO valor_tipo_const_margem VALUES ('3','Esporão');
