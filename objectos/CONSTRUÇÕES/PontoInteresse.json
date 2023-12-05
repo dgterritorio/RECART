@@ -54,14 +54,14 @@
 			"valores": [{
 				"Valores": "1",
 				"Descrição": "Alminha",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "OtherConstruction (monument)",
 				"D1": "x",
 				"D2": "",
 				"Definição": "Pequeno monumento na berma dos caminhos ou das estradas assinalando à pessoas que passam as almas do purgatório ou lembrando a memória de pessoas que ali tenham falecido."
 			}, {
 				"Valores": "2",
 				"Descrição": "Anta",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "OtherConstruction (monument)",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Monumento sepulcral pré-histórico, delimitado por pedras mais ou menos verticais, esteios, e coberto por uma grande laje horizontal, mesa ou chapéu."
@@ -82,28 +82,28 @@
 			}, {
 				"Valores": "5",
 				"Descrição": "Castro",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "OtherConstruction (monument)",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Corresponde a ruínas ou restos arqueológicos de um tipo de povoado da Idade do Cobre e da Idade do Ferro, característico de zonas da Península Ibérica."
 			}, {
 				"Valores": "6",
 				"Descrição": "Cruzeiro",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "OtherConstruction (monument)",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Cruz de pedra, raramente de madeira, colocada em praças, adros de igrejas, em caminhos e encruzilhadas."
 			}, {
 				"Valores": "7",
 				"Descrição": "Estátua",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "OtherConstruction (monument)",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Escultura em três dimensões representativa de uma figura humana, animal, mítica, divina ou abstrata."
 			}, {
 				"Valores": "8",
 				"Descrição": "Menir",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "OtherConstruction (monument)",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Monumento megalítico que consiste numa pedra mais ou menos cilíndrica fixada verticalmente no solo."
@@ -117,14 +117,14 @@
 			}, {
 				"Valores": "10",
 				"Descrição": "Padrão",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "OtherConstruction (monument)",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Monumento de pedra semelhante a um marco que os navegadores portugueses erguiam nas terras por eles descobertas ou monumento monolítico erigido para comemorar um dado acontecimento."
 			}, {
 				"Valores": "11",
 				"Descrição": "Pelourinho",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "OtherConstruction (monument)",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Coluna de pedra, símbolo do poder judicial de um concelho, erigida em praça ou sítio central e pública, junto do qual se expunham e castigavam os transgressores."

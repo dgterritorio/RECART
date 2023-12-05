@@ -61,7 +61,7 @@
 			}, {
 				"Valores": "3",
 				"Descrição": "Antena",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "OtherConstruction (antenna)",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Estrutura destinada às comunicações por meio da captação e irradiação de ondas eletromagnéticas ou radielétricas. As antenas ligadas a edifícios (exceto torres) não devem ser consideradas."

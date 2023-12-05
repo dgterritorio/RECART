@@ -371,7 +371,7 @@
 			}, {
 				"Valores": "9",
 				"Descrição": "Chaminé",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "OtherConstruction (chimney)",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Conduta vertical e elevada em forma de tubo construída para exaustão de fumos. As chaminés ligadas aos edifícios não devem ser consideradas."
@@ -511,7 +511,7 @@
 			}, {
 				"Valores": "29",
 				"Descrição": "Torre",
-				"Valores INSPIRE": "tower",
+				"Valores INSPIRE": "tower (clockTower; coolingTower; communicationTower; lookoutTower)",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Estrutura relativamente alta e estreita que pode estar isolada ou fazer parte de outra estrutura. As pequenas torres, especialmente se não estiverem fixadas ao solo, que façam parte de um edifício ou outra construção, não devem ser consideradas."
@@ -689,7 +689,7 @@
 			}, {
 				"Valores": "6.1.2",
 				"Descrição": "Torre de controlo",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "tower (controlTower)",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Edifício destinado ao controlo do tráfego aéreo."
@@ -731,7 +731,7 @@
 			}, {
 				"Valores": "6.3.2",
 				"Descrição": "Centro de controlo",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": " tower (controlTower)",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Edifício destinado ao controlo do tráfego marítimo ou fluvial."
@@ -766,7 +766,7 @@
 			}, {
 				"Valores": "6.5",
 				"Descrição": "Elevador ou ascensor",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "OtherConstruction",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Equipamento que conduz pessoas ou carga para andar superior ou inferior. Elevadores ou ascensores ligados aos edifícios não devem ser considerados."
