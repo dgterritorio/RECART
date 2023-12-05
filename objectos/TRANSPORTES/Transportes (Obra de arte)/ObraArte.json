@@ -107,6 +107,13 @@
 				"D1": "",
 				"D2": "",
 				"Definição": "Construção relativa à sapata em altura destinada a apoio a uma estrutura."
+			}, {
+				"Valores": "9",
+				"Descrição": "Estrutura de proteção",
+				"Valores INSPIRE": "OtherConstruction (protectiveStructure)",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Construção que oferece proteção contra riscos ambientais como avalanches, deslizamentos de terra, quedas de rochas, etc."
 			}]
 		}]
 	}

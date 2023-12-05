@@ -470,6 +470,7 @@ INSERT INTO valor_tipo_obra_arte VALUES ('5','Túnel');
 INSERT INTO valor_tipo_obra_arte VALUES ('6','Passagem hidráulica');
 INSERT INTO valor_tipo_obra_arte VALUES ('7','Passagem pedonal');
 INSERT INTO valor_tipo_obra_arte VALUES ('8','Pilar');
+INSERT INTO valor_tipo_obra_arte VALUES ('9','Estrutura de proteção');
 INSERT INTO valor_tipo_ponto_interesse VALUES ('1','Alminha');
 INSERT INTO valor_tipo_ponto_interesse VALUES ('2','Anta');
 INSERT INTO valor_tipo_ponto_interesse VALUES ('3','Árvore');
