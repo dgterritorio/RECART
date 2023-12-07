@@ -98,21 +98,21 @@
 				"Descrição": "Bananal",
 				"Valores INSPIRE": "",
 				"D1": "",
-				"D2": "",
+				"D2": "x",
 				"Definição": "Área de plantação de bananeiras (Musa cavendishii) na Ilha da Madeira."
 			}, {
 				"Valores": "1.7",
 				"Descrição": "Misto de culturas permanentes",
 				"Valores INSPIRE": "",
 				"D1": "",
-				"D2": "",
+				"D2": "x",
 				"Definição": "Superfície ocupada com várias espécies de culturas permanentes não se verificando dominância de qualquer espécie."
 			}, {
 				"Valores": "1.8",
 				"Descrição": "Outras culturas permanentes",
 				"Valores INSPIRE": "",
 				"D1": "",
-				"D2": "",
+				"D2": "x",
 				"Definição": "Outras culturas permanentes estremes, nomeadamente as culturas do cardo, da cana e chá."
 			}, {
 				"Valores": "2",
@@ -237,8 +237,8 @@
 				"Valores": "4.3",
 				"Descrição": "Floresta de Laurissilva",
 				"Valores INSPIRE": "",
-				"D1": "",
-				"D2": "",
+				"D1": "x",
+				"D2": "x",
 				"Definição": "Formação florestal que apresenta uma grande diversidade biológica, com uma elevada percentagem de espécies exclusivas da Macaronésia e da Madeira."
 			}, {
 				"Valores": "5",

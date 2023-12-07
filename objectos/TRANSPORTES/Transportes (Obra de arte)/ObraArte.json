@@ -54,14 +54,14 @@
 			"valores": [{
 				"Valores": "1",
 				"Descrição": "Ponte",
-				"Valores INSPIRE": "Crossing: bridge",
+				"Valores INSPIRE": "Crossing (bridge); OtherConstruction (bridge)",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Construção que liga dois pontos separados por um curso de água."
 			}, {
 				"Valores": "2",
 				"Descrição": "Viaduto",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "OtherConstruction (bridge)",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Construção sobre um vale ou uma via rodoviária para estabelecer a comunicação entre as duas vertentes."
@@ -75,14 +75,14 @@
 			}, {
 				"Valores": "4",
 				"Descrição": "Passagem inferior",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "OtherConstruction (bridge)",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Construção destinada a dar passagem a uma via rodoviária sob uma via-férrea ou uma via rodoviária de maior importância, incluindo passagens agrícolas."
 			}, {
 				"Valores": "5",
 				"Descrição": "Túnel",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "OtherConstruction (tunnel)",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Passagem abobadada por baixo de monte, rio, canal ou mar."
@@ -96,7 +96,7 @@
 			}, {
 				"Valores": "7",
 				"Descrição": "Passagem pedonal",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "OtherConstruction (bridge)",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Construção destinada à passagem de peões, incluindo as pontes pedonais. "
@@ -107,6 +107,13 @@
 				"D1": "",
 				"D2": "",
 				"Definição": "Construção relativa à sapata em altura destinada a apoio a uma estrutura."
+			}, {
+				"Valores": "9",
+				"Descrição": "Estrutura de proteção",
+				"Valores INSPIRE": "OtherConstruction (protectiveStructure)",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Construção que oferece proteção contra riscos ambientais como avalanches, deslizamentos de terra, quedas de rochas, etc."
 			}]
 		}]
 	}

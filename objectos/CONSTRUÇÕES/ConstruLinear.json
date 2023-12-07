@@ -68,14 +68,14 @@
 			"valores": [{
 				"Valores": "1",
 				"Descrição": "Muro de alvenaria ou betão",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "OtherConstruction (retainingWall [se suporte = Verdadeiro])",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Obra em alvenaria ou em betão que delimita ou separa áreas ou estruturas distintas, com altura e largura variáveis."
 			}, {
 				"Valores": "2",
 				"Descrição": "Muro de pedra",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "OtherConstruction (retainingWall [se suporte = Verdadeiro])",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Obra de pedras sobrepostas, com ou sem argamassa, que delimita ou separa áreas ou estruturas distintas, com altura e largura variáveis (inclui muros de gabiões)."
@@ -96,7 +96,7 @@
 			}, {
 				"Valores": "5",
 				"Descrição": "Muralha",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "OtherConstruction (cityWall)",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Muro de grande espessura e geralmente bastante elevado, construído, como obra defensiva, à volta de uma fortaleza, de uma praça de armas ou que protege um território."
@@ -110,7 +110,7 @@
 			}, {
 				"Valores": "7",
 				"Descrição": "Barreira acústica",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "OtherConstruction (acousticFence)",
 				"D1": "x",
 				"D2": "",
 				"Definição": "Dispositivo, normalmente sob a forma de painel, limitador da propagação de som, colocado entre as habitações e as estradas ou entre habitações e vias férreas."

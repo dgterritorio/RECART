@@ -315,14 +315,14 @@
 			}, {
 				"Valores": "5.1",
 				"Descrição": "Diário",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "seasonal",
 				"D1": "",
 				"D2": "",
 				"Definição": "Restrição de tempo máximo diário."
 			},{
 				"Valores": "5.2",
 				"Descrição": "Estação do ano",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "seasonal",
 				"D1": "",
 				"D2": "",
 				"Definição": "Restrição numa ou mais estações do ano."
