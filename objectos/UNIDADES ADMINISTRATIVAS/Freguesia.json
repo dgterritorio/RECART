@@ -42,12 +42,12 @@
 			"D2": "x",
 			"Definição": "Data da publicação da Carta Administrativa Oficial de Portugal em vigor."
 		}, {
-			"Atributo": "dicofre",
+			"Atributo": "codigo",
 			"Multip.": "1",
 			"Tipo": "Texto",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Código da freguesia."
+			"Definição": "Código da freguesia, identificada através de um código numérico de seis dígitos, dois dos quais de freguesia dentro do município."
 		}, {
 			"Atributo": "nome",
 			"Multip.": "1",

@@ -202,7 +202,7 @@ CREATE TABLE distrito (
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
 	data_publicacao date NOT NULL,
-	di varchar(255) NOT NULL,
+	codigo varchar(255) NOT NULL,
 	nome varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -210,25 +210,25 @@ CREATE TABLE distrito (
 SELECT AddGeometryColumn ('public','distrito','geometria',3763,'MULTIPOLYGON',2);
 ALTER TABLE distrito ALTER COLUMN geometria SET NOT NULL;
 
-CREATE TABLE concelho (
+CREATE TABLE municipio (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
 	data_publicacao date NOT NULL,
-	dico varchar(255) NOT NULL,
+	codigo varchar(255) NOT NULL,
 	nome varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
-SELECT AddGeometryColumn ('public','concelho','geometria',3763,'MULTIPOLYGON',2);
-ALTER TABLE concelho ALTER COLUMN geometria SET NOT NULL;
+SELECT AddGeometryColumn ('public','municipio','geometria',3763,'MULTIPOLYGON',2);
+ALTER TABLE municipio ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE freguesia (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
 	data_publicacao date NOT NULL,
-	dicofre varchar(255) NOT NULL,
+	codigo varchar(255) NOT NULL,
 	nome varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
 );
