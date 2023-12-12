@@ -382,6 +382,7 @@ INSERT INTO valor_tipo_circulacao VALUES ('1','Veículo ligeiro ou pesado');
 INSERT INTO valor_tipo_circulacao VALUES ('2','Veículo agrícola ou com tração às quatro rodas');
 INSERT INTO valor_tipo_circulacao VALUES ('3','Velocipede');
 INSERT INTO valor_tipo_circulacao VALUES ('4','Pedonal');
+INSERT INTO valor_tipo_circulacao VALUES ('5','Autocarro público');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('1','Armário de semáforos');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('2','Banco de jardim');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('3','Canteiro');

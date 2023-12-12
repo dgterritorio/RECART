@@ -388,6 +388,13 @@
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Dedicada à circulação de pessoas a pé."
+			}, {
+				"Valores": "5",
+				"Descrição": "Autocarro público",
+				"Valores INSPIRE": "publicBus",
+				"D1": "",
+				"D2": "",
+				"Definição": "Permite a circulação de veículos concebidos para o transporte de grandes grupos de pessoas, geralmente caracterizado por rotas e horários publicados."
 			}]
 		}, {
 			"nome": "valorTipoTrocoRodoviario",
