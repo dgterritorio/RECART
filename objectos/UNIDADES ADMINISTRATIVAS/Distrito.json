@@ -42,12 +42,12 @@
 			"D2": "x",
 			"Definição": "Data da publicação da Carta Administrativa Oficial de Portugal em vigor."
 		}, {
-			"Atributo": "di",
+			"Atributo": "codigo",
 			"Multip.": "1",
 			"Tipo": "Texto",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Código do distrito."
+			"Definição": "Código do distrito, no caso do Continente, e ilha, no caso das Regiões Autónomas dos Açores e da Madeira, identificado através de um código numérico de dois dígitos."
 		}, {
 			"Atributo": "nome",
 			"Multip.": "1",
