@@ -286,7 +286,7 @@ INSERT INTO valor_local_geodesico VALUES ('995','Não aplicável');
 INSERT INTO valor_local_nomeado VALUES ('1','Capital do País');
 INSERT INTO valor_local_nomeado VALUES ('2','Sede administrativa de Região Autónoma');
 INSERT INTO valor_local_nomeado VALUES ('3','Capital de Distrito');
-INSERT INTO valor_local_nomeado VALUES ('4','Sede de Concelho');
+INSERT INTO valor_local_nomeado VALUES ('4','Sede de Município');
 INSERT INTO valor_local_nomeado VALUES ('5','Sede de Freguesia');
 INSERT INTO valor_local_nomeado VALUES ('6','Forma de relevo');
 INSERT INTO valor_local_nomeado VALUES ('6.1','Serra');
