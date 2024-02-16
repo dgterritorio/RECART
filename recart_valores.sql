@@ -386,7 +386,7 @@ INSERT INTO valor_tipo_circulacao VALUES ('5','Autocarro público');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('1','Armário de semáforos');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('2','Banco de jardim');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('3','Canteiro');
-INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('4','Contentor');
+INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('4','Lixo indiferenciado');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('5','Ecoponto');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('6','Equipamento de exercício físico ao ar livre');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('7','Estacionamento para velocipedes');
