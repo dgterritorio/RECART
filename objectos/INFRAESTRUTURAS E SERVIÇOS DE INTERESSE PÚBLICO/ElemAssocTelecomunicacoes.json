@@ -54,7 +54,7 @@
 			}, {
 				"Valores": "2",
 				"Descrição": "Cabina telefónica",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "phoneBooth",
 				"D1": "x",
 				"D2": "",
 				"Definição": "Pequena construção ou compartimento isolado para proteção do utente no uso de telefone público."
@@ -64,7 +64,7 @@
 				"Valores INSPIRE": "OtherConstruction (antenna)",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Estrutura destinada às comunicações por meio da captação e irradiação de ondas eletromagnéticas ou radielétricas. As antenas ligadas a edifícios (exceto torres) não devem ser consideradas."
+				"Definição": "Estrutura destinada às comunicações por meio da captação e irradiação de ondas eletromagnéticas ou radielétricas. Devem também ser consideradas “Antena” as mais variadas e diversas antenas acopladas em torres/mastros de telecomunicações fixados no solo. As antenas ligadas a edifícios ou no topo dos mesmos, não devem ser consideradas."
 			}, {
 				"Valores": "4",
 				"Descrição": "Armário",
