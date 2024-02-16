@@ -67,18 +67,18 @@
 				"Definição": "Espaços de terreno, de pequena dimensão, normalmente retangulares, em que se plantam flores ou quaisquer plantas ou relvas."
 			}, {
 				"Valores": "4",
-				"Descrição": "Contentor",
+				"Descrição": "Lixo indiferenciado",
 				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "",
-				"Definição": "Área onde se encontram localizados um ou vários contentores que se destinam à recolha de resíduos indiferenciados."
+				"Definição": "Local, delimitado ou não no solo, onde se encontram instalados um ou vários contentores que se destinam apenas à recolha de resíduos indiferenciados."
 			}, {
 				"Valores": "5",
 				"Descrição": "Ecoponto",
 				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "",
-				"Definição": "Área onde se encontram localizados um ou vários contentores para recolha diferenciada de resíduos para reciclagem."
+				"Definição": "Local, delimitado ou não no solo, onde se encontram instalados um ou vários contentores para recolha diferenciada de resíduos para reciclagem (papelão, vidrão, embalão, pilhão, óleão, roupão, eletrão, orgânico ou outros semelhantes)."
 			}, {
 				"Valores": "6",
 				"Descrição": "Equipamento de exercício físico ao ar livre",
