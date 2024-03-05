@@ -48,6 +48,13 @@
 			"D1": "",
 			"D2": "",
 			"Definição": "O estado de uma instalação no que diz respeito à sua completude e utilização. Relevante apenas para um curso de água artificial."
+		} , {
+			"Atributo": "valorFicticio",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Caracterização do curso de água pela sua delimitação real ou fictícia (virtual)."
 		}, {
 			"Atributo": "valorPersistenciaHidrologica",
 			"Multip.": "1",
@@ -201,6 +208,51 @@
 				"D1": "",
 				"D2": "",
 				"Definição": "A instalação está a ser utilizada."
+			}]
+		} ,{
+			"nome": "valorFicticio",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Real",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Eixo que corresponde ao percurso real do curso de água."
+			}, {
+				"Valores": "2",
+				"Descrição": "Fictício em curso de água - área",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Eixo que corresponde ao percurso fictício do curso de água em curso de água-área."
+			}, {
+				"Valores": "3",
+				"Descrição": "Fictício em água lêntica",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Eixo que corresponde ao percurso fictício do curso de água em água lêntica."
+			}, {
+				"Valores": "4",
+				"Descrição": "Fictício conexão de afluente em curso de água - área",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Eixo fictício que corresponde à conexão do afluente ao eixo fictício do curso de água principal em curso de água-área."
+			}, {
+				"Valores": "5",
+				"Descrição": "Fictício conexão de afluente em água lêntica",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Eixo fictício que corresponde à conexão do afluente ao eixo fictício do curso de água principal em água lêntica."
+			}, {
+				"Valores": "6",
+				"Descrição": "Fictício outra classificação",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Eixo de conexão para dar continuidade à rede em outras situações, por exemplo quando um curso de água atravessa uma barragem."
 			}]
 		}, {
 			"nome": "valorPersistenciaHidrologica",
