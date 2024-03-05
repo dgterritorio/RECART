@@ -55,6 +55,13 @@
 			"D1": "x",
 			"D2": "x",
 			"Definição": "Caracterização do curso de água pela sua delimitação real ou fictícia (virtual)."
+		} , {
+			"Atributo": "valorNatureza",
+			"Multip.": "1",
+			"Tipo": "Lista de códigos",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Define a natureza do troço do curso de água."
 		}, {
 			"Atributo": "valorPersistenciaHidrologica",
 			"Multip.": "1",
@@ -253,6 +260,30 @@
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Eixo de conexão para dar continuidade à rede em outras situações, por exemplo quando um curso de água atravessa uma barragem."
+			}]
+		} ,{
+			"nome": "valorNatureza",
+			"valores": [{
+				"Valores": "1",
+				"Descrição": "Genérico",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Troço ou percurso total de curso de água que não se encontra canalizado nem coberto."
+			}, {
+				"Valores": "2",
+				"Descrição": "Canalizado",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Troço ou percurso total de curso de água que tem um acondicionamento artificial."
+			}, {
+				"Valores": "3",
+				"Descrição": "Coberto",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Troço ou percurso total de curso de água subterrâneo ou que se encontra coberto devido a obstáculo."
 			}]
 		}, {
 			"nome": "valorPersistenciaHidrologica",

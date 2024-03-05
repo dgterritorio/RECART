@@ -1261,6 +1261,7 @@ CREATE TABLE curso_de_agua_eixo (
 	valor_posicao_vertical varchar(10) NOT NULL,
 	valor_estado_instalacao varchar(10),
 	valor_ficticio varchar(10) NOT NULL,
+	valor_natureza varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
@@ -1386,6 +1387,12 @@ CREATE TABLE valor_ficticio (
 	PRIMARY KEY (identificador)
 );
 
+CREATE TABLE valor_natureza (
+	identificador varchar(10) NOT NULL,
+	descricao varchar(255) NOT NULL,
+	PRIMARY KEY (identificador)
+);
+
 CREATE TABLE valor_persistencia_hidrologica (
 	identificador varchar(10) NOT NULL,
 	descricao varchar(255) NOT NULL,
@@ -1438,6 +1445,7 @@ ALTER TABLE curso_de_agua_eixo ADD CONSTRAINT valor_persistencia_hidrologica_id 
 ALTER TABLE curso_de_agua_eixo ADD CONSTRAINT valor_posicao_vertical_id FOREIGN KEY (valor_posicao_vertical) REFERENCES valor_posicao_vertical (identificador);
 ALTER TABLE curso_de_agua_eixo ADD CONSTRAINT valor_estado_instalacao_id FOREIGN KEY (valor_estado_instalacao) REFERENCES valor_estado_instalacao (identificador);
 ALTER TABLE curso_de_agua_eixo ADD CONSTRAINT valor_ficticio_id FOREIGN KEY (valor_ficticio) REFERENCES valor_ficticio (identificador);
+ALTER TABLE curso_de_agua_eixo ADD CONSTRAINT valor_natureza_id FOREIGN KEY (valor_natureza) REFERENCES valor_natureza (identificador);
 ALTER TABLE zona_humida ADD CONSTRAINT valor_zona_humida_id FOREIGN KEY (valor_zona_humida) REFERENCES valor_zona_humida (identificador);
 ALTER TABLE no_hidrografico ADD CONSTRAINT valor_tipo_no_hidrografico_id FOREIGN KEY (valor_tipo_no_hidrografico) REFERENCES valor_tipo_no_hidrografico (identificador);
 ALTER TABLE barreira ADD CONSTRAINT valor_barreira_id FOREIGN KEY (valor_barreira) REFERENCES valor_barreira (identificador);
