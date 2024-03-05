@@ -1249,6 +1249,7 @@ CREATE TABLE curso_de_agua_eixo (
 	comprimento real,
 	delimitacao_conhecida bool NOT NULL,
 	ficticio bool NOT NULL,
+	navegavel_ou_flutuavel bool NOT NULL,
 	largura real,
 	id_hidrografico varchar(255),
 	id_curso_de_agua_area uuid,

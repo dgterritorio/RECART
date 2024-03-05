@@ -40,7 +40,7 @@
 			"Tipo": "Lista de códigos",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Caracterização do curso de água em função da sua navegabilidade e largura."
+			"Definição": "Caracterização do curso de água pelas suas dimensões e pela sua designação toponímica."
 		}, {
 			"Atributo": "valorEstadoInstalacao",
 			"Multip.": "1",
@@ -97,6 +97,13 @@
 			"D1": "",
 			"D2": "",
 			"Definição": "Largura média do curso de água. [unidade: metro]"
+		} , {
+			"Atributo": "navegavelOuFlutuavel",
+			"Multip.": "1",
+			"Tipo": "Booleano",
+			"D1": "x",
+			"D2": "x",
+			"Definição": "Identifica se a entidade é navegável ou flutuável."
 		}, {
 			"Atributo": "nome",
 			"Multip.": "[0..1]",
@@ -122,20 +129,6 @@
 		"listas de códigos": [{
 			"nome": "valorCursoDeAgua",
 			"valores": [{
-				"Valores": "1",
-				"Descrição": "Rio navegável ou flutuável",
-				"Valores INSPIRE": "",
-				"D1": "x",
-				"D2": "x",
-				"Definição": "Troço ou percurso total de curso de água que permite a navegação."
-			}, {
-				"Valores": "2",
-				"Descrição": "Rio não navegável nem flutuável",
-				"Valores INSPIRE": "",
-				"D1": "x",
-				"D2": "x",
-				"Definição": "Troço ou percurso total de curso de água que não permite a navegação nem a flutuabilidade."
-			}, {
 				"Valores": "3",
 				"Descrição": "Ribeira",
 				"Valores INSPIRE": "",
@@ -165,11 +158,11 @@
 				"Definição": "Fosso longo, mais ou menos largo, para conduzir águas de caudal mais ou menos constante, para usos geralmente industriais ou agrícolas."
 			}, {
 				"Valores": "7",
-				"Descrição": "Curso de água entubado",
+				"Descrição": "Rio",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Troço ou percurso total de curso de água que está entubado."
+				"Definição": "Grande curso natural de água, geralmente de carácter permanente, que no seu trajeto recebe água de outros rios e ribeiras e que vai desaguar no mar, em outros cursos de água, numa lagoa ou albufeira."
 			}]
 		},{
 			"nome": "valorEstadoInstalacao",
