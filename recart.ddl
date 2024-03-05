@@ -1227,18 +1227,18 @@ CREATE TABLE agua_lentica (
 SELECT AddGeometryColumn ('public','agua_lentica','geometria',3763,'POLYGON',3);
 ALTER TABLE agua_lentica ALTER COLUMN geometria SET NOT NULL;
 
-CREATE TABLE margem (
+CREATE TABLE terreno_marginal (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
 	nome varchar(255),
 	id_hidrografico varchar(255),
-	valor_tipo_margem varchar(10) NOT NULL,
+	valor_tipo_terreno_marginal varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
-SELECT AddGeometryColumn ('public','margem','geometria',3763,'POLYGON',2);
-ALTER TABLE margem ALTER COLUMN geometria SET NOT NULL;
+SELECT AddGeometryColumn ('public','terreno_marginal','geometria',3763,'POLYGON',2);
+ALTER TABLE terreno_marginal ALTER COLUMN geometria SET NOT NULL;
 
 -- Linha
 CREATE TABLE curso_de_agua_eixo (
@@ -1372,7 +1372,7 @@ ALTER TABLE fronteira_terra_agua ALTER COLUMN geometria SET NOT NULL;
 
 
 
-CREATE TABLE valor_tipo_margem (
+CREATE TABLE valor_tipo_terreno_marginal (
 	identificador varchar(10) NOT NULL,
 	descricao varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -1424,7 +1424,7 @@ ALTER TABLE nascente ADD CONSTRAINT valor_persistencia_hidrologica_id FOREIGN KE
 ALTER TABLE nascente ADD CONSTRAINT valor_tipo_nascente_id FOREIGN KEY (valor_tipo_nascente) REFERENCES valor_tipo_nascente (identificador);
 ALTER TABLE agua_lentica ADD CONSTRAINT valor_agua_lentica_id FOREIGN KEY (valor_agua_lentica) REFERENCES valor_agua_lentica (identificador);
 ALTER TABLE agua_lentica ADD CONSTRAINT valor_persistencia_hidrologica_id FOREIGN KEY (valor_persistencia_hidrologica) REFERENCES valor_persistencia_hidrologica (identificador);
-ALTER TABLE margem ADD CONSTRAINT valor_tipo_margem_id FOREIGN KEY (valor_tipo_margem) REFERENCES valor_tipo_margem (identificador);
+ALTER TABLE terreno_marginal ADD CONSTRAINT valor_tipo_terreno_marginal_id FOREIGN KEY (valor_tipo_terreno_marginal) REFERENCES valor_tipo_terreno_marginal (identificador);
 ALTER TABLE curso_de_agua_eixo ADD CONSTRAINT valor_curso_de_agua_id FOREIGN KEY (valor_curso_de_agua) REFERENCES valor_curso_de_agua (identificador);
 ALTER TABLE curso_de_agua_eixo ADD CONSTRAINT valor_persistencia_hidrologica_id FOREIGN KEY (valor_persistencia_hidrologica) REFERENCES valor_persistencia_hidrologica (identificador);
 ALTER TABLE curso_de_agua_eixo ADD CONSTRAINT valor_posicao_vertical_id FOREIGN KEY (valor_posicao_vertical) REFERENCES valor_posicao_vertical (identificador);
