@@ -1366,7 +1366,10 @@ CREATE TABLE fronteira_terra_agua (
 	inicio_objeto timestamp without time zone NOT NULL,
 	fim_objeto timestamp without time zone,
 	data_fonte_dados date NOT NULL,
+	fonte_dados varchar(255) NOT NULL,
 	ilha bool NOT NULL,
+	origem_natural bool,
+	valor_tipo_fronteira_terra_agua varchar(10),
 	PRIMARY KEY (identificador)
 );
 
@@ -1388,6 +1391,12 @@ CREATE TABLE valor_ficticio (
 );
 
 CREATE TABLE valor_natureza (
+	identificador varchar(10) NOT NULL,
+	descricao varchar(255) NOT NULL,
+	PRIMARY KEY (identificador)
+);
+
+CREATE TABLE valor_tipo_fronteira_terra_agua (
 	identificador varchar(10) NOT NULL,
 	descricao varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -1452,6 +1461,7 @@ ALTER TABLE barreira ADD CONSTRAINT valor_barreira_id FOREIGN KEY (valor_barreir
 ALTER TABLE barreira ADD CONSTRAINT valor_estado_instalacao_id_2 FOREIGN KEY (valor_estado_instalacao) REFERENCES valor_estado_instalacao (identificador);
 ALTER TABLE constru_na_margem ADD CONSTRAINT valor_tipo_const_margem_id FOREIGN KEY (valor_tipo_const_margem) REFERENCES valor_tipo_const_margem (identificador);
 ALTER TABLE constru_na_margem ADD CONSTRAINT valor_estado_instalacao_id_3 FOREIGN KEY (valor_estado_instalacao) REFERENCES valor_estado_instalacao (identificador);
+ALTER TABLE fronteira_terra_agua ADD CONSTRAINT valor_tipo_fronteira_terra_agua_id FOREIGN KEY (valor_tipo_fronteira_terra_agua) REFERENCES valor_tipo_fronteira_terra_agua (identificador);
 
 /**
  * Criar tabela area_trabalho auxiliar

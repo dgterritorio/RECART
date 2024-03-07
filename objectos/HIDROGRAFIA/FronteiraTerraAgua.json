@@ -1,54 +1,123 @@
 {
-	"objecto": {
-		"Tema": "HIDROGRAFIA",
-		"Característica geográfica": "Fronteira terra-água",
-		"Objeto INSPIRE": "",
-		"objeto": "FronteiraTerraAgua",
-		"Definição": "Linha que estabelece a fronteira entre a terra e a água e que representa a “linha de costa” assim como o limite das ilhas em águas interiores e no mar.",
-		"Dim.": "3D",
-		"Atributos": [{
-			"Atributo": "identificador",
-			"Multip.": "1",
-			"Definição": "Identificador unívoco - Universal Unique Identifier gerado através da função uuid_generate_v1mc().",
-			"Tipo": "UUID",
-			"D1": "x",
-			"D2": "x"
-		}, {
-			"Atributo": "inicioObjeto",
-			"Multip.": "1",
-			"Definição": "Data e hora (até ao segundo) em que a versão em causa do objeto foi inserida ou alterada na base de dados.",
-			"Tipo": "DataTempo",
-			"D1": "x",
-			"D2": "x"
-		}, {
-			"Atributo": "fimObjeto",
-			"Multip.": "[0..1]",
-			"Definição": "Data e hora (até ao segundo) em que a versão em causa do objeto foi substituída ou retirada da base de dados.",
-			"Tipo": "DataTempo",
-			"D1": "",
-			"D2": ""
-		}, {
-			"Atributo": "geometria",
-			"Multip.": "1",
-			"Tipo": "Geometria (linha)",
-			"D1": "x",
-			"D2": "x",
-			"Definição": ""
-		}, {
-			"Atributo": "dataFonteDados",
-			"Multip.": "1",
-			"Tipo": "Data",
-			"D1": "x",
-			"D2": "x",
-			"Definição": "Data da fonte de dados usada para recolha do objeto."
-		}, {
-			"Atributo": "ilha",
-			"Multip.": "1",
-			"Tipo": "Booleano",
-			"D1": "x",
-			"D2": "x",
-			"Definição": "Indica se o objeto corresponde a uma ilha ou ilhéu."
-		}],
-		"listas de códigos": []
+	"objecto":{
+	   "Tema":"HIDROGRAFIA",
+	   "Característica geográfica":"Fronteira terra-água",
+	   "Objeto INSPIRE":"",
+	   "objeto":"FronteiraTerraAgua",
+	   "Definição":"A linha em que uma massa de terra está em contacto com uma massa de água.",
+	   "Dim.":"3D",
+	   "Atributos":[
+		  {
+			 "Atributo":"identificador",
+			 "Multip.":"1",
+			 "Definição":"Identificador unívoco - Universal Unique Identifier gerado através da função uuid_generate_v1mc().",
+			 "Tipo":"UUID",
+			 "D1":"x",
+			 "D2":"x"
+		  },
+		  {
+			 "Atributo":"inicioObjeto",
+			 "Multip.":"1",
+			 "Definição":"Data e hora (até ao segundo) em que a versão em causa do objeto foi inserida ou alterada na base de dados.",
+			 "Tipo":"DataTempo",
+			 "D1":"x",
+			 "D2":"x"
+		  },
+		  {
+			 "Atributo":"fimObjeto",
+			 "Multip.":"[0..1]",
+			 "Definição":"Data e hora (até ao segundo) em que a versão em causa do objeto foi substituída ou retirada da base de dados.",
+			 "Tipo":"DataTempo",
+			 "D1":"",
+			 "D2":""
+		  },
+		  {
+			 "Atributo":"geometria",
+			 "Multip.":"1",
+			 "Tipo":"Geometria (linha)",
+			 "D1":"x",
+			 "D2":"x",
+			 "Definição":""
+		  },
+		  {
+			 "Atributo":"valorTipoFronteiraTerraAgua",
+			 "Multip.":"1",
+			 "Tipo":"Lista de códigos",
+			 "D1":"x",
+			 "D2":"x",
+			 "Definição":"Tipo de linha que estabelece a fronteira entre a terra e a água."
+		  },
+		  {
+			 "Atributo":"dataFonteDados",
+			 "Multip.":"1",
+			 "Tipo":"Data",
+			 "D1":"x",
+			 "D2":"x",
+			 "Definição":"Data da fonte de dados usada para a representação do objeto."
+		  },
+		  {
+			 "Atributo":"fonteDados",
+			 "Multip.":"1",
+			 "Tipo":"Texto",
+			 "D1":"x",
+			 "D2":"x",
+			 "Definição":"Fonte de dados usada para recolha do objeto."
+		  },
+		  {
+			 "Atributo":"ilha",
+			 "Multip.":"1",
+			 "Tipo":"Booleano",
+			 "D1":"x",
+			 "D2":"x",
+			 "Definição":"Indica se o objeto corresponde a uma ilha ou ilhéu."
+		  },
+		  {
+			 "Atributo":"origemNatural",
+			 "Multip.":"1",
+			 "Tipo":"Booleano",
+			 "D1":"",
+			 "D2":"",
+			 "Definição":"Identifica se a entidade tem origem natural (e não artificial) quando aplicável."
+		  }
+	   ],
+	   "listas de códigos":[
+		  {
+			 "nome":"valorTipoFronteiraTerraAgua",
+			 "valores":[
+				{
+				   "Valores":"1",
+				   "Descrição":"Linha de costa",
+				   "Valores INSPIRE":"SeaRegions: Shoreline: Coastline",
+				   "D1":"x",
+				   "D2":"x",
+				   "Definição":"Linha da máxima preia-mar de águas vivas equinociais (LMPAVE)."
+				},
+				{
+				   "Valores":"2",
+				   "Descrição":"Linha limite do leito",
+				   "Valores INSPIRE":"Hydrography:  LandWaterBoundary",
+				   "D1":"x",
+				   "D2":"x",
+				   "Definição":"Linha limite do leito dos cursos de água navegáveis ou flutuáveis, das águas de transição (estuários e rias - exceto a ria Formosa que é água costeira) e das lagoas."
+				},
+				{
+				   "Valores":"3",
+				   "Descrição":"Linha limite de ilha",
+				   "Valores INSPIRE":"",
+				   "D1":"x",
+				   "D2":"x",
+				   "Definição":"Linha que estabelece o limite das ilhas em águas interiores ou no mar."
+				},
+				{
+				   "Valores":"4",
+				   "Descrição":"Linha de nível pleno de armazenamento",
+				   "Valores INSPIRE":"",
+				   "D1":"x",
+				   "D2":"x",
+				   "Definição":"Linha de nível pleno de armazenamento do plano de águas das albufeiras de águas públicas."
+				}
+			 ]
+		  }
+	   ]
 	}
-}
+ }

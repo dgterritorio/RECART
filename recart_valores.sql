@@ -408,6 +408,10 @@ INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('16','Posto de carregamento e
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('19','Semáforo');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('20','Sinal de trânsito');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('22','Contentor de reutilização');
+INSERT INTO valor_tipo_fronteira_terra_agua VALUES ('1','Linha de costa');
+INSERT INTO valor_tipo_fronteira_terra_agua VALUES ('2','Linha limite do leito');
+INSERT INTO valor_tipo_fronteira_terra_agua VALUES ('3','Linha limite de ilha');
+INSERT INTO valor_tipo_fronteira_terra_agua VALUES ('4','Linha de nível pleno de armazenamento');
 INSERT INTO valor_tipo_infra_trans_aereo VALUES ('1','Aeródromo');
 INSERT INTO valor_tipo_infra_trans_aereo VALUES ('2','Heliporto');
 INSERT INTO valor_tipo_infra_trans_aereo VALUES ('3','Aeródromo com heliporto');
