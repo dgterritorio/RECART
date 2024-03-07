@@ -47,7 +47,7 @@
 			"Tipo": "Lista de códigos",
 			"D1": "",
 			"D2": "",
-			"Definição": "O estado de uma instalação no que diz respeito à sua completude e utilização. Relevante apenas para um curso de água artificial."
+			"Definição": "O estado de uma instalação no que diz respeito à sua completude e utilização. Só pode ser especificado para cursos de água artificiais."
 		} , {
 			"Atributo": "valorFicticio",
 			"Multip.": "1",
@@ -89,14 +89,14 @@
 			"Tipo": "Booleano",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Indica que a delimitação da entidade (fenómeno no mundo real) é conhecida. A delimitação pode não ser conhecida quando se trata de um curso de água subterrâneo ou não visível porque tapado pela vegetação."
+			"Definição": "Indica que a delimitação da entidade (fenómeno no mundo real) é conhecida. A delimitação pode não ser conhecida quando se trata de um curso de água coberto (exemplo: troço subterrâneo) ou não visível porque encontra-se tapado pela vegetação."
 		}, {
 			"Atributo": "ficticio",
 			"Multip.": "1",
 			"Tipo": "Booleano",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Indica que o objeto corresponde à representação artificial do eixo com vista a assegurar a conetividade hidrográfica e aplica-se exclusivamente quando o eixo está localizado no interior do “Curso de água - área” ou “Água lêntica” (Albufeira, lago ou lagoa)."
+			"Definição": "Indica que o objeto corresponde à representação virtual do eixo com vista a assegurar a conetividade hidrográfica e aplica-se normalmente quando o eixo está localizado no interior do “Curso de água - área” ou “Água lêntica” (Albufeira, lago ou lagoa)."
 		}, {
 			"Atributo": "iDHidrografico",
 			"Multip.": "1",
@@ -112,6 +112,13 @@
 			"D2": "",
 			"Definição": "Largura média do curso de água. [unidade: metro]"
 		} , {
+			"Atributo": "mare",
+			"Multip.": "1",
+			"Tipo": "Booleano",
+			"D1": "",
+			"D2": "",
+			"Definição": "Identifica se a água de superfície é afetada pela água da maré."
+		}, {
 			"Atributo": "navegavelOuFlutuavel",
 			"Multip.": "1",
 			"Tipo": "Booleano",

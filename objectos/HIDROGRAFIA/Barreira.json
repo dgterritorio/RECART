@@ -81,21 +81,21 @@
 				"Definição": "Obra hidráulica, construída sobre um rio ou em zona portuária, com uma ou várias comportas, que permite a navegação quando é necessário vencer grandes desníveis."
 			}, {
 				"Valores": "3",
-				"Descrição": "Barreira da barragem de betão",
+				"Descrição": "Barragem de betão",
 				"Valores INSPIRE": "DamOrWeir",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Barreira numa barragem de betão que retém a água de um curso de água."
+				"Definição": "Barragem de betão que retém a água de um curso de água."
 			}, {
 				"Valores": "4",
-				"Descrição": "Barreira da barragem de aterro",
+				"Descrição": "Barragem de aterro",
 				"Valores INSPIRE": "DamOrWeir",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Barreira numa barragem de aterro que retém a água de um curso de água. Estas barragens podem ser construídas com terra, madeira, pedra, pedra solta, enrocamento, mistas ou outro material."
+				"Definição": "Barragem de aterro que retém a água de um curso de água. Estas barragens podem ser construídas com terra, madeira, pedra, pedra solta, enrocamento, mistas ou outro material."
 			}, {
 				"Valores": "5",
-				"Descrição": "Barreira do açude ou represa",
+				"Descrição": "Açude ou represa",
 				"Valores INSPIRE": "DamOrWeir",
 				"D1": "x",
 				"D2": "x",

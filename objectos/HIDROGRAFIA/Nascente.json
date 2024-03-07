@@ -4,7 +4,7 @@
 		"Característica geográfica": "Nascente",
 		"Objeto INSPIRE": "spring",
 		"objeto": "Nascente",
-		"Definição": "Ponto da superfície do solo (a céu aberto) de onde brota água ou nasce um curso de água.",
+		"Definição": "Ponto da superfície do solo (a céu aberto) de onde brota água ou de onde nasce um curso de água.",
 		"Dim.": "3D",
 		"Atributos": [{
 			"Atributo": "identificador",
@@ -102,7 +102,7 @@
 				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "",
-				"Definição": "Ponto da superfície do solo de onde brota água ou onde nasce um curso de água."
+				"Definição": "Ponto da superfície do solo de onde brota água ou de onde nasce um curso de água."
 			}, {
 				"Valores": "2",
 				"Descrição": "Água mineral",

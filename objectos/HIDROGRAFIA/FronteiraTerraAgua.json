@@ -61,7 +61,7 @@
 			 "Tipo":"Texto",
 			 "D1":"x",
 			 "D2":"x",
-			 "Definição":"Fonte de dados usada para recolha do objeto."
+			 "Definição":"Fonte de dados usada para a representação do objeto."
 		  },
 		  {
 			 "Atributo":"ilha",
@@ -95,7 +95,7 @@
 				{
 				   "Valores":"2",
 				   "Descrição":"Linha limite do leito",
-				   "Valores INSPIRE":"Hydrography:  LandWaterBoundary",
+				   "Valores INSPIRE":"Hydrography: LandWaterBoundary",
 				   "D1":"x",
 				   "D2":"x",
 				   "Definição":"Linha limite do leito dos cursos de água navegáveis ou flutuáveis, das águas de transição (estuários e rias - exceto a ria Formosa que é água costeira) e das lagoas."

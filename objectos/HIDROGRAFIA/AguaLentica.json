@@ -61,7 +61,7 @@
 			"Tipo": "Data",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Data da fonte de dados usada para a representação do objeto. Aplicável apenas quando o objeto é adquirido a partir da informação visual disponível e não aplicável quando foi usada, para a sua representação, o nível de pleno armazenamento oficial – NPA oficial"
+			"Definição": "Data da fonte de dados usada para a representação do objeto."
 		}, {
 			"Atributo": "iDHidrografico",
 			"Multip.": "1",
@@ -75,7 +75,7 @@
 			"Tipo": "Booleano",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Indica se a massa de água é afetada por águas flúvio-marítimas, sujeita a marés."
+			"Definição": "Indica se a água de superfície é afetada por águas flúvio-marítimas."
 		}, {
 			"Atributo": "nome",
 			"Multip.": "[0..1]",
@@ -89,7 +89,7 @@
 			"Tipo": "Booleano",
 			"D1": "",
 			"D2": "",
-			"Definição": "Identifica se a característica geográfica tem origem natural (e não artificial)."
+			"Definição": "Identifica se a origem da água de superfície tem origem natural (e não artificial)."
 		}, {
 			"Atributo": "profundidadeMedia",
 			"Multip.": "1",
