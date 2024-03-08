@@ -130,25 +130,32 @@
 				"Definição": "Equipamento utilizado para converter a energia solar em energia elétrica quando não estão sobre edifícios nem incluídos em centrais fotovoltaicas."
 			}, {
 				"Valores": "6",
-				"Descrição": "Apoio de iluminação",
+				"Descrição": "Estrutura de eletricidade com ponto de iluminação",
 				"Valores INSPIRE": "streetLight",
 				"D1": "",
 				"D2": "",
-				"Definição": "Estrutura de iluminação coincidente, ou não, com apoio de baixa tensão."
+				"Definição": "Estrutura de iluminação da via pública coincidente, ou não, com apoio de baixa tensão."
 			}, {
 				"Valores": "6.1",
 				"Descrição": "Apoio isolado de iluminação",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "",
-				"Definição": "Haste normalmente vertical, que pode estar ou não apoiada no solo, para suporte de luminárias de iluminação da via pública."
+				"Definição": "Ponto de iluminação (candeeiro) da via pública apoiado no solo."
 			},{
 				"Valores": "6.2",
-				"Descrição": "Apoio de iluminação e baixa tensão",
+				"Descrição": "Apoio de baixa tensão com iluminação",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "",
-				"Definição": "Estrutura metálica reticulada ou de betão, tubo metálico, apoio de madeira ou outro material que suporta os cabos e os acessórios de fixação das linhas elétricas de tensão até 1kV e que coincide com suporte de iluminação vertical da via pública."
+				"Definição": "Estrutura metálica reticulada ou de betão, tubo metálico, apoio de madeira ou outro material que suporta os cabos e os acessórios de fixação das linhas elétricas de tensão até 1kV e que coincide com um ponto de iluminação (candeeiro) da via pública."
+			},{
+				"Valores": "6.3",
+				"Descrição": "Estrutura de iluminação",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Ponto de iluminação (candeeiro) da via pública ligado a edifícios ou a outras estruturas diferentes de um apoio isolado de iluminação ou de um apoio de baixa tensão."
 			}, {
 				"Valores": "7",
 				"Descrição": "Apoio de eletricidade",

@@ -133,9 +133,10 @@ INSERT INTO valor_elemento_associado_electricidade VALUES ('2','Subestação el�
 INSERT INTO valor_elemento_associado_electricidade VALUES ('3','Aeromotor');
 INSERT INTO valor_elemento_associado_electricidade VALUES ('4','Gerador eólico');
 INSERT INTO valor_elemento_associado_electricidade VALUES ('5','Painel solar fotovoltaico');
-INSERT INTO valor_elemento_associado_electricidade VALUES ('6','Apoio de iluminação');
+INSERT INTO valor_elemento_associado_electricidade VALUES ('6','Estrutura de eletricidade com ponto de iluminação');
 INSERT INTO valor_elemento_associado_electricidade VALUES ('6.1','Apoio isolado de iluminação');
-INSERT INTO valor_elemento_associado_electricidade VALUES ('6.2','Apoio de iluminação e baixa tensão');
+INSERT INTO valor_elemento_associado_electricidade VALUES ('6.2','Apoio de baixa tensão com iluminação');
+INSERT INTO valor_elemento_associado_electricidade VALUES ('6.3','Estrutura de iluminação');
 INSERT INTO valor_elemento_associado_electricidade VALUES ('7','Apoio de eletricidade');
 INSERT INTO valor_elemento_associado_electricidade VALUES ('7.1','Apoio de alta tensão');
 INSERT INTO valor_elemento_associado_electricidade VALUES ('7.2','Apoio de média tensão');
