@@ -100,8 +100,8 @@
 				"Valores": "-1",
 				"Descrição": "No subsolo",
 				"Valores INSPIRE": "underground",
-				"D1": "x",
-				"D2": "x",
+				"D1": "",
+				"D2": "",
 				"Definição": "A entidade geográfica está assente abaixo do solo."
 			}]
 		}]
