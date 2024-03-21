@@ -4,7 +4,7 @@
 		"Característica geográfica": "Instalação de gestão ambiental",
 		"Objeto INSPIRE": "EnvironmentalManagementFacility",
 		"objeto": "InstGestaoAmbiental",
-		"Definição": "Infraestrutura de gestão de resíduos ou águas residuais.",
+		"Definição": "Uma estrutura física concebida, construída ou instalada para servir funções específicas relacionadas com fluxos de materiais ambientais, tais como fluxos de resíduos ou de águas residuais, ou uma área delimitada de terreno ou água utilizada para servir essas funções.",
 		"Dim.": "-",
 		"Atributos": [{
 			"Atributo": "identificador",
@@ -46,32 +46,67 @@
 			"nome": "valorInstalacaoDeGestaoAmbiental",
 			"valores": [{
 				"Valores": "1",
-				"Descrição": "Resíduos sólidos",
+				"Descrição": "Aterros",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Instalação para depósito de resíduos sólidos urbanos ou industriais."
+			}, {
+				"Valores": "1.1",
+				"Descrição": "Aterros urbanos",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Instalação para depósito e tratamento de resíduos sólidos."
+				"Definição": "Instalação de resíduos provenientes de habitações bem como outros resíduos que, pela sua natureza ou composição, sejam semelhantes aos resíduos provenientes de habitações."
+			}, {
+				"Valores": "1.2",
+				"Descrição": "Aterros industriais",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Instalação de resíduos provenientes de indústria."
 			}, {
 				"Valores": "2",
-				"Descrição": "Resíduos líquidos",
+				"Descrição": "ETAR",
 				"Valores INSPIRE": "",
-				"D1": "x",
-				"D2": "x",
-				"Definição": "Instalação para depósito e tratamento de resíduos líquidos."
+				"D1": "",
+				"D2": "",
+				"Definição": "Instalação de Estação de Tratamento de Águas Residuais (ETAR) urbanas ou industriais."
 			}, {
-				"Valores": "3",
-				"Descrição": "Resíduos industriais",
+				"Valores": "2.1",
+				"Descrição": "ETAR urbana",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Instalação para depósito e tratamento de resíduos industriais."
+				"Definição": "Instalação de Estação de Tratamento de Águas Residuais (ETAR) urbanas."
 			}, {
-				"Valores": "4",
-				"Descrição": "Resíduos tóxicos",
+				"Valores": "2.2",
+				"Descrição": "ETAR industrial",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Instalação para depósito e tratamento de resíduos tóxicos."
+				"Definição": "Instalação de Estação de Tratamento de Águas Residuais (ETAR) industriais."
+			}, {
+				"Valores": "5",
+				"Descrição": "ETA",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Instalação de Estação de Tratamento de Água (ETA) para consumo."
+			}, {
+				"Valores": "6",
+				"Descrição": "ETRS",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Instalação de Estação de Tratamento de Resíduos Sólidos (ETRS)."
+			}, {
+				"Valores": "100",
+				"Descrição": "Outros resíduos",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Outra instalação de resíduos urbanos, industriais, perigosos ou não perigosos."
 			}]
 		}]
 	}
