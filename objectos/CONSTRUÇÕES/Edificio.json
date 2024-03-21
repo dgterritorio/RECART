@@ -489,11 +489,11 @@
 				"Definição": "Edifício de culto judaico."
 			}, {
 				"Valores": "26",
-				"Descrição": "Depósito de armazenamento",
+				"Descrição": "Reservatório de armazenamento",
 				"Valores INSPIRE": "storageTank",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Depósito geralmente para líquidos e gases comprimidos."
+				"Definição": "Reservatório geralmente para líquidos e gases comprimidos."
 			}, {
 				"Valores": "27",
 				"Descrição": "Telheiro",
@@ -514,7 +514,7 @@
 				"Valores INSPIRE": "tower (clockTower; coolingTower; communicationTower; lookoutTower)",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Estrutura relativamente alta e estreita que pode estar isolada ou fazer parte de outra estrutura. Devem também ser consideradas as torres do relógio, de arrefecimento, de comunicações e de vigia. As pequenas torres, especialmente se não estiverem fixadas ao solo, que façam parte de um edifício ou outra construção, não devem ser consideradas. Estruturas de telecomunicações sustentadas ou não por cabos (Torre e/ou Mastro), devem ser caracterizadas como uma única infraestrutura Torre. Torres/Mastros ligados aos edifícios ou no topo dos mesmos, não devem ser considerados."
+				"Definição": "Estrutura relativamente alta e estreita que pode estar isolada ou fazer parte de outra estrutura. Devem também ser consideradas as torres: do relógio; de arrefecimento; de comunicações; de vigia; reservatório elevado de água. As pequenas torres, especialmente se não estiverem fixadas ao solo, que façam parte de um edifício ou outra construção, não devem ser consideradas. Estruturas de telecomunicações sustentadas ou não por cabos (Torre e/ou Mastro), devem ser caracterizadas unicamente como Torre. Torres/Mastros ligados aos edifícios ou no topo dos mesmos, não devem ser considerados."
 			}, {
 				"Valores": "30",
 				"Descrição": "Palheiro",

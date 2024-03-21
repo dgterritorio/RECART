@@ -53,39 +53,39 @@
 			"nome": "valorAreasArtificializadas",
 			"valores": [{
 				"Valores": "1",
-				"Descrição": "Equipamentos de saúde",
+				"Descrição": "Área de equipamentos de saúde",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Área associada aos equipamentos de saúde."
 			}, {
 				"Valores": "2",
-				"Descrição": "Equipamentos de educação",
+				"Descrição": "Área de equipamentos de educação",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Área associada aos equipamentos de educação."
 			}, {
 				"Valores": "3",
-				"Descrição": "Equipamentos industriais",
+				"Descrição": "Área de equipamentos industriais",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Área associada à atividade industrial."
 			}, {
 				"Valores": "4",
-				"Descrição": "Equipamentos comerciais ou de carácter geral",
+				"Descrição": "Área de equipamentos comerciais ou de carácter geral",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Área associada à atividade comercial e de carácter geral (inclui os empreendimentos turísticos, as grandes superfícies comerciais e outros equipamentos similares)."
+				"Definição": "Área associada à atividade comercial e de carácter  geral (inclui os empreendimentos turísticos, feiras, centros de exposições, as grandes superfícies comerciais e outros equipamentos similares)."
 			}, {
 				"Valores": "5",
-				"Descrição": "Área de deposição ou tratamento de resíduos",
+				"Descrição": "Área de deposição de resíduos",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Área de deposição ou tratamento de resíduos sólidos, líquidos, industriais ou tóxicos."
+				"Definição": "Área de deposição de resíduos urbanos ou industriais associada a aterros, lixeiras e sucatas."
 			}, {
 				"Valores": "6",
 				"Descrição": "Área em construção",
@@ -95,14 +95,14 @@
 				"Definição": "Área em construção (inclui escavações, estaleiros de obra, etc.) e áreas abandonadas inseridas num contexto urbano."
 			}, {
 				"Valores": "7",
-				"Descrição": "Instalação desportiva e de lazer",
+				"Descrição": "Área de instalação desportiva e de lazer",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Área ocupada por instalações desportivas (estádios de futebol e infraestruturas anexas, estádios de hóquei, piscinas, campos de ténis, campos de tiro, autódromos, kartódromos, pistas de atletismo, ciclismo e motociclismo, etc.) e por outros equipamentos de lazer (parques infantis, parques e jardins, áreas verdes, campos de golfe, parques aquáticos, feira popular, jardim zoológico, etc.)"
+				"Definição": "Área ocupada por instalações desportivas (estádios de futebol e infraestruturas anexas, estádios de hóquei, piscinas, campos de ténis, campos de tiro, autódromos, kartódromos, hipódromos, pistas de atletismo, ciclismo e motociclismo, etc.) e por outros equipamentos de lazer (parques infantis, parques e jardins, áreas verdes, campos de golfe, parques aquáticos, jardim botânico, jardim zoológico, etc.)"
 			}, {
 				"Valores": "8",
-				"Descrição": "Parque de campismo",
+				"Descrição": "Área de parque de campismo",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
@@ -113,14 +113,14 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Terreno ou local, geralmente murado, destinado à cremação ou sepultura dos defuntos (exemplo: crematórios, cemitérios)."
+				"Definição": "Área geralmente murada, destinada à cremação ou sepultura dos defuntos (exemplo: crematórios, cemitérios)."
 			}, {
 				"Valores": "10",
-				"Descrição": "Instalação de segurança, defesa ou justiça",
+				"Descrição": "Área de equipamentos de forças de segurança, defesa ou justiça",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Área ocupada por estruturas associadas a funções de segurança, defesa ou justiça."
+				"Definição": "Área ocupada por equipamentos associados a forças de segurança, defesa ou justiça."
 			}]
 		}]
 	}
