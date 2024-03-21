@@ -68,7 +68,7 @@
 			}, {
 				"Valores": "2",
 				"Descrição": "Conduta",
-				"Valores INSPIRE": "WaterPipe",
+				"Valores INSPIRE": "WaterPipe; SewerPipe",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Tubo condutor de água."

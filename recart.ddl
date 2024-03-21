@@ -355,7 +355,7 @@ CREATE TABLE lig_valor_tipo_equipamento_coletivo_equip_util_coletiva (
 	PRIMARY KEY (identificador)
 );
 
--- Ponto, Poligono
+-- Ponto
 CREATE TABLE elem_assoc_agua (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
 	inicio_objeto timestamp without time zone NOT NULL,
@@ -365,7 +365,7 @@ CREATE TABLE elem_assoc_agua (
 	PRIMARY KEY (identificador)
 );
 
-SELECT AddGeometryColumn ('public','elem_assoc_agua','geometria',3763,'GEOMETRY',2);
+SELECT AddGeometryColumn ('public','elem_assoc_agua','geometria',3763,'POINT',2);
 ALTER TABLE elem_assoc_agua ALTER COLUMN geometria SET NOT NULL;
 
 -- Ponto, Poligono
