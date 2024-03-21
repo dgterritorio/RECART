@@ -1261,7 +1261,7 @@ CREATE TABLE curso_de_agua_eixo (
 	valor_persistencia_hidrologica varchar(10),
 	valor_posicao_vertical varchar(10) NOT NULL,
 	valor_estado_instalacao varchar(10),
-	valor_ficticio varchar(10) NOT NULL,
+	valor_ficticio varchar(10),
 	valor_natureza varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
