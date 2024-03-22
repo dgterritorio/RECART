@@ -121,6 +121,27 @@
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Área ocupada por equipamentos associados a forças de segurança, defesa ou justiça."
+			}, {
+				"Valores": "11",
+				"Descrição": "Área de instalações agrícolas",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Área ocupada por instalações de apoio à exploração agropecuária."
+			}, {
+				"Valores": "12",
+				"Descrição": "Área de equipamentos culturais",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Área ocupada por complexos arqueológicos a céu aberto, templos religiosos e espaços associados, e equipamentos culturais como centros culturais, museus, teatros, planetários e salas de espetáculos."
+			}, {
+				"Valores": "13",
+				"Descrição": "Área de extração de inertes",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Área de extração de minerais (areeiros, pedreiras, carvão, ferro, etc.) a céu aberto. Inclui áreas de extração inundadas temporariamente e saibreiras inundadas, exceto nos casos em que se trate de extração por dragagem de fundos fluviais. Inclui também áreas de extração de sal-gema e de areias em dunas costeiras ou interiores."
 			}]
 		}]
 	}
