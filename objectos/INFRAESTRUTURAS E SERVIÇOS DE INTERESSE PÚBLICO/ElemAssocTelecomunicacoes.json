@@ -47,7 +47,7 @@
 			"valores": [{
 				"Valores": "1",
 				"Descrição": "Apoio de telecomunicações",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "Pole",
 				"D1": "x",
 				"D2": "",
 				"Definição": "Elemento de sustentação apto para interligação de cabos e equipamentos de traçados aéreos de redes de comunicações eletrónicas."
@@ -68,15 +68,15 @@
 			}, {
 				"Valores": "4",
 				"Descrição": "Armário",
-				"Valores INSPIRE": "",
-				"D1": "x",
+				"Valores INSPIRE": "Cabinet",
+				"D1": "",
 				"D2": "",
 				"Definição": "Conjunto de caixa, ou bastidor, estanque, e dos dispositivos e equipamentos alojados no seu interior."
 			}, {
 				"Valores": "5",
 				"Descrição": "Câmara de visita",
-				"Valores INSPIRE": "",
-				"D1": "x",
+				"Valores INSPIRE": "Manhole",
+				"D1": "",
 				"D2": "",
 				"Definição": "Compartimento ou caixa de acesso aos troços de tubagem subterrâneos, situados geralmente no exterior de edifícios, através da qual é possível instalar, retirar e ligar cabos e proceder a trabalhos de manutenção."
 			}]

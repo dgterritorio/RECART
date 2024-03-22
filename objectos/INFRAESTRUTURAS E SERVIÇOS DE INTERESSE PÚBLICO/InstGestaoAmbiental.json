@@ -95,14 +95,7 @@
 				"Definição": "Instalação de Estação de Tratamento de Água (ETA) para consumo."
 			}, {
 				"Valores": "6",
-				"Descrição": "ETRS",
-				"Valores INSPIRE": "",
-				"D1": "x",
-				"D2": "x",
-				"Definição": "Instalação de Estação de Tratamento de Resíduos Sólidos (ETRS)."
-			}, {
-				"Valores": "100",
-				"Descrição": "Outros resíduos",
+				"Descrição": "Instalação de tratamento de resíduos",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",

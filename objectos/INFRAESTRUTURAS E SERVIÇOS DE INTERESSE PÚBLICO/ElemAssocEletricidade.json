@@ -54,7 +54,7 @@
 			"valores": [{
 				"Valores": "1",
 				"Descrição": "Central de produção elétrica",
-				"Valores INSPIRE": "mainStation",
+				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "",
 				"Definição": "Infraestrutura que contém instalação ou instalações de produção de energia."
@@ -68,7 +68,7 @@
 			}, {
 				"Valores": "1.2",
 				"Descrição": "Central fotovoltaica",
-				"Valores INSPIRE": "OtherConstruction (solarPanel)",
+				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Infraestrutura que contém uma instalação de produção de energia elétrica a partir da radiação emitida pelo sol."
@@ -117,7 +117,7 @@
 			}, {
 				"Valores": "4",
 				"Descrição": "Gerador eólico",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "windturbine",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Equipamento de grande porte capaz de transformar a energia do vento em energia elétrica que é inserida diretamente na rede elétrica."
@@ -131,7 +131,7 @@
 			}, {
 				"Valores": "6",
 				"Descrição": "Estrutura de eletricidade com ponto de iluminação",
-				"Valores INSPIRE": "streetLight",
+				"Valores INSPIRE": "Pole/streetLight",
 				"D1": "",
 				"D2": "",
 				"Definição": "Estrutura de iluminação da via pública coincidente, ou não, com apoio de baixa tensão."
@@ -173,21 +173,21 @@
 			}, {
 				"Valores": "7.2",
 				"Descrição": "Apoio de média tensão",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "Pole",
 				"D1": "x",
 				"D2": "",
 				"Definição": "Estrutura metálica reticulada, tubular ou de betão que suporta os cabos condutores, os cabos de guarda, os isoladores e os acessórios de fixação das linhas elétricas de tensão superior a 1kV e menor ou igual a 45kV."
 			}, {
 				"Valores": "7.3",
 				"Descrição": "Apoio de baixa tensão",
-				"Valores INSPIRE": "",
+				"Valores INSPIRE": "Pole",
 				"D1": "x",
 				"D2": "",
 				"Definição": "Estrutura metálica reticulada ou de betão, tubo metálico, apoio de madeira ou outro material, que suporta os cabos condutores e os acessórios de fixação das linhas elétricas de tensão até 1kV."
 			}, {
 				"Valores": "7.4",
 				"Descrição": "Apoio de muito alta tensão",
-				"Valores INSPIRE": "OtherConstruction (pylon)",
+				"Valores INSPIRE": "pylon",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Estrutura metálica reticulada ou tubular que suporta os cabos condutores, os cabos de guarda, os isoladores e os acessórios de fixação das linhas elétricas de tensão superior a 110kV."
@@ -201,22 +201,22 @@
 			}, {
 				"Valores": "9",
 				"Descrição": "Posto de transformação aéreo",
-				"Valores INSPIRE": "transformer",
+				"Valores INSPIRE": "Pole; transformer",
 				"D1": "x",
 				"D2": "",
 				"Definição": "Instalação ou equipamento elevado sobre um apoio, destinado à transformação da corrente elétrica."
 			}, {
 				"Valores": "10",
 				"Descrição": "Armário de distribuição",
-				"Valores INSPIRE": "",
-				"D1": "x",
+				"Valores INSPIRE": "Cabinet",
+				"D1": "",
 				"D2": "",
 				"Definição": "Estrutura metálica monobloco colocada na via pública destinada ao apoio à distribuição de energia elétrica."
 			}, {
 				"Valores": "11",
 				"Descrição": "Câmara de visita",
-				"Valores INSPIRE": "",
-				"D1": "x",
+				"Valores INSPIRE": "Manhole",
+				"D1": "",
 				"D2": "",
 				"Definição": "Compartimento que permite aceder à rede elétrica subterrânea."
 			}]
