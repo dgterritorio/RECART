@@ -969,7 +969,7 @@ ALTER TABLE seg_via_ferrea ADD CONSTRAINT valor_via_ferrea_id FOREIGN KEY (valor
 ALTER TABLE infra_trans_ferrov ADD CONSTRAINT valor_tipo_uso_infra_trans_ferrov_id FOREIGN KEY (valor_tipo_uso_infra_trans_ferrov) REFERENCES valor_tipo_uso_infra_trans_ferrov (identificador);
 ALTER TABLE infra_trans_ferrov ADD CONSTRAINT valor_tipo_infra_trans_ferrov_id FOREIGN KEY (valor_tipo_infra_trans_ferrov) REFERENCES valor_tipo_infra_trans_ferrov (identificador);
 ALTER TABLE no_trans_ferrov ADD CONSTRAINT valor_tipo_no_trans_ferrov_id FOREIGN KEY (valor_tipo_no_trans_ferrov) REFERENCES valor_tipo_no_trans_ferrov (identificador);
-ALTER TABLE lig_infratransferrov_notransferrov ADD CONSTRAINT infra_trans_ferrov_id_no_trans_ferrov_id_uk UNIQUE (infra_trans_ferrov_id, no_trans_ferrov_id)
+ALTER TABLE lig_infratransferrov_notransferrov ADD CONSTRAINT infra_trans_ferrov_id_no_trans_ferrov_id_uk UNIQUE (infra_trans_ferrov_id, no_trans_ferrov_id);
 ALTER TABLE lig_infratransferrov_notransferrov ADD CONSTRAINT lig_infratransferrov_notransferrov_1 FOREIGN KEY (no_trans_ferrov_id) REFERENCES no_trans_ferrov (identificador) ON DELETE CASCADE;
 ALTER TABLE lig_infratransferrov_notransferrov ADD CONSTRAINT lig_infratransferrov_notransferrov_2 FOREIGN KEY (infra_trans_ferrov_id) REFERENCES infra_trans_ferrov (identificador) ON DELETE CASCADE;
 /**
@@ -1516,10 +1516,10 @@ ALTER TABLE edificio ADD CONSTRAINT localizacao_instalacao_producao FOREIGN KEY 
 
 ALTER TABLE lig_adm_publica_edificio ADD CONSTRAINT localizacao_servico_publico_1 FOREIGN KEY (edificio_id) REFERENCES edificio (identificador) ON DELETE CASCADE;
 ALTER TABLE lig_adm_publica_edificio ADD CONSTRAINT localizacao_servico_publico_2 FOREIGN KEY (adm_publica_id) REFERENCES adm_publica (identificador) ON DELETE CASCADE;
-ALTER TABLE lig_adm_publica_edificio ADD CONSTRAINT adm_publica_id_edificio_id_uk UNIQUE (adm_publica_id, edificio_id)
+ALTER TABLE lig_adm_publica_edificio ADD CONSTRAINT adm_publica_id_edificio_id_uk UNIQUE (adm_publica_id, edificio_id);
 ALTER TABLE lig_equip_util_coletiva_edificio ADD CONSTRAINT localizacao_equip_util_coletiva_1 FOREIGN KEY (edificio_id) REFERENCES edificio (identificador) ON DELETE CASCADE;
 ALTER TABLE lig_equip_util_coletiva_edificio ADD CONSTRAINT localizacao_equip_util_coletiva_2 FOREIGN KEY (equip_util_coletiva_id) REFERENCES equip_util_coletiva (identificador) ON DELETE CASCADE;
-ALTER TABLE lig_equip_util_coletiva_edificio ADD CONSTRAINT equip_util_coletiva_id_edificio_id_uk UNIQUE (equip_util_coletiva_id, edificio_id)
+ALTER TABLE lig_equip_util_coletiva_edificio ADD CONSTRAINT equip_util_coletiva_id_edificio_id_uk UNIQUE (equip_util_coletiva_id, edificio_id);
 
 
 /**
@@ -1529,7 +1529,7 @@ ALTER TABLE lig_equip_util_coletiva_edificio ADD CONSTRAINT equip_util_coletiva_
 ALTER TABLE area_infra_trans_ferrov ADD CONSTRAINT area_infra_trans_ferrov FOREIGN KEY (infra_trans_ferrov_id) REFERENCES infra_trans_ferrov (identificador);
 ALTER TABLE lig_segviaferrea_linhaferrea ADD CONSTRAINT lig_segviaferrea_linhaferrea_1 FOREIGN KEY (seg_via_ferrea_id) REFERENCES seg_via_ferrea (identificador) ON DELETE CASCADE;
 ALTER TABLE lig_segviaferrea_linhaferrea ADD CONSTRAINT lig_segviaferrea_linhaferrea_2 FOREIGN KEY (linha_ferrea_id) REFERENCES linha_ferrea (identificador) ON DELETE CASCADE;
-ALTER TABLE lig_segviaferrea_linhaferrea ADD CONSTRAINT seg_via_ferrea_id_linha_ferrea_id_uk UNIQUE (seg_via_ferrea_id, linha_ferrea_id)
+ALTER TABLE lig_segviaferrea_linhaferrea ADD CONSTRAINT seg_via_ferrea_id_linha_ferrea_id_uk UNIQUE (seg_via_ferrea_id, linha_ferrea_id);
 
 /**
  * Dominio Transporte Rodoviario
@@ -1537,7 +1537,7 @@ ALTER TABLE lig_segviaferrea_linhaferrea ADD CONSTRAINT seg_via_ferrea_id_linha_
 
 ALTER TABLE area_infra_trans_rodov ADD CONSTRAINT area_infra_trans_rodov FOREIGN KEY (infra_trans_rodov_id) REFERENCES infra_trans_rodov (identificador);
 ALTER TABLE lig_segviarodov_viarodov ADD CONSTRAINT lig_segviarodov_viarodov_1 FOREIGN KEY (seg_via_rodov_id) REFERENCES seg_via_rodov (identificador) ON DELETE CASCADE;;
-ALTER TABLE lig_segviarodov_viarodov ADD CONSTRAINT lig_segviarodov_viarodov_2 FOREIGN KEY (via_rodov_id) REFERENCES via_rodov (identificador) ON DELETE CASCADE;;
+ALTER TABLE lig_segviarodov_viarodov ADD CONSTRAINT lig_segviarodov_viarodov_2 FOREIGN KEY (via_rodov_id) REFERENCES via_rodov (identificador) ON DELETE CASCADE;
 ALTER TABLE lig_segviarodov_viarodov ADD CONSTRAINT seg_via_rodov_id_via_rodov_id_uk UNIQUE (seg_via_rodov_id, via_rodov_id);
 
 ALTER TABLE lig_segviarodov_viarodovlimite ADD CONSTRAINT lig_segviarodov_viarodovlimite_1 FOREIGN KEY (via_rodov_limite_id) REFERENCES via_rodov_limite (identificador) ON DELETE CASCADE;
@@ -1546,7 +1546,7 @@ ALTER TABLE lig_segviarodov_viarodovlimite ADD CONSTRAINT seg_via_rodov_id_via_r
 
 ALTER TABLE lig_infratransrodov_notransrodov ADD CONSTRAINT lig_infratransrodov_notransrodov_1 FOREIGN KEY (NO_trans_rodov_id) REFERENCES no_trans_rodov (identificador) ON DELETE CASCADE;
 ALTER TABLE lig_infratransrodov_notransrodov ADD CONSTRAINT lig_infratransrodov_notransrodov_2 FOREIGN KEY (infra_trans_rodov_id) REFERENCES infra_trans_rodov (identificador) ON DELETE CASCADE;
-ALTER TABLE lig_infratransrodov_notransrodov ADD CONSTRAINT infra_trans_rodov_id_no_trans_rodov_id_uk UNIQUE (infra_trans_rodov_id, no_trans_rodov_id)
+ALTER TABLE lig_infratransrodov_notransrodov ADD CONSTRAINT infra_trans_rodov_id_no_trans_rodov_id_uk UNIQUE (infra_trans_rodov_id, no_trans_rodov_id);
 
 /**
  * Cria trigger para validacao de geometria ponto ou poligono
@@ -1583,10 +1583,6 @@ FOR EACH ROW EXECUTE PROCEDURE trigger_point_polygon_validation();
 /**
  * Cria trigger dominio Infraestruturas e Servicos Publicos
  */
-
-CREATE TRIGGER elem_assoc_agua_geometry_check
-BEFORE INSERT ON "elem_assoc_agua"
-FOR EACH ROW EXECUTE PROCEDURE trigger_point_polygon_validation();
 
 CREATE TRIGGER elem_assoc_eletricidade_geometry_check
 BEFORE INSERT ON "elem_assoc_eletricidade"
