@@ -56,71 +56,43 @@
 				"Descrição": "Pecuária",
 				"Valores INSPIRE": "",
 				"D1": "",
-				"D2": "x",
-				"Definição": "Instalação ou edifício onde é exercida uma atividade pecuária"
+				"D2": "",
+				"Definição": "Instalação onde é exercida uma atividade pecuária"
 			}, {
 				"Valores": "1.1",
-				"Descrição": "Vacaria",
+				"Descrição": "Bovinicultura",
 				"Valores INSPIRE": "",
 				"D1": "x",
-				"D2": "",
-				"Definição": "Instalação ou edifício onde é exercida uma atividade pecuária relacionada com exploração, reprodução e recriação de gado bovino."
+				"D2": "x",
+				"Definição": "Instalação onde é exercida uma atividade pecuária relacionada com exploração, reprodução e recriação de gado bovino."
 			}, {
 				"Valores": "1.2",
 				"Descrição": "Suinicultura",
 				"Valores INSPIRE": "",
 				"D1": "x",
-				"D2": "",
-				"Definição": "Instalação ou edifício onde é exercida uma atividade pecuária relacionada com exploração, reprodução e recriação de gado suíno."
+				"D2": "x",
+				"Definição": "Instalação onde é exercida uma atividade pecuária relacionada com exploração, reprodução e recriação de gado suíno."
 			}, {
 				"Valores": "1.3",
-				"Descrição": "Aviário",
+				"Descrição": "Avicultura",
 				"Valores INSPIRE": "",
 				"D1": "x",
-				"D2": "",
-				"Definição": "Instalação ou edifício onde é exercida uma atividade pecuária relacionada com exploração, reprodução e recriação de aves."
+				"D2": "x",
+				"Definição": "Instalação onde é exercida uma atividade pecuária relacionada com exploração, reprodução e recriação de aves."
 			}, {
-				"Valores": "1.4",
-				"Descrição": "Matadouro",
-				"Valores INSPIRE": "",
-				"D1": "x",
-				"D2": "",
-				"Definição": "Edifício onde se abatem animais cuja carne é para consumo público."
-			}, {
-				"Valores": "1.5",
-				"Descrição": "Ovil",
-				"Valores INSPIRE": "",
-				"D1": "x",
-				"D2": "",
-				"Definição": "Instalação ou edifício onde é exercida uma atividade pecuária relacionada com exploração, reprodução e recriação de gado ovino."
-			}, {
-				"Valores": "1.6",
+				"Valores": "1.100",
 				"Descrição": "Outros - Pecuária",
 				"Valores INSPIRE": "",
 				"D1": "x",
-				"D2": "",
-				"Definição": "Outro tipo de instalação ou edifício onde é exercida uma atividade pecuária."
-			}, {
-				"Valores": "2",
-				"Descrição": "Adega",
-				"Valores INSPIRE": "",
-				"D1": "x",
 				"D2": "x",
-				"Definição": "Instalação ou edifício onde é exercida a atividade de vinificação relacionada com a transformação da uva em vinho e a conservação, acondicionamento e comercialização de vinhos."
-			}, {
-				"Valores": "3",
-				"Descrição": "Lagar de azeite",
-				"Valores INSPIRE": "",
-				"D1": "x",
-				"D2": "x",
-				"Definição": "Instalação ou edifício onde é exercida a atividade relacionada com a transformação da azeitona em azeite."
+				"Definição": "Instalação onde é exercida uma atividade pecuária relacionada com exploração, reprodução e recriação de ovinos (Ovinocultura), caprinos (Caprinocultura), equídeos (Equinocultura), coelhos (Cunicultura) ou outras espécies pecuárias."
 			}, {
 				"Valores": "4",
 				"Descrição": "Indústria extrativa",
 				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "",
-				"Definição": "Instalação ou edifício onde são realizadas atividades relacionadas de minerais ou rochas."
+				"Definição": "Instalação onde são realizadas atividades relacionadas com a extração de minerais ou rochas."
 			}, {
 				"Valores": "4.1",
 				"Descrição": "Pedreira",
@@ -136,13 +108,6 @@
 				"D2": "x",
 				"Definição": "Área que delimita um conjunto de escavações e instalações destinadas à exploração de minérios ou outros produtos existentes no subsolo."
 			}, {
-				"Valores": "4.3",
-				"Descrição": "Extração de inertes",
-				"Valores INSPIRE": "",
-				"D1": "",
-				"D2": "",
-				"Definição": "Extração de materiais em locais fluviais ou marítimos."
-			}, {
 				"Valores": "4.4",
 				"Descrição": "Salina",
 				"Valores INSPIRE": "",
@@ -155,84 +120,112 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifício de estabelecimento industrial onde se procede à transformação ou conservação de matérias-primas e onde se obtêm ou fabricam produtos."
+				"Definição": "Instalação industrial onde se procede à transformação ou conservação de matérias-primas e onde se obtêm ou fabricam produtos."
 			}, {
 				"Valores": "6",
-				"Descrição": "Fábrica de materiais explosivos",
+				"Descrição": "Instalação de materiais explosivos",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifício onde se fabricam materiais explosivos."
+				"Definição": "Instalação onde se fabricam materiais explosivos."
 			}, {
 				"Valores": "7",
 				"Descrição": "Oficina",
 				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "x",
-				"Definição": "Lugar onde se exerce algum ofício."
+				"Definição": "Instalação onde se exerce algum ofício."
 			}, {
 				"Valores": "7.1",
 				"Descrição": "Oficina em geral",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "",
-				"Definição": "Edifício onde se encontram equipamentos ou máquinas para fabrico e reparação de objetos metálicos ou não, aparelhos, instrumentos, etc., incluindo carpintarias e serrações."
+				"Definição": "Instalação onde se encontram equipamentos ou máquinas para fabrico e reparação de objetos metálicos ou não, aparelhos, instrumentos, etc., incluindo carpintarias e serrações."
 			}, {
 				"Valores": "7.2",
 				"Descrição": "Oficina de pirotecnia",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "",
-				"Definição": "Edifício ou área onde se fabricam materiais pirotécnicos."
+				"Definição": "Instalação ou área onde se fabricam materiais pirotécnicos."
 			}, {
 				"Valores": "7.3",
 				"Descrição": "Oficina de reparação automóvel",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "",
-				"Definição": "Edifício onde se encontram equipamentos ou máquinas para reparação e substituição de peças de veículos automóveis ou outros ou onde se lavam esses veículos."
+				"Definição": "Instalação onde se encontram equipamentos ou máquinas para reparação e substituição de peças de veículos automóveis ou outros ou onde se lavam esses veículos."
 			}, {
 				"Valores": "8",
 				"Descrição": "Estaleiro",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifícios associados a áreas onde se constroem ou reparam embarcações."
-			}, {
-				"Valores": "9",
-				"Descrição": "Armazém",
-				"Valores INSPIRE": "",
-				"D1": "x",
-				"D2": "x",
-				"Definição": "Edifício onde se arrecadam diversos tipos de produtos."
-			}, {
-				"Valores": "10",
-				"Descrição": "Estação de emissão ou receção",
-				"Valores INSPIRE": "",
-				"D1": "x",
-				"D2": "x",
-				"Definição": "Edifício de apoio ao funcionamento das antenas destinadas às comunicações por meio da captação e irradiação de ondas eletromagnéticas ou radielétricas."
+				"Definição": "Instalações onde se constroem ou reparam embarcações."
 			}, {
 				"Valores": "11",
 				"Descrição": "Aquicultura",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Área com as instalações e exploração de culturas em águas marinhas, águas superficiais na proximidade da foz dos rios, que têm um caráter parcialmente salgado."
+				"Definição": "Área com as instalações e exploração de culturas em águas marinhas, águas superficiais ou em construções dedicadas."
 			}, {
 				"Valores": "12",
-				"Descrição": "Parque de sucata",
+				"Descrição": "Sucata",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Área onde se depositam materiais de ferro velho e onde se compram e vendem esses materiais."
+				"Definição": "Instalação onde se depositam materiais de ferro velho e onde se compram e vendem esses materiais."
 			}, {
 				"Valores": "13",
+				"Descrição": "Indústria agroindustrial",
+				"Valores INSPIRE": "",
+				"D1": "",
+				"D2": "",
+				"Definição": "Instalação onde são realizadas atividades agroindustriais."
+			}, {
+				"Valores": "13.1",
+				"Descrição": "Matadouro",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Instalação onde se abatem animais cuja carne é para consumo público."
+			}, {
+				"Valores": "13.2",
+				"Descrição": "Adega",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Instalação onde é exercida a atividade de vinificação relacionada com a transformação da uva em vinho e a conservação, acondicionamento e comercialização de vinhos."
+			}, {
+				"Valores": "13.3",
+				"Descrição": "Lagar de azeite",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Instalação onde é exercida a atividade relacionada com a transformação da azeitona em azeite."
+			}, {
+				"Valores": "13.4",
+				"Descrição": "Lacticínios",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Instalação onde é exercida a atividade relacionada com a transformação de leite ou dos seus derivados."
+			}, {
+				"Valores": "13.5",
 				"Descrição": "Engenho",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Instalação ou edifício agro-industrial onde é exercida a atividade relacionada com a transformação da cana-de-açúcar em mel e aguardente de cana."
+				"Definição": "Instalação agroindustrial onde é exercida a atividade relacionada com a transformação da cana-de-açúcar em mel e aguardente de cana."
+			}, {
+				"Valores": "13.100",
+				"Descrição": "Outros - Indústria agroindustrial",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Instalação onde é exercida outras actividades agroindustriais."
 			}]
 		}]
 	}
