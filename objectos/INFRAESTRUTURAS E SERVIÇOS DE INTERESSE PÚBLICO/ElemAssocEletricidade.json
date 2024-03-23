@@ -187,7 +187,7 @@
 			}, {
 				"Valores": "7.4",
 				"Descrição": "Apoio de muito alta tensão",
-				"Valores INSPIRE": "pylon",
+				"Valores INSPIRE": "OtherConstruction (pylon)",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Estrutura metálica reticulada ou tubular que suporta os cabos condutores, os cabos de guarda, os isoladores e os acessórios de fixação das linhas elétricas de tensão superior a 110kV."
