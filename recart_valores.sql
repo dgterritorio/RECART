@@ -252,9 +252,9 @@ INSERT INTO valor_gasoduto_oleoduto_sub_quimicas VALUES ('1.2','Gasoduto de 2º 
 INSERT INTO valor_gasoduto_oleoduto_sub_quimicas VALUES ('1.3','Gasoduto de 3º escalão');
 INSERT INTO valor_gasoduto_oleoduto_sub_quimicas VALUES ('2','Oleoduto');
 INSERT INTO valor_gasoduto_oleoduto_sub_quimicas VALUES ('3','Outros produtos');
-INSERT INTO valor_instalacao_gestao_ambiental VALUES ('1','Aterros');
-INSERT INTO valor_instalacao_gestao_ambiental VALUES ('1.1','Aterros urbanos');
-INSERT INTO valor_instalacao_gestao_ambiental VALUES ('1.2','Aterros industriais');
+INSERT INTO valor_instalacao_gestao_ambiental VALUES ('1','Aterro');
+INSERT INTO valor_instalacao_gestao_ambiental VALUES ('1.1','Aterro urbano');
+INSERT INTO valor_instalacao_gestao_ambiental VALUES ('1.2','Aterro industrial');
 INSERT INTO valor_instalacao_gestao_ambiental VALUES ('2','ETAR');
 INSERT INTO valor_instalacao_gestao_ambiental VALUES ('2.1','ETAR urbana');
 INSERT INTO valor_instalacao_gestao_ambiental VALUES ('2.2','ETAR industrial');
