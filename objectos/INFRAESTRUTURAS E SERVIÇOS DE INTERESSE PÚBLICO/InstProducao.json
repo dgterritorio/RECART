@@ -57,7 +57,7 @@
 				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "",
-				"Definição": "Instalação onde é exercida uma atividade pecuária"
+				"Definição": "Instalação onde é exercida uma atividade pecuária."
 			}, {
 				"Valores": "1.1",
 				"Descrição": "Bovinicultura",
@@ -148,21 +148,21 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "",
-				"Definição": "Instalação ou área onde se fabricam materiais pirotécnicos."
+				"Definição": "Instalação onde se fabricam materiais pirotécnicos."
 			}, {
 				"Valores": "7.3",
-				"Descrição": "Oficina de reparação automóvel",
+				"Descrição": "Oficina de reparação ou lavagem automóvel",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "",
 				"Definição": "Instalação onde se encontram equipamentos ou máquinas para reparação e substituição de peças de veículos automóveis ou outros ou onde se lavam esses veículos."
 			}, {
 				"Valores": "8",
-				"Descrição": "Estaleiro",
+				"Descrição": "Estaleiro naval",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Instalações onde se constroem ou reparam embarcações."
+				"Definição": "Instalação onde se constroem ou reparam embarcações."
 			}, {
 				"Valores": "11",
 				"Descrição": "Aquicultura",
@@ -218,14 +218,14 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Instalação agroindustrial onde é exercida a atividade relacionada com a transformação da cana-de-açúcar em mel e aguardente de cana."
+				"Definição": "Instalação onde é exercida a atividade relacionada com a transformação da cana-de-açúcar em mel e aguardente de cana."
 			}, {
 				"Valores": "13.100",
 				"Descrição": "Outros - Indústria agroindustrial",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Instalação onde é exercida outras actividades agroindustriais."
+				"Definição": "Instalação onde é exercida outra atividade agroindustrial."
 			}]
 		}]
 	}
