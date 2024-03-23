@@ -148,7 +148,7 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Equipamento dedicado à missão de proteger e garantir a ordem e a segurança pública (inclui edifício da Policia de Segurança Pública e da Guarda Nacional Republicana, as instalações da Policia Judiciária, a Policia Municipal, a Policia Marítima e os Postos Fronteiriços)."
+				"Definição": "Equipamento dedicado à missão de proteger e garantir a ordem e a segurança pública (inclui edifício da Polícia de Segurança Pública e da Guarda Nacional Republicana, as instalações da Polícia Judiciária, a Polícia Municipal, a Polícia Marítima e os Postos Fronteiriços)."
 			}, {
 				"Valores": "5",
 				"Descrição": "Defesa",
@@ -218,7 +218,7 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Equipamento, normalmente ao ar livre, especialmente destinada a crianças."
+				"Definição": "Equipamento, normalmente ao ar livre, especialmente destinado a crianças."
 			}, {
 				"Valores": "8",
 				"Descrição": "Cemitério",
