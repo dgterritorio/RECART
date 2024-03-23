@@ -46,21 +46,21 @@
 			"nome": "valorInstalacaoDeGestaoAmbiental",
 			"valores": [{
 				"Valores": "1",
-				"Descrição": "Aterros",
+				"Descrição": "Aterro",
 				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "",
 				"Definição": "Instalação para depósito de resíduos sólidos urbanos ou industriais."
 			}, {
 				"Valores": "1.1",
-				"Descrição": "Aterros urbanos",
+				"Descrição": "Aterro urbano",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Instalação de resíduos provenientes de habitações bem como outros resíduos que, pela sua natureza ou composição, sejam semelhantes aos resíduos provenientes de habitações."
 			}, {
 				"Valores": "1.2",
-				"Descrição": "Aterros industriais",
+				"Descrição": "Aterro industrial",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
