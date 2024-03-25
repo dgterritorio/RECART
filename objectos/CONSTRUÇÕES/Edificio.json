@@ -638,6 +638,13 @@
 				"D2": "",
 				"Definição": "Estabelecimento de grande dimensão não inserido num centro comercial."
 			}, {
+				"Valores": "4.5",
+				"Descrição": "Armazém",
+				"Valores INSPIRE": "trade",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Edifício principalmente utilizado para o armazenamento de bens e/ou distribuição para outras lojas."
+			}, {
 				"Valores": "5",
 				"Descrição": "Alojamento e restauração",
 				"Valores INSPIRE": "commerceAndServices",

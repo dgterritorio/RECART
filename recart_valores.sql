@@ -586,6 +586,7 @@ INSERT INTO valor_utilizacao_atual VALUES ('4.1','Comércio tradicional');
 INSERT INTO valor_utilizacao_atual VALUES ('4.2','Mercado');
 INSERT INTO valor_utilizacao_atual VALUES ('4.3','Centro comercial');
 INSERT INTO valor_utilizacao_atual VALUES ('4.4','Grande loja');
+INSERT INTO valor_utilizacao_atual VALUES ('4.5','Armazém');
 INSERT INTO valor_utilizacao_atual VALUES ('5','Alojamento e restauração');
 INSERT INTO valor_utilizacao_atual VALUES ('5.1','Alojamento');
 INSERT INTO valor_utilizacao_atual VALUES ('5.2','Edifício de apoio ao alojamento');
