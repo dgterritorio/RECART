@@ -4,7 +4,7 @@
 		"Característica geográfica": "Elemento associado de água",
 		"Objeto INSPIRE": "",
 		"objeto": "ElemAssocAgua",
-		"Definição": "Nó de infraestrutura associada ao transporte ou distribuição de água para consumo ou águas residuais.",
+		"Definição": "Nó de infraestrutura associada ao transporte ou distribuição de água para consumo, rega ou águas residuais.",
 		"Dim.": "2D",
 		"Atributos": [{
 			"Atributo": "identificador",
