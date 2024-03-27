@@ -64,14 +64,14 @@
 				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "",
-				"Definição": "Infraestrutura dotada de equipamentos de bombagem destinados a receber e transportar água para consumo ou águas residuais para um ponto mais elevado."
+				"Definição": "Infraestrutura dotada de equipamentos de bombagem destinados a receber e transportar água para consumo, rega ou águas residuais para um ponto mais elevado."
 			}, {
 				"Valores": "2.1",
 				"Descrição": "EE de água",
 				"Valores INSPIRE": "pump station",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Estação elevatória de água (EEA) para consumo."
+				"Definição": "Estação elevatória de água (EEA) para consumo ou rega."
 			}, {
 				"Valores": "2.2",
 				"Descrição": "EE de águas residuais",
@@ -85,7 +85,7 @@
 				"Valores INSPIRE": "treatment plant",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Instalação destinada ao tratamento de água para consumo."
+				"Definição": "Instalação destinada ao tratamento de água para consumo ou rega."
 			}, {
 				"Valores": "4",
 				"Descrição": "Fonte",
