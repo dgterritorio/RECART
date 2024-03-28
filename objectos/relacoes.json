@@ -111,5 +111,19 @@
 			"Multip.": "'Instalação de produção' [0..1], 'Área artificializada' [0..*]",
 			"D1": "x",
 			"D2": "x"
-		}]
+		}, {
+			"Relação": "ligacaoNumeroPoliciaEdificio",
+			"Tipo": "Relação CONSTRUÇÕES: Associação 'Número de polícia' e 'Edifício'",
+			"Definição": "Ligação entre o 'Edifício' e o 'Número de polícia'",
+			"Multip.": "'Edifício' [0..1], 'Número de polícia' [1]",
+			"D1": "x",
+			"D2": ""
+		}, {
+			"Relação": "ligacaoNumeroPoliciaSegViaRodov",
+			"Tipo": "Relação CONSTRUÇÕES e TRANSPORTES (Transporte rodoviário): Associação 'Número de polícia' e 'Segmento da via rodoviária'",
+			"Definição": "Ligação entre o 'Segmento da via rodoviária' e o 'Número de polícia'",
+			"Multip.": "'Segmento da via rodoviária' [1], 'Número de polícia' [1]",
+			"D1": "x",
+			"D2": ""
+		}]	
 	}

@@ -577,21 +577,28 @@ ALTER TABLE edificio ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE nome_edificio (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
-        edificio_id uuid NOT NULL,
+    edificio_id uuid NOT NULL,
 	nome varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
 ALTER TABLE nome_edificio ADD CONSTRAINT nome_edificio_id_edificio_id FOREIGN KEY (edificio_id) REFERENCES edificio (identificador) ON DELETE CASCADE;
 
-CREATE TABLE numero_policia_edificio (
+CREATE TABLE numero_policia (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
-        edificio_id uuid NOT NULL,
+	inicio_objeto timestamp without time zone NOT NULL,
+	fim_objeto timestamp without time zone,
+    edificio_id uuid,
+	seg_via_rodov_id uuid NOT NULL,
 	numero_policia varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
-ALTER TABLE numero_policia_edificio ADD CONSTRAINT numero_policia_edificio_id_edificio_id FOREIGN KEY (edificio_id) REFERENCES edificio (identificador) ON DELETE CASCADE;
+SELECT AddGeometryColumn ('public','numero_policia','geometria',3763,'POINT',2);
+ALTER TABLE numero_policia ALTER COLUMN geometria SET NOT NULL;
+
+ALTER TABLE numero_policia ADD CONSTRAINT numero_policia_id_edificio_id FOREIGN KEY (edificio_id) REFERENCES edificio (identificador);
+
 
 CREATE TABLE lig_valor_utilizacao_atual_edificio (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
@@ -1509,6 +1516,8 @@ ALTER TABLE areas_artificializadas ADD CONSTRAINT localizacao_equip_util_coletiv
 
 ALTER TABLE edificio ADD CONSTRAINT localizacao_instalacao_ambiental FOREIGN KEY (inst_gestao_ambiental_id) REFERENCES inst_gestao_ambiental (identificador);
 ALTER TABLE edificio ADD CONSTRAINT localizacao_instalacao_producao FOREIGN KEY (inst_producao_id) REFERENCES inst_producao (identificador);
+
+ALTER TABLE numero_policia ADD CONSTRAINT numero_policia_id_seg_via_rodov_id FOREIGN KEY (seg_via_rodov_id) REFERENCES seg_via_rodov (identificador);
 
 /**
  * Dominio Infraestruturas e Servicos Publicos

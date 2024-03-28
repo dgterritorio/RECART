@@ -1,0 +1,47 @@
+{
+	"objecto": {
+		"Tema": "CONSTRUÇÕES",
+		"Característica geográfica": "Número de polícia",
+		"Objeto INSPIRE": "",
+		"objeto": "NumeroPolicia",
+		"Definição": "Número, por vezes acompanhado de letras, que permite identificar um edifício, uma habitação, uma entrada ou um recinto, geralmente colocado ou inscrito por cima ou ao lado de uma porta, portão, muro ou outro local.",
+		"Dim.": "2D",
+		"Atributos": [{
+			"Atributo": "identificador",
+			"Multip.": "1",
+			"Definição": "Identificador unívoco - Universal Unique Identifier gerado através da função uuid_generate_v1mc().",
+			"Tipo": "UUID",
+			"D1": "x",
+			"D2": ""
+		}, {
+			"Atributo": "inicioObjeto",
+			"Multip.": "1",
+			"Definição": "Data e hora (até ao segundo) em que a versão em causa do objeto foi inserida ou alterada na base de dados.",
+			"Tipo": "DataTempo",
+			"D1": "x",
+			"D2": ""
+		}, {
+			"Atributo": "fimObjeto",
+			"Multip.": "[0..1]",
+			"Definição": "Data e hora (até ao segundo) em que a versão em causa do objeto foi substituída ou retirada da base de dados.",
+			"Tipo": "DataTempo",
+			"D1": "",
+			"D2": ""
+		}, {
+			"Atributo": "geometria",
+			"Multip.": "1",
+			"Tipo": "Geometria (ponto)",
+			"D1": "x",
+			"D2": "",
+			"Definição": ""
+		}, {
+			"Atributo": "numero",
+			"Multip.": "1",
+			"Tipo": "Texto",
+			"D1": "x",
+			"D2": "",
+			"Definição": "Número de polícia associado à construção por vezes acompanhado de letras."
+		}],
+		"listas de códigos": []
+	}
+}

@@ -91,13 +91,6 @@
 			"D2": "x",
 			"Definição": "Nome da construção."
 		}, {
-			"Atributo": "numeroPolicia",
-			"Multip.": "[0..*]",
-			"Tipo": "Texto",
-			"D1": "x",
-			"D2": "",
-			"Definição": "Número, por vezes acompanhado de letras, que permite identificar um edifício, geralmente colocado ou inscrito por cima ou ao lado de uma porta."
-		}, {
 			"Atributo": "numeroTotalPisos",
 			"Multip.": "[0..1]",
 			"Tipo": "Inteiro",
