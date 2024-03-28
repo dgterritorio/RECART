@@ -115,12 +115,19 @@
 				"D2": "x",
 				"Definição": "Equipamento de uma unidade básica do Serviço Nacional de Saúde para atendimento e prestação de cuidados de saúde à população."
 			}, {
-				"Valores": "2.3",
+				"Valores": "2.4",
+				"Descrição": "Farmácia",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Equipamento onde se exercem atividades de saúde como farmácias ou parafarmácias."
+			}, {
+				"Valores": "2.100",
 				"Descrição": "Outro - saúde",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Equipamento onde se exercem atividades de saúde como centros de reabilitação, sanatórios, clínicas, farmácias, etc. (inclui serviços veterinários)."
+				"Definição": "Equipamento onde se exercem atividades de saúde como centros de reabilitação, sanatórios, clínicas, etc. (inclui serviços veterinários)."
 			}, {
 				"Valores": "3",
 				"Descrição": "Ação social",
