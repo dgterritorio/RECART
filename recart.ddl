@@ -590,7 +590,7 @@ CREATE TABLE numero_policia (
 	fim_objeto timestamp without time zone,
     edificio_id uuid,
 	seg_via_rodov_id uuid NOT NULL,
-	numero_policia varchar(255) NOT NULL,
+	numero varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
