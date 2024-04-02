@@ -170,58 +170,65 @@
 				"Valores": "7",
 				"Descrição": "Estacionamento para caravanas",
 				"Valores INSPIRE": "",
-				"D1": "",
+				"D1": "x",
 				"D2": "",
 				"Definição": "Estacionamento para caravanas disponível."
 			}, {
 				"Valores": "8",
 				"Descrição": "Apoio automóvel",
 				"Valores INSPIRE": "",
-				"D1": "",
+				"D1": "x",
 				"D2": "",
 				"Definição": "Apoio automóvel disponível (inclui oficinas, serviços de lavagem, etc.)."
 			}, {
 				"Valores": "9",
 				"Descrição": "Parque infantil",
 				"Valores INSPIRE": "playground",
-				"D1": "",
+				"D1": "x",
 				"D2": "",
 				"Definição": "Parque infantil disponível."
 			}, {
 				"Valores": "10",
 				"Descrição": "Instalações sanitárias",
 				"Valores INSPIRE": "toilets",
-				"D1": "",
+				"D1": "x",
 				"D2": "",
 				"Definição": "Instalações sanitárias disponíveis."
 			}, {
 				"Valores": "11",
 				"Descrição": "Duche",
 				"Valores INSPIRE": "",
-				"D1": "",
+				"D1": "x",
 				"D2": "",
 				"Definição": "Duche disponível."
 			}, {
 				"Valores": "12",
 				"Descrição": "Área de piquenique",
 				"Valores INSPIRE": "picnicArea",
-				"D1": "",
+				"D1": "x",
 				"D2": "",
 				"Definição": "Área de piquenique disponível."
 			}, {
 				"Valores": "13",
-				"Descrição": "Estacionamento reservado",
+				"Descrição": "Estacionamento mobilidade reduzida",
 				"Valores INSPIRE": "",
-				"D1": "",
+				"D1": "x",
 				"D2": "",
 				"Definição": "Estacionamento específico para pessoas com mobilidade reduzida."
 			}, {
 				"Valores": "14",
 				"Descrição": "Estacionamento para velocípedes",
 				"Valores INSPIRE": "",
-				"D1": "",
+				"D1": "x",
 				"D2": "",
 				"Definição": "Estacionamento para velocípedes disponível."
+			}, {
+				"Valores": "15",
+				"Descrição": "Estacionamento para motas",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "",
+				"Definição": "Estacionamento para motas disponível."
 			}, {
 				"Valores": "995",
 				"Descrição": "Não aplicável",
