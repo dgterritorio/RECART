@@ -120,7 +120,7 @@
 				"Valores INSPIRE": "windturbine",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Equipamento de grande porte capaz de transformar a energia do vento em energia elétrica que é inserida diretamente na rede elétrica."
+				"Definição": "Equipamento de grande porte capaz de transformar a energia do vento em energia elétrica que é inserida diretamente na rede elétrica. Geradores eólicos ligados aos edifícios não devem ser considerados."
 			}, {
 				"Valores": "5",
 				"Descrição": "Painel solar fotovoltaico",
