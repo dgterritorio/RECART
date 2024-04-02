@@ -507,7 +507,7 @@
 				"Valores INSPIRE": "tower (clockTower; coolingTower; communicationTower; lookoutTower)",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Estrutura relativamente alta e estreita que pode estar isolada ou fazer parte de outra estrutura. Devem também ser consideradas as torres: do relógio; de arrefecimento; de comunicações; de vigia; reservatório elevado de água. As pequenas torres, especialmente se não estiverem fixadas ao solo, que façam parte de um edifício ou outra construção, não devem ser consideradas. Estruturas de telecomunicações sustentadas ou não por cabos (Torre e/ou Mastro), devem ser caracterizadas unicamente como Torre. Torres/Mastros ligados aos edifícios ou no topo dos mesmos, não devem ser considerados."
+				"Definição": "Estrutura relativamente alta e estreita que pode estar isolada ou fazer parte de outra estrutura. Devem também ser consideradas as torres: do relógio; de arrefecimento; de comunicações; de vigia; reservatório elevado de água; estrutura destinada à captação de água de um curso de água ou de uma “Água lêntica”; etc. As pequenas torres, especialmente se não estiverem fixadas ao solo, que façam parte de um edifício ou outra construção, não devem ser consideradas. Estruturas de telecomunicações sustentadas ou não por cabos (Torre e/ou Mastro), devem ser caracterizadas unicamente como Torre. Torres/Mastros ligados aos edifícios ou no topo dos mesmos, não devem ser considerados."
 			}, {
 				"Valores": "30",
 				"Descrição": "Palheiro",
