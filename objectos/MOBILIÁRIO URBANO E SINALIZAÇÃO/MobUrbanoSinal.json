@@ -44,14 +44,7 @@
 		}],
 		"listas de códigos": [{
 			"nome": "valorTipoMobUrbSinal",
-			"valores": [{
-				"Valores": "1",
-				"Descrição": "Armário de semáforos",
-				"Valores INSPIRE": "",
-				"D1": "",
-				"D2": "",
-				"Definição": "Armário existente na via pública, nomeadamente em passeios, utlizado para apoio ao funcionamento de um ou vários semáforos."
-			}, {
+			"valores": [ {
 				"Valores": "2",
 				"Descrição": "Banco de jardim",
 				"Valores INSPIRE": "",
@@ -86,14 +79,7 @@
 				"D1": "",
 				"D2": "",
 				"Definição": "Aparelhos de exercício físico ao ar livre instalados em parques e jardins."
-			}, {
-				"Valores": "7",
-				"Descrição": "Estacionamento para velocípedes",
-				"Valores INSPIRE": "",
-				"D1": "",
-				"D2": "",
-				"Definição": "Área própria para estacionar velocípedes."
-			}, {
+			},  {
 				"Valores": "8",
 				"Descrição": "Marco de correio",
 				"Valores INSPIRE": "",
