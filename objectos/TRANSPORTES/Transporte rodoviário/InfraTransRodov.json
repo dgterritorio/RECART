@@ -137,7 +137,7 @@
 				"Valores INSPIRE": "fuel",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Carregamento elétrico disponível."
+				"Definição": "Zona para carregamento/estacionamento de veículos elétricos disponível."
 			}, {
 				"Valores": "3",
 				"Descrição": "Loja de conveniência ",
@@ -210,11 +210,11 @@
 				"Definição": "Área de piquenique disponível."
 			}, {
 				"Valores": "13",
-				"Descrição": "Estacionamento mobilidade reduzida",
+				"Descrição": "Estacionamento mobilidade condicionada",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "",
-				"Definição": "Estacionamento específico para pessoas com mobilidade reduzida."
+				"Definição": "Estacionamento específico para pessoas com mobilidade condicionada."
 			}, {
 				"Valores": "14",
 				"Descrição": "Estacionamento para velocípedes",
@@ -224,11 +224,11 @@
 				"Definição": "Estacionamento para velocípedes disponível."
 			}, {
 				"Valores": "15",
-				"Descrição": "Estacionamento para motas",
+				"Descrição": "Estacionamento para motociclos",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "",
-				"Definição": "Estacionamento para motas disponível."
+				"Definição": "Estacionamento para motociclos disponível."
 			}, {
 				"Valores": "995",
 				"Descrição": "Não aplicável",
