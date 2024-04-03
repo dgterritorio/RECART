@@ -49,7 +49,7 @@ INSERT INTO valor_areas_artificializadas VALUES ('6','Área em construção');
 INSERT INTO valor_areas_artificializadas VALUES ('7','Área de equipamentos desportivos e de lazer');
 INSERT INTO valor_areas_artificializadas VALUES ('8','Área de parque de campismo');
 INSERT INTO valor_areas_artificializadas VALUES ('9','Área de inumação');
-INSERT INTO valor_areas_artificializadas VALUES ('10','Área de equipamentos de forças de segurança, defesa ou justiça');
+INSERT INTO valor_areas_artificializadas VALUES ('10','Área de equipamentos de segurança e ordem pública, defesa ou justiça');
 INSERT INTO valor_areas_artificializadas VALUES ('11','Área de instalações agrícolas');
 INSERT INTO valor_areas_artificializadas VALUES ('12','Área de equipamentos culturais');
 INSERT INTO valor_areas_artificializadas VALUES ('13','Área de extração de inertes');
