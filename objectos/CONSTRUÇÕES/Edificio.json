@@ -604,7 +604,7 @@
 				"Definição": "Edifício destinado ao comércio por grosso e a retalho; reparação de veículos automóveis, motociclos e de bens de uso pessoal e doméstico."
 			}, {
 				"Valores": "4.1",
-				"Descrição": "Comércio tradicional",
+				"Descrição": "Pequena loja",
 				"Valores INSPIRE": "trade",
 				"D1": "x",
 				"D2": "",
@@ -619,7 +619,7 @@
 			}, {
 				"Valores": "4.3",
 				"Descrição": "Centro comercial",
-				"Valores INSPIRE": "trade",
+				"Valores INSPIRE": "commerceAndServices",
 				"D1": "x",
 				"D2": "",
 				"Definição": "Estabelecimento que contém uma grande área comercial com um conjunto de estabelecimentos para consumo, prestação de serviços e lazer."
@@ -804,7 +804,7 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifício onde se desenvolvem atividades financeiras, informáticas, imobiliárias ou outras."
+				"Definição": "Edifício onde se desenvolvem atividades financeiras, informáticas, imobiliárias, de saúde ou outras."
 			}, {
 				"Valores": "8",
 				"Descrição": "Serviços coletivos, sociais e pessoais",
