@@ -116,11 +116,11 @@
 				"Definição": "Área geralmente murada, destinada à cremação ou sepultura dos defuntos (exemplo: crematórios, cemitérios)."
 			}, {
 				"Valores": "10",
-				"Descrição": "Área de equipamentos de forças de segurança, defesa ou justiça",
+				"Descrição": "Área de equipamentos de segurança e ordem pública, defesa ou justiça",
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Área ocupada por equipamentos associados a forças de segurança, defesa ou justiça."
+				"Definição": "Área ocupada por estruturas associadas a segurança e ordem pública, defesa ou justiça."
 			}, {
 				"Valores": "11",
 				"Descrição": "Área de instalações agrícolas",
