@@ -507,8 +507,7 @@ CREATE TABLE sinal_geodesico (
 	fim_objeto timestamp without time zone,
 	data_revisao date NOT NULL,
 	nome varchar(255),
-	valor_local_geodesico varchar(10) NOT NULL,
-	valor_ordem varchar(10) NOT NULL,
+	valor_categoria varchar(10) NOT NULL,
 	valor_tipo_sinal_geodesico varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
@@ -643,11 +642,6 @@ CREATE TABLE valor_elemento_edificio_z (
 	PRIMARY KEY (identificador)
 );
 
-CREATE TABLE valor_local_geodesico (
-	identificador varchar(10) NOT NULL,
-	descricao varchar(255) NOT NULL,
-	PRIMARY KEY (identificador)
-);
 
 CREATE TABLE valor_utilizacao_atual (
 	identificador varchar(10) NOT NULL,
@@ -655,7 +649,7 @@ CREATE TABLE valor_utilizacao_atual (
 	PRIMARY KEY (identificador)
 );
 
-CREATE TABLE valor_ordem (
+CREATE TABLE valor_categoria (
 	identificador varchar(10) NOT NULL,
 	descricao varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)
@@ -677,8 +671,7 @@ CREATE TABLE valor_elemento_edificio_xy (
 ALTER TABLE lig_valor_utilizacao_atual_edificio ADD CONSTRAINT lig_valor_utilizacao_atual_edificio_edificio FOREIGN KEY (edificio_id) REFERENCES edificio (identificador) ON DELETE CASCADE;
 ALTER TABLE lig_valor_utilizacao_atual_edificio ADD CONSTRAINT lig_valor_utilizacao_atual_edificio_valor_utilizacao_atual FOREIGN KEY (valor_utilizacao_atual_id) REFERENCES valor_utilizacao_atual (identificador);
 ALTER TABLE lig_valor_utilizacao_atual_edificio ADD CONSTRAINT edificio_id_valor_utilizacao_atual_id_uk UNIQUE (edificio_id, valor_utilizacao_atual_id);
-ALTER TABLE sinal_geodesico ADD CONSTRAINT valor_local_geodesico_id FOREIGN KEY (valor_local_geodesico) REFERENCES valor_local_geodesico (identificador);
-ALTER TABLE sinal_geodesico ADD CONSTRAINT valor_ordem_id FOREIGN KEY (valor_ordem) REFERENCES valor_ordem (identificador);
+ALTER TABLE sinal_geodesico ADD CONSTRAINT valor_categoria_id FOREIGN KEY (valor_categoria) REFERENCES valor_categoria (identificador);
 ALTER TABLE sinal_geodesico ADD CONSTRAINT valor_tipo_sinal_geodesico_id FOREIGN KEY (valor_tipo_sinal_geodesico) REFERENCES valor_tipo_sinal_geodesico (identificador);
 ALTER TABLE constru_linear ADD CONSTRAINT valor_construcao_linear_id FOREIGN KEY (valor_construcao_linear) REFERENCES valor_construcao_linear (identificador);
 ALTER TABLE constru_polig ADD CONSTRAINT valor_tipo_construcao_id FOREIGN KEY (valor_tipo_construcao) REFERENCES valor_tipo_construcao (identificador);
