@@ -529,7 +529,6 @@ INSERT INTO valor_tipo_equipamento_coletivo VALUES ('1.5','Outros - Educação e
 INSERT INTO valor_tipo_equipamento_coletivo VALUES ('2','Saúde');
 INSERT INTO valor_tipo_equipamento_coletivo VALUES ('2.1','Hospital');
 INSERT INTO valor_tipo_equipamento_coletivo VALUES ('2.2','Centro de saúde');
-INSERT INTO valor_tipo_equipamento_coletivo VALUES ('2.4','Farmácia');
 INSERT INTO valor_tipo_equipamento_coletivo VALUES ('2.100','Outro - saúde');
 INSERT INTO valor_tipo_equipamento_coletivo VALUES ('3','Ação social');
 INSERT INTO valor_tipo_equipamento_coletivo VALUES ('4','Segurança e ordem pública');
