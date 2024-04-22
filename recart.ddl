@@ -854,6 +854,8 @@ ALTER TABLE seg_via_ferrea ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE linha_ferrea (
 	identificador uuid NOT NULL DEFAULT uuid_generate_v1mc(),
+	inicio_objeto timestamp without time zone NOT NULL,
+	fim_objeto timestamp without time zone,
 	codigo_linha_ferrea varchar(255) NOT NULL,
 	nome varchar(255) NOT NULL,
 	PRIMARY KEY (identificador)

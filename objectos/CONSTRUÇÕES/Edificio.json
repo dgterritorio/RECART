@@ -120,7 +120,7 @@
 				"Valores INSPIRE": "underConstruction",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Construção iniciada e não concluída. Este valor aplica-se unicamente à construção inicial do edifício e não a trabalhos de manutenção."
+				"Definição": "A construção encontra-se em fase de construção e ainda não está funcional. Este valor aplica-se unicamente à construção inicial da construção e não a trabalhos de manutenção."
 			}, {
 				"Valores": "4",
 				"Descrição": "Projetado",
@@ -141,7 +141,7 @@
 				"Valores INSPIRE": "functional",
 				"D1": "",
 				"D2": "",
-				"Definição": "A construção está a ser utilizada."
+				"Definição": "A construção está funcional. A construção pode ser utilizada em condições normais pelo(s) seu(s) valor(es) de utilização atual(is)."
 			}]
 		}, {
 			"nome": "valorElementoEdificioXY",
@@ -657,7 +657,7 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "",
-				"Definição": "Edifício de suporte ao parque de campismo e de caravanismo ou de outro local de alojamento de curta duração (inclui abrigos de montanha)."
+				"Definição": "Edifício de suporte ao alojamento de curta duração (edifícios de apoio inseridos em zonas hoteleiras, de turismo rural ou de habitação ou de apoio a abrigos de montanha, apoio no parque de campismo e caravanismo ou outro tipo de alojamento de curta duração)."
 			}, {
 				"Valores": "5.3",
 				"Descrição": "Restauração",
@@ -727,7 +727,7 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "x",
-				"Definição": "Edifício destinado aos serviços associados ao transporte marítimo ou fluvial (incluindo os serviços de check-in, embarque e desembarque, comercio, etc.)."
+				"Definição": "Edifício destinado aos serviços associados ao transporte marítimo ou fluvial (incluindo os serviços de check-in, embarque e desembarque, comércio, etc.)."
 			}, {
 				"Valores": "6.3.2",
 				"Descrição": "Centro de controlo",

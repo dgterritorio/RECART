@@ -96,7 +96,7 @@
 			"Tipo": "Booleano",
 			"D1": "x",
 			"D2": "x",
-			"Definição": "Indica que o objeto corresponde à representação virtual do eixo com vista a assegurar a conetividade hidrográfica e aplica-se normalmente quando o eixo está localizado no interior do “Curso de água - área” ou “Água lêntica” (Albufeira, lago ou lagoa)."
+			"Definição": "Indica que o objeto corresponde à representação virtual do eixo com vista a assegurar a conetividade hidrográfica e aplica-se normalmente quando o eixo está localizado no interior do “Curso de água - área” ou “Água lêntica” ou em outros casos, como por exemplo quando um curso de água atravessa uma barragem."
 		}, {
 			"Atributo": "iDHidrografico",
 			"Multip.": "1",
@@ -221,7 +221,7 @@
 				"Valores INSPIRE": "functional",
 				"D1": "",
 				"D2": "",
-				"Definição": "A instalação está a ser utilizada."
+				"Definição": "A instalação está funcional."
 			}]
 		} ,{
 			"nome": "valorFicticio",
@@ -293,7 +293,7 @@
 				"Valores INSPIRE": "",
 				"D1": "",
 				"D2": "",
-				"Definição": "Cheio e/ou a correr raramente, de um modo geral, unicamente durante e /ou logo após forte precipitação."
+				"Definição": "Cheio e/ou a correr raramente, de um modo geral, unicamente durante e/ou logo após forte precipitação."
 			}, {
 				"Valores": "2",
 				"Descrição": "Efémero",
