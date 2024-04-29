@@ -301,7 +301,7 @@ CREATE TABLE elem_assoc_pgq (
 	PRIMARY KEY (identificador)
 );
 
-SELECT AddGeometryColumn ('public','elem_assoc_pgq','geometria',3763,'GEOMETRY',2);
+SELECT AddGeometryColumn ('public','elem_assoc_pgq','geometria',3763,'POINT',2);
 ALTER TABLE elem_assoc_pgq ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE oleoduto_gasoduto_subtancias_quimicas (
@@ -378,7 +378,7 @@ CREATE TABLE elem_assoc_eletricidade (
 	PRIMARY KEY (identificador)
 );
 
-SELECT AddGeometryColumn ('public','elem_assoc_eletricidade','geometria',3763,'GEOMETRY',2);
+SELECT AddGeometryColumn ('public','elem_assoc_eletricidade','geometria',3763,'POINT',2);
 ALTER TABLE elem_assoc_eletricidade ALTER COLUMN geometria SET NOT NULL;
 
 CREATE TABLE cabo_electrico (
@@ -1584,17 +1584,6 @@ CREATE TRIGGER mob_urbano_sinal_geometry_check
 BEFORE INSERT ON "mob_urbano_sinal"
 FOR EACH ROW EXECUTE PROCEDURE trigger_point_polygon_validation();
 
-/**
- * Cria trigger dominio Infraestruturas e Servicos Publicos
- */
-
-CREATE TRIGGER elem_assoc_eletricidade_geometry_check
-BEFORE INSERT ON "elem_assoc_eletricidade"
-FOR EACH ROW EXECUTE PROCEDURE trigger_point_polygon_validation();
-
-CREATE TRIGGER elem_assoc_pgq_geometry_check
-BEFORE INSERT ON "elem_assoc_pgq"
-FOR EACH ROW EXECUTE PROCEDURE trigger_point_polygon_validation();
 
 /**
  * Cria trigger dominio Construcoes

@@ -30,7 +30,7 @@
 		}, {
 			"Atributo": "geometria",
 			"Multip.": "1",
-			"Tipo": "Geometria (ponto; polígono)",
+			"Tipo": "Geometria (ponto)",
 			"D1": "x",
 			"D2": "x",
 			"Definição": ""
