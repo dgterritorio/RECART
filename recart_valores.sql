@@ -247,6 +247,8 @@ INSERT INTO valor_forma_edificio VALUES ('30','Palheiro');
 INSERT INTO valor_forma_edificio VALUES ('31','Moinho de maré');
 INSERT INTO valor_forma_edificio VALUES ('32','Barracão');
 INSERT INTO valor_forma_edificio VALUES ('33','Quiosque fixo');
+INSERT INTO valor_forma_edificio VALUES ('34','Posto transformador');
+INSERT INTO valor_forma_edificio VALUES ('35','Gerador eólico');
 INSERT INTO valor_gasoduto_oleoduto_sub_quimicas VALUES ('1','Gasoduto');
 INSERT INTO valor_gasoduto_oleoduto_sub_quimicas VALUES ('1.1','Gasoduto de 1º escalão');
 INSERT INTO valor_gasoduto_oleoduto_sub_quimicas VALUES ('1.2','Gasoduto de 2º escalão');

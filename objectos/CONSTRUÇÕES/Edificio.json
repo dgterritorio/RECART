@@ -536,6 +536,20 @@
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Pavilhão pequeno, normalmente feito de madeira, ferro, alumínio ou cimento, situado geralmente nos aglomerados urbanos, ou em zonas de grande afluência de público, destinado à venda de artesanato, jornais, tabacos, bebidas e outras miudezas."
+			}, {
+				"Valores": "34",
+				"Descrição": "Posto transformador",
+				"Valores INSPIRE": "transformer",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Edifício com equipamentos destinados à transformação da corrente elétrica."
+			}, {
+				"Valores": "35",
+				"Descrição": "Gerador eólico",
+				"Valores INSPIRE": "windTurbine",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Torre e equipamento associado que geram energia elétrica a partir do vento. Geradores eólicos ligados aos edifícios não devem ser considerados."
 			}]
 		}, {
 			"nome": "valorUtilizacaoAtual",

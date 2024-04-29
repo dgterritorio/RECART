@@ -4,7 +4,7 @@
 		"Característica geográfica": "Elemento associado de petróleo, gás e substâncias químicas",
 		"Objeto INSPIRE": "",
 		"objeto": "ElemAssocPGQ",
-		"Definição": "Infraestrutura de armazenamento ou distribuição de produtos químicos.",
+		"Definição": "Infraestrutura de armazenamento ou distribuição de produtos petrolíferos, gás ou substâncias químicas.",
 		"Dim.": "2D",
 		"Atributos": [{
 			"Atributo": "identificador",
