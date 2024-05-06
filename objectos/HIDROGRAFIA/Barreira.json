@@ -107,7 +107,8 @@
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Obra hidráulica, construída para desviar ou conter a invasão da água do mar ou de um curso de água."
-			}, {
+			}]
+			},{
 				"nome": "valorEstadoInstalacao",
 				"valores": [{
 					"Valores": "1",
@@ -144,8 +145,7 @@
 					"D1": "",
 					"D2": "",
 					"Definição": "A instalação está funcional."
-				}]
-			}]
+					}]
 		}]
 	}
 }
