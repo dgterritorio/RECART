@@ -1465,6 +1465,8 @@ ALTER TABLE barreira ADD CONSTRAINT valor_estado_instalacao_id_2 FOREIGN KEY (va
 ALTER TABLE constru_na_margem ADD CONSTRAINT valor_tipo_const_margem_id FOREIGN KEY (valor_tipo_const_margem) REFERENCES valor_tipo_const_margem (identificador);
 ALTER TABLE constru_na_margem ADD CONSTRAINT valor_estado_instalacao_id_3 FOREIGN KEY (valor_estado_instalacao) REFERENCES valor_estado_instalacao (identificador);
 ALTER TABLE fronteira_terra_agua ADD CONSTRAINT valor_tipo_fronteira_terra_agua_id FOREIGN KEY (valor_tipo_fronteira_terra_agua) REFERENCES valor_tipo_fronteira_terra_agua (identificador);
+ALTER TABLE curso_de_agua_eixo ADD CONSTRAINT lig_agua_lentica_curso_agua_eixo FOREIGN KEY (id_agua_lentica) REFERENCES agua_lentica (identificador);
+ALTER TABLE curso_de_agua_eixo ADD CONSTRAINT lig_curso_agua_area_curso_agua_eixo FOREIGN KEY (id_curso_de_agua_area) REFERENCES curso_de_agua_area (identificador);
 
 /**
  * Criar tabela area_trabalho auxiliar
