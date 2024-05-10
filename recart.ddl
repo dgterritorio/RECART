@@ -564,6 +564,7 @@ CREATE TABLE edificio (
 	fim_objeto timestamp without time zone,
 	altura_edificio real NOT NULL,
 	data_const date,
+	numero_total_pisos int4,
 	valor_condicao_const varchar(10),
 	valor_elemento_edificio_xy varchar(10) NOT NULL,
 	valor_elemento_edificio_z varchar(10) NOT NULL,
@@ -1372,7 +1373,7 @@ CREATE TABLE fronteira_terra_agua (
 	fonte_dados varchar(255) NOT NULL,
 	ilha bool NOT NULL,
 	origem_natural bool,
-	valor_tipo_fronteira_terra_agua varchar(10),
+	valor_tipo_fronteira_terra_agua varchar(10) NOT NULL,
 	PRIMARY KEY (identificador)
 );
 
