@@ -601,7 +601,7 @@ INSERT INTO valor_utilizacao_atual VALUES ('7','Serviços');
 INSERT INTO valor_utilizacao_atual VALUES ('7.1','Serviços da Administração Pública');
 INSERT INTO valor_utilizacao_atual VALUES ('7.2','Serviços de utilização coletiva');
 INSERT INTO valor_utilizacao_atual VALUES ('7.3','Outros - Serviços');
-INSERT INTO valor_utilizacao_atual VALUES ('8','Serviços coletivos sociais e pessoais');
+INSERT INTO valor_utilizacao_atual VALUES ('8','Outros serviços coletivos, sociais e pessoais');
 INSERT INTO valor_utilizacao_atual VALUES ('8.1','Atividades associativas');
 INSERT INTO valor_utilizacao_atual VALUES ('8.2','Culto e inumação');
 INSERT INTO valor_utilizacao_atual VALUES ('8.3','Atividades recreativas e culturais');
