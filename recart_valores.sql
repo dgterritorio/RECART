@@ -407,7 +407,6 @@ INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('15','Pérgula');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('16','Posto de carregamento elétrico');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('19','Semáforo');
 INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('20','Sinal de trânsito');
-INSERT INTO valor_tipo_de_mob_urbano_sinal VALUES ('22','Contentor de reutilização');
 INSERT INTO valor_tipo_fronteira_terra_agua VALUES ('1','Linha de costa');
 INSERT INTO valor_tipo_fronteira_terra_agua VALUES ('2','Linha limite do leito');
 INSERT INTO valor_tipo_fronteira_terra_agua VALUES ('3','Linha limite de ilha');
