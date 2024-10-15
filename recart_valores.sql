@@ -285,7 +285,7 @@ INSERT INTO valor_instalacao_producao VALUES ('13','Indústria agroindustrial');
 INSERT INTO valor_instalacao_producao VALUES ('13.1','Matadouro');
 INSERT INTO valor_instalacao_producao VALUES ('13.2','Adega');
 INSERT INTO valor_instalacao_producao VALUES ('13.3','Lagar');
-INSERT INTO valor_instalacao_producao VALUES ('13.4','Lacticínios');
+INSERT INTO valor_instalacao_producao VALUES ('13.4','Laticínios');
 INSERT INTO valor_instalacao_producao VALUES ('13.5','Engenho');
 INSERT INTO valor_instalacao_producao VALUES ('13.100','Outros - Indústria agroindustrial');
 INSERT INTO valor_local_nomeado VALUES ('1','Capital do País');
