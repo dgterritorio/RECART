@@ -118,7 +118,7 @@
 			 {
 				"Valores": "12",
 				"Descrição": "Grua ou guindaste",
-				"Valores INSPIRE": "OtherConstruction",
+				"Valores INSPIRE": "OtherConstruction (crane)",
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Estrutura com uma ou mais máquinas permanentemente instaladas ou usadas (exemplo: numa plataforma fixa de carris) para levantar, deslocar e baixar objetos ou materiais através de uma lança oscilante ou outro aparelho de elevação."
