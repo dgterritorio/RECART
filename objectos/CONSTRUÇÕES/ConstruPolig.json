@@ -122,7 +122,15 @@
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Estrutura com uma ou mais máquinas permanentemente instaladas ou usadas (exemplo: numa plataforma fixa de carris) para levantar, deslocar e baixar objetos ou materiais através de uma lança oscilante ou outro aparelho de elevação."
-			}]
+			},
+			{
+			   "Valores": "13",
+			   "Descrição": "Painel solar fotovoltaico",
+			   "Valores INSPIRE": "OtherConstruction (solarPanel)",
+			   "D1": "x",
+			   "D2": "x",
+			   "Definição": "Equipamento utilizado para converter a energia solar em energia elétrica. Painéis solares ligados aos edifícios não devem ser considerados."
+		   }]
 		}]
 	}
 }

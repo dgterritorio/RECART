@@ -122,13 +122,6 @@
 				"D2": "x",
 				"Definição": "Equipamento de grande porte capaz de transformar a energia do vento em energia elétrica que é inserida diretamente na rede elétrica. Geradores eólicos ligados aos edifícios não devem ser considerados."
 			}, {
-				"Valores": "5",
-				"Descrição": "Painel solar fotovoltaico",
-				"Valores INSPIRE": "OtherConstruction (solarPanel)",
-				"D1": "x",
-				"D2": "",
-				"Definição": "Equipamento utilizado para converter a energia solar em energia elétrica quando não estão sobre edifícios nem incluídos em centrais fotovoltaicas."
-			}, {
 				"Valores": "6",
 				"Descrição": "Estrutura de eletricidade com ponto de iluminação",
 				"Valores INSPIRE": "Pole/streetLight",

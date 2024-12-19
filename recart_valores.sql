@@ -139,7 +139,6 @@ INSERT INTO valor_elemento_associado_electricidade VALUES ('1.6','Central geoté
 INSERT INTO valor_elemento_associado_electricidade VALUES ('2','Subestação elétrica');
 INSERT INTO valor_elemento_associado_electricidade VALUES ('3','Aeromotor');
 INSERT INTO valor_elemento_associado_electricidade VALUES ('4','Gerador eólico');
-INSERT INTO valor_elemento_associado_electricidade VALUES ('5','Painel solar fotovoltaico');
 INSERT INTO valor_elemento_associado_electricidade VALUES ('6','Estrutura de eletricidade com ponto de iluminação');
 INSERT INTO valor_elemento_associado_electricidade VALUES ('6.1','Apoio isolado de iluminação');
 INSERT INTO valor_elemento_associado_electricidade VALUES ('6.2','Apoio de baixa tensão com iluminação');
@@ -378,6 +377,7 @@ INSERT INTO valor_tipo_construcao VALUES ('9','Passeio');
 INSERT INTO valor_tipo_construcao VALUES ('10','Limite da construção linear');
 INSERT INTO valor_tipo_construcao VALUES ('11','Rampa de acesso');
 INSERT INTO valor_tipo_construcao VALUES ('12','Grua ou guindaste');
+INSERT INTO valor_tipo_construcao VALUES ('13','Painel solar fotovoltaico');
 INSERT INTO valor_tipo_const_margem VALUES ('1','Molhe ou quebra-mar');
 INSERT INTO valor_tipo_const_margem VALUES ('2','Pontão ou cais');
 INSERT INTO valor_tipo_const_margem VALUES ('3','Esporão');
