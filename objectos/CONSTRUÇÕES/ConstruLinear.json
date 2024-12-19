@@ -66,34 +66,6 @@
 		"listas de códigos": [{
 			"nome": "valorConstrucaoLinear",
 			"valores": [{
-				"Valores": "1",
-				"Descrição": "Muro de alvenaria ou betão",
-				"Valores INSPIRE": "OtherConstruction (retainingWall [se suporte = Verdadeiro])",
-				"D1": "x",
-				"D2": "x",
-				"Definição": "Obra em alvenaria ou em betão que delimita ou separa áreas ou estruturas distintas, com altura e largura variáveis."
-			}, {
-				"Valores": "2",
-				"Descrição": "Muro de pedra",
-				"Valores INSPIRE": "OtherConstruction (retainingWall [se suporte = Verdadeiro])",
-				"D1": "x",
-				"D2": "x",
-				"Definição": "Obra de pedras sobrepostas, com ou sem argamassa, que delimita ou separa áreas ou estruturas distintas, com altura e largura variáveis (inclui muros de gabiões)."
-			}, {
-				"Valores": "3",
-				"Descrição": "Sebe",
-				"Valores INSPIRE": "",
-				"D1": "x",
-				"D2": "x",
-				"Definição": "Tapumes feitos de arbustos emaranhados, árvores justapostas, ramos secos, varas entrelaçadas, para vedarem ou cercarem áreas ou separarem outras estruturas, sobre solo, muros ou muretes ou sobre pequenas valas."
-			}, {
-				"Valores": "4",
-				"Descrição": "Gradeamento ou vedação",
-				"Valores INSPIRE": "",
-				"D1": "x",
-				"D2": "x",
-				"Definição": "Delimitação física com o objetivo de impedir a passagem de pessoas, animais ou veículos, formada por barras de metal, arame ou ripas de madeira."
-			}, {
 				"Valores": "5",
 				"Descrição": "Muralha",
 				"Valores INSPIRE": "OtherConstruction (cityWall)",
@@ -106,7 +78,7 @@
 				"Valores INSPIRE": "",
 				"D1": "x",
 				"D2": "",
-				"Definição": "Porta que pode ter diversos tamanhos e formas e que, geralmente fecha uma abertura num muro ou numa grade, impedindo o acesso da via pública a um local privado."
+				"Definição": "Porta que pode ter diversos tamanhos e formas e que, geralmente fecha uma abertura num muro, muro de vedação ou vedação, impedindo o acesso da via pública a um local privado."
 			}, {
 				"Valores": "7",
 				"Descrição": "Barreira acústica",
@@ -142,6 +114,27 @@
 				"D1": "x",
 				"D2": "x",
 				"Definição": "Tapete com carácter permanente para transporte de materiais em contexto industrial."
+			}, {
+				"Valores": "12",
+				"Descrição": "Muro",
+				"Valores INSPIRE": "OtherConstruction (retainingWall [se suporte = Verdadeiro])",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Agrupamento ordenado de pedras ou quaisquer outros materiais, ainda que não ligados artificialmente entre si, com o fim de constituir uma barreira de sustentação de terras entre solos desnivelados ou com o fim de delimitar uma parcela de terreno, independentemente, da sua localização na parcela, confinante ou não com a via pública."
+			}, {
+				"Valores": "13",
+				"Descrição": "Muro de vedação",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Qualquer elemento físico que delimite a parcela de terreno, independentemente, da sua localização na parcela, constituído por uma solução mista, composta por muros de pedra à vista ou alvenaria encimados por rede, sebe viva, arame, grade, chapa metálica, ferro, madeira, vigas ou outro material, confinante ou não com a via pública."
+			}, {
+				"Valores": "14",
+				"Descrição": "Vedação",
+				"Valores INSPIRE": "",
+				"D1": "x",
+				"D2": "x",
+				"Definição": "Qualquer elemento físico que delimite a parcela de terreno, independentemente, da sua localização na parcela, podendo ser constituída por redes, sebes, arames, grades, chapas metálicas, ferro, madeira, vigas ou outro material. Apenas devem ser consideradas as vedações que tenham carácter perene."
 			}]
 		}]
 	}
