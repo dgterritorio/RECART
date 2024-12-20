@@ -2,7 +2,7 @@
 Espaço de trabalho para o desenvolvimento da base de dados das especificações técnicas de cartografia topográfica:
 
 - Base De Dados Geográficos em PostgreSQL/PostGIS:
-    - Versão estável para produção (v2.0.2 2024-12-24): https://github.com/dgterritorio/RECART/releases/tag/v2.0.2
+    - Versão estável para produção (v2.0.2 2024-12-20): https://github.com/dgterritorio/RECART/releases/tag/v2.0.2
     - Todas as versões: https://github.com/dgterritorio/RECART/releases
     - Versão de desenvolvimento: https://github.com/dgterritorio/RECART (Branch: master)
 - Dicionário de objetos v2.0.2: http://www.dgterritorio.gov.pt/recart/
