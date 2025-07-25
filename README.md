@@ -1,5 +1,7 @@
 # RECART / CartTop
-Espaço de trabalho para o desenvolvimento da base de dados das especificações técnicas de cartografia topográfica:
+Este é um espaço de trabalho para o desenvolvimento da base de dados das especificações técnicas de cartografia topográfica.
+
+A organização deste espaço permite que coloque dúvidas ou questões, partilhe ideias e que se envolva com outros membros da geocomunidade no separador [Discussions](https://github.com/dgterritorio/RECART/discussions) bem como também possa continuar a contribuir através do separador [Issues](https://github.com/dgterritorio/RECART/issues) e [Pull requests](https://github.com/dgterritorio/RECART/pulls).
 
 - Base De Dados Geográficos em PostgreSQL/PostGIS:
     - [Versão estável para produção (v2.0.2 2024-12-20)](https://github.com/dgterritorio/RECART/releases/tag/v2.0.2)
