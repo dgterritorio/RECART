@@ -12,7 +12,7 @@ A organização deste espaço permite que coloque dúvidas ou questões, partilh
      - [Alterações CartTopV2.0.1 para CartTopV2.0.2](https://github.com/dgterritorio/RECART/blob/master/Altera%C3%A7%C3%B5es%20CartTopV2.0.1%20para%20CartTopV2.0.2.pdf)
 - Outros repositórios:
      - [Versões ANTIGAS das especificações técnicas CartTop](https://github.com/dgterritorio/recart-carttop-arquivo)
-     - A aplicação informática [recartDGT](https://github.com/dgterritorio/recart-plugin)
+     - O plugin QGIS [recartDGT](https://github.com/dgterritorio/recart-plugin)
      - [Scripts SQL](https://github.com/dgterritorio/recart-scripts-sql) utilizados nos processos de homologação (em contínuo desenvolvimento)
 
 - Homologação de Cartografia Topográfica:
