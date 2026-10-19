@@ -1611,3 +1611,186 @@ FOR EACH ROW EXECUTE PROCEDURE trigger_point_polygon_validation();
 CREATE TRIGGER barreira_geometry_check
 BEFORE INSERT ON "barreira"
 FOR EACH ROW EXECUTE PROCEDURE trigger_linestring_polygon_validation();
+
+/**
+ * Cria triggers para redução a 3 casas decimais das coordenadas das geometrias ON INSERT/ UPDATE 
+ */
+
+CREATE OR REPLACE FUNCTION public.recart_reduce_geometry_precision()
+RETURNS trigger
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    IF NEW.geometria IS NOT NULL THEN
+
+        -- Reduce XY precision
+        NEW.geometria := ST_ReducePrecision(
+            NEW.geometria,
+            0.001
+        );
+
+        -- Round Z only for 3D geometries
+        IF ST_HasZ(NEW.geometria) THEN
+            NEW.geometria := public.recart_round_z(
+                NEW.geometria
+            );
+        END IF;
+
+    END IF;
+
+    RETURN NEW;
+END;
+$$;
+
+/**
+ * Função para arredondamento de Z para 3 casas decimais
+ */
+
+CREATE OR REPLACE FUNCTION public.recart_round_z(
+    geom geometry
+)
+RETURNS geometry
+LANGUAGE plpgsql
+IMMUTABLE
+STRICT
+AS $$
+DECLARE
+    i integer;
+    j integer;
+    p geometry;
+    ring geometry;
+    new_ring geometry;
+    rings geometry[];
+BEGIN
+
+    CASE GeometryType(geom)
+
+        -- POINTZ
+        WHEN 'POINT' THEN
+
+            RETURN ST_MakePoint(
+                ST_X(geom),
+                ST_Y(geom),
+                ROUND(ST_Z(geom)::numeric, 3)
+            );
+
+
+        -- LINESTRINGZ
+        WHEN 'LINESTRING' THEN
+
+            FOR i IN 1..ST_NPoints(geom) LOOP
+
+                p := ST_PointN(geom, i);
+
+                geom := ST_SetPoint(
+                    geom,
+                    i - 1,
+                    ST_MakePoint(
+                        ST_X(p),
+                        ST_Y(p),
+                        ROUND(ST_Z(p)::numeric, 3)
+                    )
+                );
+
+            END LOOP;
+
+            RETURN geom;
+
+
+        -- POLYGONZ
+        WHEN 'POLYGON' THEN
+
+            rings := ARRAY[]::geometry[];
+
+            -- Exterior + interior rings
+            FOR i IN 0..ST_NRings(geom) - 1 LOOP
+
+                IF i = 0 THEN
+                    ring := ST_ExteriorRing(geom);
+                ELSE
+                    ring := ST_InteriorRingN(geom, i);
+                END IF;
+
+                FOR j IN 1..ST_NPoints(ring) LOOP
+
+                    p := ST_PointN(ring, j);
+
+                    ring := ST_SetPoint(
+                        ring,
+                        j - 1,
+                        ST_MakePoint(
+                            ST_X(p),
+                            ST_Y(p),
+                            ROUND(ST_Z(p)::numeric, 3)
+                        )
+                    );
+
+                END LOOP;
+
+                rings := array_append(rings, ring);
+
+            END LOOP;
+
+            -- Rebuild polygon, preserving holes
+            RETURN ST_MakePolygon(
+                rings[1],
+                rings[2:array_length(rings, 1)]
+            );
+
+    END CASE;
+
+    -- Other geometry types: leave unchanged
+    RETURN geom;
+
+END;
+$$;
+
+
+/**
+ * Script para adicionar trigger para redução a 3 casas 
+ * decimais das coordenadas das tabelas com geometria
+ */
+DO $$
+DECLARE
+    r RECORD;
+    trigger_name text;
+BEGIN
+
+    FOR r IN
+        SELECT DISTINCT
+               f_table_schema AS schema_name,
+               f_table_name AS table_name,
+               f_geometry_column AS geometry_column
+        FROM public.geometry_columns
+        WHERE f_table_schema = 'public'
+          AND f_geometry_column = 'geometria'
+    LOOP
+
+        trigger_name := 'trg_' || r.table_name || '_precision';
+
+        -- Remove o trigger caso já exista
+        EXECUTE format(
+            'DROP TRIGGER IF EXISTS %I ON %I.%I',
+            trigger_name,
+            r.schema_name,
+            r.table_name
+        );
+
+        -- Cria novamente o trigger
+        EXECUTE format(
+            'CREATE TRIGGER %I
+             BEFORE INSERT OR UPDATE OF %I
+             ON %I.%I
+             FOR EACH ROW
+             EXECUTE FUNCTION public.recart_reduce_geometry_precision()',
+            trigger_name,
+            r.geometry_column,
+            r.schema_name,
+            r.table_name
+        );
+
+    END LOOP;
+
+END;
+$$;
+
